@@ -1,0 +1,43 @@
+
+
+import Headshot from "@public/assets/aa_headshot_2_low.jpg"
+import Image from "next/image"
+import ContactIcon from "@public/assets/user-add.svg"
+import ArtIcon from "@public/assets/paintbrush-pencil.svg"
+
+const Hero = () => {
+    return (
+        <section className="bg-hero-left w-auto flex flex-column h-screen border-b-[.5px] border-b-[hsl(240,4,16)]">
+            <div className="p-6 pt-0 h-screen flex flex-col justify-center items-center w-full lg:bg-none lg:border-r-0 lg:min-w-[40%] lg:pt-0 ">
+                <div className="mb-10">
+                    <div className="mb-4 w-full bg-hero-left">
+                        <h1 className="text-4xl font-bold sm:text-6xl">Hi, I'm <span className="text-emerald-600">Aaron</span></h1>
+                        <h1 className="text-4xl font-bold sm:text-6xl">A <span className="text-emerald-600">Frontend</span> Developer</h1>
+                    </div>
+                    <h2 className="text-xl sm:text-2xl">I specialize in creating modern, accesible and visually pleasing user interfaces and <span className="text-emerald-600 font-bold">experiences.</span></h2>
+                </div>
+                <div className="w-full flex items-center justify-center lg:hidden lg:ml-8">
+                    <Image src={Headshot} alt="hero image" width={200} height={100} className="border-white border-2 rounded-full" />
+                </div>
+                <div className="flex border border-white h-15 lg:hidden"></div>
+                <div className="w-full flex flex-col justify-evenly items-center md:flex-row">
+                    <div className="w-full flex flex-col justify-center items-center md:mr-8">
+                        <button className="w-60 h-13 border-2 rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer sm:w-60 md:w-80 md:h-20 text-xl mb-4">
+                            <Image src={ContactIcon} alt="contact icon" width={20} className="icon-white-filter mr-4" />
+                            <p>Contact Me</p>
+                        </button>
+                        <button className="w-60 h-13 border-2 rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer md:w-80 md:h-20 text-xl ">
+                            <Image src={ArtIcon} alt="contact icon" width={20} className="icon-white-filter mr-4" />
+                            <p>View Projects</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div className="hidden lg:flex justify-center items-center lg:w-auto lg:h-auto lg:max-w-[40%]">
+                <Image src={Headshot} alt="hero image" className="rounded-full w-[80%] border-2 border-white" />
+            </div>
+        </section >
+    )
+}
+
+export default Hero
