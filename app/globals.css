@@ -6,6 +6,7 @@
 }
 
 @theme {
+    --breakpoint-xxs: 20rem;
     --breakpoint-xs: 30rem;
     --breakpoint-sm: 50rem;
 }
@@ -32,25 +33,28 @@ body {
     margin: 0;
 }
 
-.icon-white-filter {
-    filter: brightness(0) invert(1);
-}
-.icon-emerald-filter {
-    filter: brightness(0) saturate(100%) invert(32%) sepia(51%) saturate(3503%) hue-rotate(145deg) brightness(96%)
-        contrast(101%);
-}
-
-.emerald-green-highlight {
-    color: var(--color-emerald-600);
-}
-
-.grey-secondary-text-color {
-    color: white;
-}
-
 @layer utilities {
-    .bg-hero-left {
-        background-image: url('/assets/swirls-bg.webp');
-        background-size: cover;
+    .scribble-color-filter {
+        filter: brightness(0) saturate(100%) invert(62%) sepia(40%) saturate(3165%) hue-rotate(10deg) brightness(101%)
+            contrast(98%);
+    }
+    .icon-white-filter {
+        filter: brightness(0) invert(1);
+    }
+    .icon-emerald-filter {
+        filter: brightness(0) saturate(100%) invert(32%) sepia(51%) saturate(3503%) hue-rotate(145deg) brightness(96%)
+            contrast(101%);
+    }
+
+    .emerald-green-highlight {
+        color: var(--color-emerald-600);
+    }
+
+    .grey-secondary-text-color {
+        color: white;
+    }
+
+    .orange-text-color {
+        color: #e29c03;
     }
 }
