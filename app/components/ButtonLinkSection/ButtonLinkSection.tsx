@@ -2,7 +2,7 @@ import ResumeIcon from "@public/assets/resume.svg"
 import LinkedInIcon from "@public/assets/linkedin.svg"
 import Link from "next/link"
 import Image from "next/image"
-import ViewProjectsButton from "./ViewProjectsButton"
+import ViewProjectsButton from "../ViewProjectsButton"
 
 const ButtonLinkSection = () => {
     return (

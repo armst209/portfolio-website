@@ -2,14 +2,14 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="border-t-[.5px] border-t-[hsl(240,4,16)] border-b-[.5px] border-b-[hsl(240,4,16)] w-full h-50 p-4 mb-6">
+        <footer className="flex flex-col justify-center items-center border-t-[.5px] border-t-[hsl(240,4,16)] w-full h-40 p-4 mb-6 pr-6 lg:justify-between lg:flex-row">
             <div>
-                <h1>Aaron Armstrong</h1>
+                <div>
+                    <h2 className="emerald-green-highlight font-bold">{`© ${new Date().getFullYear()} Aaron Armstrong. All rights are reserved.`}</h2>
+                </div>
             </div>
             <p>Website built with Next.js, Typescript and Tailwind CSS.</p>
-            <div>
-                <h2>{`© ${new Date().getFullYear()} Aaron Armstrong. All rights are reserved.`}</h2>
-            </div>
+
         </footer>
     )
 }

@@ -5,6 +5,7 @@ import Image from "next/image"
 import ContactIcon from "@public/assets/user-add.svg"
 import BackgroundSwirls from "@public/assets/swirls-bg.webp"
 import CircledScribble from "@public/assets/scribble-circle.svg"
+import ScribblePeriod from "@public/assets/scribble-blob.svg"
 import ViewProjectsButton from "./ViewProjectsButton"
 import HeroSocialLinksSection from "./HeroSocialLinksSection"
 import Link from "next/link"
@@ -14,21 +15,34 @@ const Hero = () => {
         <section className="relative w-auto flex flex-column justify-center items-center min-h-screen border-b-[.5px] border-b-[hsl(240,4,16)]">
             <Image src={BackgroundSwirls} alt="background image" fill style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
 
-            <div className="z-10 pl-6 pr-6 pt-6 mb-20 h-screen flex flex-col justify-center items-center w-full lg:bg-none lg:border-r-0 lg:min-w-[40%] lg:pt-0 ">
+            <div className="z-10 pl-6 pr-6 mb-20 h-screen flex flex-col justify-start items-center w-full lg:bg-none lg:border-r-0 lg:min-w-[40%] lg:pt-0 lg:justify-center ">
                 <div className="mb-10 z-10">
                     <div className="w-full mt-20">
-                        <h1 className="text-[1.8rem] font-bold text-shadow-lg/30 md:text-6xl">Hi, I&apos;m <span className="relative emerald-green-highlight">Aaron</span></h1>
+                        <div className="flex flex-row items-end justify-start">
+                            <h1 className="text-[1.8rem] font-bold text-shadow-lg/30 md:text-6xl">Hi, I&apos;m <span className="relative emerald-green-highlight">Aaron</span></h1>
+                            <div>
+                                <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-2 w-2 lg:w-3 lg:pb-1" alt="scribble blob period" />
+                            </div>
+                        </div>
                         <div className="flex flex-col w-full items-start">
-                            <h1 className="text-[1.8rem] font-bold text-shadow-lg/30 mr-4 w-full md:text-6xl">
-                                <div className="flex flex-row">
-                                    <div className="mr-2">A</div><div className="emerald-green-highlight">Frontend Developer</div>
+                            <h1 className="text-[1.8rem] font-bold text-shadow-lg/30 mr-4 w-full md:text-5xl xl:text-6xl">
+                                <div className="flex flex-row w-full">
+                                    <div className="mr-2">A</div>
+                                    <div className="flex flex-row items-end justify-center">
+                                        <div className="emerald-green-highlight">Frontend Developer</div>
+                                        <div>
+                                            <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-2 w-2 lg:w-3 lg:pb-1" width={10} alt="scribble blob period" />
+                                        </div>
+                                    </div>
+
+
                                 </div>
 
                             </h1>
                             <HeroSocialLinksSection />
                         </div>
                     </div>
-                    <h2 className="text-md z-10 text-shadow-lg/30 sm:text-2xl">I am passionate about crafting seamless user experiences I thrive at the intersection of creativity and functionality. <span className="emerald-green-highlight font-bold">experiences.</span></h2>
+                    <h2 className="text-md z-10 text-shadow-lg/30 sm:text-2xl">I am passionate about building accesible and visually pleasing user experiences. Let&apos;s work together.</h2>
                 </div>
                 <div className="relative w-full h-auto">
                     <Image src={CircledScribble} className="mt-8 scribble-color-filter absolute inset-0 rotate-200 lg:hidden" style={{ objectFit: "contain", objectPosition: "center" }} alt="circled scribble" />

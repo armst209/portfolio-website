@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import HamburgerIcon from "@public/assets/bars-staggered.svg"
+import ScribblePeriod from "@public/assets/scribble-blob.svg"
 import { useState } from "react"
 
 const Navigation = () => {
@@ -30,9 +31,25 @@ const Navigation = () => {
                     </div>
                     <div id="mobile-menu" className={`flex fixed inset-0 bg-background z-50 transition-transform duration-300 ease-out h-100 border-b-4 rounded-br-full mt-[3.8rem] shadow(12px 9px 18px 5px rgba(0,0,0,0.84)) transform ${isOpen ? " translate-x-0" : "translate-x-full"} lg:hidden`}>
                         <div className="font-bold text-6xl flex flex-col pt-20 pl-4 h-full">
-                            <Link className="mr-2" href="/">Home</Link>
-                            <Link className="mr-2" href="/projects">Projects</Link>
-                            <Link className="mr-2" href="/contact">Contact</Link>
+                            <Link className="mr-2 flex flex-row items-center" href="/">
+                                <p>Home</p>
+                                <div>
+                                    <Image src={ScribblePeriod} className="scribble-color-filter ml-2 w-10" alt="scribble blob period" />
+                                </div>
+                            </Link>
+                            <Link className="mr-2 flex flex-row items-center" href="/">
+                                <p>Projects</p>
+                                <div>
+                                    <Image src={ScribblePeriod} className="scribble-color-filter ml-2 w-10" alt="scribble blob period" />
+                                </div>
+                            </Link>
+                            <Link className="mr-2 flex flex-row items-center" href="/">
+                                <p>Contact</p>
+                                <div>
+                                    <Image src={ScribblePeriod} className="scribble-color-filter ml-2 w-10" alt="scribble blob period" />
+                                </div>
+                            </Link>
+
                         </div>
                     </div>
 

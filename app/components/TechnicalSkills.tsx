@@ -4,6 +4,7 @@ import TechnologiesIcon from "@public/assets/technologies.svg"
 import DesignIcon from "@public/assets/ui-ux.svg"
 import BackgroundSwirls from "@public/assets/swirls-bg.webp"
 import ScribbleSmallCircle from "@public/assets/scribble-small-circle.svg"
+import ScribblePeriod from "@public/assets/scribble-blob.svg"
 import ViewProjectsButton from "./ViewProjectsButton"
 
 
@@ -12,8 +13,27 @@ const TechnicalSkills = () => {
     return (
         <section className="flex flex-col w-full justify-center pt-25 pb-25 pl-4 pr-4 border-b-[.5px] border-b-[hsl(240,4,16)]">
             <div className="mb-4">
-                <h1 className="text-[1.8rem] font-bold mb-2 lg:text-4xl"><span className="emerald-green-highlight">Modern.</span> <span className="emerald-green-highlight">Accesible.</span> <span className="emerald-green-highlight">Visually Pleasing.</span></h1>
-                <h2 className="grey-secondary-text-color text-md md:text-xl">I specialize in creating user experiences that utilize modern systems & processes, meet WCAG & ADA accessiblity standards and provide the end user with a visually pleasing product. <span className="grey-secondary-text-color text-lg">Here&apos;s how I do it:</span></h2>
+                <div className="flex flex-col mb-2 lg:flex-row">
+                    <div className="flex flex-row justify-start items-end mr-3">
+                        <h1 className="text-[2rem] font-bold emerald-green-highlight lg:text-4xl">Modern</h1>
+                        <div>
+                            <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-1 w-2 lg:w-3" width={10} alt="scribble blob period" />
+                        </div>
+                    </div>
+                    <div className="flex flex-row justify-start items-end mr-3">
+                        <h1 className="text-[2rem] font-bold emerald-green-highlight lg:text-4xl">Accesible</h1>
+                        <div>
+                            <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-1 w-2 lg:w-3" width={10} alt="scribble blob period" />
+                        </div>
+                    </div>
+                    <div className="flex flex-row justify-start items-end">
+                        <h1 className="text-[2rem] emerald-green-highlight font-bold lg:text-4xl ">Visually Pleasing</h1>
+                        <div>
+                            <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-1 w-2 lg:w-3" width={10} alt="scribble blob period" />
+                        </div>
+                    </div>
+                </div>
+                <h2 className="grey-secondary-text-color text-md md:text-xl">Crafting user experiences that utilize modern systems & processes, meet WCAG & ADA accessiblity standards and provide the end user with a visually pleasing product</h2>
             </div>
 
             <div className="relative flex flex-col items-center justify-center xl:flex-row">
@@ -22,7 +42,7 @@ const TechnicalSkills = () => {
                     <div className="z-10 relative">
                         <h2 className="text-[1.8rem] font-bold emerald-green-highlight lg:text-3xl">Skillset:</h2>
                         <h3 className="grey-secondary-text-color mb-3" >With a focus on frontend development, I can take a project from design to completion.</h3>
-                        <ul className="list-inside list-disc text-2xl font-bold">
+                        <ul className="list-inside list-disc text-2xl">
                             <li>Frontend Architecture</li>
                             <li>Fullstack Web Development</li>
                             <li>Web Accesiblity</li>
@@ -38,15 +58,15 @@ const TechnicalSkills = () => {
                     </div>
                 </div>
 
-                <div className="relative w-full border-[.5px] border-[hsl(240,4,16)] p-4 mb-2 rounded-xl h-110 pb-10 lg:mr-2">
+                <div className="relative w-full border-[.5px] border-[hsl(240,4,16)] h-120 p-4 mb-2 rounded-xl lg:h-110 lg:mr-2">
                     <Image src={BackgroundSwirls} alt="background image" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
-                    <div className="relative z-10">
-                        <h2 className="text-[1.8rem] font-bold emerald-green-highlight lg:text-3xl">Tecnologies I Use:</h2>
-                        <h3 className="grey-secondary-text-color mb-3">I use up-to-date libraries and frameworks when applicable - minimal tools needed for the job - the job dictates the technologies needed</h3>
+                    <div className="relative z-10 ">
+                        <h2 className="text-[1.8rem] font-bold emerald-green-highlight lg:text-3xl">Technologies I Use:</h2>
+                        <h3 className="grey-secondary-text-color mb-3">I utilize a wide variety of tools; current and up-to-date libraries and frameworks. </h3>
                         <div className="pb-10">
                             <div className="mb-2">
-                                <h4 className="font-bold">Frontend</h4>
-                                <ul className="list-inside list-disc text-[.8rem] xs:text-[1rem] md:text-[1.3rem] lg:text-[1.5rem] xl:text-[.8rem]">
+                                <h4 className="font-bold orange-text-color text-lg">Frontend</h4>
+                                <ul className="list-inside list-disc text-[.8rem] xs:text-[1rem] md:text-[1.3rem] lg:text-[1.5rem] xl:text-[.9rem]">
                                     <li>Frameworks: Next.js, Vite, Nuxt.js, Blazor</li>
                                     <li>Libraries: React, Vue, Tailwind CSS, Typescript, Razor, Tanstack Query & Router</li>
                                     <li>Testing: Jest, Vitest, Playwright</li>
@@ -54,20 +74,20 @@ const TechnicalSkills = () => {
                                 </ul>
                             </div>
                             <div className="mb-2">
-                                <h4 className="font-bold">Backend</h4>
-                                <ul className="list-inside list-disc text-[.8rem] xs:text-[1rem] md:text-[1.3rem] lg:text-[1.5rem] xl:text-[.8rem]">
+                                <h4 className="font-bold orange-text-color text-lg">Backend</h4>
+                                <ul className="list-inside list-disc text-[.8rem] xs:text-[1rem] md:text-[1.3rem] lg:text-[1.5rem] xl:text-[.9rem]">
                                     <li>C#, .NET, Express.js, Node.js, Supabase, Google Firebase</li>
                                 </ul>
                             </div>
                             <div>
-                                <h4 className="font-bold">Design</h4>
-                                <ul className="list-inside list-disc text-[.8rem] xs:text-[1rem] md:text-[1.3rem] lg:text-[1.5rem] xl:text-[.8rem]">
+                                <h4 className="font-bold orange-text-color text-lg">Design</h4>
+                                <ul className="list-inside list-disc text-[.8rem] xs:text-[1rem] md:text-[1.3rem] lg:text-[1.5rem] xl:text-[.9rem]">
                                     <li>Figma, Davinci Resolve</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div className="z-10 absolute bottom-0 right-0 mr-4 mb-4 w-20 h-20">
+                    <div className="absolute bottom-0 right-0 mr-4 mb-4 w-20 h-20">
                         <div className="relative h-full w-full flex justify-center">
                             <Image src={ScribbleSmallCircle} fill style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="scribble circle" />
                             <Image src={TechnologiesIcon} className="icon-emerald-filter w-10" alt="technologies icon" />
@@ -78,9 +98,9 @@ const TechnicalSkills = () => {
                 <div className="w-full relative border-[.5px] border-[hsl(240,4,16)] p-4 mb-2 rounded-xl h-110 pb-10 xl:h-110">
                     <Image src={BackgroundSwirls} alt="background image" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
                     <div className="z-10 relative">
-                        <h2 className="text-[1.8rem] font-bold emerald-green-highlight lg:text-3xl">UI/UX Design:</h2>
-                        <h3 className="grey-secondary-text-color mb-3" >I am a developer first, but I have experience in crafting and designing websites to a client&apos;s needs.</h3>
-                        <ul className="list-inside list-disc text-xl lg:text-2xl font-bold">
+                        <h2 className="text-[1.8rem] emerald-green-highlight font-bold lg:text-3xl">UI/UX Design:</h2>
+                        <h3 className="grey-secondary-text-color mb-3" >I am a developer first, but I have experience in design</h3>
+                        <ul className="list-inside list-disc text-2xl \">
                             <li>Wireframing & Prototyping</li>
                             <li>Typography/Font Selection</li>
                             <li>Responsive & Modern Layouts</li>
