@@ -4,6 +4,7 @@ import localFont from 'next/font/local'
 import './globals.css'
 import PageContainer from './components/PageContainer'
 
+
 const satoshi = localFont({
     src: [
         {
@@ -45,6 +46,7 @@ export default function RootLayout({
                 <PageContainer>
                     {children}
                 </PageContainer>
+
             </body>
         </html>
     )
