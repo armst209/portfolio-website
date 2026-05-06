@@ -1,5 +1,6 @@
 
 import ContactMe from './components/ContactMe'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import TechnicalSkills from './components/TechnicalSkills'
 import { Toaster } from 'react-hot-toast'
@@ -10,6 +11,7 @@ export default function Home() {
             <Hero />
             <TechnicalSkills />
             <ContactMe />
+            <Footer />
             <Toaster />
         </div>
     )

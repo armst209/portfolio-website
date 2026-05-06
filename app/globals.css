@@ -45,12 +45,12 @@ body {
 }
 
 .grey-secondary-text-color {
-    color: var(--color-gray-500);
+    color: white;
 }
 
 @layer utilities {
     .bg-hero-left {
-        background-image: url('/assets/swirls-bg.png');
+        background-image: url('/assets/swirls-bg.webp');
         background-size: cover;
     }
 }
