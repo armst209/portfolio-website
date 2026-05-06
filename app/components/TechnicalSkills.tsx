@@ -9,7 +9,7 @@ import ScribbleSmallCircle from "@public/assets/scribble-small-circle.svg"
 
 const TechnicalSkills = () => {
     return (
-        <section className="flex flex-col min-h-200 w-full justify-center pt-25 p-4 pb-4 2xl:pt-50">
+        <section className="flex flex-col w-full justify-center pt-10 pb-10 pl-4 pr-4">
             <div className="mb-4">
                 <h1 className="text-4xl font-bold mb-2"><span className="emerald-green-highlight">Modern.</span> <span className="emerald-green-highlight">Accesible.</span> <span className="emerald-green-highlight">Visually Pleasing.</span></h1>
                 <h2 className="grey-secondary-text-color text-lg">I specialize in creating user experiences that utilize modern systems & processes, meet WCAG & ADA accessiblity standards and provide the end user with a visually pleasing product. <span className="grey-secondary-text-color text-lg">Here's how I do it:</span></h2>
