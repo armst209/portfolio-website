@@ -4,7 +4,7 @@
 import emailjs from "@emailjs/browser"
 import toast from "react-hot-toast"
 import { useForm } from "react-hook-form"
-import SendIcon from "@public/assets/send.svg"
+import SendIcon from "@public/assets/icons/send.svg"
 import Image from "next/image"
 
 emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string)

@@ -1,12 +1,12 @@
-import ScribblePeriod from "@public/assets/scribble-blob.svg"
-import ContactIcon from "@public/assets/user-add.svg"
-import CircledScribble from "@public/assets/scribble-circle.svg"
+import ScribblePeriod from "@public/assets/icons/scribble-blob.svg"
+import ContactIcon from "@public/assets/icons/user-add.svg"
+import CircledScribble from "@public/assets/icons/scribble-circle.svg"
 import Headshot from "@public/assets/headshot.webp"
 import ViewProjectsButton from "../ViewProjectsButton"
 import HeroSocialLinksSection from "./HeroSocialLinksSection"
 import Image from "next/image"
 import Link from "next/link"
-import { site_content } from "../../content"
+
 
 const HeroTopSection = () => {
     return (
@@ -34,7 +34,7 @@ const HeroTopSection = () => {
                         </h1>
                     </div>
                 </div>
-                <h2 className="text-md text-shadow-lg/30 sm:text-xl xl:text-2xl">A developer who is passionate about building <span className="font-bold orange-text-color">modern</span>, <span className="font-bold orange-text-color">accessible</span> and <span className="font-bold orange-text-color">visually pleasing</span> user experiences. </h2>
+                <h2 className="text-md text-shadow-lg/30 sm:text-xl xl:text-2xl"> A developer with 6+ years of experience who is passionate about building <span className="font-bold orange-text-color">modern</span>, <span className="font-bold orange-text-color">accessible</span> and <span className="font-bold orange-text-color">visually pleasing</span> user experiences. </h2>
                 <HeroSocialLinksSection />
 
             </div>

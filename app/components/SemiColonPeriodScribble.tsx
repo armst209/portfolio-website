@@ -1,5 +1,5 @@
 import Image from "next/image"
-import ScribblePeriod from "@public/assets/scribble-blob.svg"
+import ScribblePeriod from "@public/assets/icons/scribble-blob.svg"
 
 const SemiColonPeriodScribble = () => {
     return (

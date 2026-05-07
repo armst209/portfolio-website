@@ -3,7 +3,7 @@
 import Headshot from "@public/assets/headshot.webp"
 import Image from "next/image"
 import BackgroundSwirls from "@public/assets/swirls-bg.webp"
-import CircledScribble from "@public/assets/scribble-circle.svg"
+import CircledScribble from "@public/assets/icons/scribble-circle.svg"
 import HeroTopSection from "./HeroTopSection"
 
 
@@ -11,7 +11,6 @@ const Hero = () => {
     return (
         <section className="relative flex flex-column justify-center items-center min-h-[calc(100vh-80px)] mx-auto p-6 overflow-hidden border-b-[.5px] border-b-[hsl(240,4,16)]">
             <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-
             <HeroTopSection />
             <div className="hidden lg:flex justify-center items-center lg:w-auto lg:h-auto lg:max-w-[40%] lg:z-10">
                 <div className="w-full flex justify-center items-center relative">

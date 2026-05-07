@@ -2,10 +2,10 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import HamburgerIcon from "@public/assets/bars-staggered.svg"
-import ScribblePeriod from "@public/assets/scribble-blob.svg"
+import HamburgerIcon from "@public/assets/icons/bars-staggered.svg"
+import ScribblePeriod from "@public/assets/icons/scribble-blob.svg"
 import BackgroundSwirls from "@public/assets/swirls-bg.webp"
-import CloseIcon from "@public/assets/close.svg"
+import CloseIcon from "@public/assets/icons/close.svg"
 import { useState } from "react"
 import { usePathname } from "next/navigation"
 

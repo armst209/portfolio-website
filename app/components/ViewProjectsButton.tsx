@@ -1,8 +1,8 @@
 
 
 import Image from "next/image"
-import BoxScribble from "@public/assets/scribble-box.svg"
-import ArtIcon from "@public/assets/paintbrush-pencil.svg"
+import BoxScribble from "@public/assets/icons/scribble-box.svg"
+import ArtIcon from "@public/assets/icons/paintbrush-pencil.svg"
 
 
 const ViewProjectsButton = () => {

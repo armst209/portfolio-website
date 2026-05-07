@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import NotFoundIcon from "@public/assets/404.svg"
-import BoxScribble from "@public/assets/scribble-box.svg"
+import NotFoundIcon from "@public/assets/icons/404.svg"
+import BoxScribble from "@public/assets/icons/scribble-box.svg"
 import BackgroundSwirls from "@public/assets/swirls-bg.webp"
 
 const NotFound = () => {

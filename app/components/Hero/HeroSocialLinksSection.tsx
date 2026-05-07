@@ -1,6 +1,6 @@
-import LinkedInIcon from "@public/assets/linkedin.svg"
-import ResumeIcon from "@public/assets/resume.svg"
-import GithubIcon from "@public/assets/github.svg"
+import LinkedInIcon from "@public/assets/icons/linkedin.svg"
+import ResumeIcon from "@public/assets/icons/resume.svg"
+import GithubIcon from "@public/assets/icons/github.svg"
 import Image from "next/image"
 
 const HeroSocialLinksSection = () => {

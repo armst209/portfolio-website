@@ -1,7 +1,7 @@
 import ContactForm from "../ContactForm/ContactForm"
 import Image from "next/image"
 import BackgroundSwirls from "@public/assets/swirls-bg.webp"
-import CircledScribble from "@public/assets/scribble-circle.svg"
+import CircledScribble from "@public/assets/icons/scribble-circle.svg"
 
 const ContactMe = () => {
     return (
