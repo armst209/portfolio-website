@@ -5,7 +5,7 @@ import { Toaster } from 'react-hot-toast'
 
 const PageContainer = ({ children }: { children: ReactNode }) => {
     return (
-        <main className="flex flex-col flex-1 items-center justify-center dark:bg-black">
+        <main className="flex flex-col flex-1 items-center justify-center dark:bg-black h-full w-full">
             <Navigation />
             {children}
             <Footer />

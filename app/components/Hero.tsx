@@ -9,6 +9,7 @@ import ScribblePeriod from "@public/assets/scribble-blob.svg"
 import ViewProjectsButton from "./ViewProjectsButton"
 import HeroSocialLinksSection from "./HeroSocialLinksSection"
 import Link from "next/link"
+import { site_content } from "../content"
 
 const Hero = () => {
     return (
@@ -19,13 +20,13 @@ const Hero = () => {
                 <div className="mb-10 z-10">
                     <div className="w-full mt-20">
                         <div className="flex flex-row items-end justify-start">
-                            <h1 className="text-[1.8rem] font-bold text-shadow-lg/30 md:text-6xl">Hi, I&apos;m <span className="relative emerald-green-text-color">Aaron</span></h1>
+                            <h1 className="text-[1.5rem] font-bold text-shadow-lg/30 xs:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">Hi, I&apos;m <span className="relative emerald-green-text-color">Aaron</span></h1>
                             <div>
                                 <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-2 w-2 lg:w-3 lg:pb-1" alt="scribble blob period" />
                             </div>
                         </div>
                         <div className="flex flex-col w-full items-start">
-                            <h1 className="text-[1.8rem] font-bold text-shadow-lg/30 mr-4 w-full md:text-5xl xl:text-6xl">
+                            <h1 className="text-[1.5rem] font-bold text-shadow-lg/30 mr-4 w-full xs:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                                 <div className="flex flex-row w-full">
                                     <div className="mr-2">A</div>
                                     <div className="flex flex-row items-end justify-center">
@@ -42,7 +43,7 @@ const Hero = () => {
                             <HeroSocialLinksSection />
                         </div>
                     </div>
-                    <h2 className="text-md z-10 text-shadow-lg/30 sm:text-2xl">I am passionate about building accesible and visually pleasing user experiences. Let&apos;s work together.</h2>
+                    <h2 className="text-md z-10 text-shadow-lg/30 sm:text-2xl">{site_content.hero.subtitle}</h2>
                 </div>
                 <div className="relative w-full h-auto">
                     <Image src={CircledScribble} className="mt-8 scribble-color-filter absolute inset-0 rotate-200 lg:hidden" style={{ objectFit: "contain", objectPosition: "center" }} alt="circle scribble" />

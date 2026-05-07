@@ -6,6 +6,7 @@ import BackgroundSwirls from "@public/assets/swirls-bg.webp"
 import ScribbleSmallCircle from "@public/assets/scribble-small-circle.svg"
 import ScribblePeriod from "@public/assets/scribble-blob.svg"
 import ViewProjectsButton from "../ViewProjectsButton"
+import Link from "next/link"
 
 
 
@@ -100,7 +101,7 @@ const TechnicalSkills = () => {
                     <div className="z-10 relative">
                         <h2 className="text-[1.8rem] emerald-green-text-color font-bold lg:text-3xl">UI/UX Design:</h2>
                         <h3 className="grey-secondary-text-color mb-3" >I am a developer first, but I have experience in design</h3>
-                        <ul className="list-inside list-disc text-2xl \">
+                        <ul className="list-inside list-disc text-xl md:text-2xl">
                             <li>Wireframing & Prototyping</li>
                             <li>Typography/Font Selection</li>
                             <li>Responsive & Modern Layouts</li>
@@ -119,7 +120,7 @@ const TechnicalSkills = () => {
 
             </div>
             <div className="flex w-full justify-center pt-4 lg:justify-end">
-                <ViewProjectsButton />
+                <Link href="/projects"><ViewProjectsButton /></Link>
             </div>
 
         </section >

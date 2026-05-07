@@ -15,11 +15,8 @@ const Navigation = () => {
     const closeMobileMenu = () => setIsOpen(false)
     const pathname = usePathname()
 
-    console.log("pathname", pathname)
-
-
     return (
-        <header className="sticky top-0 z-20 w-full bg-background border-b-[.5px] border-b-[hsl(240,4,16)]">
+        <header className="fixed top-0 z-20 w-full bg-background border-b-[.5px] border-b-[hsl(240,4,16)]">
             <nav className="flex flex-row p-4 w-full justify-between lg:items-center">
                 <div>
                     <Link href="/">
@@ -37,7 +34,7 @@ const Navigation = () => {
                     <button id="hamburger" className="flex lg:hidden" onClick={toggleMobileMenu} aria-label="Open Navigation">
                         <Image src={HamburgerIcon} width={25} alt="mobile menu icon" className="icon-white-filter" />
                     </button>
-                    <div role="dialog" id="mobile-menu" aria-label="mobile menu" aria-expanded={isOpen} className={`w-full flex fixed inset-0 bg-background z-50 transition-transform duration-300 ease-out h-100 border-b-4 rounded-br-full mt-[3.6rem] shadow(12px 9px 18px 5px rgba(0,0,0,0.84)) transform ${isOpen ? " translate-x-0" : "translate-x-full"} lg:hidden`}>
+                    <div role="dialog" id="mobile-menu" aria-label="mobile menu" aria-expanded={isOpen} className={`w-full h-screen flex fixed inset-0 bg-background z-50 transition-transform duration-300 ease-out mt-[3.6rem] shadow(12px 9px 18px 5px rgba(0,0,0,0.84)) transform ${isOpen ? " translate-x-0" : "translate-x-full"} lg:hidden`}>
                         <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         <button onClick={closeMobileMenu} className="absolute top-0 flex justify-end w-full pt-2 pr-3" aria-label="Close Navigation">
                             <Image src={CloseIcon} alt="close navigation icon" width={40} className="icon-white-filter" />
