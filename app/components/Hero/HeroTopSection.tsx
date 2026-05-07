@@ -55,7 +55,7 @@ const HeroTopSection = () => {
                             </button>
                         </div>
                     </a>
-                    <Link href="/projects"><ViewProjectsButton /></Link>
+                    <Link href="/projects" className="pb-4"><ViewProjectsButton /></Link>
                 </div>
             </div>
         </div>
