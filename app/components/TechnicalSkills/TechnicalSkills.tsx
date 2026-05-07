@@ -15,19 +15,19 @@ const TechnicalSkills = () => {
             <div className="mb-4">
                 <div className="flex flex-col mb-2 lg:flex-row">
                     <div className="flex flex-row justify-start items-end mr-3">
-                        <h1 className="text-[2rem] font-bold emerald-green-highlight lg:text-4xl">Modern</h1>
+                        <h1 className="text-[2rem] font-bold emerald-green-text-color lg:text-4xl">Modern</h1>
                         <div>
                             <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-1 w-2 lg:w-3" width={10} alt="scribble blob period" />
                         </div>
                     </div>
                     <div className="flex flex-row justify-start items-end mr-3">
-                        <h1 className="text-[2rem] font-bold emerald-green-highlight lg:text-4xl">Accesible</h1>
+                        <h1 className="text-[2rem] font-bold emerald-green-text-color lg:text-4xl">Accesible</h1>
                         <div>
                             <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-1 w-2 lg:w-3" width={10} alt="scribble blob period" />
                         </div>
                     </div>
                     <div className="flex flex-row justify-start items-end">
-                        <h1 className="text-[2rem] emerald-green-highlight font-bold lg:text-4xl ">Visually Pleasing</h1>
+                        <h1 className="text-[2rem] emerald-green-text-color font-bold lg:text-4xl ">Visually Pleasing</h1>
                         <div>
                             <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-1 w-2 lg:w-3" width={10} alt="scribble blob period" />
                         </div>
@@ -40,7 +40,7 @@ const TechnicalSkills = () => {
                 <div className="z-10 w-full relative border-[.5px] border-[hsl(240,4,16)] p-4 mb-2 rounded-xl h-auto pb-30 lg:mr-2 xl:h-110">
                     <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
                     <div className="z-10 relative">
-                        <h2 className="text-[1.8rem] font-bold emerald-green-highlight lg:text-3xl">Skillset:</h2>
+                        <h2 className="text-[1.8rem] font-bold emerald-green-text-color lg:text-3xl">Skillset:</h2>
                         <h3 className="grey-secondary-text-color mb-3" >With a focus on frontend development, I can take a project from design to completion.</h3>
                         <ul className="list-inside list-disc text-2xl">
                             <li>Frontend Architecture</li>
@@ -61,7 +61,7 @@ const TechnicalSkills = () => {
                 <div className="relative w-full border-[.5px] border-[hsl(240,4,16)] h-120 p-4 mb-2 rounded-xl lg:h-110 lg:mr-2">
                     <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
                     <div className="relative z-10 ">
-                        <h2 className="text-[1.8rem] font-bold emerald-green-highlight lg:text-3xl">Technologies I Use:</h2>
+                        <h2 className="text-[1.8rem] font-bold emerald-green-text-color lg:text-3xl">Technologies I Use:</h2>
                         <h3 className="grey-secondary-text-color mb-3">I utilize a wide variety of tools; current and up-to-date libraries and frameworks. </h3>
                         <div className="pb-10">
                             <div className="mb-2">
@@ -98,7 +98,7 @@ const TechnicalSkills = () => {
                 <div className="w-full relative border-[.5px] border-[hsl(240,4,16)] p-4 mb-2 rounded-xl h-110 pb-10 xl:h-110">
                     <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
                     <div className="z-10 relative">
-                        <h2 className="text-[1.8rem] emerald-green-highlight font-bold lg:text-3xl">UI/UX Design:</h2>
+                        <h2 className="text-[1.8rem] emerald-green-text-color font-bold lg:text-3xl">UI/UX Design:</h2>
                         <h3 className="grey-secondary-text-color mb-3" >I am a developer first, but I have experience in design</h3>
                         <ul className="list-inside list-disc text-2xl \">
                             <li>Wireframing & Prototyping</li>

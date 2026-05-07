@@ -216,10 +216,10 @@ describe('TechnicalSkills', () => {
         expect(h4s.length).toBeGreaterThan(0)
     })
 
-    it('should have emerald-green-highlight class on main headings', () => {
+    it('should have emerald-green-text-color class on main headings', () => {
         render(<TechnicalSkills />)
 
-        const emeraldHeadings = document.querySelectorAll('.emerald-green-highlight')
+        const emeraldHeadings = document.querySelectorAll('.emerald-green-text-color')
         expect(emeraldHeadings.length).toBeGreaterThan(0)
     })
 

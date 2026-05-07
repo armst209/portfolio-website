@@ -14,7 +14,7 @@ const ContactMe = () => {
                         <Image src={CircledScribble} className="scribble-color-filter absolute inset-0 rotate-25 mt-25 mr-10 md:rotate-0 md:mt-0 lg:rotate-0" fill style={{ objectFit: "fill" }} alt="circle scribble" />
                         <Image src={CircledScribble} className="scribble-color-filter absolute inset-0 rotate-150 mt-28 ml-5 md:hidden" fill style={{ objectFit: "fill" }} alt="circle scribble" />
                         <div className="flex flex-col items-center justify-center z-20 border-[.5px] border-[hsl(240,4,16)] rounded-lg p-6 h-full bg-background md:bg-transparent md:border-0 md:rounded-0">
-                            <h1 className='text-md z-10 font-bold emerald-green-highlight md:text-xl lg:text-2xl xl:text-3xl'>Have an idea for a project?</h1>
+                            <h1 className='text-md z-10 font-bold emerald-green-text-color md:text-xl lg:text-2xl xl:text-3xl'>Have an idea for a project?</h1>
                             <h2 className="text-sm z-10 md:text-lg lg:text-xl xl:text-2xl">Let&apos;s connect!</h2>
                         </div>
 

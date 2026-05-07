@@ -23,7 +23,7 @@ const Navigation = () => {
             <nav className="flex flex-row p-4 w-full justify-between lg:items-center">
                 <div>
                     <Link href="/">
-                        <h1 className='flex flex-rowtext-lg font-bold text-emerald-600 md:text-2xl'>armst209<span className="flex items-end w-3 pb-1"><Image src={ScribblePeriod} className="scribble-color-filter  w-2" alt="scribble blob period" /></span>dev</h1>
+                        <h1 className='flex flex-rowtext-lg font-bold emerald-green-text-color md:text-2xl'>armst209<span className="flex items-end w-3 pb-1"><Image src={ScribblePeriod} className="scribble-color-filter  w-2" alt="scribble blob period" /></span>dev</h1>
                     </Link>
                 </div>
                 <div className="relative">

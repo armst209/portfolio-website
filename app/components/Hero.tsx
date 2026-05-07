@@ -19,7 +19,7 @@ const Hero = () => {
                 <div className="mb-10 z-10">
                     <div className="w-full mt-20">
                         <div className="flex flex-row items-end justify-start">
-                            <h1 className="text-[1.8rem] font-bold text-shadow-lg/30 md:text-6xl">Hi, I&apos;m <span className="relative emerald-green-highlight">Aaron</span></h1>
+                            <h1 className="text-[1.8rem] font-bold text-shadow-lg/30 md:text-6xl">Hi, I&apos;m <span className="relative emerald-green-text-color">Aaron</span></h1>
                             <div>
                                 <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-2 w-2 lg:w-3 lg:pb-1" alt="scribble blob period" />
                             </div>
@@ -29,7 +29,7 @@ const Hero = () => {
                                 <div className="flex flex-row w-full">
                                     <div className="mr-2">A</div>
                                     <div className="flex flex-row items-end justify-center">
-                                        <div className="emerald-green-highlight">Frontend Developer</div>
+                                        <div className="emerald-green-text-color">Frontend Developer</div>
                                         <div>
                                             <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-2 w-2 lg:w-3 lg:pb-1" width={10} alt="scribble blob period" />
                                         </div>
