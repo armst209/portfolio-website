@@ -5,7 +5,7 @@ import DesignIcon from "@public/assets/ui-ux.svg"
 import BackgroundSwirls from "@public/assets/swirls-bg.webp"
 import ScribbleSmallCircle from "@public/assets/scribble-small-circle.svg"
 import ScribblePeriod from "@public/assets/scribble-blob.svg"
-import ViewProjectsButton from "./ViewProjectsButton"
+import ViewProjectsButton from "../ViewProjectsButton"
 
 
 
@@ -38,7 +38,7 @@ const TechnicalSkills = () => {
 
             <div className="relative flex flex-col items-center justify-center xl:flex-row">
                 <div className="z-10 w-full relative border-[.5px] border-[hsl(240,4,16)] p-4 mb-2 rounded-xl h-auto pb-30 lg:mr-2 xl:h-110">
-                    <Image src={BackgroundSwirls} alt="background image" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
+                    <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
                     <div className="z-10 relative">
                         <h2 className="text-[1.8rem] font-bold emerald-green-highlight lg:text-3xl">Skillset:</h2>
                         <h3 className="grey-secondary-text-color mb-3" >With a focus on frontend development, I can take a project from design to completion.</h3>
@@ -52,14 +52,14 @@ const TechnicalSkills = () => {
                     </div>
                     <div className="z-10 absolute bottom-0 right-0 mr-4 mb-4 w-20 h-20">
                         <div className="relative h-full w-full flex justify-center">
-                            <Image src={ScribbleSmallCircle} fill style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="scribble circle" />
+                            <Image src={ScribbleSmallCircle} fill style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="small scribbled circle" />
                             <Image src={SkillsIcon} alt="skillset icon" className="icon-emerald-filter w-10" />
                         </div>
                     </div>
                 </div>
 
                 <div className="relative w-full border-[.5px] border-[hsl(240,4,16)] h-120 p-4 mb-2 rounded-xl lg:h-110 lg:mr-2">
-                    <Image src={BackgroundSwirls} alt="background image" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
+                    <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
                     <div className="relative z-10 ">
                         <h2 className="text-[1.8rem] font-bold emerald-green-highlight lg:text-3xl">Technologies I Use:</h2>
                         <h3 className="grey-secondary-text-color mb-3">I utilize a wide variety of tools; current and up-to-date libraries and frameworks. </h3>
@@ -89,14 +89,14 @@ const TechnicalSkills = () => {
                     </div>
                     <div className="absolute bottom-0 right-0 mr-4 mb-4 w-20 h-20">
                         <div className="relative h-full w-full flex justify-center">
-                            <Image src={ScribbleSmallCircle} fill style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="scribble circle" />
+                            <Image src={ScribbleSmallCircle} fill style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="small scribbled circle" />
                             <Image src={TechnologiesIcon} className="icon-emerald-filter w-10" alt="technologies icon" />
                         </div>
                     </div>
                 </div>
 
                 <div className="w-full relative border-[.5px] border-[hsl(240,4,16)] p-4 mb-2 rounded-xl h-110 pb-10 xl:h-110">
-                    <Image src={BackgroundSwirls} alt="background image" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
+                    <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
                     <div className="z-10 relative">
                         <h2 className="text-[1.8rem] emerald-green-highlight font-bold lg:text-3xl">UI/UX Design:</h2>
                         <h3 className="grey-secondary-text-color mb-3" >I am a developer first, but I have experience in design</h3>
@@ -111,7 +111,7 @@ const TechnicalSkills = () => {
                     </div>
                     <div className="z-10 absolute bottom-0 right-0 mr-4 mb-4 w-20 h-20">
                         <div className="relative h-full w-full flex justify-center">
-                            <Image src={ScribbleSmallCircle} fill style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="scribble circle" />
+                            <Image src={ScribbleSmallCircle} fill style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="small scribbled circle" />
                             <Image src={DesignIcon} alt="design icon" className="icon-emerald-filter w-10" />
                         </div>
                     </div>

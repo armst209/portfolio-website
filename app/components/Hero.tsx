@@ -13,7 +13,7 @@ import Link from "next/link"
 const Hero = () => {
     return (
         <section className="relative w-auto flex flex-column justify-center items-center min-h-screen border-b-[.5px] border-b-[hsl(240,4,16)]">
-            <Image src={BackgroundSwirls} alt="background image" fill style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
 
             <div className="z-10 pl-6 pr-6 mb-20 h-screen flex flex-col justify-start items-center w-full lg:bg-none lg:border-r-0 lg:min-w-[40%] lg:pt-0 lg:justify-center ">
                 <div className="mb-10 z-10">
@@ -45,7 +45,7 @@ const Hero = () => {
                     <h2 className="text-md z-10 text-shadow-lg/30 sm:text-2xl">I am passionate about building accesible and visually pleasing user experiences. Let&apos;s work together.</h2>
                 </div>
                 <div className="relative w-full h-auto">
-                    <Image src={CircledScribble} className="mt-8 scribble-color-filter absolute inset-0 rotate-200 lg:hidden" style={{ objectFit: "contain", objectPosition: "center" }} alt="circled scribble" />
+                    <Image src={CircledScribble} className="mt-8 scribble-color-filter absolute inset-0 rotate-200 lg:hidden" style={{ objectFit: "contain", objectPosition: "center" }} alt="circle scribble" />
                     <div className="relative z-10 w-full flex items-center justify-center lg:hidden lg:ml-8">
                         <Image src={Headshot} alt="hero image" width={200} height={100} className="border-white border-2 rounded-full" />
                     </div>
@@ -68,8 +68,8 @@ const Hero = () => {
             </div >
             <div className="hidden lg:flex justify-center items-center lg:w-auto lg:h-auto lg:max-w-[40%] lg:z-10">
                 <div className="w-full flex justify-center items-center relative">
-                    <Image src={CircledScribble} className="scribble-color-filter absolute inset-0 rotate-340 top-40 bottom-0 left-[-30] right-0 hidden lg:block" style={{ objectFit: "contain", objectPosition: "center" }} alt="circled scribble" />
-                    <Image src={CircledScribble} className="scribble-color-filter absolute inset-0 rotate-210 top-40 bottom-0 left-[-30] right-0 hidden lg:flex" style={{ objectFit: "contain", objectPosition: "center" }} alt="circled scribble" />
+                    <Image src={CircledScribble} className="scribble-color-filter absolute inset-0 rotate-340 top-40 bottom-0 left-[-30] right-0 hidden lg:block" style={{ objectFit: "contain", objectPosition: "center" }} alt="circle scribble" />
+                    <Image src={CircledScribble} className="scribble-color-filter absolute inset-0 rotate-210 top-40 bottom-0 left-[-30] right-0 hidden lg:flex" style={{ objectFit: "contain", objectPosition: "center" }} alt="circle scribble" />
                     <Image src={Headshot} alt="hero image" className="z-10 rounded-full w-[80%] border-2 border-white" priority fetchPriority="high" />
                 </div>
 

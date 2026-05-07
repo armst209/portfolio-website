@@ -10,10 +10,10 @@ const HeroSocialLinksSection = () => {
                 <Image src={LinkedInIcon} width={40} className="scribble-color-filter mr-4" alt="linkedin icon" />
             </a>
             <a href="https://github.com/armst209" rel="noopener noreferer" target="_blank" className="mr-4">
-                <Image src={GithubIcon} width={40} className="scribble-color-filter" alt="linkedin icon" />
+                <Image src={GithubIcon} width={40} className="scribble-color-filter" alt="github icon" />
             </a>
             <a href="https://www.linkedin.com/in/aaronlamararmstrong/overlay/1777396879101/single-media-viewer/?profileId=ACoAAAh1eh4BVMDLJsB0gxpMglGeh1kbmv42b9I" rel="noopener noreferer" target="_blank">
-                <Image src={ResumeIcon} width={40} className="scribble-color-filter mr-4" alt="linkedin icon" />
+                <Image src={ResumeIcon} width={40} className="scribble-color-filter mr-4" alt="resume icon" />
             </a>
         </div>
     )
