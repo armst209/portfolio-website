@@ -16,7 +16,7 @@ const Navigation = () => {
     const pathname = usePathname()
 
     return (
-        <header className="fixed top-0 z-20 w-full bg-background border-b-[.5px] border-b-[hsl(240,4,16)]">
+        <header className="flex place-items-center sticky top-0 z-50 h-20 py-4 bg-background border-b-[.5px] border-b-[hsl(240,4,16)]">
             <nav className="flex flex-row p-4 w-full justify-between lg:items-center">
                 <div>
                     <Link href="/">

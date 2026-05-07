@@ -1,6 +1,6 @@
 export const site_content = {
     hero: {
         title: '',
-        subtitle: `I am passionate about building accesible and visually pleasing user experiences. Let's work together.`,
+        subtitle: `A developer who is passionate about building modern, accessible and visually pleasing user experiences.`,
     },
 }

@@ -1,6 +1,6 @@
 
 import ContactMe from './components/ContactMe/ContactMe'
-import Hero from './components/Hero'
+import Hero from './components/Hero/Hero'
 import TechnicalSkills from './components/TechnicalSkills/TechnicalSkills'
 
 

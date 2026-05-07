@@ -5,9 +5,11 @@ import { Toaster } from 'react-hot-toast'
 
 const PageContainer = ({ children }: { children: ReactNode }) => {
     return (
-        <main className="flex flex-col flex-1 items-center justify-center dark:bg-black h-full w-full">
+        <>
             <Navigation />
-            {children}
+            <main>
+                {children}
+            </main >
             <Footer />
             <Toaster toastOptions={{
                 style: {
@@ -24,9 +26,8 @@ const PageContainer = ({ children }: { children: ReactNode }) => {
                     role: "status",
                     "aria-live": "polite",
                 }
-
             }} />
-        </main >
+        </>
     )
 }
 

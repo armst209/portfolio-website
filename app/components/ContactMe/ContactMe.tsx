@@ -5,7 +5,7 @@ import CircledScribble from "@public/assets/scribble-circle.svg"
 
 const ContactMe = () => {
     return (
-        <section id="contact" className="flex flex-col min-h-150 w-full justify-center items-center p-4 pt-25 pb-25">
+        <section id="contact" className="flex flex-col min-h-150 w-full justify-center items-center p-4 pt-25 pb-25 lg:p-6">
 
             <div className="relative h-auto border-[.5px] border-[hsl(240,4,16)] rounded-lg w-full p-4 ">
                 <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />

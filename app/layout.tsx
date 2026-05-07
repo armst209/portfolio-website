@@ -42,11 +42,10 @@ export default function RootLayout({
             lang='en'
             className={`${satoshi.className} h-full antialiased`}
         >
-            <body className='min-h-full flex flex-col'>
+            <body>
                 <PageContainer>
                     {children}
                 </PageContainer>
-
             </body>
         </html>
     )

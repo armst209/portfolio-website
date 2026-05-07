@@ -12,7 +12,7 @@ import Link from "next/link"
 
 const TechnicalSkills = () => {
     return (
-        <section className="flex flex-col w-full justify-center pt-25 pb-25 pl-4 pr-4 border-b-[.5px] border-b-[hsl(240,4,16)]">
+        <section className="flex flex-col w-full justify-center p-4 border-b-[.5px] border-b-[hsl(240,4,16)] lg:p-6">
             <div className="mb-4">
                 <div className="flex flex-col mb-2 lg:flex-row">
                     <div className="flex flex-row justify-start items-end mr-3">
