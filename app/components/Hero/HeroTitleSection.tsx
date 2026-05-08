@@ -39,7 +39,7 @@ const HeroTitleSection = () => {
             <div className="relative w-full h-auto">
                 <Image src={CircledScribble} className="mt-8 scribble-color-filter absolute inset-0 rotate-200 lg:hidden" style={{ objectFit: "contain", objectPosition: "center" }} alt="circle scribble" />
                 <div className="relative z-10 w-full flex items-center justify-center lg:hidden lg:ml-8">
-                    <Image src={Headshot} alt="hero image" width={200} height={100} className="border-white border-2 rounded-full" />
+                    <Image src={Headshot} alt="hero image" width={200} height={100} className="border-white border-2 rounded-full" priority fetchPriority="high" />
                 </div>
                 <div className="flex items-center justify-center w-full lg:hidden">
                     <div className="flex border w-0 border-white h-15"></div>
