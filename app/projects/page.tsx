@@ -13,15 +13,6 @@ const Tools = () => {
 
 const Projects = () => {
 
-
-    const projectInfo = [
-        {
-            title: "Anaheim Electronics",
-            subtitle: "A website for a technical manufacturing corporation (Company is from a fictional universe).",
-            tools: Tools,
-            liveURL: "https://armst209.github.io/"
-        }
-    ]
     return (
         <section className="p-4">
 

@@ -22,7 +22,7 @@ const TechnicalSkills = () => {
                         </div>
                     </div>
                     <div className="flex flex-row justify-start items-end mr-3">
-                        <h1 className="text-[2rem] font-bold emerald-green-text-color lg:text-4xl">Accesible</h1>
+                        <h1 className="text-[2rem] font-bold emerald-green-text-color lg:text-4xl">Accessible</h1>
                         <div>
                             <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-1 w-2 lg:w-3" width={10} alt="scribble blob period" />
                         </div>
@@ -34,7 +34,7 @@ const TechnicalSkills = () => {
                         </div>
                     </div>
                 </div>
-                <h2 className="grey-secondary-text-color text-md md:text-xl">Crafting user experiences that utilize modern systems & processes, meet WCAG & ADA accessiblity standards and provide the end user with a visually pleasing product</h2>
+                <h2 className="grey-secondary-text-color text-md md:text-xl">Crafting user experiences that utilize modern systems & processes, meet WCAG & ADA accessibility standards and provide the end user with a visually pleasing product</h2>
             </div>
 
             <div className="relative flex flex-col items-center justify-center xl:flex-row">
@@ -46,8 +46,8 @@ const TechnicalSkills = () => {
                         <ul className="list-inside list-disc text-2xl">
                             <li>Frontend Architecture</li>
                             <li>Fullstack Web Development</li>
-                            <li>Web Accesiblity</li>
-                            <li>API Intergration</li>
+                            <li>Web Accessibility</li>
+                            <li>API Integration</li>
                             <li>UI/UX Design</li>
                         </ul>
                     </div>
@@ -107,7 +107,7 @@ const TechnicalSkills = () => {
                             <li>Responsive & Modern Layouts</li>
                             <li>Product Branding/Storytelling</li>
                             <li>User Testing</li>
-                            <li>Color Selection/Accesiblility</li>
+                            <li>Color Selection/Accessibility</li>
                         </ul>
                     </div>
                     <div className="z-10 absolute bottom-0 right-0 mr-4 mb-4 w-20 h-20">
