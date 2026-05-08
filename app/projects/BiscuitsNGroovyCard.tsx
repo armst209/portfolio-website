@@ -12,7 +12,7 @@ import BiscuitsNGroovyLogo from "@public/assets/project-photos/biscuits-n-groovy
 const BiscuitsNGroovyCard = () => {
     return (
         <div className="h-auto relative flex flex-col rounded-xl border-[.5px] border-[hsl(240,4,16)] lg:h-180 max-w-200">
-            <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            <Image src={BackgroundSwirls} alt="background image swirls" fill={true} style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
 
             <div className="z-10">
                 <Image src={ProjectImage} alt="project hero image" className="rounded-t-xl" />
@@ -42,7 +42,6 @@ const BiscuitsNGroovyCard = () => {
                     <a href="https://github.com/armst209/BiscuitsNGroovy/blob/main/src/common/assets/showcase/site-capture.png" className="w-70 items-center justify-center flex flex-row m-4 bg-background border-[.5px] border-[hsl(240,4,16)] p-4 rounded-xl lg:ml-0 lg:bottom-0 lg:right-0 lg:justify-center lg:w-auto lg:hidden" rel="noopener noreferer" target="_blank">
                         <div className="flex items-center">
                             <p className="font-bold mr-2">View Site Photos</p>
-
                         </div>
 
                     </a>

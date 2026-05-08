@@ -14,7 +14,7 @@ import ScribbleSmallCircle from "@public/assets/icons/scribble-small-circle.svg"
 const AnaheimElectronicsCard = () => {
     return (
         <div className="relative flex flex-col rounded-xl border-[.5px] border-[hsl(240,4,16)] h-auto max-w-200 lg:h-180">
-            <Image src={BackgroundSwirls} alt="background image swirls" fill style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            <Image src={BackgroundSwirls} alt="background image swirls" fill={true} style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             <div className="z-10">
                 <Image src={ProjectImage} alt="project hero image" className="rounded-t-xl" />
             </div>
@@ -42,7 +42,7 @@ const AnaheimElectronicsCard = () => {
                         </div>
                         <div className="w-20 h-20">
                             <div className="relative h-full w-full flex justify-center">
-                                <Image src={ScribbleSmallCircle} fill style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="small scribbled circle" />
+                                <Image src={ScribbleSmallCircle} fill={true} style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="small scribbled circle" />
                                 <Image src={LiveDemoIcon} alt="skillset icon" className="icon-emerald-filter w-10" />
                             </div>
                         </div>
