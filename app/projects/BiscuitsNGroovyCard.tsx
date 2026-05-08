@@ -14,8 +14,8 @@ const BiscuitsNGroovyCard = () => {
         <div className="h-auto relative flex flex-col rounded-xl border-[.5px] border-[hsl(240,4,16)] lg:h-180 max-w-200">
             <Image src={BackgroundSwirls} alt="background image swirls" fill={true} style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
 
-            <div className="z-10">
-                <Image src={ProjectImage} alt="project hero image" className="rounded-t-xl" />
+            <div className="z-10 ">
+                <Image src={ProjectImage} alt="project hero image" className="rounded-t-xl" preload={true} placeholder="blur" />
             </div>
             <div className="z-10 flex flex-col lg:flex-row">
                 <div className="flex flex-col justify-between z-10 border-t-[.5px] border-[hsl(240,4,16)] p-4 pb-4 lg:flex-row lg:mb-30">
