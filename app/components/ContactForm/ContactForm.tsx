@@ -5,13 +5,17 @@ import emailjs from "@emailjs/browser"
 import toast from "react-hot-toast"
 import { useForm } from "react-hook-form"
 import SendIcon from "@public/assets/icons/send.svg"
+import LoadingIcon from "@public/assets/icons/loading.svg"
 import Image from "next/image"
+import { useState } from "react"
 
 emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string)
 
 const ContactForm = () => {
+    const [isSending, setIsSending] = useState(false)
     const { register, handleSubmit, reset, formState: { errors } } = useForm()
     const onSubmit = handleSubmit(async (data) => {
+        setIsSending(true)
         try {
             const response = await emailjs.send(
                 process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
@@ -22,9 +26,11 @@ const ContactForm = () => {
 
             if (response.status === 200) {
                 toast.success("Message sent successfully!");
+                setIsSending(false)
                 reset();
             }
         } catch (error) {
+            setIsSending(false)
             toast.error("Email failed to send")
             console.error("Failed to send email:", error);
         }
@@ -40,7 +46,10 @@ const ContactForm = () => {
             {errors.email && <p role="alert">{errors.email.message as string}</p>}
             <textarea {...register("message")} maxLength={500} className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-4 h-10 rounded-md min-h-50 p-2" placeholder='Message' required />
             {errors.message && <p role="alert">{errors.message.message as string}</p>}
-            <button type="submit" className='border-2 border-white p-4 rounded-xl w-30 font-bold flex flex-row items-center justify-center cursor-pointer'><Image src={SendIcon} width={15} alt="send email icon" className="icon-emerald-filter mr-2" /><p>Send</p></button>
+            <button type="submit" className='border-2 border-white p-4 rounded-xl w-30 font-bold flex flex-row items-center justify-center cursor-pointer'>
+                {isSending ? <Image src={LoadingIcon} width={15} alt="send email icon" className="icon-emerald-filter mr-2 animate-spin" /> : <Image src={SendIcon} width={15} alt="send email icon" className="icon-emerald-filter mr-2" />}
+                <p>Send</p>
+            </button>
         </form>
     )
 }
