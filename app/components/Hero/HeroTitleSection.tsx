@@ -8,10 +8,9 @@ import Image from "next/image"
 import Link from "next/link"
 
 
-const HeroTopSection = () => {
+const HeroTitleSection = () => {
     return (
         <div className="z-10 grid grid-cols-1 w-full">
-
             <div className="pb-8 w-full xl:pb-4">
                 <div className="pb-1">
                     <div className="flex flex-row items-end justify-start">
@@ -34,9 +33,8 @@ const HeroTopSection = () => {
                         </h1>
                     </div>
                 </div>
-                <h2 className="text-md text-shadow-lg/30 sm:text-xl xl:text-2xl"> A developer with 6+ years of experience who is passionate about building <span className="font-bold orange-text-color">modern</span>, <span className="font-bold orange-text-color">accessible</span> and <span className="font-bold orange-text-color">visually pleasing</span> user experiences. </h2>
+                <h2 className="text-md text-shadow-lg/30 sm:text-xl xl:text-2xl"> A developer with <span className="orange-text-color font-bold">6+ years</span> of experience who is passionate about building <span className="font-bold orange-text-color">modern</span>, <span className="font-bold orange-text-color">accessible</span> and <span className="font-bold orange-text-color">visually pleasing</span> user experiences. </h2>
                 <HeroSocialLinksSection />
-
             </div>
             <div className="relative w-full h-auto">
                 <Image src={CircledScribble} className="mt-8 scribble-color-filter absolute inset-0 rotate-200 lg:hidden" style={{ objectFit: "contain", objectPosition: "center" }} alt="circle scribble" />
@@ -62,4 +60,4 @@ const HeroTopSection = () => {
     )
 }
 
-export default HeroTopSection
+export default HeroTitleSection

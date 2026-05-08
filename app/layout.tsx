@@ -3,7 +3,10 @@ import localFont from 'next/font/local'
 
 import './globals.css'
 import PageContainer from './components/PageContainer'
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
 
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const satoshi = localFont({
     src: [
@@ -40,7 +43,7 @@ export default function RootLayout({
     return (
         <html
             lang='en'
-            className={`${satoshi.className} h-full antialiased`}
+            className={cn("h-full", "antialiased", satoshi.className, "font-sans", geist.variable)}
         >
             <body>
                 <PageContainer>
