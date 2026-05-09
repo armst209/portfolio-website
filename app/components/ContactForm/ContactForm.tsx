@@ -38,18 +38,25 @@ const ContactForm = () => {
 
     return (
         <form onSubmit={onSubmit} className='flex flex-col h-full justify-center items-center w-full'>
-            <input type="text" {...register("title")} className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-2 h-10 rounded-md p-2" placeholder='Title' required />
+            <label htmlFor="subject" className="font-bold w-full pb-2">Subject</label>
+            <input type="text" {...register("subject")} className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-2 h-10 rounded-md p-2" placeholder='Your Subject' required />
             {errors.title && <p role="alert">{errors.title.message as string}</p>}
-            <input type="text" {...register("name")} className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-2 h-10 rounded-md p-2" placeholder='Name' required />
+            <label htmlFor="name" className="font-bold w-full pb-2">Name</label>
+            <input type="text" {...register("name")} className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-2 h-10 rounded-md p-2" placeholder='Your Name' required />
             {errors.name && <p role="alert">{errors.name.message as string}</p>}
-            <input type="email" {...register("email")} className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-2 h-10 rounded-md p-2" placeholder='Email' required />
+            <label htmlFor="email" className="font-bold w-full pb-2">Email</label>
+            <input type="email" {...register("email")} className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-2 h-10 rounded-md p-2" placeholder='ex: contact@email.com' required />
             {errors.email && <p role="alert">{errors.email.message as string}</p>}
-            <textarea {...register("message")} maxLength={500} className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-4 h-10 rounded-md min-h-50 p-2" placeholder='Message' required />
+            <label htmlFor="message" className="font-bold w-full pb-2">Message</label>
+            <textarea {...register("message")} maxLength={500} className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-4 h-10 rounded-md min-h-50 p-2" placeholder='Your message here...' required />
             {errors.message && <p role="alert">{errors.message.message as string}</p>}
-            <button type="submit" className='border-2 border-white p-4 rounded-xl w-30 font-bold flex flex-row items-center justify-center cursor-pointer'>
-                {isSending ? <Image src={LoadingIcon} width={15} alt="send email icon" className="icon-emerald-filter mr-2 animate-spin" /> : <Image src={SendIcon} width={15} alt="send email icon" className="icon-emerald-filter mr-2" />}
-                <p>Send</p>
-            </button>
+            <div className="w-full flex justify-end">
+                <button type="submit" className='bg-[#e29c03] text-black p-2 rounded-md w-30 font-bold flex flex-row items-center justify-center cursor-pointer'>
+                    <p className="mr-2">Send</p>
+                    {isSending ? <Image src={LoadingIcon} width={15} alt="send email icon" className="icon-emerald-filter animate-spin" /> : <Image src={SendIcon} width={15} alt="send email icon" className="mr-2" />}
+                </button>
+            </div>
+
         </form>
     )
 }

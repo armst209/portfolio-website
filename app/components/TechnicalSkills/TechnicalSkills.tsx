@@ -1,126 +1,164 @@
 import Image from "next/image"
 import SkillsIcon from "@public/assets/icons/skills.svg"
-import TechnologiesIcon from "@public/assets/icons/technologies.svg"
-import DesignIcon from "@public/assets/icons/ui-ux.svg"
-import BackgroundSwirls from "@public/assets/swirls-bg.webp"
+import TechnologiesIcon from "@public/assets/icons/resources.svg"
+import UIUXIcon from "@public/assets/icons/ui-ux.svg"
 import ScribbleSmallCircle from "@public/assets/icons/scribble-small-circle.svg"
-import ScribblePeriod from "@public/assets/icons/scribble-blob.svg"
-import ViewProjectsButton from "../ViewProjectsButton"
-import Link from "next/link"
+import CheckIcon from "@public/assets/icons/check.svg"
+import TestingIcon from "@public/assets/icons/testing.svg"
+import FrontendIcon from "@public/assets/icons/front-end.svg"
+import StateManagementIcon from "@public/assets/icons/state-management.svg"
+import BackendIcon from "@public/assets/icons/backend.svg"
+import DesignIcon from "@public/assets/icons/design.svg"
+import SemiColonPeriodScribble from "../SemiColonPeriodScribble"
+
+
+
 
 
 
 const TechnicalSkills = () => {
     return (
-        <section className="flex flex-col w-full justify-center p-4 mt-10  border-b-[.5px] border-b-[hsl(240,4,16)] lg:p-6">
-            <div className="mb-4">
-                <div className="flex flex-col mb-2 lg:flex-row">
-                    <div className="flex flex-row justify-start items-end mr-3">
-                        <h1 className="text-[2rem] font-bold emerald-green-text-color lg:text-4xl">Modern</h1>
-                        <div>
-                            <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-1 w-2 lg:w-3" width={10} alt="scribble blob period" />
+        <section className="flex flex-col w-full justify-center pl-4 pr-4 lg:pl-6 lg:pr-6">
+
+            <div className="mb-20 rounded-xl">
+                <div className="z-10 relative w-full flex flex-col pb-6 lg:flex-row">
+                    <div className="flex items-center justify-center pb-6 lg:justify-start">
+                        <div className="z-10 relative w-30 h-30 flex items-center justify-center">
+                            <div className="flex justify-center items-center">
+                                <Image src={ScribbleSmallCircle} style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="small scribbled circle" />
+                                <Image src={SkillsIcon} alt="skillset icon" className="icon-emerald-filter w-15" />
+                            </div>
                         </div>
                     </div>
-                    <div className="flex flex-row justify-start items-end mr-3">
-                        <h1 className="text-[2rem] font-bold emerald-green-text-color lg:text-4xl">Accessible</h1>
-                        <div>
-                            <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-1 w-2 lg:w-3" width={10} alt="scribble blob period" />
-                        </div>
-                    </div>
-                    <div className="flex flex-row justify-start items-end">
-                        <h1 className="text-[2rem] emerald-green-text-color font-bold lg:text-4xl ">Visually Pleasing</h1>
-                        <div>
-                            <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-1 w-2 lg:w-3" width={10} alt="scribble blob period" />
-                        </div>
+                    <div className="flex flex-col justify-center lg:ml-4 lg:justify-center">
+                        <h1 className="font-bold text-4xl flex items-center"><p>Skillset</p><SemiColonPeriodScribble /></h1>
+                        <h2 className="text-2xl">With a focus on frontend development I can take a project from design to completion</h2>
                     </div>
                 </div>
-                <h2 className="grey-secondary-text-color text-md md:text-xl">Crafting user experiences that utilize modern systems & processes, meet WCAG & ADA accessibility standards and provide the end user with a visually pleasing product</h2>
+                <div className="flex justify-evenly flex-wrap gap-2 z-10 relative">
+                    <div className="w-fit border-2 rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer bg-black text-sm mr-4 lg:text-xl ">
+                        <Image src={CheckIcon} alt="check icon" width={20} className="mr-4 icon-emerald-filter" />
+                        <p>Frontend Architecture</p>
+                    </div>
+                    <div className="w-fit border-2 rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer bg-black text-sm mr-4 lg:text-xl ">
+                        <Image src={CheckIcon} alt="check icon" width={20} className="icon-emerald-filter mr-4" />
+                        <p>Fullstack Web Development</p>
+                    </div>
+                    <div className="w-fit border-2 rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer bg-black text-sm mr-4 lg:text-xl ">
+                        <Image src={CheckIcon} alt="check icon" width={20} className="icon-emerald-filter mr-4" />
+                        <p>Web Accessibility</p>
+                    </div>
+                    <div className="w-fit border-2 rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer bg-black text-sm mr-4 lg:text-xl ">
+                        <Image src={CheckIcon} alt="check icon" width={20} className="icon-emerald-filter mr-4" />
+                        <p>API Integration</p>
+                    </div>
+                    <div className="w-fit border-2 rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer bg-black text-sm lg:text-xl ">
+                        <Image src={CheckIcon} alt="check icon" width={20} className="icon-emerald-filter mr-4" />
+                        <p>UI/UX Design</p>
+                    </div>
+                </div>
             </div>
 
-            <div className="relative flex flex-col items-center justify-center xl:flex-row">
-                <div className="z-10 w-full relative border-[.5px] border-[hsl(240,4,16)] p-4 mb-2 rounded-xl h-auto pb-30 lg:mr-2 xl:h-110">
-                    <Image src={BackgroundSwirls} alt="background image swirls" fill={true} style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
-                    <div className="z-10 relative">
-                        <h2 className="text-[1.8rem] font-bold emerald-green-text-color lg:text-3xl">Skillset:</h2>
-                        <h3 className="grey-secondary-text-color mb-3" >With a focus on frontend development, I can take a project from design to completion.</h3>
-                        <ul className="list-inside list-disc text-2xl">
-                            <li>Frontend Architecture</li>
-                            <li>Fullstack Web Development</li>
-                            <li>Web Accessibility</li>
-                            <li>API Integration</li>
-                            <li>UI/UX Design</li>
-                        </ul>
-                    </div>
-                    <div className="z-10 absolute bottom-0 right-0 mr-4 mb-4 w-20 h-20">
-                        <div className="relative h-full w-full flex justify-center">
-                            <Image src={ScribbleSmallCircle} fill={true} style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="small scribbled circle" />
-                            <Image src={SkillsIcon} alt="skillset icon" className="icon-emerald-filter w-10" />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="relative w-full border-[.5px] border-[hsl(240,4,16)] h-120 p-4 mb-2 rounded-xl lg:h-110 lg:mr-2">
-                    <Image src={BackgroundSwirls} alt="background image swirls" fill={true} style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
-                    <div className="relative z-10 ">
-                        <h2 className="text-[1.8rem] font-bold emerald-green-text-color lg:text-3xl">Technologies I Use:</h2>
-                        <h3 className="grey-secondary-text-color mb-3">I utilize a wide variety of tools; current and up-to-date libraries and frameworks. </h3>
-                        <div className="pb-10">
-                            <div className="mb-2">
-                                <h4 className="font-bold orange-text-color text-lg">Frontend</h4>
-                                <ul className="list-inside list-disc text-[.8rem] xs:text-[1rem] md:text-[1.3rem] lg:text-[1.5rem] xl:text-[.9rem]">
-                                    <li>Frameworks: Next.js, Vite, Nuxt.js, Blazor</li>
-                                    <li>Libraries: React, Vue, Tailwind CSS, Typescript, Razor, Tanstack Query & Router</li>
-                                    <li>Testing: Jest, Vitest, Playwright</li>
-                                    <li>State Management: Zustand, Redux/Redux Toolkit, Jotai</li>
-                                </ul>
-                            </div>
-                            <div className="mb-2">
-                                <h4 className="font-bold orange-text-color text-lg">Backend</h4>
-                                <ul className="list-inside list-disc text-[.8rem] xs:text-[1rem] md:text-[1.3rem] lg:text-[1.5rem] xl:text-[.9rem]">
-                                    <li>C#, .NET, Express.js, Node.js, Supabase, Google Firebase</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 className="font-bold orange-text-color text-lg">Design</h4>
-                                <ul className="list-inside list-disc text-[.8rem] xs:text-[1rem] md:text-[1.3rem] lg:text-[1.5rem] xl:text-[.9rem]">
-                                    <li>Figma, Davinci Resolve</li>
-                                </ul>
+            <div className="mb-10 rounded-xl">
+                <div className="w-full flex flex-col lg:flex-row">
+                    <div className="flex items-center justify-center pb-6 lg:justify-start">
+                        <div className="z-10 relative w-30 h-30 flex items-center justify-center">
+                            <div className="flex justify-center items-center">
+                                <Image src={ScribbleSmallCircle} style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="small scribbled circle" />
+                                <Image src={TechnologiesIcon} alt="technologies icon" className="icon-emerald-filter w-15" />
                             </div>
                         </div>
                     </div>
-                    <div className="absolute bottom-0 right-0 mr-4 mb-4 w-20 h-20">
-                        <div className="relative h-full w-full flex justify-center">
-                            <Image src={ScribbleSmallCircle} fill={true} style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="small scribbled circle" />
-                            <Image src={TechnologiesIcon} className="icon-emerald-filter w-10" alt="technologies icon" />
+                    <div className="flex flex-col justify-center lg:ml-4 lg:justify-center">
+                        <h1 className="font-bold text-4xl flex items-center"><p>Technologies I Use</p><SemiColonPeriodScribble /></h1>
+                        <h2 className="text-2xl">I utilize a variety of tools; current and up-to-date libraries and frameworks</h2>
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 grid-row-2 gap-0 lg:grid-cols-3">
+                    <div className="border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4 row-span-2">
+                        <div className="flex flex-row pb-2">
+                            <Image src={FrontendIcon} width={30} className="icon-emerald-filter mr-4" alt="frontend icon" />
+                            <h2 className="font-bold text-lg">Frontend</h2>
+                        </div>
+
+                        <div className="pb-2">
+                            <h3 className="emerald-green-text-color font-bold">Frameworks</h3>
+                            <p className="wrap-normal">Next.js, Nuxt.js, Blazor </p>
+                        </div>
+                        <div>
+                            <h3 className="emerald-green-text-color font-bold">Libraries & Build Tools</h3>
+                            <p className="wrap-normal">React, Vue, Tailwind CSS, Typescript, Razor, Tanstack Query & Router</p>
+                        </div>
+                    </div>
+
+                    <div className="border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4">
+                        <div className="flex flex-row pb-2">
+                            <Image src={TestingIcon} width={30} className="icon-emerald-filter mr-4" alt="testing icon" />
+                            <h2 className="font-bold text-lg">Testing</h2>
+                        </div>
+                        <div className="pb-2">
+                            <p className="wrap-normal">Jest, Vitest, Playwright</p>
+                        </div>
+                    </div>
+                    <div className="border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4">
+                        <div className="flex flex-row pb-2">
+                            <Image src={StateManagementIcon} width={30} className="icon-emerald-filter mr-4" alt="state management icon" />
+                            <h2 className="font-bold text-lg">State Management</h2>
+                        </div>
+                        <div className="pb-2">
+                            <p className="wrap-normal">Zustand, Redux/Redux Toolkit, Jotai</p>
+                        </div>
+                    </div>
+                    <div className="border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4">
+                        <div className="flex flex-row pb-2">
+                            <Image src={BackendIcon} width={30} className="icon-emerald-filter mr-4" alt="backend icon" />
+                            <h2 className="font-bold text-lg">Backend</h2>
+                        </div>
+                        <div className="pb-2">
+                            <p className="wrap-normal">C#, .NET, Express.js, Node.js, Supabase, Google Firebase</p>
+                        </div>
+                    </div>
+                    <div className="border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4">
+                        <div className="flex flex-row pb-2">
+                            <Image src={DesignIcon} width={30} className="icon-emerald-filter mr-4" alt="design icon" />
+                            <h2 className="font-bold text-lg">Design</h2>
+                        </div>
+                        <div className="pb-2">
+                            <p className="wrap-normal">Figma, Davinci Resolve</p>
                         </div>
                     </div>
                 </div>
-
-                <div className="w-full relative border-[.5px] border-[hsl(240,4,16)] p-4 mb-2 rounded-xl h-110 pb-10 xl:h-110">
-                    <Image src={BackgroundSwirls} alt="background image swirls" fill={true} style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="absolute inset-0" />
-                    <div className="z-10 relative">
-                        <h2 className="text-[1.8rem] emerald-green-text-color font-bold lg:text-3xl">UI/UX Design:</h2>
-                        <h3 className="grey-secondary-text-color mb-3" >I am a developer first, but I have experience in design</h3>
-                        <ul className="list-inside list-disc text-xl md:text-2xl">
-                            <li>Wireframing & Prototyping</li>
-                            <li>Typography/Font Selection</li>
-                            <li>Responsive & Modern Layouts</li>
-                            <li>Product Branding/Storytelling</li>
-                            <li>User Testing</li>
-                            <li>Color Selection/Accessibility</li>
-                        </ul>
-                    </div>
-                    <div className="z-10 absolute bottom-0 right-0 mr-4 mb-4 w-20 h-20">
-                        <div className="relative h-full w-full flex justify-center">
-                            <Image src={ScribbleSmallCircle} fill={true} style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="small scribbled circle" />
-                            <Image src={DesignIcon} alt="design icon" className="icon-emerald-filter w-10" />
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <div className="flex w-full justify-center pt-4 lg:justify-end">
-                <Link href="/projects"><ViewProjectsButton /></Link>
+
+            <div className="w-full h-auto flex flex-col items-center justify-evenly border-[.5px] border-[hsl(240,4,16)] rounded-xl bg-background xl:flex-row xl:h-70">
+                <div className="w-full flex pb-6 flex-col p-4 xl:w-[33.3%] lg:flex-row">
+                    <div className="flex items-center justify-center pb-6 lg:justify-start">
+                        <div className="z-10 relative w-30 h-30 flex items-center justify-center mr-4 lg:mr-0">
+                            <div className="flex justify-center items-center">
+                                <Image src={ScribbleSmallCircle} style={{ objectFit: "cover", objectPosition: "center" }} className="absolute inset-0 scribble-color-filter" alt="small scribbled circle" />
+                                <Image src={UIUXIcon} alt="ui/ux icon" className="icon-emerald-filter w-15" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col justify-center lg:ml-4 lg:justify-center">
+                        <h1 className="font-bold text-4xl flex items-center"><p>UI/UX Design</p><SemiColonPeriodScribble /></h1>
+                        <h2 className="text-2xl">I am a developer first, but I have experience in design</h2>
+                    </div>
+                </div>
+                <div className="z-10 w-full border-b-[.5px] border-b-[hsl(240,4,16)] xl:border-b-0 xl:border-r-[.5px] xl:border-r-[hsl(240,4,16)] xl:h-full xl:w-auto"></div>
+                <div className="flex p-4 flex-col w-full md:flex-row xl:w-[66.6%]">
+                    <div className="p-4 w-full lg:w-[50%]">
+                        <div className="flex flex-row items-center justify-center"><Image src={CheckIcon} alt="contact icon" width={20} className="mr-4 icon-emerald-filter" /><p className="text-lg">Wireframing & Prototyping</p></div>
+                        <div className="flex flex-row items-center justify-center"><Image src={CheckIcon} alt="contact icon" width={20} className="mr-4 icon-emerald-filter" /><p className="text-lg">Typography/Font Selection</p></div>
+                        <div className="flex flex-row items-center justify-center"><Image src={CheckIcon} alt="contact icon" width={20} className="mr-4 icon-emerald-filter" /><p className="text-lg">Responsive & Modern Layouts</p></div>
+                    </div>
+                    <div className="p-4 flex flex-col items-center justify-start w-full lg:w-[50%]">
+                        <div className="flex flex-row items-center justify-center"><Image src={CheckIcon} alt="contact icon" width={20} className="mr-4 icon-emerald-filter" /><p className="text-lg">Product Branding/Storytelling</p></div>
+                        <div className="flex flex-row items-center justify-center"><Image src={CheckIcon} alt="contact icon" width={20} className="mr-4 icon-emerald-filter" /><p className="text-lg">User Testing</p></div>
+                        <div className="flex flex-row items-center justify-center"><Image src={CheckIcon} alt="contact icon" width={20} className="mr-4 icon-emerald-filter" /><p className="text-lg">Color Selection/Accessibility</p></div>
+                    </div>
+                </div>
+
             </div>
 
         </section >

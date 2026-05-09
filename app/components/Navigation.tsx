@@ -6,6 +6,7 @@ import HamburgerIcon from "@public/assets/icons/bars-staggered.svg"
 import ScribblePeriod from "@public/assets/icons/scribble-blob.svg"
 import BackgroundSwirls from "@public/assets/swirls-bg.webp"
 import CloseIcon from "@public/assets/icons/close.svg"
+import ContactIcon from "@public/assets/icons/user-add.svg"
 import { useState } from "react"
 import { usePathname } from "next/navigation"
 
@@ -25,10 +26,13 @@ const Navigation = () => {
                 </div>
                 <div className="relative">
                     <div id="desktop-menu" className="hidden lg:flex">
-                        <div className="font-bold">
-                            <Link className="mr-2" href="/">Home</Link>
-                            <Link className="mr-2" href="/projects">Projects</Link>
-                            <a href="#contact" className="mr-2">Contact</a>
+                        <div className="font-bold flex items-center">
+                            <Link className="mr-6" href="/">Home</Link>
+                            <Link className="mr-6" href="/projects">Projects</Link>
+                            <a href="#contact" className='bg-[#e29c03] text-black p-2 rounded-md w-40 font-bold flex flex-row items-center justify-center cursor-pointer'>
+                                <p className="mr-2">Let's Connect</p>
+                                <Image src={ContactIcon} width={15} alt="send email icon" />
+                            </a>
                         </div>
                     </div>
                     <button id="hamburger" className="flex lg:hidden" onClick={toggleMobileMenu} aria-label="Open Navigation">

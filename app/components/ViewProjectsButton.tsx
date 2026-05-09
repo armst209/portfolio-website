@@ -1,17 +1,14 @@
 
 
 import Image from "next/image"
-import BoxScribble from "@public/assets/icons/scribble-box.svg"
 import ArtIcon from "@public/assets/icons/paintbrush-pencil.svg"
 
 
 const ViewProjectsButton = () => {
     return (
-        <button className={`w-70 h-30 relative font-bold flex flex-row items-center justify-center cursor-pointer text-xl`}>
-            <Image src={BoxScribble} className="scribble-color-filter absolute inset-0" style={{ objectFit: "cover", objectPosition: "center" }} alt="circle scribble" />
-
+        <button className="w-55 h-15 p-2 border-2 border-[#e29c03] text-black rounded-md font-bold flex flex-row items-center justify-center cursor-pointer bg-[#e29c03] mb-4 text-xl md:mb-0">
             <div className="z-10 flex flex-row justify-center items-center">
-                <Image src={ArtIcon} alt="project icon" width={20} className="icon-emerald-filter mr-4" />
+                <Image src={ArtIcon} alt="project icon" width={20} className=" mr-4" />
                 <p>View Projects</p>
             </div>
 

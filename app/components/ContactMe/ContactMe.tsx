@@ -19,7 +19,7 @@ const ContactMe = () => {
                         </div>
 
                     </div>
-                    <div className='border-[.5px] border-[hsl(240,4,16)] z-10 rounded-lg p-6 w-full h-full bg-background'>
+                    <div className='border-[.5px] border-[hsl(240,4,16)] z-10 rounded-lg p-4 w-full h-full bg-background'>
                         <ContactForm />
                     </div>
                 </div>
