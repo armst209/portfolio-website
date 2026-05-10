@@ -3,9 +3,9 @@ import DownArrow from "@public/assets/icons/down-arrow.svg"
 
 const DownSwirlArrowPartition = () => {
     return (
-        <div className="flex justify-center">
+        <section className="flex justify-center">
             <Image src={DownArrow} alt="down arrow" height={150} />
-        </div>
+        </section>
     )
 }
 
