@@ -16,7 +16,7 @@ const Navigation = () => {
     const pathname = usePathname()
 
     return (
-        <header className="flex place-items-center sticky top-0 z-50 h-20 py-4 bg-background">
+        <header className="flex place-items-center sticky top-0 z-50 h-20 py-4 bg-white dark:bg-background">
             <nav className="flex w-full justify-center ">
                 <div className=" flex justify-between p-4 lg:items-center w-full xl:w-[80%]">
                     <Link href="/">
@@ -36,7 +36,7 @@ const Navigation = () => {
                         <button id="hamburger" className="flex lg:hidden" onClick={toggleMobileMenu} aria-label="Open Navigation">
                             <Image src={HamburgerIcon} width={25} alt="mobile menu icon" className="icon-white-filter" />
                         </button>
-                        <div role="dialog" id="mobile-menu" aria-label="mobile menu" aria-expanded={isOpen} className={`w-full h-screen flex fixed inset-0 bg-background z-50 transition-transform duration-300 ease-out shadow(12px 9px 18px 5px rgba(0,0,0,0.84)) transform ${isOpen ? " translate-x-0" : "translate-x-full"} lg:hidden`}>
+                        <div role="dialog" id="mobile-menu" aria-label="mobile menu" aria-expanded={isOpen} className={`w-full h-screen flex fixed inset-0 z-50 transition-transform duration-300 ease-out shadow(12px 9px 18px 5px rgba(0,0,0,0.84)) transform ${isOpen ? " translate-x-0" : "translate-x-full"} bg-white dark:bg-background lg:hidden`}>
                             <button onClick={closeMobileMenu} className="absolute top-0 flex justify-end w-full pt-5 pr-3" aria-label="Close Navigation">
                                 <Image src={CloseIcon} alt="close navigation icon" width={40} className="icon-white-filter" />
                             </button>

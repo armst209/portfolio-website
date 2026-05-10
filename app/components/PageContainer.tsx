@@ -7,7 +7,7 @@ const PageContainer = ({ children }: { children: ReactNode }) => {
     return (
         <>
             <Navigation />
-            <main>
+            <main className='bg-white dark:bg-background'>
                 {children}
             </main >
             <Footer />

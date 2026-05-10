@@ -1,8 +1,12 @@
-import React from 'react'
+"use client"
 
+
+import { useTheme } from "next-themes"
 const ThemeToggle = () => {
+    const { theme, setTheme } = useTheme()
+
     return (
-        <button>ThemeToggle</button>
+        <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>Toggle Theme</button>
     )
 }
 

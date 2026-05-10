@@ -34,13 +34,13 @@ const BiscuitsNGroovyCard = () => {
                 </div>
 
                 <div className="w-auto flex justify-center flex-col items-center lg:flex-row">
-                    <a href="https://github.com/armst209/BiscuitsNGroovy/blob/main/src/common/assets/showcase/site-capture.png" className="w-70 items-center justify-center flex flex-row m-4 bg-background border-[.5px] border-[hsl(240,4,16)] p-4 rounded-xl lg:ml-0 lg:bottom-0 lg:right-0 lg:justify-center lg:w-auto lg:hidden" rel="noopener noreferer" target="_blank">
+                    <a href="https://github.com/armst209/BiscuitsNGroovy/blob/main/src/common/assets/showcase/site-capture.png" className="w-70 items-center justify-center flex flex-row m-4 border-[.5px] border-[hsl(240,4,16)] p-4 rounded-xl lg:ml-0 lg:bottom-0 lg:right-0 lg:justify-center lg:w-auto lg:hidden" rel="noopener noreferer" target="_blank">
                         <div className="flex items-center">
                             <p className="font-bold mr-2">View Site Photos</p>
                         </div>
 
                     </a>
-                    <a href="https://armst209.github.io/" className="w-70 items-center justify-center flex flex-row m-4 bg-background border-[.5px] border-[hsl(240,4,16)] p-4 rounded-xl lg:absolute lg:ml-0 lg:bottom-0 lg:right-0 lg:justify-center lg:w-auto" rel="noopener noreferer" target="_blank">
+                    <a href="https://armst209.github.io/" className="w-70 items-center justify-center flex flex-row m-4 border-[.5px] border-[hsl(240,4,16)] p-4 rounded-xl lg:absolute lg:ml-0 lg:bottom-0 lg:right-0 lg:justify-center lg:w-auto" rel="noopener noreferer" target="_blank">
                         <div className="flex items-center">
                             <p className="font-bold mr-2">Live Demo Not Available</p>
                             <Image src={WorkInProgress} alt="work in progress icon" className="scribble-color-filter" />

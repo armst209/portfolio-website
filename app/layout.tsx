@@ -162,11 +162,10 @@ export default function RootLayout({
     return (
         <html
             lang='en'
-            className={`${satoshi.className} h-full antialiased`}
             suppressHydrationWarning
         >
-            <body>
-                <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <body className={`${satoshi.className} h-full antialiased`}>
+                <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
                     <PageContainer>
                         {children}
                     </PageContainer>
