@@ -1,8 +1,5 @@
 
 
-
-
-import BackgroundSwirls from "@public/assets/swirls-bg.webp"
 import Image from "next/image"
 import ProjectImage from "@public/assets/project-photos/biscuits-n-groovy/hero.webp"
 import WorkInProgress from "@public/assets/icons/work-in-progress.svg"
@@ -11,13 +8,11 @@ import BiscuitsNGroovyLogo from "@public/assets/project-photos/biscuits-n-groovy
 
 const BiscuitsNGroovyCard = () => {
     return (
-        <div className="h-auto relative flex flex-col rounded-xl border-[.5px] border-[hsl(240,4,16)] lg:h-180 max-w-200">
-            <Image src={BackgroundSwirls} alt="background image swirls" fill={true} style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-
+        <div className="h-auto flex flex-col rounded-xl border-[.5px] border-[hsl(240,4,16)] lg:h-180 max-w-200">
             <div className="z-10 ">
                 <Image src={ProjectImage} alt="project hero image" className="rounded-t-xl" preload={true} placeholder="blur" />
             </div>
-            <div className="z-10 flex flex-col lg:flex-row">
+            <div className="relative z-10 flex flex-col lg:flex-row">
                 <div className="flex flex-col justify-between z-10 border-t-[.5px] border-[hsl(240,4,16)] p-4 pb-4 lg:flex-row lg:mb-30">
                     <div>
                         <div className="pb-4">

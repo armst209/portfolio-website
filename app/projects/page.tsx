@@ -1,35 +1,27 @@
-import ScribblePeriod from "@public/assets/icons/scribble-blob.svg"
-import Image from "next/image"
+
 import AnaheimElectronicsCard from "./AnaheimElectronicsCard"
 import BiscuitsNGroovyCard from "./BiscuitsNGroovyCard"
+import SemiColonPeriodScribble from "../components/SemiColonPeriodScribble"
 
 
-
-const Tools = () => {
-    return (<li>
-
-    </li>)
-}
 
 const Projects = () => {
 
     return (
-        <section className="p-4">
-
-            <div className="flex flex-col w-full">
-                <div className="flex flex-row items-end justify-start">
-                    <h1 className="text-[1.7rem] font-bold text-shadow-lg/30 pb-2 emerald-green-text-color xs:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-                        Projects
-                    </h1>
-                    <div>
-                        <Image src={ScribblePeriod} className="scribble-color-filter ml-2 pb-2 w-2 lg:w-3 lg:pb-1" alt="scribble blob period" />
+        <section className="p-4 pt-20 pb-20 w-full flex flex-col justify-center items-center">
+            <div className="w-full items-center justify-center xl:w-[80%]">
+                <div className="flex flex-col">
+                    <div className="flex flex-row">
+                        <h1 className="flex flex-row items-center text-6xl pb-2 font-bold text-shadow-lg/30">
+                            <p>Projects</p><SemiColonPeriodScribble />
+                        </h1>
                     </div>
+                    <h2 className="text-md sm:text-xl xl:text-2xl">Here you will find a collection of my completed and in-progress work</h2>
                 </div>
-                <h2 className="text-md sm:text-xl xl:text-2xl">Here you will find a collection of my completed and in-progress work</h2>
-            </div>
-            <div className="grid grid-cols-1 gap-4 pt-10 place-items-center lg:grid-cols-2">
-                <AnaheimElectronicsCard />
-                <BiscuitsNGroovyCard />
+                <div className="grid grid-cols-1 gap-4 pt-10 place-items-center lg:grid-cols-2">
+                    <AnaheimElectronicsCard />
+                    <BiscuitsNGroovyCard />
+                </div>
             </div>
         </section>
 

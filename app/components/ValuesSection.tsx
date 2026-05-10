@@ -7,8 +7,8 @@ import EyeIcon from "@public/assets/icons/visually-pleasing.svg"
 
 const ValuesSection = () => {
     return (
-        <section className="pt-20 pb-20">
-            <div className="h-auto flex flex-col items-center justify-evenly border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4 bg-background xl:flex-row xl:h-70">
+        <section className="pt-20 pb-5 pl-4 pr-4 w-full flex justify-center">
+            <div className="h-auto flex flex-col items-center justify-evenly border-[.5px] border-[hsl(240,4,16)] rounded-xl p-4 bg-background lg:w-[80%] xl:flex-row xl:h-70">
                 <div className="w-full flex flex-col h-full z-10 px-4 py-6 sm:flex-row ">
                     <div className="flex justify-center items-start min-w-20 pb-4 sm:pb-0">
                         <div className="relative w-20 h-20 flex justify-center items-center">

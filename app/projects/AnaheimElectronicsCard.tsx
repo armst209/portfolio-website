@@ -1,6 +1,5 @@
 
 
-import BackgroundSwirls from "@public/assets/swirls-bg.webp"
 import Image from "next/image"
 import ProjectImage from "@public/assets/project-photos/anahiem-electronics/hero.webp"
 import LiveDemoIcon from "@public/assets/icons/live-demo.svg"
@@ -9,12 +8,11 @@ import ScribbleSmallCircle from "@public/assets/icons/scribble-small-circle.svg"
 
 const AnaheimElectronicsCard = () => {
     return (
-        <div className="relative flex flex-col rounded-xl border-[.5px] border-[hsl(240,4,16)] h-auto max-w-200 lg:h-180">
-            <Image src={BackgroundSwirls} alt="background image swirls" fill={true} style={{ objectFit: "cover" }} className="absolute inset-0" priority fetchPriority="high" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+        <div className="flex flex-col rounded-xl border-[.5px] border-[hsl(240,4,16)] h-auto max-w-200 lg:h-180">
             <div className="z-10">
                 <Image src={ProjectImage} alt="project hero image" className="rounded-t-xl" preload={true} height={450} placeholder="blur" />
             </div>
-            <div className="z-10 flex flex-col h-90 lg:flex-row">
+            <div className="relative z-10 flex flex-col h-90 lg:flex-row">
                 <div className="flex flex-col justify-between z-10 border-t-[.5px] border-[hsl(240,4,16)] p-4 pb-4 lg:flex-row lg:mb-30">
                     <div>
                         <div className="pb-4">
