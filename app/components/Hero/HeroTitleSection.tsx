@@ -19,7 +19,7 @@ const HeroTitleSection = () => {
                         </div>
                     </div>
                     <div className="flex flex-col w-full items-start pb-2">
-                        <h1 className="text-3xl font-bold mr-4 w-full md:text-4xl lg:text-5xl">
+                        <h1 className="text-2xl font-bold mr-4 w-full xs:text-3xl md:text-4xl lg:text-5xl">
                             <div className="flex flex-row w-full">
                                 <div className="mr-2">A</div>
                                 <div className="flex flex-row items-end justify-center">

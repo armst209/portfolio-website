@@ -6,11 +6,11 @@ const Footer = () => {
     return (
         <footer className="flex items-center justify-center h-75 border-t-[.5px] border-t-[hsl(240,4,16)] w-full p-4 mb-6 pr-6 ">
             <div className="flex flex-col items-center w-full lg:w-[80%]">
-                <div className="w-full flex justify-center lg:justify-start">
+                <div className="w-full flex justify-center mb-2 lg:mb-0 lg:justify-start">
                     <h1 className='flex flex-row text-lg font-bold emerald-green-text-color md:text-2xl'>armst209<span className="flex items-end w-3 pb-1"><Image src={ScribblePeriod} className="scribble-color-filter  w-2" alt="scribble blob period" /></span>dev</h1>
                 </div>
 
-                <div className="flex flex-col justify-between w-full lg:flex-row">
+                <div className="flex flex-col justify-between w-full mb-4 lg:mb-0 lg:flex-row">
                     <div className="flex justify-center w-full text-wrap text-center text-sm lg:justify-start">
                         <h2>{`© ${new Date().getFullYear()} Aaron Armstrong. All rights are reserved.`}</h2>
                     </div>
