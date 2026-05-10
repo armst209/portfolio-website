@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
-import { ThemeProvider } from 'next-themes'
 import './globals.css'
 import PageContainer from './components/PageContainer'
 
@@ -165,12 +164,10 @@ export default function RootLayout({
             className={`${satoshi.className} h-full antialiased`}
             suppressHydrationWarning
         >
-            <body>
-                <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-                    <PageContainer>
-                        {children}
-                    </PageContainer>
-                </ThemeProvider>
+            <body >
+                <PageContainer>
+                    {children}
+                </PageContainer>
             </body>
         </html >
     )
