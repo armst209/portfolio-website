@@ -32,7 +32,7 @@ const HeroTitleSection = () => {
                         </h1>
                     </div>
                 </div>
-                <h2 className="text-md sm:text-xl xl:text-2xl"> A developer with <span className="orange-text-color font-bold">6+ years</span> of experience who is passionate about building <span className="font-bold orange-text-color">modern</span>, <span className="font-bold orange-text-color">accessible</span> and <span className="font-bold orange-text-color">visually pleasing</span> user experiences. </h2>
+                <h2 className="text-md sm:text-xl xl:text-2xl"> A developer with <span className="font-bold text-highlight-light dark:text-highlight-dark">6+ years</span> of experience who is passionate about building <span className="font-bold text-highlight-light dark:text-highlight-dark">modern</span>, <span className="font-bold text-highlight-light dark:text-highlight-dark">accessible</span> and <span className="font-bold text-highlight-light dark:text-highlight-dark">visually pleasing</span> user experiences. </h2>
                 <div className="pt-6 pb-4">
                     <HeroSocialLinksSection />
                 </div>

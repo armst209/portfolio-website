@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
     --background: #ffffff;
@@ -13,18 +13,31 @@
     --breakpoint-sm: 50rem;
     --color-background-light: hsl(0 0% 100%);
     --color-background-dark: hsl(0 0% 3.9%);
+    --color-light: hsl(0 0% 3.9%);
+    --color-dark: hsl(0 0% 100%);
+    --color-highlight-light: var(--color-emerald-600);
+    --color-highlight-dark: hsl(41 97.4% 44.9%);
+    --light-border: hsl(0 0% 87.8%);
+    --dark-border: hsl(240 4% 16%);
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
     :root {
         --background: var(--color-background-dark);
         --foreground: var(--color-background-light);
     }
+} */
+
+@media (prefers-color-scheme: dark) {
+    .imgLight {
+        display: none;
+    }
+    .imgDark {
+        display: unset;
+    }
 }
 
 body {
-    background: var(--background);
-    color: var(--foreground);
     font-family: 'Satoshi', sans-serif;
     margin: 0;
     box-sizing: border-box;
@@ -48,11 +61,10 @@ body {
         color: var(--color-emerald-600);
     }
 
-    .grey-secondary-text-color {
-        color: white;
-    }
-
     .orange-text-color {
         color: #e29c03;
+    }
+    .imgDark {
+        display: none;
     }
 }
