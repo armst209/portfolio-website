@@ -147,7 +147,6 @@ const Projects = () => {
                     <div className="flex flex-row">
                         <h1 className="flex flex-row items-center text-6xl pb-2 font-bold text-shadow-lg/30">
                             <p>Personal Projects</p>
-                            <SemiColonPeriodScribble />
                         </h1>
                     </div>
                     <h2 className="text-md sm:text-xl xl:text-2xl">

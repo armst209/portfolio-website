@@ -1,6 +1,5 @@
-
-import HeroTitleSection from "./components/HeroTitleSection"
-import DesktopHeroImage from "./components/DesktopHeroImage";
+import HeroTitleSection from './components/HeroTitleSection'
+import DesktopHeroImage from './components/DesktopHeroImage'
 
 const Hero = () => {
     return (
@@ -9,8 +8,8 @@ const Hero = () => {
                 <HeroTitleSection />
                 <DesktopHeroImage />
             </div>
-        </section >
+        </section>
     )
 }
 
-export default Hero;
+export default Hero

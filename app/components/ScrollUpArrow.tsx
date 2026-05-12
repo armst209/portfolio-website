@@ -29,7 +29,7 @@ const ScrollUpArrow = () => {
 
     return (
         <button
-            className={`rounded-full m-4 bg-background fixed z-60 bottom-0 right-0 p-2 shadow-lg transition-opacity duration-300 ${
+            className={`cursor-pointer rounded-full m-4 bg-background fixed z-60 bottom-0 right-0 p-2 shadow-lg transition-opacity duration-300 ${
                 isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
             }`}
             aria-label="Scroll to top"
