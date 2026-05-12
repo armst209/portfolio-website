@@ -15,13 +15,20 @@ const ValuesSection = () => {
                                 src={ScribbleSmallCircle}
                                 fill={true}
                                 style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                className="absolute inset-0 scribble-color-filter"
+                                className="hidden absolute inset-0 orange-color-filter dark:flex"
+                                alt="small scribbled circle"
+                            />
+                            <Image
+                                src={ScribbleSmallCircle}
+                                fill={true}
+                                style={{ objectFit: 'cover', objectPosition: 'center' }}
+                                className="flex absolute inset-0 black-color-filter dark:hidden"
                                 alt="small scribbled circle"
                             />
                             <Image
                                 src={ModernIcon}
                                 alt="modern icon"
-                                className="w-10 icon-emerald-filter"
+                                className="w-10 emerald-green-filter"
                             />
                         </div>
                     </div>
@@ -43,13 +50,20 @@ const ValuesSection = () => {
                                 src={ScribbleSmallCircle}
                                 fill={true}
                                 style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                className="absolute inset-0 scribble-color-filter"
+                                className="hidden absolute inset-0 orange-color-filter dark:flex"
+                                alt="small scribbled circle"
+                            />
+                            <Image
+                                src={ScribbleSmallCircle}
+                                fill={true}
+                                style={{ objectFit: 'cover', objectPosition: 'center' }}
+                                className="flex absolute inset-0 black-color-filter dark:hidden"
                                 alt="small scribbled circle"
                             />
                             <Image
                                 src={AccessibilityIcon}
                                 alt="accessibility icon"
-                                className="w-10 icon-emerald-filter"
+                                className="w-10 emerald-green-filter"
                             />
                         </div>
                     </div>
@@ -70,13 +84,20 @@ const ValuesSection = () => {
                                 src={ScribbleSmallCircle}
                                 fill={true}
                                 style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                className="absolute inset-0 scribble-color-filter"
+                                className="hidden absolute inset-0 orange-color-filter dark:flex"
+                                alt="small scribbled circle"
+                            />
+                            <Image
+                                src={ScribbleSmallCircle}
+                                fill={true}
+                                style={{ objectFit: 'cover', objectPosition: 'center' }}
+                                className="flex absolute inset-0 black-color-filter dark:hidden"
                                 alt="small scribbled circle"
                             />
                             <Image
                                 src={EyeIcon}
                                 alt="eye icon"
-                                className="w-10 icon-emerald-filter"
+                                className="w-10 emerald-green-filter"
                             />
                         </div>
                     </div>

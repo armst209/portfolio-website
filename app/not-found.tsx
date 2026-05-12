@@ -11,7 +11,7 @@ const NotFound = () => {
                     src={NotFoundIcon}
                     alt="404 icon"
                     width={50}
-                    className="icon-emerald-filter pr-4"
+                    className="emerald-green-filter pr-4"
                 />
                 |<h1 className="text-3xl pl-4 font-bold xl:text-5xl">Not Found</h1>
             </div>
@@ -22,7 +22,7 @@ const NotFound = () => {
             >
                 <Image
                     src={BoxScribble}
-                    className="scribble-color-filter absolute inset-0"
+                    className="orange-color-filter absolute inset-0"
                     style={{
                         objectFit: 'cover',
                         objectPosition: 'center',

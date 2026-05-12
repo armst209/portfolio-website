@@ -25,7 +25,7 @@ const Navigation = () => {
                             <span className="flex items-end w-3 pb-1">
                                 <Image
                                     src={ScribblePeriod}
-                                    className="scribble-color-filter  w-2"
+                                    className="orange-color-filter  w-2"
                                     alt="scribble blob period"
                                 />
                             </span>
@@ -91,7 +91,7 @@ const Navigation = () => {
                                     <div>
                                         <Image
                                             src={ScribblePeriod}
-                                            className="scribble-color-filter ml-2 w-10"
+                                            className="orange-color-filter ml-2 w-10"
                                             alt="scribble blob period"
                                         />
                                     </div>
@@ -105,7 +105,7 @@ const Navigation = () => {
                                     <div>
                                         <Image
                                             src={ScribblePeriod}
-                                            className="scribble-color-filter ml-2 w-10"
+                                            className="orange-color-filter ml-2 w-10"
                                             alt="scribble blob period"
                                         />
                                     </div>
@@ -119,7 +119,7 @@ const Navigation = () => {
                                     <div>
                                         <Image
                                             src={ScribblePeriod}
-                                            className="scribble-color-filter ml-2 w-10"
+                                            className="orange-color-filter ml-2 w-10"
                                             alt="scribble blob period"
                                         />
                                     </div>
@@ -133,7 +133,7 @@ const Navigation = () => {
                                     <div>
                                         <Image
                                             src={ScribblePeriod}
-                                            className="scribble-color-filter ml-2 w-10"
+                                            className="orange-color-filter ml-2 w-10"
                                             alt="scribble blob period"
                                         />
                                     </div>

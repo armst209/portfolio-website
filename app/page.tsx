@@ -12,9 +12,7 @@ export default function Home() {
     return (
         <>
             <ThemeToggle />
-            <div className='bg-background-light dark:bg-background-dark'>
-                THIS SHOULD CHANGE
-            </div>
+            <div className="bg-background-light dark:bg-background-dark">THIS SHOULD CHANGE</div>
             <Hero />
             <ProfessionalExperience />
             <DownSwirlArrowPartition />

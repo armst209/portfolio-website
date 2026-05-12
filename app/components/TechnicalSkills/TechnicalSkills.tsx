@@ -37,7 +37,7 @@ const TechnicalSkills = () => {
                                             src={CheckIcon}
                                             alt="check icon"
                                             width={20}
-                                            className="mr-4 icon-emerald-filter"
+                                            className="mr-4 emerald-green-filter"
                                         />
                                         <p>Frontend Architecture</p>
                                     </div>
@@ -46,7 +46,7 @@ const TechnicalSkills = () => {
                                             src={CheckIcon}
                                             alt="check icon"
                                             width={20}
-                                            className="icon-emerald-filter mr-4"
+                                            className="emerald-green-filter mr-4"
                                         />
                                         <p>Fullstack Web Development</p>
                                     </div>
@@ -55,7 +55,7 @@ const TechnicalSkills = () => {
                                             src={CheckIcon}
                                             alt="check icon"
                                             width={20}
-                                            className="icon-emerald-filter mr-4"
+                                            className="emerald-green-filter mr-4"
                                         />
                                         <p>Web Accessibility</p>
                                     </div>
@@ -64,7 +64,7 @@ const TechnicalSkills = () => {
                                             src={CheckIcon}
                                             alt="check icon"
                                             width={20}
-                                            className="icon-emerald-filter mr-4"
+                                            className="emerald-green-filter mr-4"
                                         />
                                         <p>API Integration</p>
                                     </div>
@@ -73,7 +73,7 @@ const TechnicalSkills = () => {
                                             src={CheckIcon}
                                             alt="check icon"
                                             width={20}
-                                            className="icon-emerald-filter mr-4"
+                                            className="emerald-green-filter mr-4"
                                         />
                                         <p>UI/UX Design</p>
                                     </div>
@@ -99,7 +99,7 @@ const TechnicalSkills = () => {
                                             <Image
                                                 src={FrontendIcon}
                                                 width={30}
-                                                className="icon-emerald-filter mr-4"
+                                                className="emerald-green-filter mr-4"
                                                 alt="frontend icon"
                                             />
                                             <h2 className="font-bold text-lg">Frontend</h2>
@@ -127,7 +127,7 @@ const TechnicalSkills = () => {
                                             <Image
                                                 src={TestingIcon}
                                                 width={30}
-                                                className="icon-emerald-filter mr-4"
+                                                className="emerald-green-filter mr-4"
                                                 alt="testing icon"
                                             />
                                             <h2 className="font-bold text-lg">Testing</h2>
@@ -141,7 +141,7 @@ const TechnicalSkills = () => {
                                             <Image
                                                 src={StateManagementIcon}
                                                 width={30}
-                                                className="icon-emerald-filter mr-4"
+                                                className="emerald-green-filter mr-4"
                                                 alt="state management icon"
                                             />
                                             <h2 className="font-bold text-lg">State Management</h2>
@@ -157,7 +157,7 @@ const TechnicalSkills = () => {
                                             <Image
                                                 src={BackendIcon}
                                                 width={30}
-                                                className="icon-emerald-filter mr-4"
+                                                className="emerald-green-filter mr-4"
                                                 alt="backend icon"
                                             />
                                             <h2 className="font-bold text-lg">Backend</h2>
@@ -174,7 +174,7 @@ const TechnicalSkills = () => {
                                             <Image
                                                 src={DesignIcon}
                                                 width={30}
-                                                className="icon-emerald-filter mr-4"
+                                                className="emerald-green-filter mr-4"
                                                 alt="design icon"
                                             />
                                             <h2 className="font-bold text-lg">Design</h2>

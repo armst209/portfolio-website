@@ -55,13 +55,13 @@ const AnaheimElectronicsCard = () => {
                                     src={ScribbleSmallCircle}
                                     fill={true}
                                     style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="absolute inset-0 scribble-color-filter"
+                                    className="absolute inset-0 orange-color-filter"
                                     alt="small scribbled circle"
                                 />
                                 <Image
                                     src={LiveDemoIcon}
                                     alt="skillset icon"
-                                    className="icon-emerald-filter w-10"
+                                    className="emerald-green-filter w-10"
                                 />
                             </div>
                         </div>

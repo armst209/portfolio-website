@@ -15,13 +15,13 @@ const UIUXSection = () => {
                                 <Image
                                     src={ScribbleSmallCircle}
                                     style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="absolute inset-0 scribble-color-filter"
+                                    className="absolute inset-0 orange-color-filter"
                                     alt="small scribbled circle"
                                 />
                                 <Image
                                     src={UIUXIcon}
                                     alt="ui/ux icon"
-                                    className="icon-emerald-filter w-10"
+                                    className="emerald-green-filter w-10"
                                 />
                             </div>
                         </div>
@@ -44,7 +44,7 @@ const UIUXSection = () => {
                                 src={CheckIcon}
                                 alt="contact icon"
                                 width={20}
-                                className="mr-4 icon-emerald-filter"
+                                className="mr-4 emerald-green-filter"
                             />
                             <p className="text-lg">Wireframing & Prototyping</p>
                         </div>
@@ -53,7 +53,7 @@ const UIUXSection = () => {
                                 src={CheckIcon}
                                 alt="contact icon"
                                 width={20}
-                                className="mr-4 icon-emerald-filter"
+                                className="mr-4 emerald-green-filter"
                             />
                             <p className="text-lg">Typography/Font Selection</p>
                         </div>
@@ -62,7 +62,7 @@ const UIUXSection = () => {
                                 src={CheckIcon}
                                 alt="contact icon"
                                 width={20}
-                                className="mr-4 icon-emerald-filter"
+                                className="mr-4 emerald-green-filter"
                             />
                             <p className="text-lg">Responsive & Modern Layouts</p>
                         </div>
@@ -73,7 +73,7 @@ const UIUXSection = () => {
                                 src={CheckIcon}
                                 alt="contact icon"
                                 width={20}
-                                className="mr-4 icon-emerald-filter"
+                                className="mr-4 emerald-green-filter"
                             />
                             <p className="text-lg">Product Branding & Storytelling</p>
                         </div>
@@ -82,7 +82,7 @@ const UIUXSection = () => {
                                 src={CheckIcon}
                                 alt="contact icon"
                                 width={20}
-                                className="mr-4 icon-emerald-filter"
+                                className="mr-4 emerald-green-filter"
                             />
                             <p className="text-lg">User Testing</p>
                         </div>
@@ -91,7 +91,7 @@ const UIUXSection = () => {
                                 src={CheckIcon}
                                 alt="contact icon"
                                 width={20}
-                                className="mr-4 icon-emerald-filter"
+                                className="mr-4 emerald-green-filter"
                             />
                             <p className="text-lg">Color Selection</p>
                         </div>

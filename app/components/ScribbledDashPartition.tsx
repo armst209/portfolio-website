@@ -7,7 +7,12 @@ const ScribbledDashPartition = () => {
             <Image
                 src={ScribbledDash}
                 alt="pointing down arrows"
-                className="top-0 right-0 left-0 scribble-color-filter w-50"
+                className="hidden top-0 right-0 left-0 orange-color-filter w-50 dark:flex"
+            />
+            <Image
+                src={ScribbledDash}
+                alt="pointing down arrows"
+                className="flex top-0 right-0 left-0 black-color-filter w-50 dark:hidden"
             />
         </section>
     )

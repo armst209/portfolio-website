@@ -23,14 +23,14 @@ const ProfessionalExperience = () => {
                         <Image
                             src={MinusIcon}
                             alt="minus icon"
-                            className="ml-auto transition-transform duration-200 ease-out icon-emerald-filter cursor-pointer"
+                            className="ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer"
                             width={30}
                         />
                     ) : (
                         <Image
                             src={PlusIcon}
                             alt="plus icon"
-                            className="ml-auto transition-transform duration-200 ease-out icon-emerald-filter cursor-pointer"
+                            className="ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer"
                             width={30}
                         />
                     )}
@@ -52,7 +52,7 @@ const ProfessionalExperience = () => {
             <div>
                 <h1 className="text-2xl lg:text-4xl font-bold">Professional Experience</h1>
             </div>
-            <div className="mx-2 my-4 border-t border-[#e29c03]">
+            <div className="mx-2 my-4 border-t border-emerald-green-custom dark:border-orange-custom">
                 <Accordion transition transitionTimeout={200}>
                     <AccordionItem
                         header={`Front End Software Engineer @ Ford Motor Company (2025 - 2026)`}
@@ -70,7 +70,7 @@ const ProfessionalExperience = () => {
                                         src={LocationIcon}
                                         alt="location icon"
                                         width={20}
-                                        className="scribble-color-filter mr-2"
+                                        className="orange-color-filter mr-2"
                                     />
                                     <p>Dearborn, Michigan</p>
                                 </div>
@@ -80,7 +80,7 @@ const ProfessionalExperience = () => {
                                         src={GlobeIcon}
                                         alt="globe icon"
                                         width={20}
-                                        className="scribble-color-filter mr-2"
+                                        className="orange-color-filter mr-2"
                                     />
                                     <a
                                         href="https://www.ford.com/"
@@ -145,7 +145,7 @@ const ProfessionalExperience = () => {
                                         src={LocationIcon}
                                         alt="location icon"
                                         width={20}
-                                        className="scribble-color-filter mr-2"
+                                        className="orange-color-filter mr-2"
                                     />
                                     <p>Pontiac, Michigan</p>
                                 </div>
@@ -155,7 +155,7 @@ const ProfessionalExperience = () => {
                                         src={GlobeIcon}
                                         alt="globe icon"
                                         width={20}
-                                        className="scribble-color-filter mr-2"
+                                        className="orange-color-filter mr-2"
                                     />
                                     <a
                                         href="https://www.uwm.com/"
@@ -227,7 +227,7 @@ const ProfessionalExperience = () => {
                                         src={LocationIcon}
                                         alt="location icon"
                                         width={20}
-                                        className="scribble-color-filter mr-2"
+                                        className="orange-color-filter mr-2"
                                     />
                                     <p>Detroit, Michigan</p>
                                 </div>
@@ -237,7 +237,7 @@ const ProfessionalExperience = () => {
                                         src={GlobeIcon}
                                         alt="globe icon"
                                         width={20}
-                                        className="scribble-color-filter mr-2"
+                                        className="orange-color-filter mr-2"
                                     />
                                     <a
                                         href="https://linktr.ee/bngroovy"

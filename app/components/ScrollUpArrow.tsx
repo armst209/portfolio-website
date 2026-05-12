@@ -38,13 +38,13 @@ const ScrollUpArrow = () => {
             <Image
                 src={ScrollArrow}
                 alt="scroll arrow "
-                className="m-4 w-8 xs-w-8 md:w-9 icon-emerald-filter font-bold"
+                className="m-4 w-8 xs-w-8 md:w-9 emerald-green-filter font-bold"
             />
             <Image
                 src={ScribbleSmallCircle}
                 fill={true}
                 style={{ objectFit: 'contain', objectPosition: 'center' }}
-                className="absolute inset-0 scribble-color-filter"
+                className="absolute inset-0 orange-color-filter"
                 alt="small scribbled circle"
             />
         </button>

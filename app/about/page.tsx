@@ -160,7 +160,7 @@ const About = () => {
                     <Image
                         src={ScribbledDash}
                         alt="pointing down arrows"
-                        className="top-0 right-0 left-0 scribble-color-filter w-50"
+                        className="top-0 right-0 left-0 orange-color-filter w-50"
                     />
                 </div>
                 <div className="flex flex-col justify-center items-center w-full xl:hidden">
@@ -194,7 +194,7 @@ const About = () => {
                     <Image
                         src={ScribbledDash}
                         alt="pointing down arrows"
-                        className="top-0 right-0 left-0 scribble-color-filter w-50"
+                        className="top-0 right-0 left-0 orange-color-filter w-50"
                     />
                 </div>
                 <div className="w-full flex justify-start mb-4">

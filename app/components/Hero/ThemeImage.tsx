@@ -1,20 +1,19 @@
-"use client"
+'use client'
 
-import Image from "next/image";
-import { useTheme } from "next-themes";
+import Image from 'next/image'
+import { useTheme } from 'next-themes'
 
 interface MyImageProps {
-    DefaultImage: string;
-    DarkImage: string;
+    DefaultImage: string
+    DarkImage: string
 }
 
-const MyImage: React.FC<MyImageProps> = ({ DefaultImage, DarkImage }) => {
+const ThemeImage: React.FC<MyImageProps> = ({ DefaultImage, DarkImage }) => {
+    const { theme } = useTheme()
 
-    const { theme } = useTheme();
-
-    let imageUrl = DefaultImage;
-    if (theme === "dark") {
-        imageUrl = DarkImage;
+    let imageUrl = DefaultImage
+    if (theme === 'dark') {
+        imageUrl = DarkImage
     }
 
     return (
@@ -25,7 +24,7 @@ const MyImage: React.FC<MyImageProps> = ({ DefaultImage, DarkImage }) => {
             fetchPriority="high"
             blurDataURL="sdfgsgs"
         />
-    );
-};
+    )
+}
 
-export default MyImage;
+export default ThemeImage

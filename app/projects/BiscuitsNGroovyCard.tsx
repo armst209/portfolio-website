@@ -74,7 +74,7 @@ const BiscuitsNGroovyCard = () => {
                             <Image
                                 src={WorkInProgress}
                                 alt="work in progress icon"
-                                className="scribble-color-filter"
+                                className="orange-color-filter"
                             />
                         </div>
                     </a>
