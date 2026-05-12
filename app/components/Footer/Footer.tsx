@@ -1,4 +1,4 @@
-import HeroSocialLinksSection from "../Hero/components/HeroSocialLinksSection"
+import SocialLinksSection from "../SocialLinksSection"
 import ScribblePeriod from "@public/assets/icons/scribble-blob.svg"
 import Image from "next/image"
 
@@ -19,7 +19,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="flex pt-2">
-                    <HeroSocialLinksSection />
+                    <SocialLinksSection />
                 </div>
             </div>
         </footer>

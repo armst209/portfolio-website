@@ -6,7 +6,7 @@ import InfoIcon from "@public/assets/icons/info.svg"
 import Image from "next/image"
 import Link from "next/link"
 
-const HeroSocialLinksSection = () => {
+const SocialLinksSection = () => {
     return (
         <div className="flex flex-row items-center justify-center h-auto w-full">
             <Link href="/about">
@@ -18,7 +18,7 @@ const HeroSocialLinksSection = () => {
             <a href="https://github.com/armst209" rel="noopener noreferer" target="_blank" className="mr-4">
                 <Image src={GithubIcon} className="scribble-color-filter w-8 lg:w-10 xl:w-15" alt="github icon" />
             </a>
-            <a href="https://drive.google.com/file/d/1aI5EOJ4zim8uO-H0v02KelhgfK9YM5zj/view?usp=sharing" rel="noopener noreferer" target="_blank" className="mr-4">
+            <a href="https://drive.google.com/file/d/11kO-LIcwe-BIVgw2w7LYY6Zq_6fkGIsR/view?usp=sharing" rel="noopener noreferer" target="_blank" className="mr-4">
                 <Image src={ResumeIcon} width={40} className="scribble-color-filter w-8 lg:w-10 xl:w-15" alt="resume icon" />
             </a>
             <a href="https://x.com/armst209dev" rel="noopener noreferer" target="_blank">
@@ -28,4 +28,4 @@ const HeroSocialLinksSection = () => {
     )
 }
 
-export default HeroSocialLinksSection
+export default SocialLinksSection

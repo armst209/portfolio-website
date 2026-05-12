@@ -1,5 +1,5 @@
 import MobileHeroArt from "@public/assets/MobileHeroImage.webp"
-import HeroSocialLinksSection from "./HeroSocialLinksSection"
+import SocialLinksSection from "../../SocialLinksSection"
 import PointingDownArrows from "@public/assets/icons/pointing down arrows.svg"
 import ScribbledDash from "@public/assets/icons/scribbled-dash.svg"
 import Image from "next/image"
@@ -35,7 +35,7 @@ const HeroTitleSection = () => {
 
                 <div className="w-full flex flex-col lg:items-center">
                     <div className="flex flex-col items-center justify-center w-full pt-4 pb-4">
-                        <HeroSocialLinksSection />
+                        <SocialLinksSection />
                     </div>
                     <div className="flex justify-center">
                         <Image src={ScribbledDash} alt="pointing down arrows" className="top-0 right-0 left-0 scribble-color-filter w-50" />
