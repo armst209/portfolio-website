@@ -188,7 +188,7 @@ const ProfessionalExperience = () => {
                                         <p>React</p>
                                     </div>
                                     <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>vue</p>
+                                        <p>Vue</p>
                                     </div>
                                     <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
                                         <p>Next.js</p>
