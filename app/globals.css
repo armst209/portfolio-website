@@ -13,31 +13,18 @@
     --breakpoint-sm: 50rem;
     --color-background-light: hsl(0 0% 100%);
     --color-background-dark: hsl(0 0% 3.9%);
+    --color-background-foreground-light: hsl(240, 7.69%, 97.45%);
     --color-background-light-secondary: hsl(0 0% 100%);
     --color-light: hsl(0 0% 3.9%);
     --color-dark: hsl(0 0% 100%);
     --color-highlight-light: var(--color-emerald-600);
     --color-highlight-dark: hsl(41 97.4% 44.9%);
-    --light-border: hsl(0 0% 87.8%);
-    --dark-border: hsl(240 4% 16%);
+    --color-light-border: hsl(216, 9.8%, 90%);
+    --color-dark-border: hsl(240, 4%, 16%);
     --color-emerald-green-custom: var(--color-emerald-600);
     --color-orange-custom: hsl(41.17, 97.38%, 44.9%);
-}
-/* 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: var(--color-background-dark);
-        --foreground: var(--color-background-light);
-    }
-} */
-
-@media (prefers-color-scheme: dark) {
-    .imgLight {
-        display: none;
-    }
-    .imgDark {
-        display: unset;
-    }
+    --color-black-custom: hsl(0 0% 3.9%);
+    --color-box-shadow-custom: 0 1px 2px rgba(0, 0, 0, 0.13), 0 0px 2px rgba(0, 0, 0, 0.08);
 }
 
 body {
@@ -64,7 +51,7 @@ body {
             brightness(104%) contrast(92%);
     }
 
-    .icon-white-filter {
+    .white-color-filter {
         filter: brightness(0) invert(1);
     }
 
@@ -72,13 +59,11 @@ body {
         color: var(--color-emerald-600);
     }
 
-    .orange-text-color {
-        color: #e29c03;
+    .box-shadow-custom {
+        box-shadow: var(--color-box-shadow-custom);
     }
 
-    .about-image-float {
-        float: left;
-        shape-margin: 1rem;
-        shape-outside: url('../public/assets/AboutMeHeadshot.webp');
+    .orange-text-color {
+        color: #e29c03;
     }
 }

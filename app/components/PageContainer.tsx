@@ -8,7 +8,7 @@ const PageContainer = ({ children }: { children: ReactNode }) => {
     return (
         <>
             <Navigation />
-            <main className="grid place-items-center w-full bg-background-light dark:bg-background-dark text-light dark:text-dark">
+            <main className="grid place-items-center w-full">
                 <div className="w-full md:w-[90%]">{children}</div>
             </main>
             <ScrollUpArrow />

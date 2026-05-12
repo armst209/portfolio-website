@@ -7,7 +7,7 @@ import EyeIcon from '@public/assets/icons/visually-pleasing.svg'
 const ValuesSection = () => {
     return (
         <section className="pt-20 pb-5 pl-4 pr-4 w-full flex justify-center">
-            <div className="h-auto flex flex-col items-center justify-evenly border border-(--light-border) dark:border-(--dark-border) rounded-xl p-4 xl:flex-row xl:h-70">
+            <div className="h-auto flex flex-col items-center justify-evenly border border-light-border dark:border-dark-border rounded-xl p-4 xl:flex-row xl:h-70">
                 <div className="w-full flex flex-col h-full z-10 px-4 py-6 sm:flex-row ">
                     <div className="flex justify-center items-start min-w-20 pb-4 sm:pb-0">
                         <div className="relative w-20 h-20 flex justify-center items-center">
@@ -28,7 +28,12 @@ const ValuesSection = () => {
                             <Image
                                 src={ModernIcon}
                                 alt="modern icon"
-                                className="w-10 emerald-green-filter"
+                                className="hidden w-10 orange-color-filter dark:flex"
+                            />
+                            <Image
+                                src={ModernIcon}
+                                alt="modern icon"
+                                className="flex w-10 emerald-green-filter dark:hidden"
                             />
                         </div>
                     </div>
@@ -41,7 +46,7 @@ const ValuesSection = () => {
                     </div>
                 </div>
 
-                <div className="z-10 w-full border-b  border-b-(--light-border) dark:border-b-(--dark-border) xl:border-b-0 xl:border-r xl: border-r-(--light-border) dark:border-r-(--dark-border) xl:h-full xl:w-auto"></div>
+                <div className="z-10 w-full border-b border-b-light-border dark:border-b-dark-border xl:border-b-0 xl:border-r xl: border-r-light-border dark:border-r-dark-border xl:h-full xl:w-auto"></div>
 
                 <div className="w-full flex flex-col h-full px-4 py-6 z-10 sm:flex-row lg:justify-start">
                     <div className="flex justify-center items-start w-auto pb-4 sm:pb-0">
@@ -63,7 +68,12 @@ const ValuesSection = () => {
                             <Image
                                 src={AccessibilityIcon}
                                 alt="accessibility icon"
-                                className="w-10 emerald-green-filter"
+                                className="hidden w-10 orange-color-filter dark:flex"
+                            />
+                            <Image
+                                src={AccessibilityIcon}
+                                alt="accessibility icon"
+                                className="flex w-10 emerald-green-filter dark:hidden"
                             />
                         </div>
                     </div>
@@ -75,7 +85,7 @@ const ValuesSection = () => {
                         </h2>
                     </div>
                 </div>
-                <div className="z-10 w-full border-b  border-b-(--light-border) dark:border-b-(--dark-border) xl:border-b-0 xl:border-r xl: border-r-(--light-border) dark:border-r-(--dark-border) xl:h-full xl:w-auto"></div>
+                <div className="z-10 w-full border-b border-b-light-border dark:border-b-dark-border xl:border-b-0 xl:border-r xl: border-r-light-border dark:border-r-dark-border xl:h-full xl:w-auto"></div>
 
                 <div className="w-full flex flex-col h-full px-4 py-6 z-10 sm:flex-row">
                     <div className="flex justify-center items-start w-auto pb-4 sm:pb-0">
@@ -97,7 +107,12 @@ const ValuesSection = () => {
                             <Image
                                 src={EyeIcon}
                                 alt="eye icon"
-                                className="w-10 emerald-green-filter"
+                                className="hidden w-10 orange-color-filter dark:flex"
+                            />
+                            <Image
+                                src={EyeIcon}
+                                alt="eye icon"
+                                className="flex w-10 emerald-green-filter dark:hidden"
                             />
                         </div>
                     </div>

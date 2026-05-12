@@ -51,7 +51,7 @@ const ContactForm = () => {
             <input
                 type="text"
                 {...register('subject')}
-                className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-2 h-10 rounded-md p-2"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border dark:bg-black"
                 placeholder="Your Subject"
                 required
             />
@@ -62,7 +62,7 @@ const ContactForm = () => {
             <input
                 type="text"
                 {...register('name')}
-                className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-2 h-10 rounded-md p-2"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border dark:bg-black"
                 placeholder="Your Name"
                 required
             />
@@ -73,7 +73,7 @@ const ContactForm = () => {
             <input
                 type="email"
                 {...register('email')}
-                className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-2 h-10 rounded-md p-2"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border dark:bg-black"
                 placeholder="ex: contact@email.com"
                 required
             />
@@ -84,7 +84,7 @@ const ContactForm = () => {
             <textarea
                 {...register('message')}
                 maxLength={500}
-                className="bg-black border-[.5px] border-[hsl(240,4,16)] w-full mb-4 h-10 rounded-md min-h-50 p-2"
+                className=" min-h-50 w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border dark:bg-black"
                 placeholder="Your message here..."
                 required
             />
@@ -92,18 +92,39 @@ const ContactForm = () => {
             <div className="w-full flex justify-end">
                 <button
                     type="submit"
-                    className="bg-[#e29c03] text-black p-2 rounded-md w-30 font-bold flex flex-row items-center justify-center cursor-pointer"
+                    className="p-2 rounded-md w-30 font-bold flex flex-row items-center justify-center cursor-pointer bg-black-custom dark:bg-orange-custom"
                 >
-                    <p className="mr-2">Send</p>
+                    <p className="mr-2 text-white dark:text-black-custom">Send</p>
                     {isSending ? (
-                        <Image
-                            src={LoadingIcon}
-                            width={15}
-                            alt="send email icon"
-                            className="emerald-green-filter animate-spin"
-                        />
+                        <>
+                            <Image
+                                src={LoadingIcon}
+                                width={15}
+                                alt="send email icon"
+                                className="hidden black-color-filter animate-spin dark:flex"
+                            />
+                            <Image
+                                src={LoadingIcon}
+                                width={15}
+                                alt="send email icon"
+                                className="flex white-color-filter animate-spin dark:hidden"
+                            />
+                        </>
                     ) : (
-                        <Image src={SendIcon} width={15} alt="send email icon" className="mr-2" />
+                        <>
+                            <Image
+                                src={SendIcon}
+                                width={15}
+                                alt="send email icon"
+                                className="hidden mr-2 black-color-filter dark:flex"
+                            />
+                            <Image
+                                src={SendIcon}
+                                width={15}
+                                alt="send email icon"
+                                className="flex mr-2 white-color-filter dark:hidden"
+                            />
+                        </>
                     )}
                 </button>
             </div>

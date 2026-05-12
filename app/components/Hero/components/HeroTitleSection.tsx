@@ -66,7 +66,7 @@ const HeroTitleSection = () => {
                             accessible
                         </span>{' '}
                         and{' '}
-                        <span className="font-bold text-emerald-green-custom dark:text-orange-custom">
+                        <span className="font-bold text-[#00a6f4] dark:text-orange-custom">
                             visually pleasing
                         </span>{' '}
                         user experiences.

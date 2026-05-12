@@ -1,5 +1,5 @@
 'use client'
-import ScrollArrow from '@public/assets/scroll-up-arrow.svg'
+import ScrollArrow from '@public/assets/icons/up-arrow.svg'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import ScribbleSmallCircle from '@public/assets/icons/scribble-small-circle.svg'
@@ -38,13 +38,20 @@ const ScrollUpArrow = () => {
             <Image
                 src={ScrollArrow}
                 alt="scroll arrow "
-                className="m-4 w-8 xs-w-8 md:w-9 emerald-green-filter font-bold"
+                className="m-2 w-4 xs-w-8 md:w-9 emerald-green-filter font-bold"
             />
             <Image
                 src={ScribbleSmallCircle}
                 fill={true}
                 style={{ objectFit: 'contain', objectPosition: 'center' }}
-                className="absolute inset-0 orange-color-filter"
+                className="hidden absolute inset-0 orange-color-filter dark:flex"
+                alt="small scribbled circle"
+            />
+            <Image
+                src={ScribbleSmallCircle}
+                fill={true}
+                style={{ objectFit: 'contain', objectPosition: 'center' }}
+                className="flex absolute inset-0 black-color-filter dark:hidden"
                 alt="small scribbled circle"
             />
         </button>

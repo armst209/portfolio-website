@@ -52,7 +52,7 @@ const ProfessionalExperience = () => {
             <div>
                 <h1 className="text-2xl lg:text-4xl font-bold">Professional Experience</h1>
             </div>
-            <div className="mx-2 my-4 border-t border-emerald-green-custom dark:border-orange-custom">
+            <div className="mx-2 my-4 border-t border-black-custom dark:border-orange-custom">
                 <Accordion transition transitionTimeout={200}>
                     <AccordionItem
                         header={`Front End Software Engineer @ Ford Motor Company (2025 - 2026)`}

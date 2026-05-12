@@ -143,7 +143,7 @@ const About = () => {
     return (
         <section className="min-h-[calc(100vh-80px)] p-4 pt-20 pb-20 w-full">
             <div className="flex flex-row w-full mb-10">
-                <h1 className="flex flex-row items-center text-6xl pb-2 font-bold text-shadow-lg/30">
+                <h1 className="flex flex-row items-center text-6xl pb-2 font-bold">
                     <p>About Me</p>
                 </h1>
             </div>

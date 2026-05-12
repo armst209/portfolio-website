@@ -31,8 +31,8 @@ const TechnicalSkills = () => {
                                         </h2>
                                     </div>
                                 </div>
-                                <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2 z-10 border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4 w-full">
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
+                                <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2 z-10 border  m-6 rounded-xl p-4 w-full border-light-border dark:border-dark-border">
+                                    <div className="w-auto rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 border border-light-border dark:border-dark-border lg:text-xl">
                                         <Image
                                             src={CheckIcon}
                                             alt="check icon"
@@ -41,7 +41,7 @@ const TechnicalSkills = () => {
                                         />
                                         <p>Frontend Architecture</p>
                                     </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
+                                    <div className="w-auto rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 border border-light-border dark:border-dark-border lg:text-xl">
                                         <Image
                                             src={CheckIcon}
                                             alt="check icon"
@@ -50,7 +50,7 @@ const TechnicalSkills = () => {
                                         />
                                         <p>Fullstack Web Development</p>
                                     </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
+                                    <div className="w-auto rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 border border-light-border dark:border-dark-border lg:text-xl">
                                         <Image
                                             src={CheckIcon}
                                             alt="check icon"
@@ -59,7 +59,7 @@ const TechnicalSkills = () => {
                                         />
                                         <p>Web Accessibility</p>
                                     </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
+                                    <div className="w-auto rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 border border-light-border dark:border-dark-border lg:text-xl">
                                         <Image
                                             src={CheckIcon}
                                             alt="check icon"
@@ -68,7 +68,7 @@ const TechnicalSkills = () => {
                                         />
                                         <p>API Integration</p>
                                     </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
+                                    <div className="w-auto rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 border border-light-border dark:border-dark-border lg:text-xl">
                                         <Image
                                             src={CheckIcon}
                                             alt="check icon"
@@ -93,26 +93,32 @@ const TechnicalSkills = () => {
                                         </h2>
                                     </div>
                                 </div>
-                                <div className="grid grid-cols-1 grid-row-2 gap-0 border-[.5px] border-[hsl(240,4,16)] rounded-xl lg:grid-cols-3">
-                                    <div className="border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4 row-span-2">
-                                        <div className="flex flex-row pb-2">
+                                <div className="grid grid-cols-1 grid-row-2 gap-0 rounded-xl border border-light-border dark:border-dark-border lg:grid-cols-3">
+                                    <div className="m-6 rounded-xl p-4 row-span-2 border border-light-border dark:border-dark-border">
+                                        <div className="flex flex-row pb-2 items-center">
                                             <Image
                                                 src={FrontendIcon}
                                                 width={30}
-                                                className="emerald-green-filter mr-4"
+                                                className="flex black-color-filter mr-4 dark:hidden"
+                                                alt="frontend icon"
+                                            />
+                                            <Image
+                                                src={FrontendIcon}
+                                                width={30}
+                                                className="hidden orange-color-filter mr-4 dark:flex"
                                                 alt="frontend icon"
                                             />
                                             <h2 className="font-bold text-lg">Frontend</h2>
                                         </div>
 
                                         <div className="pb-2">
-                                            <h3 className="emerald-green-text-color font-bold">
+                                            <h3 className="text-emerald-green-custom font-bold dark:text-orange-custom xl:text-xl">
                                                 Frameworks
                                             </h3>
                                             <p className="wrap-normal">Next.js, Nuxt.js, Blazor </p>
                                         </div>
                                         <div>
-                                            <h3 className="emerald-green-text-color font-bold">
+                                            <h3 className="text-emerald-green-custom font-bold dark:text-orange-custom xl:text-xl">
                                                 Libraries & Build Tools
                                             </h3>
                                             <p className="wrap-normal">
@@ -122,12 +128,18 @@ const TechnicalSkills = () => {
                                         </div>
                                     </div>
 
-                                    <div className="border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4">
-                                        <div className="flex flex-row pb-2">
+                                    <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border">
+                                        <div className="flex flex-row pb-2 items-center">
                                             <Image
                                                 src={TestingIcon}
                                                 width={30}
-                                                className="emerald-green-filter mr-4"
+                                                className="flex black-color-filter mr-4 dark:hidden"
+                                                alt="testing icon"
+                                            />
+                                            <Image
+                                                src={TestingIcon}
+                                                width={30}
+                                                className="hidden orange-color-filter mr-4 dark:flex"
                                                 alt="testing icon"
                                             />
                                             <h2 className="font-bold text-lg">Testing</h2>
@@ -136,12 +148,18 @@ const TechnicalSkills = () => {
                                             <p className="wrap-normal">Jest, Vitest, Playwright</p>
                                         </div>
                                     </div>
-                                    <div className="border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4">
-                                        <div className="flex flex-row pb-2">
+                                    <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border">
+                                        <div className="flex flex-row pb-2 items-center">
                                             <Image
                                                 src={StateManagementIcon}
                                                 width={30}
-                                                className="emerald-green-filter mr-4"
+                                                className="flex black-color-filter mr-4 dark:hidden"
+                                                alt="state management icon"
+                                            />
+                                            <Image
+                                                src={StateManagementIcon}
+                                                width={30}
+                                                className="hidden orange-color-filter mr-4 dark:flex"
                                                 alt="state management icon"
                                             />
                                             <h2 className="font-bold text-lg">State Management</h2>
@@ -152,12 +170,18 @@ const TechnicalSkills = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4">
-                                        <div className="flex flex-row pb-2">
+                                    <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border">
+                                        <div className="flex flex-row pb-2 items-center">
                                             <Image
                                                 src={BackendIcon}
                                                 width={30}
-                                                className="emerald-green-filter mr-4"
+                                                className="flex black-color-filter mr-4 dark:hidden"
+                                                alt="backend icon"
+                                            />
+                                            <Image
+                                                src={BackendIcon}
+                                                width={30}
+                                                className="hidden orange-color-filter mr-4 dark:flex"
                                                 alt="backend icon"
                                             />
                                             <h2 className="font-bold text-lg">Backend</h2>
@@ -169,13 +193,19 @@ const TechnicalSkills = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="border-[.5px] border-[hsl(240,4,16)] m-6 rounded-xl p-4">
-                                        <div className="flex flex-row pb-2">
+                                    <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border">
+                                        <div className="flex flex-row pb-2 items-center">
                                             <Image
                                                 src={DesignIcon}
                                                 width={30}
-                                                className="emerald-green-filter mr-4"
-                                                alt="design icon"
+                                                className="flex black-color-filter mr-4 dark:hidden"
+                                                alt="state management icon"
+                                            />
+                                            <Image
+                                                src={DesignIcon}
+                                                width={30}
+                                                className="hidden orange-color-filter mr-4 dark:flex"
+                                                alt="state management icon"
                                             />
                                             <h2 className="font-bold text-lg">Design</h2>
                                         </div>

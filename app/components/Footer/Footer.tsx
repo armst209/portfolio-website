@@ -1,23 +1,12 @@
 import SocialLinksSection from '../SocialLinksSection'
-import ScribblePeriod from '@public/assets/icons/scribble-blob.svg'
-import Image from 'next/image'
+import SiteLogo from '../SiteLogo'
 
 const Footer = () => {
     return (
-        <footer className="grid place-items-center h-75 border-t-[.5px] border-t-[hsl(240,4,16)] w-full p-4 mb-6 pr-6 ">
+        <footer className="grid place-items-center h-75 border-t border-t-light-border w-full p-4 mb-6 pr-6 dark:border-t-dark-border">
             <div className="w-full  flex flex-col items-center md:w-[90%]">
                 <div className="w-full flex justify-center mb-2 lg:mb-0 lg:justify-start">
-                    <h1 className="flex flex-row text-lg font-bold emerald-green-text-color md:text-2xl">
-                        armst209
-                        <span className="flex items-end w-3 pb-1">
-                            <Image
-                                src={ScribblePeriod}
-                                className="orange-color-filter  w-2"
-                                alt="scribble blob period"
-                            />
-                        </span>
-                        dev
-                    </h1>
+                    <SiteLogo />
                 </div>
 
                 <div className="flex flex-col justify-between w-full mb-4 lg:mb-0 lg:flex-row">
