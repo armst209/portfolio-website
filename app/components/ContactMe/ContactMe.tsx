@@ -8,7 +8,7 @@ const ContactMe = () => {
     return (
         <section id="contact" className="flex justify-center w-full p-4 pb-20">
 
-            <div className="w-full lg:w-[80%]">
+            <div className="w-full">
                 <div className="relative h-auto border-[.5px] border-[hsl(240,4,16)] rounded-xl w-full p-4 ">
                     <div className="relative flex flex-col items-center h-full xl:flex-row">
                         <div className='z-10 relative w-full flex flex-col justify-center items-center mb-4 md:h-50 lg:items-left lg:mr-4 lg:h-120'>

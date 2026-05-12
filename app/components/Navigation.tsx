@@ -16,9 +16,9 @@ const Navigation = () => {
     const pathname = usePathname()
 
     return (
-        <header className="flex place-items-center sticky top-0 z-50 h-20 py-4 bg-background">
-            <nav className="flex w-full justify-center ">
-                <div className=" flex justify-between p-4 lg:items-center w-full xl:w-[80%]">
+        <header className="grid place-items-center sticky top-0 z-50 h-20 py-4 bg-background w-full">
+            <nav className="flex justify-center w-full md:w-[90%]">
+                <div className=" flex justify-between p-4 lg:items-center w-full">
                     <Link href="/">
                         <h1 className='flex flex-row text-lg font-bold emerald-green-text-color md:text-2xl'>armst209<span className="flex items-end w-3 pb-1"><Image src={ScribblePeriod} className="scribble-color-filter  w-2" alt="scribble blob period" /></span>dev</h1>
                     </Link>
@@ -27,10 +27,8 @@ const Navigation = () => {
                             <div className="font-bold flex items-center">
                                 <Link className="mr-6" href="/">Home</Link>
                                 <Link className="mr-6" href="/projects">Projects</Link>
-                                <a href="#contact" className='bg-[#e29c03] text-black p-2 rounded-md w-40 font-bold flex flex-row items-center justify-center cursor-pointer'>
-                                    <p className="mr-2">Let's Connect</p>
-                                    <Image src={ContactIcon} width={15} alt="connect icon" />
-                                </a>
+                                <Link className="" href="/about">About</Link>
+
                             </div>
                         </div>
                         <button id="hamburger" className="flex lg:hidden" onClick={toggleMobileMenu} aria-label="Open Navigation">

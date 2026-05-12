@@ -8,7 +8,7 @@ import EyeIcon from "@public/assets/icons/visually-pleasing.svg"
 const ValuesSection = () => {
     return (
         <section className="pt-20 pb-5 pl-4 pr-4 w-full flex justify-center">
-            <div className="h-auto flex flex-col items-center justify-evenly border-[.5px] border-[hsl(240,4,16)] rounded-xl p-4 bg-background lg:w-[80%] xl:flex-row xl:h-70">
+            <div className="h-auto flex flex-col items-center justify-evenly border-[.5px] border-[hsl(240,4,16)] rounded-xl p-4 bg-background xl:flex-row xl:h-70">
                 <div className="w-full flex flex-col h-full z-10 px-4 py-6 sm:flex-row ">
                     <div className="flex justify-center items-start min-w-20 pb-4 sm:pb-0">
                         <div className="relative w-20 h-20 flex justify-center items-center">
@@ -17,7 +17,7 @@ const ValuesSection = () => {
                         </div>
                     </div>
                     <div className="w-full h-full flex flex-col justify-center items-start pl-4">
-                        <h1 className="pb-6 w-full text-2xl font-bold lg:text-3xl">Modern</h1>
+                        <h1 className={`pb-6 w-full text-4xl font-bold lg:text-3xl`}>Modern</h1>
                         <h2 className="text-md lg:text-xl">I build with modern frameworks and best practices to create fast, scalable and maintainable applications.</h2>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const ValuesSection = () => {
                         </div>
                     </div>
                     <div className="w-full h-full flex flex-col justify-center items-start pl-4">
-                        <h1 className="pb-6 w-full text-2xl font-bold lg:text-3xl">Accessible</h1>
+                        <h1 className={`pb-6 w-full text-2xl font-bold lg:text-3xl`}>Accessible</h1>
                         <h2 className="text-md lg:text-xl">Accessibility is at the core of what I do. I build inclusive experiences that work for everyone.</h2>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const ValuesSection = () => {
                     </div>
                     <div className="w-full h-full flex flex-col justify-center items-start pl-4">
                         <h1 className="pb-6 w-full text-2xl font-bold lg:text-3xl">Visually Pleasing</h1>
-                        <h2 className="text-md lg:text-xl">Clean, thoughtful design and attention to detail create engaging experiences users love.</h2>
+                        <h2 className="text-md lg:text-xl">Clean, thoughtful design and attention to detail. </h2>
                     </div>
                 </div>
             </div>

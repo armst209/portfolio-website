@@ -14,13 +14,12 @@ import SemiColonPeriodScribble from "../SemiColonPeriodScribble"
 
 const TechnicalSkills = () => {
     return (
-        <section className=" flex justify-center w-full items-center pt-5 pb-6">
-            <div className="flex flex-col w-full justify-center pl-4 pr-4 lg:w-[80%]">
+        <section className="flex justify-center w-full items-center pt-5 pb-6">
+            <div className="flex flex-col w-full justify-center pl-4 pr-4">
                 <div>
-                    <div className="flex flex-col 2xl:flex-row">
+                    <div className="flex flex-col w-full justify-center 2xl:flex-row">
                         <div id="tech-skills-content">
-                            <div id="skillset-section" className="flex flex-col items-center w-full md:pb-10">
-
+                            <div id="skillset-section" className="flex flex-col items-center justify-center w-full md:pb-10">
                                 <div className="z-10 w-full flex flex-col lg:flex-row">
                                     <div className="flex flex-col justify-center lg:justify-center">
                                         <h1 className="font-bold flex items-center text-2xl lg:text-4xl"><p>Skillset</p><SemiColonPeriodScribble /></h1>

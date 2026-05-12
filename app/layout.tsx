@@ -1,28 +1,11 @@
 import type { Metadata, Viewport } from 'next'
-import localFont from 'next/font/local'
+import { satoshi } from './utils/fonts'
 import './globals.css'
 import PageContainer from './components/PageContainer'
 
 
-const satoshi = localFont({
-    src: [
-        {
-            path: '../public/fonts/Satoshi-Regular.woff2',
-            weight: '400',
-            style: 'normal',
-        },
-        {
-            path: '../public/fonts/Satoshi-Italic.woff2',
-            weight: '400',
-            style: 'italic',
-        },
-        {
-            path: '../public/fonts/Satoshi-Bold.woff2',
-            weight: '900',
-            style: 'bold',
-        },
-    ],
-})
+
+
 
 export const viewport: Viewport = {
     width: "device-width",
@@ -164,7 +147,7 @@ export default function RootLayout({
             className={`${satoshi.className} h-full antialiased`}
             suppressHydrationWarning
         >
-            <body >
+            <body>
                 <PageContainer>
                     {children}
                 </PageContainer>

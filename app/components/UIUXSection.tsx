@@ -7,7 +7,7 @@ import SemiColonPeriodScribble from "./SemiColonPeriodScribble"
 const UIUXSection = () => {
     return (
         <section className="pt-5 pb-6 pl-4 pr-4 w-full flex justify-center">
-            <div className="w-full h-auto flex flex-col items-center justify-evenly border-[.5px] border-[hsl(240,4,16)] rounded-xl bg-background lg:w-[80%] 2xl:flex-row xl:h-70">
+            <div className="w-full h-auto flex flex-col items-center justify-evenly border-[.5px] border-[hsl(240,4,16)] rounded-xl bg-background 2xl:flex-row xl:h-70">
                 <div className="w-full flex pb-6 flex-col p-4 lg:flex-row 2xl:w-[34%]">
                     <div className="flex items-center justify-center lg:justify-start">
                         <div className="z-10 relative h-20 w-20 flex items-center justify-center mr-4 lg:mr-0">

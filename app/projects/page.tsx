@@ -135,7 +135,7 @@ const Projects = () => {
 
     return (
         <section className="p-4 pt-20 pb-20 w-full flex flex-col justify-center items-center">
-            <div className="w-full items-center justify-center xl:w-[80%]">
+            <div className="w-full items-center justify-center">
                 <div className="flex flex-col">
                     <div className="flex flex-row">
                         <h1 className="flex flex-row items-center text-6xl pb-2 font-bold text-shadow-lg/30">
