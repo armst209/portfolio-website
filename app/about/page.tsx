@@ -152,6 +152,9 @@ const About = () => {
                     src={AboutMeHeadShot}
                     alt="about me headshot"
                     className="w-50 about-image-float pb-6 lg:w-90"
+                    quality={75}
+                    placeholder="blur"
+                    preload={true}
                 />
                 <div className="flex justify-center">
                     <Image
