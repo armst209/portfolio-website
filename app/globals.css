@@ -40,18 +40,19 @@
 body {
     font-family: 'Satoshi', sans-serif;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     line-height: inherit;
 }
 
 @layer utilities {
     .icon-emerald-filter {
-        filter: brightness(0) saturate(100%) invert(32%) sepia(51%) saturate(3503%) hue-rotate(145deg) brightness(96%)
-            contrast(101%);
+        filter: brightness(0) saturate(100%) invert(32%) sepia(51%) saturate(3503%)
+            hue-rotate(145deg) brightness(96%) contrast(101%);
     }
     .scribble-color-filter {
-        filter: brightness(0) saturate(100%) invert(62%) sepia(40%) saturate(3165%) hue-rotate(10deg) brightness(101%)
-            contrast(98%);
+        filter: brightness(0) saturate(100%) invert(62%) sepia(40%) saturate(3165%)
+            hue-rotate(10deg) brightness(101%) contrast(98%);
     }
     .icon-white-filter {
         filter: brightness(0) invert(1);
@@ -64,7 +65,10 @@ body {
     .orange-text-color {
         color: #e29c03;
     }
-    .imgDark {
-        display: none;
+
+    .about-image-float {
+        float: left;
+        shape-margin: 1rem;
+        shape-outside: url('../public/assets/AboutMeHeadshot.webp');
     }
 }
