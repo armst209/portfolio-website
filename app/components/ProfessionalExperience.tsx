@@ -17,7 +17,7 @@ const ProfessionalExperience = () => {
         <Item
             {...rest}
             header={({ state: { isEnter } }) => (
-                <div className="flex justify-between w-full">
+                <div className="flex justify-between w-full h-full cursor-pointer">
                     <h2 className="font-bold text-lg lg:text-2xl">{header as ReactNode}</h2>
                     {isEnter ? (
                         <Image
@@ -57,7 +57,7 @@ const ProfessionalExperience = () => {
                     <AccordionItem
                         header={`Front End Software Engineer @ Ford Motor Company (2025 - 2026)`}
                     >
-                        <div className="w-full flex flex-col text-lg">
+                        <div className="w-full h-full flex flex-col text-lg ">
                             <div className="flex flex-col justify-center items-center md:flex-row">
                                 <Image
                                     src={FordLogo}
