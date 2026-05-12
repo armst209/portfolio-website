@@ -18,7 +18,7 @@ const ProfessionalExperience = () => {
             {...rest}
             header={({ state: { isEnter } }) => (
                 <div className="flex justify-between w-full h-full cursor-pointer">
-                    <h2 className="font-bold text-lg lg:text-2xl">{header as ReactNode}</h2>
+                    <div className="font-bold text-lg lg:text-2xl">{header as ReactNode}</div>
                     {isEnter ? (
                         <Image
                             src={MinusIcon}
