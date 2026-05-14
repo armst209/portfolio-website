@@ -5,6 +5,17 @@ import ScribbleSmallCircle from '@public/assets/icons/scribble-small-circle.svg'
 import SemiColonPeriodScribble from './SemiColonPeriodScribble'
 import { bonaNova } from '@/app/utils/fonts'
 
+const uiuxContent = [
+    'Wireframing',
+    'Prototyping',
+    'Typography',
+    'Responsive Layouts',
+    'Product Branding',
+    'Storytelling',
+    'User Testing',
+    'Color Selection',
+]
+
 const UIUXSection = () => {
     return (
         <section className="pr-4 pl-4 w-full flex justify-center">
@@ -34,7 +45,7 @@ const UIUXSection = () => {
                                     <Image
                                         src={UIUXIcon}
                                         alt="ui/ux icon"
-                                        className="flex w-10 emerald-green-filter dark:hidden"
+                                        className="flex w-10 black-color-filter dark:hidden"
                                     />
                                 </div>
                             </div>
@@ -57,79 +68,28 @@ const UIUXSection = () => {
 
                 <div className="w-full h-full">
                     <div className="h-full grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] p-4 rounded-xl bg-white border border-light-border dark:bg-transparent dark:border-0">
-                        <div className="flex flex-row items-center justify-center">
-                            <Image
-                                src={CheckIcon}
-                                alt="contact icon"
-                                width={20}
-                                className="mr-4 emerald-green-filter"
-                            />
-                            <p className="text-lg xl:text-2xl">Wireframing</p>
-                        </div>
-                        <div className="flex flex-row items-center justify-center">
-                            <Image
-                                src={CheckIcon}
-                                alt="contact icon"
-                                width={20}
-                                className="mr-4 emerald-green-filter"
-                            />
-                            <p className="text-lg xl:text-2xl">Prototyping</p>
-                        </div>
-                        <div className="flex flex-row items-center justify-center">
-                            <Image
-                                src={CheckIcon}
-                                alt="contact icon"
-                                width={20}
-                                className="mr-4 emerald-green-filter"
-                            />
-                            <p className="text-lg xl:text-2xl">Typography</p>
-                        </div>
-                        <div className="flex flex-row items-center justify-center">
-                            <Image
-                                src={CheckIcon}
-                                alt="contact icon"
-                                width={20}
-                                className="mr-4 emerald-green-filter"
-                            />
-                            <p className="text-lg xl:text-2xl">Responsive Layouts</p>
-                        </div>
-
-                        <div className="flex flex-row items-center justify-center">
-                            <Image
-                                src={CheckIcon}
-                                alt="contact icon"
-                                width={20}
-                                className="mr-4 emerald-green-filter"
-                            />
-                            <p className="text-lg xl:text-2xl">Product Branding </p>
-                        </div>
-                        <div className="flex flex-row items-center justify-center">
-                            <Image
-                                src={CheckIcon}
-                                alt="contact icon"
-                                width={20}
-                                className="mr-4 emerald-green-filter"
-                            />
-                            <p className="text-lg xl:text-2xl">Storytelling </p>
-                        </div>
-                        <div className="flex flex-row items-center justify-start xxs:justify-center">
-                            <Image
-                                src={CheckIcon}
-                                alt="contact icon"
-                                width={20}
-                                className="mr-4 emerald-green-filter"
-                            />
-                            <p className="text-lg xl:text-2xl">User Testing</p>
-                        </div>
-                        <div className="flex flex-row items-center justify-start xxs:justify-center">
-                            <Image
-                                src={CheckIcon}
-                                alt="contact icon"
-                                width={20}
-                                className="mr-4 emerald-green-filter"
-                            />
-                            <p className="text-lg xl:text-2xl">Color Selection</p>
-                        </div>
+                        {uiuxContent.map((skill, index) => {
+                            return (
+                                <div
+                                    key={`uiuxskill-${index}`}
+                                    className="flex flex-row items-center justify-center"
+                                >
+                                    <Image
+                                        src={CheckIcon}
+                                        alt="contact icon"
+                                        width={20}
+                                        className="hidden mr-4 emerald-green-filter dark:flex"
+                                    />
+                                    <Image
+                                        src={CheckIcon}
+                                        alt="contact icon"
+                                        width={20}
+                                        className="flex mr-4 black-color-filter dark:hidden"
+                                    />
+                                    <p className="text-lg xl:text-2xl">{skill}</p>
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
             </div>

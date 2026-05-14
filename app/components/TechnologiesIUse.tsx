@@ -45,13 +45,13 @@ const TechnologiesIUse = () => {
                     </div>
 
                     <div className="pb-2">
-                        <h3 className="text-emerald-green-custom font-bold dark:text-orange-custom xl:text-xl">
+                        <h3 className="text-black-custom font-bold dark:text-orange-custom xl:text-xl">
                             Frameworks
                         </h3>
                         <p className="wrap-normal">Next.js, Nuxt.js, Blazor </p>
                     </div>
                     <div>
-                        <h3 className="text-emerald-green-custom font-bold dark:text-orange-custom xl:text-xl">
+                        <h3 className="text-black-custom font-bold dark:text-orange-custom xl:text-xl">
                             Libraries & Build Tools
                         </h3>
                         <p className="wrap-normal">

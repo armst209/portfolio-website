@@ -27,7 +27,7 @@ const ContactMe = () => {
                             Have an idea for a project?
                         </h1>
                         <h2
-                            className={`${bonaNova.className} text-emerald-green-custom font-bold lg:text-5xl xl:text-6xl dark:text-orange-custom`}
+                            className={`${bonaNova.className} text-black-custom font-bold text-3xl lg:text-5xl xl:text-6xl dark:text-orange-custom`}
                         >
                             Let&apos;s connect!
                         </h2>

@@ -43,7 +43,13 @@ const Skillset = () => {
                                     src={CheckIcon}
                                     alt="check icon"
                                     width={20}
-                                    className="mr-4 emerald-green-filter"
+                                    className="hidden mr-4 emerald-green-filter dark:flex"
+                                />
+                                <Image
+                                    src={CheckIcon}
+                                    alt="check icon"
+                                    width={20}
+                                    className="flex mr-4 black-color-filter dark:hidden"
                                 />
                                 <p>{skill}</p>
                             </div>

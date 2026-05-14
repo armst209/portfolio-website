@@ -21,17 +21,31 @@ const ProfessionalExperience = () => {
                 <div className="flex justify-between w-full h-full cursor-pointer">
                     <div className="text-lg lg:text-2xl">{header as ReactNode}</div>
                     {isEnter ? (
-                        <Image
-                            src={MinusIcon}
-                            alt="minus icon"
-                            className="ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer w-8 h-8"
-                        />
+                        <>
+                            <Image
+                                src={MinusIcon}
+                                alt="minus icon"
+                                className="hidden ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer w-8 h-8 dark:flex"
+                            />
+                            <Image
+                                src={MinusIcon}
+                                alt="minus icon"
+                                className="flex ml-auto transition-transform duration-200 ease-out black-color-filter cursor-pointer w-8 h-8 dark:hidden"
+                            />
+                        </>
                     ) : (
-                        <Image
-                            src={PlusIcon}
-                            alt="plus icon"
-                            className="ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer w-8 h-8"
-                        />
+                        <>
+                            <Image
+                                src={PlusIcon}
+                                alt="plus icon"
+                                className="hidden ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer w-8 h-8 dark:flex"
+                            />
+                            <Image
+                                src={PlusIcon}
+                                alt="plus icon"
+                                className="flex ml-auto transition-transform duration-200 ease-out black-color-filter cursor-pointer w-8 h-8 dark:hidden"
+                            />
+                        </>
                     )}
                 </div>
             )}
@@ -71,7 +85,13 @@ const ProfessionalExperience = () => {
                                         src={LocationIcon}
                                         alt="location icon"
                                         width={20}
-                                        className="orange-color-filter mr-2"
+                                        className="hidden orange-color-filter mr-2 dark:flex"
+                                    />
+                                    <Image
+                                        src={LocationIcon}
+                                        alt="location icon"
+                                        width={20}
+                                        className="flex black-color-filter mr-2 dark:hidden"
                                     />
                                     <p>Dearborn, Michigan</p>
                                 </div>
@@ -81,7 +101,13 @@ const ProfessionalExperience = () => {
                                         src={GlobeIcon}
                                         alt="globe icon"
                                         width={20}
-                                        className="orange-color-filter mr-2"
+                                        className="hidden orange-color-filter mr-2 dark:flex"
+                                    />
+                                    <Image
+                                        src={GlobeIcon}
+                                        alt="globe icon"
+                                        width={20}
+                                        className="flex black-color-filter mr-2 dark:hidden"
                                     />
                                     <a
                                         href="https://www.ford.com/"
@@ -145,7 +171,13 @@ const ProfessionalExperience = () => {
                                         src={LocationIcon}
                                         alt="location icon"
                                         width={20}
-                                        className="orange-color-filter mr-2"
+                                        className="hidden orange-color-filter mr-2 dark:flex"
+                                    />
+                                    <Image
+                                        src={LocationIcon}
+                                        alt="location icon"
+                                        width={20}
+                                        className="flex black-color-filter mr-2 dark:hidden"
                                     />
                                     <p>Pontiac, Michigan</p>
                                 </div>
@@ -155,7 +187,13 @@ const ProfessionalExperience = () => {
                                         src={GlobeIcon}
                                         alt="globe icon"
                                         width={20}
-                                        className="orange-color-filter mr-2"
+                                        className="hidden orange-color-filter mr-2 dark:flex"
+                                    />
+                                    <Image
+                                        src={GlobeIcon}
+                                        alt="globe icon"
+                                        width={20}
+                                        className="flex black-color-filter mr-2 dark:hidden"
                                     />
                                     <a
                                         href="https://www.uwm.com/"
@@ -226,7 +264,13 @@ const ProfessionalExperience = () => {
                                         src={LocationIcon}
                                         alt="location icon"
                                         width={20}
-                                        className="orange-color-filter mr-2"
+                                        className="hidden orange-color-filter mr-2 dark:flex"
+                                    />
+                                    <Image
+                                        src={LocationIcon}
+                                        alt="location icon"
+                                        width={20}
+                                        className="flex black-color-filter mr-2 dark:hidden"
                                     />
                                     <p>Detroit, Michigan</p>
                                 </div>
@@ -236,7 +280,13 @@ const ProfessionalExperience = () => {
                                         src={GlobeIcon}
                                         alt="globe icon"
                                         width={20}
-                                        className="orange-color-filter mr-2"
+                                        className="hidden orange-color-filter mr-2 dark:flex"
+                                    />
+                                    <Image
+                                        src={GlobeIcon}
+                                        alt="globe icon"
+                                        width={20}
+                                        className="flex black-color-filter mr-2 dark:hidden"
                                     />
                                     <a
                                         href="https://linktr.ee/bngroovy"

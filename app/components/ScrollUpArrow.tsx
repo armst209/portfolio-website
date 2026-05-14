@@ -43,7 +43,7 @@ const ScrollUpArrow = () => {
             <Image
                 src={ScrollArrow}
                 alt="scroll arrow "
-                className="flex m-2 w-4 xs-w-8 md:w-9 emerald-green-filter font-bold dark:hidden"
+                className="flex m-2 w-4 xs-w-8 md:w-9 black-color-filter font-bold dark:hidden"
             />
             <Image
                 src={ScribbleSmallCircle}

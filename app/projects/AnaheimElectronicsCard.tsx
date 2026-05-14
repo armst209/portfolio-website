@@ -80,7 +80,7 @@ const AnaheimElectronicsCard = () => {
                                 <Image
                                     src={LiveDemoIcon}
                                     alt="skillset icon"
-                                    className="flex emerald-green-filter w-10 dark:hidden"
+                                    className="flex black-color-filter w-10 dark:hidden"
                                 />
                             </div>
                         </div>

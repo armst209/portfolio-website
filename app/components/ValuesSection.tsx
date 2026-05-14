@@ -61,7 +61,7 @@ const ValuesSection = () => {
                                         <Image
                                             src={icon}
                                             alt="modern icon"
-                                            className="flex w-10 emerald-green-filter dark:hidden"
+                                            className="flex w-10 black-color-filter dark:hidden"
                                         />
                                     </div>
                                 </div>
