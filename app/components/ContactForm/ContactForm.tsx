@@ -51,7 +51,7 @@ const ContactForm = () => {
             <input
                 type="text"
                 {...register('subject')}
-                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border dark:bg-black"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
                 placeholder="Your Subject"
                 required
             />
@@ -62,7 +62,7 @@ const ContactForm = () => {
             <input
                 type="text"
                 {...register('name')}
-                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border dark:bg-black"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
                 placeholder="Your Name"
                 required
             />
@@ -73,7 +73,7 @@ const ContactForm = () => {
             <input
                 type="email"
                 {...register('email')}
-                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border dark:bg-black"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
                 placeholder="ex: contact@email.com"
                 required
             />
@@ -84,7 +84,7 @@ const ContactForm = () => {
             <textarea
                 {...register('message')}
                 maxLength={500}
-                className=" min-h-50 w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border dark:bg-black"
+                className=" min-h-50 w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
                 placeholder="Your message here..."
                 required
             />

@@ -1,7 +1,9 @@
 import { Metadata, Viewport } from 'next'
 import Image from 'next/image'
 import AboutMeHeadShot from '@public/assets/AboutMeHeadshot.webp'
-import ScribbledDash from '@public/assets/icons/scribbled-dash.svg'
+import AboutMeHeadShotLight from '@public/assets/AboutMeHeadshot_Light.webp'
+import { bonaNova } from '../utils/fonts'
+import ScribbledDashPartition from '../components/ScribbledDashPartition'
 
 export const viewport: Viewport = {
     width: 'device-width',
@@ -143,7 +145,9 @@ const About = () => {
     return (
         <section className="min-h-[calc(100vh-80px)] p-4 pt-20 pb-20 w-full">
             <div className="flex flex-row w-full mb-10">
-                <h1 className="flex flex-row items-center text-6xl pb-2 font-bold">
+                <h1
+                    className={`${bonaNova.className} flex flex-row items-center text-6xl pb-2 font-bold hero-text-h1`}
+                >
                     <p>About Me</p>
                 </h1>
             </div>
@@ -151,18 +155,20 @@ const About = () => {
                 <Image
                     src={AboutMeHeadShot}
                     alt="about me headshot"
-                    className="w-50 about-image-float pb-6 lg:w-90"
+                    className="hidden w-50 about-image-float pb-6 lg:w-90 dark:flex"
                     quality={75}
                     placeholder="blur"
                     preload={true}
                 />
-                <div className="flex justify-center">
-                    <Image
-                        src={ScribbledDash}
-                        alt="pointing down arrows"
-                        className="top-0 right-0 left-0 orange-color-filter w-50"
-                    />
-                </div>
+                <Image
+                    src={AboutMeHeadShotLight}
+                    alt="about me headshot"
+                    className="flex w-50 about-image-float pb-6 lg:w-90 dark:hidden"
+                    quality={75}
+                    placeholder="blur"
+                    preload={true}
+                />
+                <ScribbledDashPartition />
                 <div className="flex flex-col justify-center items-center w-full xl:hidden">
                     <p className="text-md mb-4 wrap-normal w-full md:text-xl lg:text-2xl xl:mb-0 xl:text-3xl">
                         Hi! My name is Aaron Armstrong! I am a software engineer with 6+ years of
@@ -190,13 +196,7 @@ const About = () => {
                     </p>
                 </div>
 
-                <div className="flex justify-center">
-                    <Image
-                        src={ScribbledDash}
-                        alt="pointing down arrows"
-                        className="top-0 right-0 left-0 orange-color-filter w-50"
-                    />
-                </div>
+                <ScribbledDashPartition />
                 <div className="w-full flex justify-start mb-4">
                     <h2 className="text-2xl font-bold lg:text-3xl">How I got started</h2>
                 </div>

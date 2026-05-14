@@ -12,7 +12,7 @@
     --breakpoint-xs: 30rem;
     --breakpoint-sm: 50rem;
     --color-background-light: hsl(0 0% 100%);
-    --color-background-dark: hsl(0 0% 3.9%);
+    --color-background-dark: hsl(0, 0%, 4.31%);
     --color-background-foreground-light: hsl(240, 7.69%, 97.45%);
     --color-background-light-secondary: hsl(0 0% 100%);
     --color-light: hsl(0 0% 3.9%);
@@ -23,7 +23,7 @@
     --color-dark-border: hsl(240, 4%, 16%);
     --color-emerald-green-custom: var(--color-emerald-600);
     --color-orange-custom: hsl(41.17, 97.38%, 44.9%);
-    --color-black-custom: hsl(0 0% 3.9%);
+    --color-black-custom: hsl(0, 0%, 4.31%);
     --color-box-shadow-custom: 0 1px 2px rgba(0, 0, 0, 0.13), 0 0px 2px rgba(0, 0, 0, 0.08);
 }
 
@@ -65,5 +65,18 @@ body {
 
     .orange-text-color {
         color: #e29c03;
+    }
+
+    .hero-text-h1 {
+        font-size: clamp(2.8rem, 8vw + 1rem, 6rem);
+        line-height: 1;
+    }
+
+    .hero-text-h2 {
+        font-size: clamp(1rem, 2.5vw + 1rem, 2rem);
+        line-height: 1;
+    }
+    .hero-text-h3 {
+        font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem);
     }
 }

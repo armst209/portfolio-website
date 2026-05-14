@@ -9,7 +9,13 @@ import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import SiteLogo from './SiteLogo'
 import ThemeToggle from './ThemeToggle'
+import { bonaNova } from '../utils/fonts'
 
+const menuItems = [
+    { id: 1, title: 'Home', pathname: '/' },
+    { id: 2, title: 'Projects', pathname: '/projects' },
+    { id: 3, title: 'About', pathname: '/about' },
+]
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false)
     const toggleMobileMenu = () => setIsOpen(!isOpen)
@@ -25,16 +31,20 @@ const Navigation = () => {
                         <ThemeToggle className="mr-6" />
                         <div id="desktop-menu" className="hidden lg:flex">
                             <div className="font-bold flex items-center">
-                                <Link className="mr-6" href="/">
+                                <Link className="mr-6 h-full flex items-center" href="/">
                                     Home
                                 </Link>
-                                <Link className="mr-6" href="/projects">
+                                <Link className="mr-6 h-full flex items-center" href="/projects">
                                     Projects
                                 </Link>
-                                <Link className="mr-6" href="/about">
+                                <Link className="mr-6 h-full flex items-center" href="/about">
                                     About
                                 </Link>
-                                <a href={`${pathname !== '/' ? '/#contact' : '#contact'}`}>
+
+                                <a
+                                    href={`${pathname !== '/' ? '/#contact' : '#contact'}`}
+                                    className="w-25 text-center text-black-custom border-2 border-dark-border p-2 rounded-md dark:bg-orange-custom"
+                                >
                                     Contact
                                 </a>
                             </div>
@@ -49,12 +59,14 @@ const Navigation = () => {
                             <Image
                                 src={HamburgerIcon}
                                 width={25}
+                                height={25}
                                 alt="mobile menu icon"
                                 className="hidden white-color-filter dark:flex"
                             />
                             <Image
                                 src={HamburgerIcon}
                                 width={25}
+                                height={25}
                                 alt="mobile menu icon"
                                 className="flex black-color-filter dark:hidden"
                             />
@@ -86,58 +98,46 @@ const Navigation = () => {
                                 />
                             </button>
                             <div className="z-10 relative font-bold text-6xl flex flex-col pt-20 pl-4 h-full">
-                                <Link
-                                    className="mr-2 flex flex-row items-center focus-visible:outline-1"
-                                    href="/"
-                                    onNavigate={closeMobileMenu}
-                                >
-                                    <p>Home</p>
-                                    <div>
-                                        <Image
-                                            src={ScribblePeriod}
-                                            className="orange-color-filter ml-2 w-10"
-                                            alt="scribble blob period"
-                                        />
-                                    </div>
-                                </Link>
-                                <Link
-                                    className="mr-2 flex flex-row items-center"
-                                    href="/projects"
-                                    onNavigate={closeMobileMenu}
-                                >
-                                    <p>Projects</p>
-                                    <div>
-                                        <Image
-                                            src={ScribblePeriod}
-                                            className="orange-color-filter ml-2 w-10"
-                                            alt="scribble blob period"
-                                        />
-                                    </div>
-                                </Link>
-                                <Link
-                                    className="mr-2 flex flex-row items-center"
-                                    href="/about"
-                                    onNavigate={closeMobileMenu}
-                                >
-                                    <p>About</p>
-                                    <div>
-                                        <Image
-                                            src={ScribblePeriod}
-                                            className="orange-color-filter ml-2 w-10"
-                                            alt="scribble blob period"
-                                        />
-                                    </div>
-                                </Link>
+                                {menuItems.map(({ title, pathname, id }) => {
+                                    return (
+                                        <Link
+                                            key={`menu-item-${id}`}
+                                            className="mr-2 flex flex-row items-center focus-visible:outline-1"
+                                            href={pathname}
+                                            onNavigate={closeMobileMenu}
+                                        >
+                                            <p className={`${bonaNova.className}`}>{title}</p>
+                                            <div>
+                                                <Image
+                                                    src={ScribblePeriod}
+                                                    className="hidden orange-color-filter ml-2 w-10 dark:flex"
+                                                    alt="scribble blob period"
+                                                />
+                                                <Image
+                                                    src={ScribblePeriod}
+                                                    className="flex black-color-filter ml-2 w-10 dark:hidden"
+                                                    alt="scribble blob period"
+                                                />
+                                            </div>
+                                        </Link>
+                                    )
+                                })}
+
                                 <a
                                     href={`${pathname !== '/' ? '/#contact' : '#contact'}`}
                                     className="w-70 flex flex-row items-center"
                                     onClick={closeMobileMenu}
                                 >
-                                    <p>Contact</p>
+                                    <p className={`${bonaNova.className}`}>Contact</p>
                                     <div>
                                         <Image
                                             src={ScribblePeriod}
-                                            className="orange-color-filter ml-2 w-10"
+                                            className="hidden orange-color-filter ml-2 w-10 dark:flex"
+                                            alt="scribble blob period"
+                                        />
+                                        <Image
+                                            src={ScribblePeriod}
+                                            className="flex black-color-filter ml-2 w-10 dark:hidden"
                                             alt="scribble blob period"
                                         />
                                     </div>

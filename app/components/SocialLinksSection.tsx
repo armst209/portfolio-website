@@ -12,12 +12,12 @@ const SocialLinksSection = () => {
             <Link href="/about">
                 <Image
                     src={InfoIcon}
-                    className="hidden orange-color-filter mr-5 w-8 lg:w-10 xl:w-12 dark:flex"
+                    className="hidden orange-color-filter mr-5 w-6 lg:w-10 dark:flex"
                     alt="info icon"
                 />
                 <Image
                     src={InfoIcon}
-                    className="flex black-color-filter mr-5 w-8 lg:w-10 xl:w-12 dark:hidden"
+                    className="flex black-color-filter mr-5 w-6 lg:w-10 dark:hidden"
                     alt="info icon"
                 />
             </Link>
@@ -28,12 +28,12 @@ const SocialLinksSection = () => {
             >
                 <Image
                     src={LinkedInIcon}
-                    className="hidden orange-color-filter mr-4 w-8 lg:w-10 xl:w-12 dark:flex"
+                    className="hidden orange-color-filter mr-4 w-6 lg:w-10 dark:flex"
                     alt="linkedin icon"
                 />
                 <Image
                     src={LinkedInIcon}
-                    className="flex black-color-filter mr-4 w-8 lg:w-10 xl:w-12 dark:hidden"
+                    className="flex black-color-filter mr-4 w-6 lg:w-10 dark:hidden"
                     alt="linkedin icon"
                 />
             </a>
@@ -45,12 +45,12 @@ const SocialLinksSection = () => {
             >
                 <Image
                     src={GithubIcon}
-                    className="hidden orange-color-filter w-8 lg:w-10 xl:w-12 dark:flex"
+                    className="hidden orange-color-filter w-6 lg:w-10 dark:flex"
                     alt="github icon"
                 />
                 <Image
                     src={GithubIcon}
-                    className="flex black-color-filter w-8 lg:w-10 xl:w-12 dark:hidden"
+                    className="flex black-color-filter w-6 lg:w-10 dark:hidden"
                     alt="github icon"
                 />
             </a>
@@ -62,24 +62,24 @@ const SocialLinksSection = () => {
             >
                 <Image
                     src={ResumeIcon}
-                    className="hidden orange-color-filter w-8 lg:w-10 xl:w-12 dark:flex"
+                    className="hidden orange-color-filter w-6 lg:w-10 dark:flex"
                     alt="resume icon"
                 />
                 <Image
                     src={ResumeIcon}
-                    className="flex black-color-filter w-8 lg:w-10 xl:w-12 dark:hidden"
+                    className="flex black-color-filter w-6 lg:w-10 dark:hidden"
                     alt="resume icon"
                 />
             </a>
             <a href="https://x.com/armst209dev" rel="noopener noreferer" target="_blank">
                 <Image
                     src={TwitterIcon}
-                    className="hidden orange-color-filter w-8 lg:w-10 xl:w-12 dark:flex"
+                    className="hidden orange-color-filter w-6 lg:w-10 dark:flex"
                     alt="twitter/x icon"
                 />
                 <Image
                     src={TwitterIcon}
-                    className="flex black-color-filter w-8 lg:w-10 xl:w-12 dark:hidden"
+                    className="flex black-color-filter w-6 lg:w-10 dark:hidden"
                     alt="twitter/x icon"
                 />
             </a>

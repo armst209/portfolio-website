@@ -1,9 +1,9 @@
 import ScribbledDash from '@public/assets/icons/scribbled-dash.svg'
 import Image from 'next/image'
 
-const ScribbledDashPartition = () => {
+const ScribbledDashPartition = ({ className }: { className?: string }) => {
     return (
-        <section className="flex justify-center">
+        <section className={`flex justify-center ${className}`}>
             <Image
                 src={ScribbledDash}
                 alt="pointing down arrows"

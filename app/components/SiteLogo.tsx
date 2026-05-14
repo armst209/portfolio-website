@@ -1,11 +1,14 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ScribblePeriod from '@public/assets/icons/scribble-blob.svg'
+import { bonaNova } from '../utils/fonts'
 
 const SiteLogo = () => {
     return (
         <Link href="/">
-            <h1 className="flex flex-row text-lg font-bold text-black-custom md:text-2xl dark:text-white ">
+            <h1
+                className={`${bonaNova.className} flex flex-row text-lg font-bold text-black-custom md:text-2xl dark:text-white`}
+            >
                 armst209
                 <span className="flex items-end w-3 pb-1">
                     <Image

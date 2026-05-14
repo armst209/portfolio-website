@@ -1,7 +1,8 @@
 import AnaheimElectronicsCard from './AnaheimElectronicsCard'
 import BiscuitsNGroovyCard from './BiscuitsNGroovyCard'
-import SemiColonPeriodScribble from '../components/SemiColonPeriodScribble'
+import { bonaNova } from '../utils/fonts'
 import { Metadata, Viewport } from 'next'
+import ScribbledDashPartition from '../components/ScribbledDashPartition'
 
 export const viewport: Viewport = {
     width: 'device-width',
@@ -145,14 +146,19 @@ const Projects = () => {
             <div className="w-full items-center justify-center">
                 <div className="flex flex-col">
                     <div className="flex flex-row">
-                        <h1 className="flex flex-row items-center text-6xl pb-2 font-bold">
-                            <p>Personal Projects</p>
-                        </h1>
+                        <div className="flex flex-row w-full">
+                            <h1
+                                className={`${bonaNova.className} flex flex-row items-center text-6xl pb-2 font-bold hero-text-h1`}
+                            >
+                                <p>Personal Projects</p>
+                            </h1>
+                        </div>
                     </div>
                     <h2 className="text-md sm:text-xl xl:text-2xl">
                         Here you will find a collection of my completed and in-progress work
                     </h2>
                 </div>
+                <ScribbledDashPartition className="mt-10 mb-10" />
                 <div className="grid grid-cols-1 gap-4 pt-10 place-items-center lg:grid-cols-2">
                     <AnaheimElectronicsCard />
                     <BiscuitsNGroovyCard />

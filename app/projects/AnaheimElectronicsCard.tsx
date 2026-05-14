@@ -5,7 +5,7 @@ import ScribbleSmallCircle from '@public/assets/icons/scribble-small-circle.svg'
 
 const AnaheimElectronicsCard = () => {
     return (
-        <div className="flex flex-col rounded-xl border-[.5px] border-[hsl(240,4,16)] h-auto max-w-200 lg:h-180">
+        <div className="flex flex-col rounded-xl border border-light-border h-auto max-w-200 lg:h-180 dark:border-dark-border">
             <div className="z-10">
                 <Image
                     src={ProjectImage}
@@ -42,7 +42,7 @@ const AnaheimElectronicsCard = () => {
                 <div className="w-auto flex justify-center">
                     <a
                         href="https://armst209.github.io/"
-                        className="w-70 items-center justify-center flex flex-row m-4 bg-background border-[.5px] border-[hsl(240,4,16)] p-4 rounded-xl lg:absolute lg:ml-0 lg:bottom-0 lg:right-0 lg:justify-center lg:w-auto"
+                        className="w-70 items-center justify-center flex flex-row m-4 border border-light-border p-4 rounded-xl lg:absolute lg:ml-0 lg:bottom-0 lg:right-0 lg:justify-center lg:w-auto dark:border-dark-border"
                         rel="noopener noreferer"
                         target="_blank"
                     >
@@ -61,7 +61,12 @@ const AnaheimElectronicsCard = () => {
                                 <Image
                                     src={LiveDemoIcon}
                                     alt="skillset icon"
-                                    className="emerald-green-filter w-10"
+                                    className="hidden orange-color-filter w-10 dark:flex"
+                                />
+                                <Image
+                                    src={LiveDemoIcon}
+                                    alt="skillset icon"
+                                    className="flex black-color-filter w-10 dark:hidden"
                                 />
                             </div>
                         </div>

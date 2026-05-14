@@ -1,5 +1,25 @@
 import localFont from 'next/font/local'
 
+export const bonaNova = localFont({
+    src: [
+        {
+            path: '../../public/fonts/BonaNova-Regular.woff2',
+            weight: '400',
+            style: 'normal',
+        },
+        {
+            path: '../../public/fonts/BonaNova-Italic.woff2',
+            weight: '400',
+            style: 'italic',
+        },
+        {
+            path: '../../public/fonts/BonaNova-Bold.woff2',
+            weight: '700',
+            style: 'bold',
+        },
+    ],
+})
+
 export const satoshi = localFont({
     src: [
         {

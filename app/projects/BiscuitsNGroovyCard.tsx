@@ -5,7 +5,7 @@ import BiscuitsNGroovyLogo from '@public/assets/project-photos/biscuits-n-groovy
 
 const BiscuitsNGroovyCard = () => {
     return (
-        <div className=" h-auto flex flex-col rounded-xl border-[.5px] border-[hsl(240,4,16)] lg:h-180 max-w-200">
+        <div className=" h-auto flex flex-col rounded-xl border border-light-border lg:h-180 max-w-200 dark:border-dark-border">
             <div className="z-10 ">
                 <Image
                     src={ProjectImage}
@@ -35,18 +35,42 @@ const BiscuitsNGroovyCard = () => {
                         <ul className="list-disc list-inside">
                             <li>
                                 Built with{' '}
-                                <span className="font-bold orange-text-color">React 18</span>,{' '}
-                                <span className="font-bold orange-text-color">Vite</span>,{' '}
-                                <span className="font-bold orange-text-color">Redux Toolkit</span>,{' '}
-                                <span className="font-bold orange-text-color">Sass/SCSS</span> and{' '}
-                                <span className="font-bold orange-text-color">Material UI</span>.
+                                <span className="font-bold text-black-custom dark:text-orange-custom">
+                                    React 18
+                                </span>
+                                ,{' '}
+                                <span className="font-bold text-black-custom dark:text-orange-custom">
+                                    Vite
+                                </span>
+                                ,{' '}
+                                <span className="font-bold text-black-custom dark:text-orange-custom">
+                                    Redux Toolkit
+                                </span>
+                                ,{' '}
+                                <span className="font-bold text-black-custom dark:text-orange-custom">
+                                    Sass/SCSS
+                                </span>{' '}
+                                and{' '}
+                                <span className="font-bold text-black-custom dark:text-orange-custom">
+                                    Material UI
+                                </span>
+                                .
                             </li>
                             <li>
                                 Work in progress. Currenly updating npm packages and frameworks to
                                 latest versions. Updating to{' '}
-                                <span className="font-bold orange-text-color">Next.js</span>,{' '}
-                                <span className="font-bold orange-text-color">Tailwind CSS</span>{' '}
-                                and <span className="font-bold orange-text-color">React 19</span>.
+                                <span className="font-bold text-black-custom dark:text-orange-custom">
+                                    Next.js
+                                </span>
+                                ,{' '}
+                                <span className="font-bold text-black-custom dark:text-orange-custom">
+                                    Tailwind CSS
+                                </span>{' '}
+                                and{' '}
+                                <span className="font-bold text-black-custom dark:text-orange-custom">
+                                    React 19
+                                </span>
+                                .
                             </li>
                         </ul>
                     </div>

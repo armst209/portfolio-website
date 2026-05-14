@@ -11,6 +11,7 @@ import UWMLogo from '@public/assets/uwm-logo.webp'
 import BNGLogo from '@public/assets/bng-logo.svg'
 import { AccordionItemProps } from '@szhsin/react-accordion'
 import { ReactNode } from 'react'
+import { bonaNova } from '../utils/fonts'
 
 const ProfessionalExperience = () => {
     const AccordionItem = ({ header, ...rest }: AccordionItemProps) => (
@@ -18,20 +19,18 @@ const ProfessionalExperience = () => {
             {...rest}
             header={({ state: { isEnter } }) => (
                 <div className="flex justify-between w-full h-full cursor-pointer">
-                    <div className="font-bold text-lg lg:text-2xl">{header as ReactNode}</div>
+                    <div className="text-lg lg:text-2xl">{header as ReactNode}</div>
                     {isEnter ? (
                         <Image
                             src={MinusIcon}
                             alt="minus icon"
-                            className="ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer"
-                            width={30}
+                            className="ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer w-8 h-8"
                         />
                     ) : (
                         <Image
                             src={PlusIcon}
                             alt="plus icon"
-                            className="ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer"
-                            width={30}
+                            className="ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer w-8 h-8"
                         />
                     )}
                 </div>
@@ -48,9 +47,11 @@ const ProfessionalExperience = () => {
     )
 
     return (
-        <section className="p-4 pt-20">
+        <section className="p-4 pt-20 pb-0">
             <div>
-                <h1 className="text-2xl lg:text-4xl font-bold">Professional Experience</h1>
+                <h1 className={`text-2xl lg:text-4xl font-bold ${bonaNova.className}`}>
+                    Professional Experience
+                </h1>
             </div>
             <div className="mx-2 my-4 border-t border-black-custom dark:border-orange-custom">
                 <Accordion transition transitionTimeout={200}>

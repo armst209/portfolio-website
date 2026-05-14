@@ -3,7 +3,8 @@ import DownSwirlArrowPartition from './components/DownSwirlArrowPartition'
 import Hero from './components/Hero/Hero'
 import ProfessionalExperience from './components/ProfessionalExperience'
 import ScribbledDashPartition from './components/ScribbledDashPartition'
-import TechnicalSkills from './components/TechnicalSkills/TechnicalSkills'
+import Skillset from './components/Skillset'
+import TechnologiesIUse from './components/TechnologiesIUse'
 import UIUXSection from './components/UIUXSection'
 import ValuesSection from './components/ValuesSection'
 
@@ -11,17 +12,17 @@ export default function Home() {
     return (
         <>
             <Hero />
-            <div className="bg-background-foreground-light dark:bg-transparent">
-                <ProfessionalExperience />
-                <DownSwirlArrowPartition />
-                <TechnicalSkills />
-                <DownSwirlArrowPartition />
-                <UIUXSection />
-                <ScribbledDashPartition />
-                <ValuesSection />
-                <DownSwirlArrowPartition />
-                <ContactMe />
-            </div>
+            <ProfessionalExperience />
+            <DownSwirlArrowPartition className="mt-10 mb-10" />
+            <Skillset />
+            <ScribbledDashPartition className="mt-10 mb-10" />
+            <TechnologiesIUse />
+            <DownSwirlArrowPartition className="mt-10 mb-10" />
+            <UIUXSection />
+            <ScribbledDashPartition className="mt-10 mb-10" />
+            <ValuesSection />
+            <DownSwirlArrowPartition className="mt-10 mb-10" />
+            <ContactMe />
         </>
     )
 }
