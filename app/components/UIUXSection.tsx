@@ -10,9 +10,9 @@ const UIUXSection = () => {
         <section className="pr-4 pl-4 w-full flex justify-center">
             <div className="p-6 w-full h-auto flex flex-col items-center border border-light-border rounded-xl bg-background-foreground-light 2xl:flex-row xl:h-70 dark:border-dark-border dark:bg-transparent xl:flex-row">
                 <div className="w-full h-full flex pb-6 flex-col xl: mr-4 xl:flex-row dark:mr-0 xl:w-[50%] xl:pb-0">
-                    <div className="flex h-full bg-white rounded-xl border border-light-border p-4 dark:bg-transparent dark:border-0">
+                    <div className="flex h-full flex-col bg-white rounded-xl border border-light-border p-4 lg:flex-row dark:bg-transparent dark:border-0">
                         <div className="flex items-center justify-center lg:justify-start">
-                            <div className=" relative h-20 w-20 flex items-center justify-center mr-4 lg:mr-0">
+                            <div className=" relative h-20 w-20 flex items-center justify-center mb-4 mr-4 lg:mr-0 lg:mb-0">
                                 <div className="flex justify-center items-center">
                                     <Image
                                         src={ScribbleSmallCircle}
@@ -41,7 +41,7 @@ const UIUXSection = () => {
                         </div>
                         <div className="flex flex-col justify-center lg:ml-4">
                             <h1
-                                className={`${bonaNova.className} font-bold flex items-center text-2xl lg:text-4xl`}
+                                className={`${bonaNova.className} font-bold flex items-center text-2xl lg:text-3xl xxl:text-4xl`}
                             >
                                 <p>UI/UX Design</p>
                                 <SemiColonPeriodScribble />

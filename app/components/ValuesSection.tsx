@@ -37,7 +37,7 @@ const ValuesSection = () => {
                         return (
                             <div
                                 key={id}
-                                className={`flex flex-col border-b border-b-light-border xl:border-b-0 dark:border-b-dark-border h-70 w-full p-4 xl:w-[33%] lg:h-50 sm:flex-row`}
+                                className={`flex flex-col border-b ${id === 3 ? 'border-b-0' : 'border-b-light-border'} xl:border-b-0 dark:${id !== 3 && 'border-b-dark-border'} h-70 w-full p-4 xl:w-[33%] lg:h-50 sm:flex-row`}
                             >
                                 <div className="flex justify-center items-center pb-4 sm:pb-0 lg:items-center">
                                     <div className="relative w-20 h-20 flex justify-center items-center">
