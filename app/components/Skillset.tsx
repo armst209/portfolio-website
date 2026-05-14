@@ -5,7 +5,7 @@ import { bonaNova } from '../utils/fonts'
 
 const skillsetContent = [
     'Frontend Architecture',
-    'Fullstack Web Development',
+    'Fullstack Development',
     'Web Accessibility',
     'API Integration',
     'UI/UX Design',
