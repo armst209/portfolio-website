@@ -9,7 +9,7 @@ const UIUXSection = () => {
     return (
         <section className="pr-4 pl-4 w-full flex justify-center">
             <div className="p-6 w-full h-auto flex flex-col items-center border border-light-border rounded-xl bg-background-foreground-light 2xl:flex-row xl:h-70 dark:border-dark-border dark:bg-transparent xl:flex-row">
-                <div className="w-full h-full flex pb-6 flex-col xl: mr-4 xl:flex-row dark:mr-0 xl:w-[50%] xl:pb-0">
+                <div className="w-full h-full flex pb-6 flex-col xl:mr-4 xl:flex-row dark:mr-0 xl:w-[50%] xl:pb-0">
                     <div className="flex h-full flex-col bg-white rounded-xl border border-light-border p-4 lg:flex-row dark:bg-transparent dark:border-0">
                         <div className="flex items-center justify-center lg:justify-start">
                             <div className=" relative h-20 w-20 flex items-center justify-center mb-4 mr-4 lg:mr-0 lg:mb-0">
@@ -53,7 +53,7 @@ const UIUXSection = () => {
                     </div>
                 </div>
 
-                <div className="w-full border-b border-b-light-border xl:border-b-0 xl:w-auto xl:h-full dark:border-r dark:border-r-dark-border dark:border-b-dark-border"></div>
+                <div className="hidden w-full border-b border-b-light-border xl:border-b-0 xl:w-auto xl:h-full dark:border-r dark:flex dark:border-r-dark-border dark:border-b-dark-border dark:mb-4"></div>
 
                 <div className="w-full h-full">
                     <div className="h-full grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] p-4 rounded-xl bg-white border border-light-border dark:bg-transparent dark:border-0">
