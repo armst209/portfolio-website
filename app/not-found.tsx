@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import NotFoundIcon from '@public/assets/icons/404.svg'
-import BoxScribble from '@public/assets/icons/scribble-box.svg'
+import HomeIcon from '@public/assets/icons/home.svg'
+import { bonaNova } from './utils/fonts'
 
 const NotFound = () => {
     return (
@@ -11,26 +12,27 @@ const NotFound = () => {
                     src={NotFoundIcon}
                     alt="404 icon"
                     width={50}
-                    className="emerald-green-filter pr-4"
+                    className="hidden orange-color-filter pr-4 dark:flex"
                 />
-                |<h1 className="text-3xl pl-4 font-bold xl:text-5xl">Not Found</h1>
+                <Image
+                    src={NotFoundIcon}
+                    alt="404 icon"
+                    width={50}
+                    className="flex black-color-filter pr-4 dark:hidden"
+                />
+                |
+                <h1 className={`${bonaNova.className} text-3xl pl-4 font-bold xl:text-5xl`}>
+                    Not Found
+                </h1>
             </div>
             <h2 className="mb-5 z-10 xl:text-2xl">The page you are looking for does not exist.</h2>
             <Link
                 href="/"
-                className={`w-70 h-30 relative font-bold flex flex-row items-center justify-center cursor-pointer text-xl`}
+                className="p-4 text-center text-black-custom border-2 border-dark-border rounded-md dark:bg-orange-custom"
             >
-                <Image
-                    src={BoxScribble}
-                    className="orange-color-filter absolute inset-0"
-                    style={{
-                        objectFit: 'cover',
-                        objectPosition: 'center',
-                    }}
-                    alt="circle scribble"
-                />
                 <div className="z-10 flex flex-row justify-center items-center">
-                    <p>Return Home</p>
+                    <p className="mr-4 font-bold">Return Home</p>
+                    <Image src={HomeIcon} width={20} alt="home icon" />
                 </div>
             </Link>
         </div>
