@@ -28,11 +28,17 @@ const NotFound = () => {
             <h2 className="mb-5 z-10 xl:text-2xl">The page you are looking for does not exist.</h2>
             <Link
                 href="/"
-                className="p-4 text-center text-black-custom border-2 border-dark-border rounded-md dark:bg-orange-custom"
+                className="p-4 text-center bg-black-custom text-white  border-2 border-dark-border rounded-md dark:text-black-custom dark:bg-orange-custom"
             >
-                <div className="z-10 flex flex-row justify-center items-center">
-                    <p className="mr-4 font-bold">Return Home</p>
-                    <Image src={HomeIcon} width={20} alt="home icon" />
+                <div className="flex flex-row justify-center items-center">
+                    <p className="font-bold mr-3">Return Home</p>
+                    <Image src={HomeIcon} width={20} alt="home icon" className="hidden dark:flex" />
+                    <Image
+                        src={HomeIcon}
+                        width={20}
+                        alt="home icon"
+                        className="flex white-color-filter dark:hidden"
+                    />
                 </div>
             </Link>
         </div>
