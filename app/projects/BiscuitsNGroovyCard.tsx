@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import ProjectImage from '@public/assets/project-photos/biscuits-n-groovy/hero.webp'
-import WorkInProgress from '@public/assets/icons/work-in-progress.svg'
 import BiscuitsNGroovyLogo from '@public/assets/project-photos/biscuits-n-groovy/bng_logo_webp.webp'
 
 const BiscuitsNGroovyCard = () => {
@@ -23,7 +22,7 @@ const BiscuitsNGroovyCard = () => {
                                 <Image
                                     src={BiscuitsNGroovyLogo}
                                     alt="Biscuits n Groovy logo"
-                                    className="w-70 pb-2"
+                                    className="w-70 pb-2 bg-background-dark dark:bg-transparent"
                                 />
                             </h2>
                             <h3>
@@ -75,34 +74,6 @@ const BiscuitsNGroovyCard = () => {
                         </ul>
                     </div>
                 </div>
-
-                {/* <div className=" bottom-0 right-0 flex justify-between flex-row items-center w-full">
-                    <a
-                        href="https://github.com/armst209/BiscuitsNGroovy/blob/main/src/common/assets/showcase/site-capture.png"
-                        className="w-70 items-center justify-center flex flex-row m-4 bg-background border-[.5px] border-[hsl(240,4,16)] p-4 rounded-xl lg:justify-center lg:w-auto "
-                        rel="noopener noreferer"
-                        target="_blank"
-                    >
-                        <div className="flex items-center">
-                            <p className="font-bold mr-2">View Site Photos</p>
-                        </div>
-                    </a>
-                    <a
-                        href="https://armst209.github.io/"
-                        className="w-70 items-center justify-center flex flex-row m-4 bg-background border-[.5px] border-[hsl(240,4,16)] p-4 rounded-xl lg:absolute lg:justify-center lg:w-auto"
-                        rel="noopener noreferer"
-                        target="_blank"
-                    >
-                        <div className="flex items-center">
-                            <p className="font-bold mr-2">Live Demo Not Available</p>
-                            <Image
-                                src={WorkInProgress}
-                                alt="work in progress icon"
-                                className="orange-color-filter"
-                            />
-                        </div>
-                    </a>
-                </div> */}
             </div>
         </div>
     )

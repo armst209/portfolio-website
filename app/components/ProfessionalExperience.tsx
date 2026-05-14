@@ -58,7 +58,7 @@ const ProfessionalExperience = () => {
                     <AccordionItem
                         header={`Front End Software Engineer @ Ford Motor Company (2025 - 2026)`}
                     >
-                        <div className="w-full h-full flex flex-col text-lg ">
+                        <div className="w-full h-full flex flex-col text-lg">
                             <div className="flex flex-col justify-center items-center md:flex-row">
                                 <Image
                                     src={FordLogo}
@@ -102,29 +102,28 @@ const ProfessionalExperience = () => {
                                     purchase platforms.
                                 </li>
                             </ul>
-                            <div className="grid">
-                                <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2 m-4 rounded-xl p-4 w-full">
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>Next.js</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>React</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>Tailwind CSS</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
-                                        <p>Playwright</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>Zustand</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
-                                        <p>Javascript</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
-                                        <p>Web Components</p>
-                                    </div>
+
+                            <div className="grid grid-cols-[repeat(auto-fit,minmax(170,1fr))] gap-2 m-4 rounded-xl p-4 w-full">
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>Next.js</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>React</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>Tailwind CSS</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>Playwright</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>Zustand</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>Javascript</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>Web Components</p>
                                 </div>
                             </div>
                         </div>
@@ -180,35 +179,34 @@ const ProfessionalExperience = () => {
                                     reporting and SEO (BOLT & Brand360)
                                 </li>
                             </ul>
-                            <div className="grid">
-                                <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2 m-4 rounded-xl p-4 w-full">
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>Javascript</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>React</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>Vue</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
-                                        <p>Next.js</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>C#</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
-                                        <p>.NET</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
-                                        <p>Blazor</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
-                                        <p>Razor</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
-                                        <p>JQuery</p>
-                                    </div>
+
+                            <div className="grid grid-cols-[repeat(auto-fit,minmax(170,1fr))] gap-2 m-4 rounded-xl p-4 w-full">
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>Javascript</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>React</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>Vue</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>Next.js</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>C#</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>.NET</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>Blazor</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>Razor</p>
+                                </div>
+                                <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                    <p>JQuery</p>
                                 </div>
                             </div>
                         </div>
@@ -262,26 +260,20 @@ const ProfessionalExperience = () => {
                             </ul>
                             <div className="grid">
                                 <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2 m-4 rounded-xl p-4 w-full">
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>Next.js</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
+                                    <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
                                         <p>React</p>
                                     </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>Tailwind CSS</p>
+                                    <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                        <p>Redux</p>
                                     </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
-                                        <p>Playwright</p>
+                                    <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                        <p>Figma</p>
                                     </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm mr-4 lg:text-xl ">
-                                        <p>Zustand</p>
+                                    <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                        <p>Lit</p>
                                     </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
-                                        <p>Javascript</p>
-                                    </div>
-                                    <div className="w-auto border-[.5px] border-[hsl(240,4,16)] rounded-md p-2 font-bold flex flex-row items-center justify-center cursor-pointer text-sm lg:text-xl ">
-                                        <p>Web Components</p>
+                                    <div className="w-auto rounded-md font-bold flex flex-row items-center justify-center cursor-pointer mr-4 lg:text-xl">
+                                        <p>Vite</p>
                                     </div>
                                 </div>
                             </div>
