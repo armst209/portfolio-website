@@ -84,7 +84,7 @@ const UIUXSection = () => {
                                         src={CheckIcon}
                                         alt="contact icon"
                                         width={20}
-                                        className="flex mr-4 black-color-filter dark:hidden"
+                                        className="flex mr-4 forest-green-filter dark:hidden"
                                     />
                                     <p className="text-lg xl:text-2xl">{skill}</p>
                                 </div>
