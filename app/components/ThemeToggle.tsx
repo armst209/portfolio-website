@@ -10,8 +10,6 @@ const ThemeToggle = ({ className }: { className: string }) => {
     const [mounted, setMounted] = useState(false)
     const { resolvedTheme, setTheme } = useTheme()
 
-    console.log('theme', resolvedTheme)
-
     const toggleTheme = () => {
         setTheme(resolvedTheme === 'light' ? 'dark' : 'light')
     }
