@@ -47,7 +47,7 @@ const UIUXSection = () => {
                                 <SemiColonPeriodScribble />
                             </h1>
                             <h2 className="text-lg lg:text-2xl">
-                                I am a developer first, but I have experience in design
+                                I am an engineer first, but I have experience in design
                             </h2>
                         </div>
                     </div>

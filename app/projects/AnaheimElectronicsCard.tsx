@@ -28,9 +28,16 @@ const AnaheimElectronicsCard = () => {
                         </div>
                         <ul className="list-disc list-inside">
                             <li>
-                                Built with <span className="font-bold orange-text-color">HTML</span>
-                                , <span className="font-bold orange-text-color">CSS</span> and{' '}
-                                <span className="font-bold orange-text-color">
+                                Built with{' '}
+                                <span className="font-bold text-black-custom dark:text-orange-custom">
+                                    HTML
+                                </span>
+                                ,{' '}
+                                <span className="font-bold text-black-custom dark:text-orange-custom">
+                                    CSS
+                                </span>{' '}
+                                and{' '}
+                                <span className="font-bold text-black-custom dark:text-orange-custom">
                                     Vanilla Javascript
                                 </span>
                                 .
@@ -55,7 +62,14 @@ const AnaheimElectronicsCard = () => {
                                     src={ScribbleSmallCircle}
                                     fill={true}
                                     style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="absolute inset-0 orange-color-filter"
+                                    className="hidden absolute inset-0 orange-color-filter dark:flex"
+                                    alt="small scribbled circle"
+                                />
+                                <Image
+                                    src={ScribbleSmallCircle}
+                                    fill={true}
+                                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                                    className="flex absolute inset-0 black-color-filter dark:hidden"
                                     alt="small scribbled circle"
                                 />
                                 <Image
@@ -66,7 +80,7 @@ const AnaheimElectronicsCard = () => {
                                 <Image
                                     src={LiveDemoIcon}
                                     alt="skillset icon"
-                                    className="flex black-color-filter w-10 dark:hidden"
+                                    className="flex emerald-green-filter w-10 dark:hidden"
                                 />
                             </div>
                         </div>
