@@ -1,17 +1,17 @@
 # Portfolio Website
 
-A modern personal portfolio built with Next.js 16, React 19, Tailwind CSS v4, and EmailJS.
+A polished personal portfolio built with Next.js 16, React 19, Tailwind CSS v4, and EmailJS.
 
-This repository demonstrates a frontend portfolio layout with hero content, skill sections, project cards, and a contact form that sends email requests through EmailJS.
+This repository showcases a frontend portfolio experience with a hero section, skill highlights, project cards, and a client-side contact form.
 
-## Key Features
+## Features
 
-- Responsive portfolio site with modern layout and animation-ready components
-- Hero section, skills overview, project gallery, and contact form
-- Project detail cards with live/demo links and descriptive content
-- Client-side contact form powered by EmailJS
-- Theme-aware design with dark/light mode support
-- TypeScript, Tailwind CSS, and accessibility-minded UI components
+- Responsive, modern portfolio layout
+- Hero banner, skills overview, and project showcase
+- Dedicated projects page with project card components
+- Contact form integrated with EmailJS for email submission
+- Theme support with dark/light mode styles
+- Accessible UI components and structured content
 
 ## Tech Stack
 
@@ -23,21 +23,21 @@ This repository demonstrates a frontend portfolio layout with hero content, skil
 - React Hook Form
 - React Hot Toast
 - Lucide React icons
-- shadcn UI utilities
+- `class-variance-authority`, `clsx`, `next-themes`
 
 ## Repository Structure
 
 - `app/`
     - `page.tsx` — main home page
-    - `projects/page.tsx` — project showcase page
-    - `layout.tsx` — root layout and global styling
+    - `projects/page.tsx` — project gallery page
+    - `layout.tsx` — root layout, metadata, and font setup
     - `globals.css` — Tailwind base styles and custom utilities
-    - `about/` — about page and supporting components
+    - `about/` — about page and related components
+    - `components/` — reusable UI sections and page pieces
+    - `utils/` — shared content and helper modules
 - `public/` — static assets, fonts, and images
-- `app/components/` — reusable UI sections and page components
-- `app/utils/` — shared data and helper modules
 
-## Getting Started
+## Setup
 
 1. Install dependencies:
 
@@ -45,7 +45,7 @@ This repository demonstrates a frontend portfolio layout with hero content, skil
 npm install
 ```
 
-2. Create a `.env.local` file at the project root and add EmailJS variables:
+2. Create a `.env.local` file at the repository root and add EmailJS credentials:
 
 ```env
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
@@ -53,34 +53,30 @@ NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
 ```
 
-3. Start the development server:
+3. Run the development server:
 
 ```bash
 npm run dev
 ```
 
-4. Open the app at:
+4. Open the site:
 
 ```text
 http://localhost:3000
 ```
 
-## Scripts
+## Available Scripts
 
-- `npm run dev` — run the Next.js development server
-- `npm run build` — build the app for production
-- `npm run start` — run the production server
-- `npm run lint` — run ESLint
-- `npm run test` — run Vitest
-- `npm run prettier` — format files with Prettier
-- `npm run prettier:check` — verify formatting
+- `npm run dev` — start the development server
+- `npm run build` — create a production build
+- `npm run start` — serve the production build
+- `npm run lint` — run ESLint checks
+- `npm run test` — run Vitest tests
+- `npm run prettier` — format code
+- `npm run prettier:check` — check formatting
 
 ## Notes
 
-- The contact form relies on EmailJS and requires valid public keys and service/template IDs.
-- Static assets, fonts, and images are served from `public/`.
-- The project includes example work such as fictional portfolio projects for demonstration.
-
-## License
-
-This repository is private and does not include a public open-source license.
+- The contact form requires EmailJS configuration to send messages.
+- Static assets are stored under `public/`.
+- This project is configured as a private repository.
