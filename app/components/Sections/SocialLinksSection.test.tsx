@@ -1,17 +1,17 @@
 import { render } from '@testing-library/react'
 import { axe } from 'vitest-axe'
-
 vi.mock('next/image', () => ({ default: (props: any) => <img {...props} /> }))
 
-import ContactMe from './ContactMe'
+import SocialLinksSection from './SocialLinksSection'
 
-describe('ContactMe', () => {
+describe('SocialLinksSection', () => {
     it('renders without throwing an error', () => {
-        expect(() => render(<ContactMe />)).not.toThrow()
+        expect(() => render(<SocialLinksSection />)).not.toThrow()
     })
     it('should have no accessibility violations', async () => {
-        const { container } = render(<ContactMe />)
+        const { container } = render(<SocialLinksSection />)
         const results = (await axe(container)).violations
+
         expect(results).toHaveLength(0)
     })
 })

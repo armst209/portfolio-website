@@ -6,7 +6,7 @@ import Image from 'next/image'
 import DarkModeIcon from '@public/assets/icons/dark-moon.svg'
 import LightModeIcon from '@public/assets/icons/sun-light.svg'
 
-const ThemeToggle = ({ className }: { className: string }) => {
+const ThemeToggle = ({ className }: { className?: string }) => {
     const [mounted, setMounted] = useState(false)
     const { resolvedTheme, setTheme } = useTheme()
 

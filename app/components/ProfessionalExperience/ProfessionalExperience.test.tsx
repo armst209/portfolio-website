@@ -3,15 +3,16 @@ import { axe } from 'vitest-axe'
 
 vi.mock('next/image', () => ({ default: (props: any) => <img {...props} /> }))
 
-import ContactMe from './ContactMe'
+import ProfessionalExperience from './ProfessionalExperience'
 
-describe('ContactMe', () => {
+describe('ProfessionalExperience', () => {
     it('renders without throwing an error', () => {
-        expect(() => render(<ContactMe />)).not.toThrow()
+        expect(() => render(<ProfessionalExperience />)).not.toThrow()
     })
     it('should have no accessibility violations', async () => {
-        const { container } = render(<ContactMe />)
+        const { container } = render(<ProfessionalExperience />)
         const results = (await axe(container)).violations
+
         expect(results).toHaveLength(0)
     })
 })

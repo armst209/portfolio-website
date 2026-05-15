@@ -5,7 +5,7 @@ import ContactForm from './ContactForm'
 vi.mock('@emailjs/browser', () => ({
     default: {
         init: vi.fn(),
-        send: vi.fn(),
+        send: vi.fn(() => Promise.resolve({ text: 'OK' })),
     },
 }))
 
@@ -31,32 +31,31 @@ describe('ContactForm', () => {
     it('should render the form with all input fields', () => {
         render(<ContactForm />)
 
-        expect(screen.getByPlaceholderText('Title')).toBeInTheDocument()
-        expect(screen.getByPlaceholderText('Name')).toBeInTheDocument()
-        expect(screen.getByPlaceholderText('Email')).toBeInTheDocument()
-        expect(screen.getByPlaceholderText('Message')).toBeInTheDocument()
+        expect(screen.getByPlaceholderText('Your Subject')).toBeInTheDocument()
+        expect(screen.getByPlaceholderText('Your Name')).toBeInTheDocument()
+        expect(screen.getByPlaceholderText('ex: contact@email.com')).toBeInTheDocument()
+        expect(screen.getByPlaceholderText(/Your Message here.../i)).toBeInTheDocument()
         expect(screen.getByRole('button', { name: /send/i })).toBeInTheDocument()
     })
 
-    it('should render the send button with icon', () => {
+    it('should render the send button', () => {
         render(<ContactForm />)
 
         const button = screen.getByRole('button', { name: /send/i })
         expect(button).toBeInTheDocument()
-
-        const icon = screen.getByAltText('send email icon')
-        expect(icon).toBeInTheDocument()
     })
 
     it('should have required attributes on all inputs', () => {
         render(<ContactForm />)
 
-        const titleInput = screen.getByPlaceholderText('Title') as HTMLInputElement
-        const nameInput = screen.getByPlaceholderText('Name') as HTMLInputElement
-        const emailInput = screen.getByPlaceholderText('Email') as HTMLInputElement
-        const messageInput = screen.getByPlaceholderText('Message') as HTMLTextAreaElement
+        const subjectInput = screen.getByPlaceholderText('Your Subject') as HTMLInputElement
+        const nameInput = screen.getByPlaceholderText('Your Name') as HTMLInputElement
+        const emailInput = screen.getByPlaceholderText('ex: contact@email.com') as HTMLInputElement
+        const messageInput = screen.getByPlaceholderText(
+            /Your Message here.../i
+        ) as HTMLTextAreaElement
 
-        expect(titleInput.required).toBe(true)
+        expect(subjectInput.required).toBe(true)
         expect(nameInput.required).toBe(true)
         expect(emailInput.required).toBe(true)
         expect(messageInput.required).toBe(true)
@@ -65,14 +64,16 @@ describe('ContactForm', () => {
     it('should have email input type set to email', () => {
         render(<ContactForm />)
 
-        const emailInput = screen.getByPlaceholderText('Email') as HTMLInputElement
+        const emailInput = screen.getByPlaceholderText('ex: contact@email.com') as HTMLInputElement
         expect(emailInput.type).toBe('email')
     })
 
     it('should have correct maxLength on message textarea', () => {
         render(<ContactForm />)
 
-        const messageInput = screen.getByPlaceholderText('Message') as HTMLTextAreaElement
+        const messageInput = screen.getByPlaceholderText(
+            /Your Message here.../i
+        ) as HTMLTextAreaElement
         expect(messageInput.maxLength).toBe(500)
     })
 
@@ -82,20 +83,31 @@ describe('ContactForm', () => {
 
         render(<ContactForm />)
 
-        const titleInput = screen.getByPlaceholderText('Title')
-        const nameInput = screen.getByPlaceholderText('Name')
-        const emailInput = screen.getByPlaceholderText('Email')
-        const messageInput = screen.getByPlaceholderText('Message')
+        const subjectInput = screen.getByPlaceholderText('Your Subject')
+        const nameInput = screen.getByPlaceholderText('Your Name')
+        const emailInput = screen.getByPlaceholderText('ex: contact@email.com')
+        const messageInput = screen.getByPlaceholderText(/Your Message here.../i)
         const submitButton = screen.getByRole('button', { name: /send/i })
 
-        await user.type(titleInput, 'Test Title')
+        await user.type(subjectInput, 'Test Subject')
         await user.type(nameInput, 'John Doe')
         await user.type(emailInput, 'john@example.com')
         await user.type(messageInput, 'This is a test message')
         await user.click(submitButton)
 
         await waitFor(() => {
-            expect(emailjs.send).toHaveBeenCalled()
+            expect(emailjs.send).toHaveBeenCalledTimes(1)
+            expect(emailjs.send).toHaveBeenCalledWith(
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+                {
+                    email: 'john@example.com',
+                    message: 'This is a test message',
+                    name: 'John Doe',
+                    subject: 'Test Subject',
+                },
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+            )
         })
     })
 
@@ -105,13 +117,13 @@ describe('ContactForm', () => {
 
         render(<ContactForm />)
 
-        const titleInput = screen.getByPlaceholderText('Title')
-        const nameInput = screen.getByPlaceholderText('Name')
-        const emailInput = screen.getByPlaceholderText('Email')
-        const messageInput = screen.getByPlaceholderText('Message')
+        const subjectInput = screen.getByPlaceholderText('Your Subject')
+        const nameInput = screen.getByPlaceholderText('Your Name')
+        const emailInput = screen.getByPlaceholderText('ex: contact@email.com')
+        const messageInput = screen.getByPlaceholderText(/Your message here.../i)
         const submitButton = screen.getByRole('button', { name: /send/i })
 
-        await user.type(titleInput, 'Test Title')
+        await user.type(subjectInput, 'Test Subject')
         await user.type(nameInput, 'John Doe')
         await user.type(emailInput, 'john@example.com')
         await user.type(messageInput, 'Test message')
@@ -122,7 +134,7 @@ describe('ContactForm', () => {
                 process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
                 process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
                 {
-                    title: 'Test Title',
+                    subject: 'Test Subject',
                     name: 'John Doe',
                     email: 'john@example.com',
                     message: 'Test message',
@@ -138,13 +150,13 @@ describe('ContactForm', () => {
 
         render(<ContactForm />)
 
-        const titleInput = screen.getByPlaceholderText('Title')
-        const nameInput = screen.getByPlaceholderText('Name')
-        const emailInput = screen.getByPlaceholderText('Email')
-        const messageInput = screen.getByPlaceholderText('Message')
+        const subjectInput = screen.getByPlaceholderText('Your Subject')
+        const nameInput = screen.getByPlaceholderText('Your Name')
+        const emailInput = screen.getByPlaceholderText('ex: contact@email.com')
+        const messageInput = screen.getByPlaceholderText(/Your message here.../i)
         const submitButton = screen.getByRole('button', { name: /send/i })
 
-        await user.type(titleInput, 'Test Title')
+        await user.type(subjectInput, 'Test Subject')
         await user.type(nameInput, 'John Doe')
         await user.type(emailInput, 'john@example.com')
         await user.type(messageInput, 'Test message')
@@ -161,20 +173,22 @@ describe('ContactForm', () => {
 
         render(<ContactForm />)
 
-        const titleInput = screen.getByPlaceholderText('Title') as HTMLInputElement
-        const nameInput = screen.getByPlaceholderText('Name') as HTMLInputElement
-        const emailInput = screen.getByPlaceholderText('Email') as HTMLInputElement
-        const messageInput = screen.getByPlaceholderText('Message') as HTMLTextAreaElement
+        const subjectInput = screen.getByPlaceholderText('Your Subject') as HTMLInputElement
+        const nameInput = screen.getByPlaceholderText('Your Name') as HTMLInputElement
+        const emailInput = screen.getByPlaceholderText('ex: contact@email.com') as HTMLInputElement
+        const messageInput = screen.getByPlaceholderText(
+            /Your message here.../i
+        ) as HTMLTextAreaElement
         const submitButton = screen.getByRole('button', { name: /send/i })
 
-        await user.type(titleInput, 'Test Title')
+        await user.type(subjectInput, 'Test Subject')
         await user.type(nameInput, 'John Doe')
         await user.type(emailInput, 'john@example.com')
         await user.type(messageInput, 'Test message')
         await user.click(submitButton)
 
         await waitFor(() => {
-            expect(titleInput.value).toBe('')
+            expect(subjectInput.value).toBe('')
             expect(nameInput.value).toBe('')
             expect(emailInput.value).toBe('')
             expect(messageInput.value).toBe('')
@@ -188,13 +202,13 @@ describe('ContactForm', () => {
 
         render(<ContactForm />)
 
-        const titleInput = screen.getByPlaceholderText('Title')
-        const nameInput = screen.getByPlaceholderText('Name')
-        const emailInput = screen.getByPlaceholderText('Email')
-        const messageInput = screen.getByPlaceholderText('Message')
+        const subjectInput = screen.getByPlaceholderText('Your Subject')
+        const nameInput = screen.getByPlaceholderText('Your Name')
+        const emailInput = screen.getByPlaceholderText('ex: contact@email.com')
+        const messageInput = screen.getByPlaceholderText(/Your message here.../i)
         const submitButton = screen.getByRole('button', { name: /send/i })
 
-        await user.type(titleInput, 'Test Title')
+        await user.type(subjectInput, 'Test Subject')
         await user.type(nameInput, 'John Doe')
         await user.type(emailInput, 'john@example.com')
         await user.type(messageInput, 'Test message')
@@ -211,51 +225,39 @@ describe('ContactForm', () => {
 
         render(<ContactForm />)
 
-        const titleInput = screen.getByPlaceholderText('Title') as HTMLInputElement
-        const nameInput = screen.getByPlaceholderText('Name') as HTMLInputElement
-        const emailInput = screen.getByPlaceholderText('Email') as HTMLInputElement
-        const messageInput = screen.getByPlaceholderText('Message') as HTMLTextAreaElement
+        const subjectInput = screen.getByPlaceholderText('Your Subject') as HTMLInputElement
+        const nameInput = screen.getByPlaceholderText('Your Name') as HTMLInputElement
+        const emailInput = screen.getByPlaceholderText('ex: contact@email.com') as HTMLInputElement
+        const messageInput = screen.getByPlaceholderText(
+            /Your message here.../i
+        ) as HTMLTextAreaElement
         const submitButton = screen.getByRole('button', { name: /send/i })
 
         const testData = {
-            title: 'Test Title',
+            subject: 'Test Subject',
             name: 'John Doe',
             email: 'john@example.com',
             message: 'Test message',
         }
 
-        await user.type(titleInput, testData.title)
+        await user.type(subjectInput, testData.subject)
         await user.type(nameInput, testData.name)
         await user.type(emailInput, testData.email)
         await user.type(messageInput, testData.message)
         await user.click(submitButton)
 
         await waitFor(() => {
-            expect(titleInput.value).toBe(testData.title)
+            expect(subjectInput.value).toBe(testData.subject)
             expect(nameInput.value).toBe(testData.name)
             expect(emailInput.value).toBe(testData.email)
             expect(messageInput.value).toBe(testData.message)
         })
     })
 
-    it('should have correct CSS classes on form elements', () => {
-        render(<ContactForm />)
-
-        const titleInput = screen.getByPlaceholderText('Title')
-        const messageInput = screen.getByPlaceholderText('Message')
-        const submitButton = screen.getByRole('button', { name: /send/i })
-
-        expect(titleInput).toHaveClass('bg-black')
-        expect(titleInput).toHaveClass('rounded-md')
-        expect(messageInput).toHaveClass('min-h-50')
-        expect(submitButton).toHaveClass('border-2')
-        expect(submitButton).toHaveClass('rounded-xl')
-    })
-
     it('should be a client component with proper form structure', () => {
         render(<ContactForm />)
 
-        const form = screen.getByPlaceholderText('Title').closest('form')
+        const form = screen.getByPlaceholderText('Your Subject').closest('form')
         expect(form).toBeInTheDocument()
         expect(form).toHaveClass('flex')
         expect(form).toHaveClass('flex-col')

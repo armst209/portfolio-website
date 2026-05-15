@@ -20,6 +20,7 @@ const ContactForm = () => {
     } = useForm()
 
     const onSubmit = handleSubmit(async (data) => {
+        console.log(data)
         setIsSending(true)
         try {
             const response = await emailjs.send(

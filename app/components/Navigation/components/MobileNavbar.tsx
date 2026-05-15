@@ -34,6 +34,7 @@ const MobileNavbar = () => {
                 />
             </button>
             <div
+                role="dialog"
                 id="mobile-menu"
                 aria-label="mobile menu"
                 aria-expanded={isOpen}
