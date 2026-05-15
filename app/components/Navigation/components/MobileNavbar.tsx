@@ -30,7 +30,9 @@ const MobileNavbar = () => {
                 <Image
                     src={HamburgerIcon}
                     alt="mobile menu icon"
-                    className="flex black-color-filter dark:hidden w-6.5"
+                    width={25}
+                    height={25}
+                    className="flex black-color-filter dark:hidden "
                 />
             </button>
             <div
@@ -49,12 +51,14 @@ const MobileNavbar = () => {
                         src={CloseIcon}
                         alt="close navigation icon"
                         width={40}
+                        height={40}
                         className="hidden white-color-filter dark:flex"
                     />
                     <Image
                         src={CloseIcon}
                         alt="close navigation icon"
                         width={40}
+                        height={40}
                         className="flex black-color-filter dark:hidden"
                     />
                 </button>
@@ -71,12 +75,16 @@ const MobileNavbar = () => {
                                 <div>
                                     <Image
                                         src={ScribblePeriod}
-                                        className="hidden orange-color-filter ml-2 w-10 dark:flex"
+                                        className="hidden orange-color-filter ml-2 dark:flex"
+                                        width={40}
+                                        height={40}
                                         alt="scribble blob period"
                                     />
                                     <Image
                                         src={ScribblePeriod}
-                                        className="flex black-color-filter ml-2 w-10 dark:hidden"
+                                        className="flex black-color-filter ml-2 dark:hidden"
+                                        width={40}
+                                        height={40}
                                         alt="scribble blob period"
                                     />
                                 </div>
@@ -94,12 +102,16 @@ const MobileNavbar = () => {
                         <div>
                             <Image
                                 src={ScribblePeriod}
-                                className="hidden orange-color-filter ml-2 w-10 dark:flex"
+                                className="hidden orange-color-filter ml-2 dark:flex"
+                                width={40}
+                                height={40}
                                 alt="scribble blob period"
                             />
                             <Image
                                 src={ScribblePeriod}
-                                className="flex black-color-filter ml-2 w-10 dark:hidden"
+                                className="flex black-color-filter ml-2 dark:hidden"
+                                width={40}
+                                height={40}
                                 alt="scribble blob period"
                             />
                         </div>
