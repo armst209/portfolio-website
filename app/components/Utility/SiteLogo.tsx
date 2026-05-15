@@ -15,7 +15,7 @@ const SiteLogo = () => {
                     />
                     <Image
                         src={ScribblePeriod}
-                        className="flex black-color-filter w-2 dark:hidden"
+                        className="flex burgundy-color-filter w-2 dark:hidden"
                         alt="scribble blob period"
                     />
                 </span>

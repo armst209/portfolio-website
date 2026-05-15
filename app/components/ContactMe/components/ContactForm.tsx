@@ -53,7 +53,7 @@ const ContactForm = () => {
             <input
                 type="text"
                 {...register('subject')}
-                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-black"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
                 placeholder="Your Subject"
                 required
             />
@@ -64,7 +64,7 @@ const ContactForm = () => {
             <input
                 type="text"
                 {...register('name')}
-                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-black"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
                 placeholder="Your Name"
                 required
             />
@@ -75,7 +75,7 @@ const ContactForm = () => {
             <input
                 type="email"
                 {...register('email')}
-                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-black"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
                 placeholder="ex: contact@email.com"
                 required
             />
@@ -86,7 +86,7 @@ const ContactForm = () => {
             <textarea
                 {...register('message')}
                 maxLength={500}
-                className=" min-h-50 w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-black"
+                className=" min-h-50 w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
                 placeholder="Your message here..."
                 required
             />
@@ -94,16 +94,16 @@ const ContactForm = () => {
             <div className="w-full flex justify-end">
                 <button
                     type="submit"
-                    className="p-2 rounded-md w-30 font-bold flex flex-row items-center justify-center cursor-pointer bg-black-custom dark:bg-orange-custom"
+                    className="p-2 text-black-custom rounded-md w-30 font-bold flex flex-row items-center justify-center cursor-pointer border-2 border-black-custom dark:bg-orange-custom dark:border-0 dark:text-black-custom"
                 >
-                    <p className="mr-2 text-white dark:text-black-custom">Send</p>
+                    <p className="mr-2">Send</p>
                     {isSending ? (
                         <>
                             <Image
                                 src={LoadingIcon}
                                 width={15}
                                 alt="send email icon"
-                                className="hidden black-color-filter animate-spin dark:flex"
+                                className="hidden burgundy-color-filter animate-spin dark:flex"
                             />
                             <Image
                                 src={LoadingIcon}
@@ -124,7 +124,7 @@ const ContactForm = () => {
                                 src={SendIcon}
                                 width={15}
                                 alt="send email icon"
-                                className="flex mr-2 white-color-filter dark:hidden"
+                                className="flex mr-2 black-color-filter dark:hidden"
                             />
                         </>
                     )}

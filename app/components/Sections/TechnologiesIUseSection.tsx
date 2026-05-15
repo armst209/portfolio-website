@@ -27,7 +27,7 @@ const TechnologiesIUseSection = () => {
                         <Image
                             src={FrontendIcon}
                             width={30}
-                            className="flex black-color-filter mr-4 dark:hidden"
+                            className="flex burgundy-color-filter mr-4 dark:hidden"
                             alt="frontend icon"
                         />
                         <Image
@@ -60,7 +60,7 @@ const TechnologiesIUseSection = () => {
                         <Image
                             src={TestingIcon}
                             width={30}
-                            className="flex black-color-filter mr-4 dark:hidden"
+                            className="flex burgundy-color-filter mr-4 dark:hidden"
                             alt="testing icon"
                         />
                         <Image
@@ -80,7 +80,7 @@ const TechnologiesIUseSection = () => {
                         <Image
                             src={StateManagementIcon}
                             width={30}
-                            className="flex black-color-filter mr-4 dark:hidden"
+                            className="flex burgundy-color-filter mr-4 dark:hidden"
                             alt="state management icon"
                         />
                         <Image
@@ -100,7 +100,7 @@ const TechnologiesIUseSection = () => {
                         <Image
                             src={BackendIcon}
                             width={30}
-                            className="flex black-color-filter mr-4 dark:hidden"
+                            className="flex burgundy-color-filter mr-4 dark:hidden"
                             alt="backend icon"
                         />
                         <Image
@@ -122,7 +122,7 @@ const TechnologiesIUseSection = () => {
                         <Image
                             src={DesignIcon}
                             width={30}
-                            className="flex black-color-filter mr-4 dark:hidden"
+                            className="flex burgundy-color-filter mr-4 dark:hidden"
                             alt="state management icon"
                         />
                         <Image

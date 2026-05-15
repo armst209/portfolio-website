@@ -18,13 +18,13 @@ const SemiColonPeriodScribble = () => {
             />
             <Image
                 src={ScribblePeriod}
-                className="flex black-color-filter ml-2 pb-1 w-1.5 lg:w-2 dark:hidden"
+                className="flex burgundy-color-filter ml-2 pb-1 w-1.5 lg:w-2 dark:hidden"
                 width={10}
                 alt="scribble blob period"
             />
             <Image
                 src={ScribblePeriod}
-                className="flex black-color-filter ml-2 pb-1 w-1.5 lg:w-2 dark:hidden"
+                className="flex burgundy-color-filter ml-2 pb-1 w-1.5 lg:w-2 dark:hidden"
                 width={10}
                 alt="scribble blob period"
             />

@@ -14,7 +14,7 @@ const DownSwirlArrowPartition = ({ className }: { className?: string }) => {
                 src={DownArrow}
                 alt="down arrow"
                 height={160}
-                className="flex black-color-filter dark:hidden"
+                className="flex burgundy-color-filter dark:hidden"
             />
         </section>
     )

@@ -32,7 +32,7 @@ const MobileNavbar = () => {
                     alt="mobile menu icon"
                     width={25}
                     height={25}
-                    className="flex black-color-filter dark:hidden "
+                    className="flex black-color-filter dark:hidden"
                 />
             </button>
             <div

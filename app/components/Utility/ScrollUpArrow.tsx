@@ -43,7 +43,7 @@ const ScrollUpArrow = () => {
             <Image
                 src={ScrollArrow}
                 alt="scroll arrow"
-                className="flex m-2 w-4 xs-w-8 md:w-9 black-color-filter font-bold dark:hidden"
+                className="flex m-2 w-4 xs-w-8 md:w-9 burgundy-color-filter font-bold dark:hidden"
             />
             <Image
                 src={ScribbleSmallCircle}
@@ -54,7 +54,7 @@ const ScrollUpArrow = () => {
             <Image
                 src={ScribbleSmallCircle}
                 style={{ objectFit: 'contain', objectPosition: 'center' }}
-                className="flex absolute inset-0 black-color-filter dark:hidden"
+                className="flex absolute inset-0 burgundy-color-filter dark:hidden"
                 alt="small scribbled circle"
             />
         </button>

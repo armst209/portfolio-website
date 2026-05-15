@@ -21,31 +21,29 @@ const SkillSetSection = () => {
                     </h2>
                 </div>
             </div>
-            <div className="w-full border rounded-xl mt-4 border-light-border bg-background-light-secondary dark:bg-transparent dark:border-dark-border">
-                <div className="grid grid-cols-[repeat(auto-fit,minmax(250,1fr))] border m-6 rounded-xl pt-2 pb-2 w-auto bg-background-light border-light-border dark:border-0 dark:bg-transparent">
-                    {skillSetContent.map((skill, index) => {
-                        return (
-                            <div
-                                key={index}
-                                className="w-auto rounded-md p-2 flex flex-row items-center justify-center cursor-pointer mr-4 text-lg xl:text-xl"
-                            >
-                                <Image
-                                    src={CheckIcon}
-                                    alt="check icon"
-                                    width={20}
-                                    className="hidden mr-4 emerald-green-filter dark:flex"
-                                />
-                                <Image
-                                    src={CheckIcon}
-                                    alt="check icon"
-                                    width={20}
-                                    className="flex mr-4 forest-green-filter dark:hidden"
-                                />
-                                <p>{skill}</p>
-                            </div>
-                        )
-                    })}
-                </div>
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(250,1fr))] p-4 w-full border rounded-xl mt-4 border-light-border bg-background-light-secondary dark:bg-transparent dark:border-dark-border">
+                {skillSetContent.map((skill, index) => {
+                    return (
+                        <div
+                            key={index}
+                            className="w-auto rounded-md p-2 flex flex-row items-center justify-center cursor-pointer mr-4 text-lg xl:text-xl"
+                        >
+                            <Image
+                                src={CheckIcon}
+                                alt="check icon"
+                                width={20}
+                                className="hidden mr-4 emerald-green-filter dark:flex"
+                            />
+                            <Image
+                                src={CheckIcon}
+                                alt="check icon"
+                                width={20}
+                                className="flex mr-4 burgundy-color-filter dark:hidden"
+                            />
+                            <p>{skill}</p>
+                        </div>
+                    )
+                })}
             </div>
         </section>
     )

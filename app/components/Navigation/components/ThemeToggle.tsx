@@ -29,7 +29,7 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                     src={DarkModeIcon}
                     alt="dark mode icon"
                     width={25}
-                    className="black-color-filter"
+                    className="burgundy-color-filter"
                 />
             ) : (
                 <Image

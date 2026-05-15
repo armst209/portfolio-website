@@ -13,7 +13,7 @@ const HeroContent = () => {
                     <Image
                         src={PointingDownArrows}
                         alt="pointing down arrows"
-                        className="flex black-color-filter dark:hidden w-30 mt-6"
+                        className="flex burgundy-color-filter dark:hidden w-30 mt-6"
                     />
                     <Image
                         src={PointingDownArrows}
@@ -30,7 +30,7 @@ const HeroContent = () => {
                     <Image
                         src={ScribbledDash}
                         alt="pointing down arrows"
-                        className="flex top-0 right-0 left-0 black-color-filter w-50 dark:hidden"
+                        className="flex top-0 right-0 left-0 burgundy-color-filter w-50 dark:hidden"
                     />
                 </div>
                 <div
@@ -42,15 +42,15 @@ const HeroContent = () => {
                     </h1>
                     <h2 className="hero-text-h2">
                         I&apos;m a frontend engineer who is passionate about building{' '}
-                        <span className="font-bold  text-black-custom dark:text-orange-custom">
+                        <span className="font-bold text-highlight-light dark:text-highlight-dark">
                             modern
                         </span>
                         ,{' '}
-                        <span className="font-bold text-black-custom dark:text-orange-custom">
+                        <span className="font-bold text-highlight-light dark:text-highlight-dark">
                             accessible
                         </span>{' '}
                         and{' '}
-                        <span className="font-bold text-black-custom dark:text-orange-custom">
+                        <span className="font-bold text-highlight-light dark:text-highlight-dark">
                             visually pleasing
                         </span>{' '}
                         user experiences.
@@ -68,14 +68,14 @@ const HeroContent = () => {
                     <Image
                         src={ScribbledDash}
                         alt="pointing down arrows"
-                        className="flex top-0 right-0 left-0 black-color-filter w-50 dark:hidden"
+                        className="flex top-0 right-0 left-0 burgundy-color-filter w-50 dark:hidden"
                     />
                 </div>
                 <div className="flex items-center justify-center rotate-180">
                     <Image
                         src={PointingDownArrows}
                         alt="pointing down arrows"
-                        className="flex black-color-filter dark:hidden w-30 mt-6"
+                        className="flex burgundy-color-filter dark:hidden w-30 mt-6"
                     />
                     <Image
                         src={PointingDownArrows}
