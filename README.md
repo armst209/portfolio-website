@@ -1,37 +1,43 @@
 # Portfolio Website
 
-A personal portfolio website built with Next.js 16, React 19, Tailwind CSS v4, and EmailJS.
+A modern personal portfolio built with Next.js 16, React 19, Tailwind CSS v4, and EmailJS.
 
-The app features a home page with a hero section, technical skills overview, a project gallery, and a contact form with email delivery.
+This repository demonstrates a frontend portfolio layout with hero content, skill sections, project cards, and a contact form that sends email requests through EmailJS.
 
-## Features
+## Key Features
 
-- Responsive single-page portfolio layout
-- Home sections for hero, skills, and contact
-- Project detail cards with live demo links
-- Contact form powered by EmailJS
-- Custom local fonts and SVG/graphic styling
+- Responsive portfolio site with modern layout and animation-ready components
+- Hero section, skills overview, project gallery, and contact form
+- Project detail cards with live/demo links and descriptive content
+- Client-side contact form powered by EmailJS
+- Theme-aware design with dark/light mode support
+- TypeScript, Tailwind CSS, and accessibility-minded UI components
 
 ## Tech Stack
 
 - Next.js 16
 - React 19
-- Tailwind CSS v4
 - TypeScript
-- EmailJS for client-side email submission
-- React Hook Form for form validation
-- React Hot Toast for user notifications
+- Tailwind CSS v4
+- EmailJS (`@emailjs/browser`)
+- React Hook Form
+- React Hot Toast
+- Lucide React icons
+- shadcn UI utilities
 
-## Project Structure
+## Repository Structure
 
 - `app/`
     - `page.tsx` — main home page
-    - `projects/page.tsx` — project listing page
-    - `layout.tsx` — root layout with global styles and fonts
-    - `globals.css` — Tailwind and custom global utilities
-    - `components/` — reusable UI sections and form components
+    - `projects/page.tsx` — project showcase page
+    - `layout.tsx` — root layout and global styling
+    - `globals.css` — Tailwind base styles and custom utilities
+    - `about/` — about page and supporting components
+- `public/` — static assets, fonts, and images
+- `app/components/` — reusable UI sections and page components
+- `app/utils/` — shared data and helper modules
 
-## Local Setup
+## Getting Started
 
 1. Install dependencies:
 
@@ -39,7 +45,7 @@ The app features a home page with a hero section, technical skills overview, a p
 npm install
 ```
 
-2. Create environment variables in a `.env.local` file:
+2. Create a `.env.local` file at the project root and add EmailJS variables:
 
 ```env
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
@@ -47,30 +53,34 @@ NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
 ```
 
-3. Run the development server:
+3. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-4. Open `http://localhost:3000`
+4. Open the app at:
 
-## Available Scripts
+```text
+http://localhost:3000
+```
 
-- `npm run dev` — start development server
+## Scripts
+
+- `npm run dev` — run the Next.js development server
 - `npm run build` — build the app for production
-- `npm run start` — start the production server
+- `npm run start` — run the production server
 - `npm run lint` — run ESLint
-- `npm run test` — run Vitest tests
-- `npm run prettier` — format code
-- `npm run prettier:check` — check formatting
+- `npm run test` — run Vitest
+- `npm run prettier` — format files with Prettier
+- `npm run prettier:check` — verify formatting
 
 ## Notes
 
-- The contact form uses EmailJS and requires valid public keys and service/template IDs.
-- The project cards currently include work for a fictional `Anaheim Electronics` site.
-- Static assets such as SVGs and fonts are stored under `public/assets/`.
+- The contact form relies on EmailJS and requires valid public keys and service/template IDs.
+- Static assets, fonts, and images are served from `public/`.
+- The project includes example work such as fictional portfolio projects for demonstration.
 
 ## License
 
-This repository is set up as a private project and does not include an open-source license.
+This repository is private and does not include a public open-source license.
