@@ -18,6 +18,7 @@ const ContactForm = () => {
         reset,
         formState: { errors },
     } = useForm()
+
     const onSubmit = handleSubmit(async (data) => {
         setIsSending(true)
         try {
