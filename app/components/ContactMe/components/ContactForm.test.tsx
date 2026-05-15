@@ -1,8 +1,6 @@
-
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import ContactForm from './ContactForm'
-
 
 vi.mock('@emailjs/browser', () => ({
     default: {
@@ -10,7 +8,6 @@ vi.mock('@emailjs/browser', () => ({
         send: vi.fn(),
     },
 }))
-
 
 vi.mock('react-hot-toast', () => ({
     default: {
@@ -20,9 +17,7 @@ vi.mock('react-hot-toast', () => ({
 }))
 
 vi.mock('next/image', () => ({
-    default: ({ src, alt, ...props }: any) => (
-        <img src={src} alt={alt} {...props} />
-    ),
+    default: ({ src, alt, ...props }: any) => <img src={src} alt={alt} {...props} />,
 }))
 
 import emailjs from '@emailjs/browser'
@@ -265,5 +260,4 @@ describe('ContactForm', () => {
         expect(form).toHaveClass('flex')
         expect(form).toHaveClass('flex-col')
     })
-
 })

@@ -1,15 +1,14 @@
 import Image from 'next/image'
 import PointingDownArrows from '@public/assets/icons/pointing down arrows.svg'
 import ScribbledDash from '@public/assets/icons/scribbled-dash.svg'
-import HeroArtDark from '@public/assets/HeroImage.webp'
+import HeroArtDark from '@public/assets/HeroImage_Dark.webp'
 import HeroArtLight from '@public/assets/HeroImage_Light.webp'
-import { bonaNova } from '@/app/utils/fonts'
-import SocialLinksSection from '../../SocialLinksSection'
+import SocialLinksSection from '../../Sections/SocialLinksSection'
 
-const HeroMobile = () => {
+const HeroContent = () => {
     return (
         <section className="flex flex-col xxl:flex-row lg:items-center lg:justify-between">
-            <div id="hero-section-top">
+            <div id="hero-section-headings">
                 <div className="flex items-center justify-center">
                     <Image
                         src={PointingDownArrows}
@@ -38,10 +37,10 @@ const HeroMobile = () => {
                     id="hero-text-mobile"
                     className="flex-cold justify-center items-center text-center"
                 >
-                    <h1 className={`hero-text-h1 ${bonaNova.className} font-bold`}>
+                    <h1 className="hero-text-h1 font-display font-bold">
                         Hi! I&apos;m Aaron Armstrong
                     </h1>
-                    <h2 className="hero-text-h3">
+                    <h2 className="hero-text-h2">
                         I&apos;m a frontend engineer who is passionate about building{' '}
                         <span className="font-bold  text-black-custom dark:text-orange-custom">
                             modern
@@ -85,7 +84,7 @@ const HeroMobile = () => {
                     />
                 </div>
             </div>
-            <div id="hero-section-bottom" className="h-full flex justify-center items-center">
+            <div id="hero-section-image" className="h-full flex justify-center items-center">
                 <Image
                     src={HeroArtDark}
                     alt="hero image"
@@ -107,4 +106,4 @@ const HeroMobile = () => {
     )
 }
 
-export default HeroMobile
+export default HeroContent

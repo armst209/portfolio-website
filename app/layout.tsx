@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next'
-import { satoshi } from './utils/fonts'
+import { bonaNova, satoshi } from './utils/fonts'
 import './globals.css'
-import PageContainer from './components/PageContainer'
+import PageContainer from './components/PageContainer/PageContainer'
 import { ThemeProvider } from 'next-themes'
 
 export const viewport: Viewport = {
@@ -148,7 +148,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body
-                className={`${satoshi.className} h-full antialiased transition-colors duration-300 bg-background-light dark:bg-background-dark text-light dark:text-dark`}
+                className={`${satoshi.className} ${bonaNova.className} h-full antialiased transition-colors duration-300 bg-background-light dark:bg-background-dark text-light dark:text-dark`}
             >
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
                     <PageContainer>{children}</PageContainer>

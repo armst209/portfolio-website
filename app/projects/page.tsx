@@ -1,8 +1,7 @@
 import AnaheimElectronicsCard from './AnaheimElectronicsCard'
 import BiscuitsNGroovyCard from './BiscuitsNGroovyCard'
-import { bonaNova } from '../utils/fonts'
 import { Metadata, Viewport } from 'next'
-import ScribbledDashPartition from '../components/ScribbledDashPartition'
+import ScribbledDashPartition from '../components/Partitions/ScribbledDashPartition'
 
 export const viewport: Viewport = {
     width: 'device-width',
@@ -147,9 +146,7 @@ const Projects = () => {
                 <div className="flex flex-col">
                     <div className="flex flex-row">
                         <div className="flex flex-row w-full">
-                            <h1
-                                className={`${bonaNova.className} flex flex-row items-center text-6xl pb-2 font-bold hero-text-h1`}
-                            >
+                            <h1 className="font-display flex flex-row items-center text-6xl pb-2 font-bold hero-text-h1">
                                 <p>Personal Projects</p>
                             </h1>
                         </div>

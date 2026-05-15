@@ -1,8 +1,8 @@
 import { ReactNode } from 'react'
-import Navigation from './Navigation'
-import Footer from './Footer/Footer'
-import { Toaster, toast } from 'react-hot-toast'
-import ScrollUpArrow from './ScrollUpArrow'
+import Navigation from '../Navigation/Navigation'
+import Footer from '../Footer/Footer'
+import { Toaster } from 'react-hot-toast'
+import ScrollUpArrow from '../Utility/ScrollUpArrow'
 
 const PageContainer = ({ children }: { children: ReactNode }) => {
     return (

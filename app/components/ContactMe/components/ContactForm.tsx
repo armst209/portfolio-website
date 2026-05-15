@@ -43,6 +43,7 @@ const ContactForm = () => {
 
     return (
         <form
+            id="contact-form"
             onSubmit={onSubmit}
             className="flex flex-col h-full justify-center items-center w-full"
         >
@@ -52,7 +53,7 @@ const ContactForm = () => {
             <input
                 type="text"
                 {...register('subject')}
-                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-black"
                 placeholder="Your Subject"
                 required
             />
@@ -63,7 +64,7 @@ const ContactForm = () => {
             <input
                 type="text"
                 {...register('name')}
-                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-black"
                 placeholder="Your Name"
                 required
             />
@@ -74,7 +75,7 @@ const ContactForm = () => {
             <input
                 type="email"
                 {...register('email')}
-                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
+                className="w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-black"
                 placeholder="ex: contact@email.com"
                 required
             />
@@ -85,7 +86,7 @@ const ContactForm = () => {
             <textarea
                 {...register('message')}
                 maxLength={500}
-                className=" min-h-50 w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-white dark:bg-black"
+                className=" min-h-50 w-full mb-2 h-10 rounded-md p-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-black"
                 placeholder="Your message here..."
                 required
             />

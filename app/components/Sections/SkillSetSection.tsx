@@ -1,17 +1,9 @@
 import Image from 'next/image'
 import CheckIcon from '@public/assets/icons/check.svg'
-import SemiColonPeriodScribble from './SemiColonPeriodScribble'
-import { bonaNova } from '../utils/fonts'
+import SemiColonPeriodScribble from '../Utility/SemiColonPeriodScribble'
+import { skillSetContent } from '@/app/utils/content'
 
-const skillsetContent = [
-    'Frontend Architecture',
-    'Fullstack Development',
-    'Web Accessibility',
-    'API Integration',
-    'UI/UX Design',
-]
-
-const Skillset = () => {
+const SkillSetSection = () => {
     return (
         <section
             id="skillset-section"
@@ -19,9 +11,7 @@ const Skillset = () => {
         >
             <div className="z-10 w-full flex flex-col lg:flex-row">
                 <div className="flex flex-col justify-center lg:justify-center">
-                    <h1
-                        className={`${bonaNova.className} font-bold flex items-center text-2xl lg:text-4xl`}
-                    >
+                    <h1 className="font-display font-bold flex items-center text-2xl lg:text-4xl">
                         <p>Skillset</p>
                         <SemiColonPeriodScribble />
                     </h1>
@@ -31,9 +21,9 @@ const Skillset = () => {
                     </h2>
                 </div>
             </div>
-            <div className="w-full border rounded-xl mt-4 border-light-border bg-background-foreground-light dark:bg-transparent dark:border-dark-border">
-                <div className="grid grid-cols-[repeat(auto-fit,minmax(250,1fr))] border m-6 rounded-xl pt-2 pb-2 w-auto bg-white border-light-border dark:border-0 dark:bg-transparent">
-                    {skillsetContent.map((skill, index) => {
+            <div className="w-full border rounded-xl mt-4 border-light-border bg-background-light-secondary dark:bg-transparent dark:border-dark-border">
+                <div className="grid grid-cols-[repeat(auto-fit,minmax(250,1fr))] border m-6 rounded-xl pt-2 pb-2 w-auto bg-background-light border-light-border dark:border-0 dark:bg-transparent">
+                    {skillSetContent.map((skill, index) => {
                         return (
                             <div
                                 key={index}
@@ -61,4 +51,4 @@ const Skillset = () => {
     )
 }
 
-export default Skillset
+export default SkillSetSection

@@ -1,9 +1,8 @@
 import { Metadata, Viewport } from 'next'
 import Image from 'next/image'
-import AboutMeHeadShot from '@public/assets/AboutMeHeadshot.webp'
+import AboutMeHeadShotDark from '@public/assets/AboutMeHeadshot_Dark.webp'
 import AboutMeHeadShotLight from '@public/assets/AboutMeHeadshot_Light.webp'
-import { bonaNova } from '../utils/fonts'
-import ScribbledDashPartition from '../components/ScribbledDashPartition'
+import ScribbledDashPartition from '../components/Partitions/ScribbledDashPartition'
 
 export const viewport: Viewport = {
     width: 'device-width',
@@ -145,15 +144,13 @@ const About = () => {
     return (
         <section className="min-h-[calc(100vh-80px)] p-4 pt-20 pb-20 w-full">
             <div className="flex flex-row w-full mb-10">
-                <h1
-                    className={`${bonaNova.className} flex flex-row items-center text-6xl pb-2 font-bold hero-text-h1`}
-                >
+                <h1 className="font-display flex flex-row items-center text-6xl pb-2 font-bold hero-text-h1">
                     <p>About Me</p>
                 </h1>
             </div>
             <article className="flex flex-col justify-center items-center w-full">
                 <Image
-                    src={AboutMeHeadShot}
+                    src={AboutMeHeadShotDark}
                     alt="about me headshot"
                     className="hidden w-50 about-image-float pb-6 lg:w-90 dark:flex"
                     quality={75}

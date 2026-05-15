@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import NotFoundIcon from '@public/assets/icons/404.svg'
 import HomeIcon from '@public/assets/icons/home.svg'
-import { bonaNova } from './utils/fonts'
 
 const NotFound = () => {
     return (
@@ -20,10 +19,7 @@ const NotFound = () => {
                     width={50}
                     className="flex black-color-filter pr-4 dark:hidden"
                 />
-                |
-                <h1 className={`${bonaNova.className} text-3xl pl-4 font-bold xl:text-5xl`}>
-                    Not Found
-                </h1>
+                |<h1 className="font-display text-3xl pl-4 font-bold xl:text-5xl">Not Found</h1>
             </div>
             <h2 className="mb-5 z-10 xl:text-2xl">The page you are looking for does not exist.</h2>
             <Link

@@ -1,5 +1,5 @@
-import SocialLinksSection from '../SocialLinksSection'
-import SiteLogo from '../SiteLogo'
+import SocialLinksSection from '../Sections/SocialLinksSection'
+import SiteLogo from '../Utility/SiteLogo'
 
 const Footer = () => {
     return (

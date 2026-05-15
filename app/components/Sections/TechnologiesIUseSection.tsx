@@ -1,5 +1,4 @@
-import { bonaNova } from '../utils/fonts'
-import SemiColonPeriodScribble from './SemiColonPeriodScribble'
+import SemiColonPeriodScribble from '../Utility/SemiColonPeriodScribble'
 import Image from 'next/image'
 import TestingIcon from '@public/assets/icons/testing.svg'
 import FrontendIcon from '@public/assets/icons/front-end.svg'
@@ -7,16 +6,12 @@ import StateManagementIcon from '@public/assets/icons/state-management.svg'
 import BackendIcon from '@public/assets/icons/backend.svg'
 import DesignIcon from '@public/assets/icons/design.svg'
 
-const tiuContent = [{}]
-
-const TechnologiesIUse = () => {
+const TechnologiesIUseSection = () => {
     return (
         <section id="tech-i-use-section" className="pr-4 pl-4">
             <div className="w-full flex flex-col lg:flex-row">
                 <div className="flex flex-col justify-center pb-6 lg:justify-center">
-                    <h1
-                        className={`${bonaNova.className} font-bold flex items-center text-2xl lg:text-4xl`}
-                    >
+                    <h1 className="font-display font-bold flex items-center text-2xl lg:text-4xl">
                         <p>Technologies I Use</p>
                         <SemiColonPeriodScribble />
                     </h1>
@@ -26,8 +21,8 @@ const TechnologiesIUse = () => {
                     </h2>
                 </div>
             </div>
-            <div className="grid grid-cols-1 grid-row-2 gap-0 rounded-xl border bg-background-foreground-light border-light-border dark:border-dark-border lg:grid-cols-3 dark:bg-transparent">
-                <div className="m-6 rounded-xl p-4 row-span-2 border border-light-border dark:border-dark-border bg-white dark:bg-transparent">
+            <div className="grid grid-cols-1 grid-row-2 gap-0 rounded-xl border bg-background-light-secondary border-light-border dark:border-dark-border lg:grid-cols-3 dark:bg-transparent">
+                <div className="m-6 rounded-xl p-4 row-span-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center">
                         <Image
                             src={FrontendIcon}
@@ -41,7 +36,7 @@ const TechnologiesIUse = () => {
                             className="hidden orange-color-filter mr-4 dark:flex"
                             alt="frontend icon"
                         />
-                        <h2 className={`${bonaNova.className} font-bold text-lg`}>Frontend</h2>
+                        <h2 className="font-display font-bold text-lg">Frontend</h2>
                     </div>
 
                     <div className="pb-2">
@@ -60,7 +55,7 @@ const TechnologiesIUse = () => {
                     </div>
                 </div>
 
-                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-white dark:bg-transparent">
+                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center ">
                         <Image
                             src={TestingIcon}
@@ -74,13 +69,13 @@ const TechnologiesIUse = () => {
                             className="hidden orange-color-filter mr-4 dark:flex"
                             alt="testing icon"
                         />
-                        <h2 className={`${bonaNova.className} font-bold text-lg`}>Testing</h2>
+                        <h2 className="font-display font-bold text-lg">Testing</h2>
                     </div>
                     <div className="pb-2">
                         <p className="wrap-normal">Jest, Vitest, Playwright</p>
                     </div>
                 </div>
-                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-white dark:bg-transparent">
+                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center">
                         <Image
                             src={StateManagementIcon}
@@ -94,15 +89,13 @@ const TechnologiesIUse = () => {
                             className="hidden orange-color-filter mr-4 dark:flex"
                             alt="state management icon"
                         />
-                        <h2 className={`${bonaNova.className} font-bold text-lg`}>
-                            State Management
-                        </h2>
+                        <h2 className="font-display font-bold text-lg">State Management</h2>
                     </div>
                     <div className="pb-2">
                         <p className="wrap-normal">Zustand, Redux/Redux Toolkit, Jotai</p>
                     </div>
                 </div>
-                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-white dark:bg-transparent">
+                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center">
                         <Image
                             src={BackendIcon}
@@ -116,7 +109,7 @@ const TechnologiesIUse = () => {
                             className="hidden orange-color-filter mr-4 dark:flex"
                             alt="backend icon"
                         />
-                        <h2 className={`${bonaNova.className} font-bold text-lg`}>Backend</h2>
+                        <h2 className="font-display font-bold text-lg">Backend</h2>
                     </div>
                     <div className="pb-2">
                         <p className="wrap-normal">
@@ -124,7 +117,7 @@ const TechnologiesIUse = () => {
                         </p>
                     </div>
                 </div>
-                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-white dark:bg-transparent">
+                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center">
                         <Image
                             src={DesignIcon}
@@ -138,7 +131,7 @@ const TechnologiesIUse = () => {
                             className="hidden orange-color-filter mr-4 dark:flex"
                             alt="state management icon"
                         />
-                        <h2 className={`${bonaNova.className} font-bold text-lg`}>Design</h2>
+                        <h2 className="font-display font-bold text-lg">Design</h2>
                     </div>
                     <div className="pb-2">
                         <p className="wrap-normal">Figma, Davinci Resolve, GIMP</p>
@@ -149,4 +142,4 @@ const TechnologiesIUse = () => {
     )
 }
 
-export default TechnologiesIUse
+export default TechnologiesIUseSection
