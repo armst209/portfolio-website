@@ -21,7 +21,7 @@ const SkillSetSection = () => {
                     </h2>
                 </div>
             </div>
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(250,1fr))] p-4 w-full border rounded-xl mt-4 border-light-border bg-transparent dark:border-dark-border">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(250,1fr))] p-4 w-full rounded-xl mt-4 border border-light-border bg-transparent dark:border-dark-border">
                 {skillSetContent.map((skill, index) => {
                     return (
                         <div

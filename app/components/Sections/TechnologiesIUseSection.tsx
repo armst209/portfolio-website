@@ -21,7 +21,7 @@ const TechnologiesIUseSection = () => {
                     </h2>
                 </div>
             </div>
-            <div className="grid grid-cols-1 grid-row-2 gap-0 rounded-xl border bg-transparent border-light-border dark:border-dark-border lg:grid-cols-3">
+            <div className="grid grid-cols-1 grid-row-2 gap-0 rounded-xl border bg-transparent dark:border-dark-border lg:grid-cols-3">
                 <div className="m-6 rounded-xl p-4 row-span-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center">
                         <Image
@@ -54,7 +54,6 @@ const TechnologiesIUseSection = () => {
                         </p>
                     </div>
                 </div>
-
                 <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center ">
                         <Image

@@ -24,7 +24,7 @@ const DesktopNavbar = () => {
                 <a
                     id="desktop-link-contact"
                     href={`${pathname !== '/' ? '/#contact-me' : '#contact-me'}`}
-                    className="w-25 text-center text-black-custom border-2 border-dark-border p-2 rounded-md dark:bg-orange-custom"
+                    className="w-25 text-center text-white bg-black-custom border-2 p-2 rounded-md dark:bg-orange-custom dark:text-black-custom"
                 >
                     Contact
                 </a>

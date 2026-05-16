@@ -150,7 +150,12 @@ export default function RootLayout({
             <body
                 className={`${satoshi.className} ${bonaNova.className} h-full antialiased transition-colors duration-300 bg-background-light dark:bg-background-dark text-light dark:text-dark`}
             >
-                <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem={true}
+                    themes={['light', 'dark', 'forest', 'refined']}
+                >
                     <PageContainer>{children}</PageContainer>
                 </ThemeProvider>
             </body>

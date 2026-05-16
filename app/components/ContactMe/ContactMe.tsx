@@ -31,7 +31,7 @@ const ContactMe = () => {
                     </div>
                 </div>
                 <div className="flex justify-center h-auto rounded-xl w-full">
-                    <div className=" border-0 z-10 rounded-lg p-4 w-full h-full dark:border dark:border-dark-border dark:bg-transparent">
+                    <div className=" border-0  rounded-lg p-4 w-full h-full dark:border dark:border-dark-border dark:bg-transparent">
                         <ContactForm />
                     </div>
                 </div>
