@@ -21,13 +21,13 @@ const TechnologiesIUseSection = () => {
                     </h2>
                 </div>
             </div>
-            <div className="grid grid-cols-1 grid-row-2 gap-0 rounded-xl border bg-background-light-secondary border-light-border dark:border-dark-border lg:grid-cols-3 dark:bg-transparent">
+            <div className="grid grid-cols-1 grid-row-2 gap-0 rounded-xl border bg-transparent border-light-border dark:border-dark-border lg:grid-cols-3">
                 <div className="m-6 rounded-xl p-4 row-span-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center">
                         <Image
                             src={FrontendIcon}
                             width={30}
-                            className="flex burgundy-color-filter mr-4 dark:hidden"
+                            className="flex black-color-filter mr-4 dark:hidden"
                             alt="frontend icon"
                         />
                         <Image
@@ -60,7 +60,7 @@ const TechnologiesIUseSection = () => {
                         <Image
                             src={TestingIcon}
                             width={30}
-                            className="flex burgundy-color-filter mr-4 dark:hidden"
+                            className="flex black-color-filter mr-4 dark:hidden"
                             alt="testing icon"
                         />
                         <Image
@@ -80,7 +80,7 @@ const TechnologiesIUseSection = () => {
                         <Image
                             src={StateManagementIcon}
                             width={30}
-                            className="flex burgundy-color-filter mr-4 dark:hidden"
+                            className="flex black-color-filter mr-4 dark:hidden"
                             alt="state management icon"
                         />
                         <Image
@@ -100,7 +100,7 @@ const TechnologiesIUseSection = () => {
                         <Image
                             src={BackendIcon}
                             width={30}
-                            className="flex burgundy-color-filter mr-4 dark:hidden"
+                            className="flex black-color-filter mr-4 dark:hidden"
                             alt="backend icon"
                         />
                         <Image
@@ -122,7 +122,7 @@ const TechnologiesIUseSection = () => {
                         <Image
                             src={DesignIcon}
                             width={30}
-                            className="flex burgundy-color-filter mr-4 dark:hidden"
+                            className="flex black-color-filter mr-4 dark:hidden"
                             alt="state management icon"
                         />
                         <Image

@@ -23,7 +23,7 @@ const ValuesSection = () => {
                                     <Image
                                         src={ScribbleSmallCircle}
                                         style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                        className="flex absolute inset-0 burgundy-color-filter dark:hidden"
+                                        className="flex absolute inset-0 black-color-filter dark:hidden"
                                         alt="small scribbled circle"
                                     />
                                     <Image
@@ -34,7 +34,7 @@ const ValuesSection = () => {
                                     <Image
                                         src={icon}
                                         alt="modern icon"
-                                        className="flex w-10 burgundy-color-filter dark:hidden"
+                                        className="flex w-10 black-color-filter dark:hidden"
                                     />
                                 </div>
                             </div>

@@ -17,7 +17,7 @@ const NotFound = () => {
                     src={NotFoundIcon}
                     alt="404 icon"
                     width={50}
-                    className="flex burgundy-color-filter pr-4 dark:hidden"
+                    className="flex black-color-filter pr-4 dark:hidden"
                 />
                 |<h1 className="font-display text-3xl pl-4 font-bold xl:text-5xl">Not Found</h1>
             </div>

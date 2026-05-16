@@ -24,7 +24,7 @@ const CustomAccordionItem = ({ header, ...rest }: AccordionItemProps) => {
                             <Image
                                 src={MinusIcon}
                                 alt="minus icon"
-                                className="flex ml-auto transition-transform duration-200 ease-out burgundy-color-filter cursor-pointer w-8 h-8 dark:hidden"
+                                className="flex ml-auto transition-transform duration-200 ease-out black-color-filter cursor-pointer w-8 h-8 dark:hidden"
                             />
                         </>
                     ) : (
@@ -37,7 +37,7 @@ const CustomAccordionItem = ({ header, ...rest }: AccordionItemProps) => {
                             <Image
                                 src={PlusIcon}
                                 alt="plus icon"
-                                className="flex ml-auto transition-transform duration-200 ease-out burgundy-color-filter cursor-pointer w-8 h-8 dark:hidden"
+                                className="flex ml-auto transition-transform duration-200 ease-out black-color-filter cursor-pointer w-8 h-8 dark:hidden"
                             />
                         </>
                     )}

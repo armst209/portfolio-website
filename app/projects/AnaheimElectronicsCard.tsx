@@ -69,7 +69,7 @@ const AnaheimElectronicsCard = () => {
                                     src={ScribbleSmallCircle}
                                     fill={true}
                                     style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="flex absolute inset-0 burgundy-color-filter dark:hidden"
+                                    className="flex absolute inset-0 black-color-filter dark:hidden"
                                     alt="small scribbled circle"
                                 />
                                 <Image
@@ -80,7 +80,7 @@ const AnaheimElectronicsCard = () => {
                                 <Image
                                     src={LiveDemoIcon}
                                     alt="skillset icon"
-                                    className="flex burgundy-color-filter w-10 dark:hidden"
+                                    className="flex black-color-filter w-10 dark:hidden"
                                 />
                             </div>
                         </div>

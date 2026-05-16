@@ -7,8 +7,8 @@ import { uiuxContent } from '@/app/utils/content'
 
 const UIUXSection = () => {
     return (
-        <section id="ui-ux-section" className="pr-4 pl-4 w-full flex justify-center">
-            <div className="p-6 w-full h-auto flex flex-col items-center border border-light-border rounded-xl bg-background-light-secondary 2xl:flex-row xl:h-70 dark:border-dark-border dark:bg-transparent xl:flex-row">
+        <section id="ui-ux-section" className="pr-4 pl-4 w-full flex justify-center bg-transparent">
+            <div className="p-6 w-full h-auto flex flex-col items-center border border-light-border rounded-xl 2xl:flex-row xl:h-70 dark:border-dark-border xl:flex-row">
                 <div className="w-full h-full flex pb-6 flex-col xl:mr-4 xl:flex-row xl:w-[50%] xl:pb-0">
                     <div className="flex h-full flex-col p-4 lg:flex-row dark:bg-transparent dark:border-0">
                         <div className="flex items-center justify-center lg:justify-start">
@@ -23,7 +23,7 @@ const UIUXSection = () => {
                                     <Image
                                         src={ScribbleSmallCircle}
                                         style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                        className="flex absolute inset-0 burgundy-color-filter dark:hidden"
+                                        className="flex absolute inset-0 black-color-filter dark:hidden"
                                         alt="small scribbled circle"
                                     />
                                     <Image
@@ -34,7 +34,7 @@ const UIUXSection = () => {
                                     <Image
                                         src={UIUXIcon}
                                         alt="ui/ux icon"
-                                        className="flex w-10 burgundy-color-filter dark:hidden"
+                                        className="flex w-10 black-color-filter dark:hidden"
                                     />
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ const UIUXSection = () => {
 
                 <div className="w-full border-r border-b border-b-light-border xl:border-b-0 xl:w-auto xl:h-full dark:border-r-dark-border dark:border-b-dark-border "></div>
 
-                <div className="h-full w-full grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] mt-4 p-4 rounded-xl xl:mt-0 bg-background-light dark:bg-transparent">
+                <div className="h-full w-full grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] mt-4 p-4 rounded-xl xl:mt-0">
                     {uiuxContent.map((skill, index) => {
                         return (
                             <div
@@ -70,7 +70,7 @@ const UIUXSection = () => {
                                     src={CheckIcon}
                                     alt="contact icon"
                                     width={20}
-                                    className="flex mr-4 burgundy-color-filter dark:hidden"
+                                    className="flex mr-4 black-color-filter dark:hidden"
                                 />
                                 <p className="text-lg xl:text-2xl">{skill}</p>
                             </div>

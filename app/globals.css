@@ -11,14 +11,17 @@
     --breakpoint-xxs: 20rem;
     --breakpoint-xs: 30rem;
     --breakpoint-sm: 50rem;
-    --color-background-light: hsl(42, 38.46%, 94.9%);
+    --color-background-light: hsl(0 0% 100%);
     --color-background-dark: hsl(0, 0%, 4.31%);
-    --color-background-light-secondary: hsl(42, 38.46%, 94.9%);
+    --color-background-refined: hsl(42, 38.46%, 94.9%);
+    --color-background-light-secondary: hsl(240, 7.69%, 97.45%);
+    --color-background-refined-secondary: hsl(42, 38.46%, 94.9%);
     --color-light: hsl(0 0% 4.31%);
     --color-dark: hsl(0 0% 100%);
     --color-burgundy: hsl(14, 82%, 30%);
-    --color-highlight-light: hsl(14, 82%, 30%);
+    --color-highlight-light: hsl(0, 0%, 4.31%);
     --color-highlight-dark: hsl(41 97.4% 44.9%);
+    --color-highlight-refined: hsl(14, 82%, 30%);
     --color-light-border: hsl(240, 4%, 16%);
     --color-dark-border: hsl(240, 4%, 16%);
     --color-forest-green-custom: hsl(158.28, 82.86%, 13.73%);
@@ -53,9 +56,14 @@ body {
             hue-rotate(10deg) brightness(101%) contrast(98%);
     }
 
-    .burgundy-color-filter {
+    .black-color-filter {
         filter: invert(18%) sepia(34%) saturate(4555%) hue-rotate(357deg) brightness(91%)
             contrast(92%);
+    }
+
+    .black-color-filter {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(39%) saturate(6308%) hue-rotate(28deg)
+            brightness(104%) contrast(92%);
     }
 
     .white-color-filter {

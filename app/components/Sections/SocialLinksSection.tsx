@@ -17,7 +17,7 @@ const SocialLinksSection = () => {
                 />
                 <Image
                     src={InfoIcon}
-                    className="flex burgundy-color-filter mr-5 w-6 lg:w-10 dark:hidden"
+                    className="flex black-color-filter mr-5 w-6 lg:w-10 dark:hidden"
                     alt="info icon"
                 />
             </Link>
@@ -33,7 +33,7 @@ const SocialLinksSection = () => {
                 />
                 <Image
                     src={LinkedInIcon}
-                    className="flex burgundy-color-filter mr-4 w-6 lg:w-10 dark:hidden"
+                    className="flex black-color-filter mr-4 w-6 lg:w-10 dark:hidden"
                     alt="linkedin icon"
                 />
             </a>
@@ -50,7 +50,7 @@ const SocialLinksSection = () => {
                 />
                 <Image
                     src={GithubIcon}
-                    className="flex burgundy-color-filter w-6 lg:w-10 dark:hidden"
+                    className="flex black-color-filter w-6 lg:w-10 dark:hidden"
                     alt="github icon"
                 />
             </a>
@@ -67,7 +67,7 @@ const SocialLinksSection = () => {
                 />
                 <Image
                     src={ResumeIcon}
-                    className="flex burgundy-color-filter w-6 lg:w-10 dark:hidden"
+                    className="flex black-color-filter w-6 lg:w-10 dark:hidden"
                     alt="resume icon"
                 />
             </a>
@@ -79,7 +79,7 @@ const SocialLinksSection = () => {
                 />
                 <Image
                     src={TwitterIcon}
-                    className="flex burgundy-color-filter w-6 lg:w-10 dark:hidden"
+                    className="flex black-color-filter w-6 lg:w-10 dark:hidden"
                     alt="twitter/x icon"
                 />
             </a>

@@ -21,7 +21,7 @@ const SkillSetSection = () => {
                     </h2>
                 </div>
             </div>
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(250,1fr))] p-4 w-full border rounded-xl mt-4 border-light-border bg-background-light-secondary dark:bg-transparent dark:border-dark-border">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(250,1fr))] p-4 w-full border rounded-xl mt-4 border-light-border bg-transparent dark:border-dark-border">
                 {skillSetContent.map((skill, index) => {
                     return (
                         <div
@@ -38,7 +38,7 @@ const SkillSetSection = () => {
                                 src={CheckIcon}
                                 alt="check icon"
                                 width={20}
-                                className="flex mr-4 burgundy-color-filter dark:hidden"
+                                className="flex mr-4 black-color-filter dark:hidden"
                             />
                             <p>{skill}</p>
                         </div>

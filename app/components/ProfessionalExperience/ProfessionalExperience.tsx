@@ -40,7 +40,7 @@ const ProfessionalExperience = () => {
                                                     src={LocationIcon}
                                                     alt="location icon"
                                                     width={20}
-                                                    className="flex burgundy-color-filter mr-2 dark:hidden"
+                                                    className="flex black-color-filter mr-2 dark:hidden"
                                                 />
                                                 <p>{location}</p>
                                             </div>
@@ -56,7 +56,7 @@ const ProfessionalExperience = () => {
                                                     src={GlobeIcon}
                                                     alt="globe icon"
                                                     width={20}
-                                                    className="flex burgundy-color-filter mr-2 dark:hidden"
+                                                    className="flex black-color-filter mr-2 dark:hidden"
                                                 />
                                                 <a
                                                     href={website}

@@ -13,7 +13,7 @@ const HeroContent = () => {
                     <Image
                         src={PointingDownArrows}
                         alt="pointing down arrows"
-                        className="flex burgundy-color-filter dark:hidden w-30 mt-6"
+                        className="flex black-color-filter dark:hidden w-30 mt-6"
                     />
                     <Image
                         src={PointingDownArrows}
@@ -30,7 +30,7 @@ const HeroContent = () => {
                     <Image
                         src={ScribbledDash}
                         alt="pointing down arrows"
-                        className="flex top-0 right-0 left-0 burgundy-color-filter w-50 dark:hidden"
+                        className="flex top-0 right-0 left-0 black-color-filter w-50 dark:hidden"
                     />
                 </div>
                 <div
@@ -68,14 +68,14 @@ const HeroContent = () => {
                     <Image
                         src={ScribbledDash}
                         alt="pointing down arrows"
-                        className="flex top-0 right-0 left-0 burgundy-color-filter w-50 dark:hidden"
+                        className="flex top-0 right-0 left-0 black-color-filter w-50 dark:hidden"
                     />
                 </div>
                 <div className="flex items-center justify-center rotate-180">
                     <Image
                         src={PointingDownArrows}
                         alt="pointing down arrows"
-                        className="flex burgundy-color-filter dark:hidden w-30 mt-6"
+                        className="flex black-color-filter dark:hidden w-30 mt-6"
                     />
                     <Image
                         src={PointingDownArrows}

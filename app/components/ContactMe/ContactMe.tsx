@@ -17,7 +17,7 @@ const ContactMe = () => {
                         />
                         <Image
                             src={Lightbulb}
-                            className="flex burgundy-color-filter w-50 h-20 md:flex dark:hidden"
+                            className="flex black-color-filter w-50 h-20 md:flex dark:hidden"
                             alt="lightbulb"
                         />
                     </div>
@@ -25,13 +25,13 @@ const ContactMe = () => {
                         <h1 className="font-display text-3xl z-10 font-bold lg:text-5xl xl:text-6xl">
                             Have an idea for a project?
                         </h1>
-                        <h2 className="font-display text-burgundy font-bold text-3xl lg:text-5xl xl:text-6xl dark:text-orange-custom">
+                        <h2 className="font-display text-black-custom font-bold text-3xl lg:text-5xl xl:text-6xl dark:text-orange-custom">
                             Let&apos;s connect!
                         </h2>
                     </div>
                 </div>
                 <div className="flex justify-center h-auto rounded-xl w-full">
-                    <div className=" border border-light-border z-10 rounded-lg p-4 w-full h-full dark:border-dark-border bg-background-light-secondary dark:bg-transparent">
+                    <div className=" border-0 z-10 rounded-lg p-4 w-full h-full dark:border dark:border-dark-border dark:bg-transparent">
                         <ContactForm />
                     </div>
                 </div>
