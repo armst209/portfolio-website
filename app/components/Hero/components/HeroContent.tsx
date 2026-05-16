@@ -37,12 +37,12 @@ const HeroContent = () => {
                     id="hero-text-mobile"
                     className="flex-cold justify-center items-center text-center"
                 >
-                    <h1 className="hero-text-h1 font-display font-bold">
+                    <h1 className="hero-text-h1 font-display font-bold mb-1 chocolate:text-chocolate ">
                         Hi! I&apos;m Aaron Armstrong
                     </h1>
                     <h2 className="hero-text-h2">
                         I&apos;m a frontend engineer who is passionate about building{' '}
-                        <span className="font-bold text-highlight-light dark:text-highlight-dark">
+                        <span className="font-bold text-highlight-light dark:text-highlight-dark chocolate:text-highlight-chocolate">
                             modern
                         </span>
                         ,{' '}

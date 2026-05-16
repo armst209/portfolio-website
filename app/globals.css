@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
+@custom-variant chocolate (&:where(.chocolate, .chocolate *));
 
 :root {
     --background: #ffffff;
@@ -13,15 +14,15 @@
     --breakpoint-sm: 50rem;
     --color-background-light: hsl(0 0% 100%);
     --color-background-dark: hsl(0, 0%, 4.31%);
-    --color-background-refined: hsl(42, 38.46%, 94.9%);
+    --color-background-chocolate: hsl(28, 33%, 49%);
     --color-background-light-secondary: hsl(240, 7.69%, 97.45%);
-    --color-background-refined-secondary: hsl(42, 38.46%, 94.9%);
+    --color-background-chocolate-secondary: hsl(39, 56%, 87%);
     --color-light: hsl(0 0% 4.31%);
     --color-dark: hsl(0 0% 100%);
-    --color-burgundy: hsl(14, 82%, 30%);
+    --color-chocolate: hsl(12, 90%, 8%);
     --color-highlight-light: hsl(0, 0%, 4.31%);
     --color-highlight-dark: hsl(41 97.4% 44.9%);
-    --color-highlight-refined: hsl(14, 82%, 30%);
+    --color-highlight-chocolate: hsl(12, 90%, 8%);
     --color-light-border: hsl(240, 4%, 16%);
     --color-dark-border: hsl(240, 4%, 16%);
     --color-forest-green-custom: hsl(158.28, 82.86%, 13.73%);
@@ -37,7 +38,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: normal;
+    line-height: inherit;
 }
 
 @layer utilities {
