@@ -31,9 +31,9 @@ export const metadata: Metadata = {
         'portfolio',
     ],
     openGraph: {
-        title: 'Armst209.dev - Software Engineer, Frontend & Design',
+        title: 'Armst209.dev | Software Engineer, Frontend & Design',
         description:
-            'A portfolio website for Aaron Armstrong -I build modern, accessible and visually pleasing user experiences.',
+            'A portfolio website for Aaron Armstrong | I build modern, accessible and visually pleasing user experiences.',
         siteName: 'armst209.dev',
         locale: 'en_US',
         type: 'website',
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Armst209.dev - Aaron Armstrong | Software Engineer, Frontend & Design',
+        title: 'Armst209.dev | Software Engineer, Frontend & Design',
         description:
-            'A portfolio website for Aaron Armstrong - I build modern, accessible and visually pleasing user experiences.',
+            'A portfolio website for Aaron Armstrong | I build modern, accessible and visually pleasing user experiences.',
         creator: '@armst209dev',
         images: [],
     },

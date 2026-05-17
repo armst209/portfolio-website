@@ -28,11 +28,12 @@ export const metadata: Metadata = {
         'ui/ux design',
         'web accessibility',
         'portfolio',
+        'projects',
     ],
     openGraph: {
-        title: 'Armst209.dev - Software Engineer, Frontend & Design',
+        title: 'Personal Projects - Armst209.dev | Software Engineer, Frontend & Design',
         description:
-            'A portfolio website for Aaron Armstrong - I build modern, accessible and visually pleasing user experiences.',
+            'A portfolio website for Aaron Armstrong | I build modern, accessible and visually pleasing user experiences.',
         siteName: 'armst209.dev',
         locale: 'en_US',
         type: 'website',
@@ -40,9 +41,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Personal Projects - Aaron Armstrong | Software Engineer, Frontend & Design',
+        title: 'Personal Projects - Armst209.dev | Software Engineer, Frontend & Design',
         description:
-            'A portfolio website for Aaron Armstrong - I build modern, accessible and visually pleasing user experiences.',
+            'A portfolio website for Aaron Armstrong | I build modern, accessible and visually pleasing user experiences.',
         creator: '@armst209dev',
         images: [],
     },

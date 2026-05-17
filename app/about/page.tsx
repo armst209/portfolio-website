@@ -30,9 +30,10 @@ export const metadata: Metadata = {
         'ui/ux design',
         'web accessibility',
         'portfolio',
+        'about',
     ],
     openGraph: {
-        title: 'About Me - Software Engineer, Frontend & Design',
+        title: 'About Me | Software Engineer, Frontend & Design',
         description:
             'A portfolio website for Aaron Armstrong - I build modern, accessible and visually pleasing user experiences.',
         siteName: 'armst209.dev',
