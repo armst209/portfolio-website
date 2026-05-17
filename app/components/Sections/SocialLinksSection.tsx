@@ -17,7 +17,12 @@ const SocialLinksSection = () => {
                 />
                 <Image
                     src={InfoIcon}
-                    className="flex black-color-filter mr-5 w-6 lg:w-10 dark:hidden"
+                    className="flex black-color-filter mr-5 w-6 lg:w-10 dark:hidden coffee:hidden"
+                    alt="info icon"
+                />
+                <Image
+                    src={InfoIcon}
+                    className="hidden coffee-color-filter mr-5 w-6 lg:w-10 coffee:flex dark:hidden"
                     alt="info icon"
                 />
             </Link>
@@ -33,7 +38,12 @@ const SocialLinksSection = () => {
                 />
                 <Image
                     src={LinkedInIcon}
-                    className="flex black-color-filter mr-4 w-6 lg:w-10 dark:hidden"
+                    className="flex black-color-filter mr-4 w-6 lg:w-10 dark:hidden coffee:hidden"
+                    alt="linkedin icon"
+                />
+                <Image
+                    src={LinkedInIcon}
+                    className="hidden coffee-color-filter mr-4 w-6 lg:w-10 coffee:flex dark:hidden"
                     alt="linkedin icon"
                 />
             </a>
@@ -50,7 +60,12 @@ const SocialLinksSection = () => {
                 />
                 <Image
                     src={GithubIcon}
-                    className="flex black-color-filter w-6 lg:w-10 dark:hidden"
+                    className="flex black-color-filter w-6 lg:w-10 dark:hidden coffee:hidden"
+                    alt="github icon"
+                />
+                <Image
+                    src={GithubIcon}
+                    className="hidden coffee-color-filter w-6 lg:w-10 coffee:flex dark:hidden"
                     alt="github icon"
                 />
             </a>
@@ -67,19 +82,29 @@ const SocialLinksSection = () => {
                 />
                 <Image
                     src={ResumeIcon}
-                    className="flex black-color-filter w-6 lg:w-10 dark:hidden"
+                    className="flex black-color-filter w-6 lg:w-10 dark:hidden coffee:hidden"
+                    alt="resume icon"
+                />
+                <Image
+                    src={ResumeIcon}
+                    className="hidden coffee-color-filter w-6 lg:w-10 coffee:flex dark:hidden"
                     alt="resume icon"
                 />
             </a>
             <a href="https://x.com/armst209dev" rel="noopener noreferer" target="_blank">
                 <Image
                     src={TwitterIcon}
-                    className="hidden orange-color-filter w-6 lg:w-10 dark:flex"
+                    className="hidden orange-color-filter w-6 lg:w-10 dark:flex coffee:hidden"
                     alt="twitter/x icon"
                 />
                 <Image
                     src={TwitterIcon}
-                    className="flex black-color-filter w-6 lg:w-10 dark:hidden"
+                    className="flex black-color-filter w-6 lg:w-10 dark:hidden coffee:hidden"
+                    alt="twitter/x icon"
+                />
+                <Image
+                    src={TwitterIcon}
+                    className="hidden coffee-color-filter w-6 lg:w-10 coffee:flex dark:hidden"
                     alt="twitter/x icon"
                 />
             </a>

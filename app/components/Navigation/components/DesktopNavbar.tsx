@@ -13,7 +13,7 @@ const DesktopNavbar = () => {
                     return (
                         <Link
                             key={`desktop-link-${id}`}
-                            className="mr-6 h-full flex items-center"
+                            className="mr-6 h-full flex items-center coffee:text-coffee"
                             href={pathname}
                         >
                             {title}
@@ -24,7 +24,7 @@ const DesktopNavbar = () => {
                 <a
                     id="desktop-link-contact"
                     href={`${pathname !== '/' ? '/#contact-me' : '#contact-me'}`}
-                    className="w-25 text-center text-white bg-black-custom border-2 p-2 rounded-md dark:bg-orange-custom dark:text-black-custom"
+                    className="w-25 text-center text-white bg-black-custom border-2 p-2 rounded-md dark:bg-orange-custom dark:text-black-custom coffee:text-white coffee:bg-coffee coffee:border-coffee"
                 >
                     Contact
                 </a>

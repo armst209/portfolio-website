@@ -7,7 +7,7 @@ const SendEmailButton = ({ isSending = false }: { isSending: boolean }) => {
         <div id="send-email-button" className="w-full flex justify-end">
             <button
                 type="submit"
-                className="p-2 text-white rounded-md w-30 font-bold flex flex-row items-center justify-center cursor-pointer border-2 bg-black-custom dark:bg-orange-custom dark:border-0 dark:text-black-custom"
+                className="p-2 text-white rounded-md w-30 font-bold flex flex-row items-center justify-center cursor-pointer border-2 bg-black-custom dark:bg-orange-custom dark:border-0 dark:text-black-custom coffee:text-white coffee:bg-coffee coffee:border-coffee"
             >
                 <p className="mr-2">Send</p>
                 {isSending ? (

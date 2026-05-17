@@ -12,12 +12,17 @@ const ContactMe = () => {
                     <div className="flex justify-center items-center w-full">
                         <Image
                             src={Lightbulb}
-                            className="hidden orange-color-filter w-50 h-20 dark:flex"
+                            className="hidden orange-color-filter w-50 h-20 dark:flex coffee:hidden"
                             alt="lightbulb"
                         />
                         <Image
                             src={Lightbulb}
-                            className="flex black-color-filter w-50 h-20 md:flex dark:hidden"
+                            className="hidden black-color-filter w-50 h-20 md:flex dark:hidden coffee:hidden"
+                            alt="lightbulb"
+                        />
+                        <Image
+                            src={Lightbulb}
+                            className="hidden coffee-color-filter w-50 h-20 coffee:md:flex dark:hidden"
                             alt="lightbulb"
                         />
                     </div>
@@ -25,7 +30,7 @@ const ContactMe = () => {
                         <h1 className="font-display text-3xl z-10 font-bold lg:text-5xl xl:text-6xl">
                             Have an idea for a project?
                         </h1>
-                        <h2 className="font-display text-black-custom font-bold text-3xl lg:text-5xl xl:text-6xl dark:text-orange-custom">
+                        <h2 className="font-display text-black-custom font-bold text-3xl lg:text-5xl xl:text-6xl dark:text-orange-custom coffee:text-highlight-coffee">
                             Let&apos;s connect!
                         </h2>
                     </div>

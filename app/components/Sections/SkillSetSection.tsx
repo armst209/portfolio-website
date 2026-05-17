@@ -32,13 +32,19 @@ const SkillSetSection = () => {
                                 src={CheckIcon}
                                 alt="check icon"
                                 width={20}
-                                className="hidden mr-4 emerald-green-filter dark:flex"
+                                className="hidden mr-4 emerald-green-filter dark:flex coffee:hidden"
                             />
                             <Image
                                 src={CheckIcon}
                                 alt="check icon"
                                 width={20}
-                                className="flex mr-4 black-color-filter dark:hidden"
+                                className="flex mr-4 black-color-filter dark:hidden coffee:hidden"
+                            />
+                            <Image
+                                src={CheckIcon}
+                                alt="check icon"
+                                width={20}
+                                className="hidden mr-4 coffee-color-filter dark:hidden coffee:flex"
                             />
                             <p>{skill}</p>
                         </div>

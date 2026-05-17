@@ -148,13 +148,13 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body
-                className={`${satoshi.className} ${bonaNova.className} h-full antialiased transition-colors duration-400 bg-background-light dark:bg-background-dark text-light dark:text-dark`}
+                className={`${satoshi.className} ${bonaNova.className} h-full antialiased transition-colors duration-400 bg-background-light dark:bg-background-dark text-light dark:text-dark coffee:bg-background-coffee coffee:text-coffee`}
             >
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
                     enableSystem={true}
-                    themes={['light', 'dark', 'forest', 'chocolate']}
+                    themes={['light', 'dark', 'forest', 'coffee']}
                 >
                     <PageContainer>{children}</PageContainer>
                 </ThemeProvider>

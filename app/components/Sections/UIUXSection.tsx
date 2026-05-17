@@ -17,24 +17,35 @@ const UIUXSection = () => {
                                     <Image
                                         src={ScribbleSmallCircle}
                                         style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                        className="hidden absolute inset-0 orange-color-filter dark:flex"
+                                        className="hidden absolute inset-0 orange-color-filter dark:flex coffee:hidden"
                                         alt="small scribbled circle"
                                     />
                                     <Image
                                         src={ScribbleSmallCircle}
                                         style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                        className="flex absolute inset-0 black-color-filter dark:hidden"
+                                        className="flex absolute inset-0 black-color-filter dark:hidden coffee:hidden"
+                                        alt="small scribbled circle"
+                                    />
+                                    <Image
+                                        src={ScribbleSmallCircle}
+                                        style={{ objectFit: 'cover', objectPosition: 'center' }}
+                                        className="hidden absolute inset-0 coffee-color-filter dark:hidden coffee:flex"
                                         alt="small scribbled circle"
                                     />
                                     <Image
                                         src={UIUXIcon}
                                         alt="ui/ux icon"
-                                        className="hidden w-10 orange-color-filter dark:flex"
+                                        className="hidden w-10 orange-color-filter dark:flex coffee:hidden"
                                     />
                                     <Image
                                         src={UIUXIcon}
                                         alt="ui/ux icon"
-                                        className="flex w-10 black-color-filter dark:hidden"
+                                        className="flex w-10 black-color-filter dark:hidden coffee:hidden"
+                                    />
+                                    <Image
+                                        src={UIUXIcon}
+                                        alt="ui/ux icon"
+                                        className="hidden w-10 coffee-color-filter dark:hidden coffee:flex"
                                     />
                                 </div>
                             </div>
@@ -64,13 +75,19 @@ const UIUXSection = () => {
                                     src={CheckIcon}
                                     alt="contact icon"
                                     width={20}
-                                    className="hidden mr-4 emerald-green-filter dark:flex"
+                                    className="hidden mr-4 emerald-green-filter dark:flex coffee:hidden"
                                 />
                                 <Image
                                     src={CheckIcon}
                                     alt="contact icon"
                                     width={20}
-                                    className="flex mr-4 black-color-filter dark:hidden"
+                                    className="hidden mr-4 black-color-filter dark:hidden coffee:hidden"
+                                />
+                                <Image
+                                    src={CheckIcon}
+                                    alt="contact icon"
+                                    width={20}
+                                    className="flex mr-4 coffee-color-filter dark:hidden coffee:flex"
                                 />
                                 <p className="text-lg xl:text-2xl">{skill}</p>
                             </div>

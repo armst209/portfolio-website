@@ -5,7 +5,7 @@ import { valuesContent } from '@/app/utils/content'
 const ValuesSection = () => {
     return (
         <section id="values-section" className="pl-4 pr-4 w-full flex justify-center ">
-            <div className="bg-background-light w-full h-full flex flex-col items-center justify-evenly xl:flex-row border border-light-border rounded-xl p-6 xl:h-80 dark:bg-transparent">
+            <div className="bg-transparent w-full h-full flex flex-col items-center justify-evenly xl:flex-row border border-light-border rounded-xl p-6 xl:h-80 dark:bg-transparent">
                 {valuesContent.map(({ title, content, icon, id }) => {
                     return (
                         <div
@@ -17,24 +17,35 @@ const ValuesSection = () => {
                                     <Image
                                         src={ScribbleSmallCircle}
                                         style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                        className="hidden absolute inset-0 orange-color-filter dark:flex"
+                                        className="hidden absolute inset-0 orange-color-filter dark:flex coffee:hidden"
                                         alt="small scribbled circle"
                                     />
                                     <Image
                                         src={ScribbleSmallCircle}
                                         style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                        className="flex absolute inset-0 black-color-filter dark:hidden"
+                                        className="flex absolute inset-0 black-color-filter dark:hidden coffee:hidden"
+                                        alt="small scribbled circle"
+                                    />
+                                    <Image
+                                        src={ScribbleSmallCircle}
+                                        style={{ objectFit: 'cover', objectPosition: 'center' }}
+                                        className="hidden absolute inset-0 coffee-color-filter dark:hidden coffee:flex"
                                         alt="small scribbled circle"
                                     />
                                     <Image
                                         src={icon}
                                         alt="modern icon"
-                                        className="hidden w-10 orange-color-filter dark:flex"
+                                        className="hidden w-10 orange-color-filter dark:flex coffee:hidden"
                                     />
                                     <Image
                                         src={icon}
                                         alt="modern icon"
-                                        className="flex w-10 black-color-filter dark:hidden"
+                                        className="flex w-10 black-color-filter dark:hidden coffee:hidden"
+                                    />
+                                    <Image
+                                        src={icon}
+                                        alt="modern icon"
+                                        className="hidden w-10 coffee-color-filter dark:hidden coffee:flex"
                                     />
                                 </div>
                             </div>

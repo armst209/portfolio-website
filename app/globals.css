@@ -1,7 +1,6 @@
 @import 'tailwindcss';
-
 @custom-variant dark (&:where(.dark, .dark *));
-@custom-variant chocolate (&:where(.chocolate, .chocolate *));
+@custom-variant coffee (&:where(.coffee, .coffee *));
 
 :root {
     --background: #ffffff;
@@ -14,15 +13,15 @@
     --breakpoint-sm: 50rem;
     --color-background-light: hsl(0 0% 100%);
     --color-background-dark: hsl(0, 0%, 4.31%);
-    --color-background-chocolate: hsl(28, 33%, 49%);
+    --color-background-coffee: hsl(39, 56%, 87%);
     --color-background-light-secondary: hsl(240, 7.69%, 97.45%);
-    --color-background-chocolate-secondary: hsl(39, 56%, 87%);
+    --color-background-coffee-secondary: hsl(29, 100%, 22%);
     --color-light: hsl(0 0% 4.31%);
     --color-dark: hsl(0 0% 100%);
-    --color-chocolate: hsl(12, 90%, 8%);
+    --color-coffee: hsl(12, 90%, 8%);
     --color-highlight-light: hsl(0, 0%, 4.31%);
     --color-highlight-dark: hsl(41 97.4% 44.9%);
-    --color-highlight-chocolate: hsl(12, 90%, 8%);
+    --color-highlight-coffee: hsl(29, 100%, 22%);
     --color-light-border: hsl(240, 4%, 16%);
     --color-dark-border: hsl(240, 4%, 16%);
     --color-forest-green-custom: hsl(158.28, 82.86%, 13.73%);
@@ -58,13 +57,13 @@ body {
     }
 
     .black-color-filter {
-        filter: invert(18%) sepia(34%) saturate(4555%) hue-rotate(357deg) brightness(91%)
-            contrast(92%);
-    }
-
-    .black-color-filter {
         filter: brightness(0) saturate(100%) invert(0%) sepia(39%) saturate(6308%) hue-rotate(28deg)
             brightness(104%) contrast(92%);
+    }
+
+    .coffee-color-filter {
+        filter: brightness(0) saturate(100%) invert(11%) sepia(96%) saturate(5011%)
+            hue-rotate(50deg) brightness(93%) contrast(102%);
     }
 
     .white-color-filter {

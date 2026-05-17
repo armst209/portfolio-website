@@ -22,18 +22,24 @@ const TechnologiesIUseSection = () => {
                 </div>
             </div>
             <div className="grid grid-cols-1 grid-row-2 gap-0 rounded-xl border bg-transparent dark:border-dark-border lg:grid-cols-3">
-                <div className="m-6 rounded-xl p-4 row-span-2 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
+                <div className="m-6 rounded-xl bg-transparent p-4 row-span-2 border border-light-border dark:border-dark-border dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center">
                         <Image
                             src={FrontendIcon}
                             width={30}
-                            className="flex black-color-filter mr-4 dark:hidden"
+                            className="flex black-color-filter mr-4 dark:hidden coffee:hidden"
                             alt="frontend icon"
                         />
                         <Image
                             src={FrontendIcon}
                             width={30}
-                            className="hidden orange-color-filter mr-4 dark:flex"
+                            className="hidden orange-color-filter mr-4 dark:flex coffee:hidden"
+                            alt="frontend icon"
+                        />
+                        <Image
+                            src={FrontendIcon}
+                            width={30}
+                            className="hidden coffee-color-filter mr-4 dark:hidden coffee:flex"
                             alt="frontend icon"
                         />
                         <h2 className="font-display font-bold text-lg">Frontend</h2>
@@ -54,18 +60,24 @@ const TechnologiesIUseSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
+                <div className="m-6 rounded-xl bg-transparent p-4 border border-light-border dark:border-dark-border dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center ">
                         <Image
                             src={TestingIcon}
                             width={30}
-                            className="flex black-color-filter mr-4 dark:hidden"
+                            className="flex black-color-filter mr-4 dark:hidden coffee:hidden"
                             alt="testing icon"
                         />
                         <Image
                             src={TestingIcon}
                             width={30}
-                            className="hidden orange-color-filter mr-4 dark:flex"
+                            className="hidden orange-color-filter mr-4 dark:flex coffee:hidden"
+                            alt="testing icon"
+                        />
+                        <Image
+                            src={TestingIcon}
+                            width={30}
+                            className="hidden coffee-color-filter mr-4 dark:hidden coffee:flex"
                             alt="testing icon"
                         />
                         <h2 className="font-display font-bold text-lg">Testing</h2>
@@ -74,18 +86,24 @@ const TechnologiesIUseSection = () => {
                         <p className="wrap-normal">Jest, Vitest, Playwright</p>
                     </div>
                 </div>
-                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
+                <div className="m-6 rounded-xl bg-transparent p-4 border border-light-border dark:border-dark-border dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center">
                         <Image
                             src={StateManagementIcon}
                             width={30}
-                            className="flex black-color-filter mr-4 dark:hidden"
+                            className="flex black-color-filter mr-4 dark:hidden coffee:hidden"
                             alt="state management icon"
                         />
                         <Image
                             src={StateManagementIcon}
                             width={30}
-                            className="hidden orange-color-filter mr-4 dark:flex"
+                            className="hidden orange-color-filter mr-4 dark:flex coffee:hidden"
+                            alt="state management icon"
+                        />
+                        <Image
+                            src={StateManagementIcon}
+                            width={30}
+                            className="hidden coffee-color-filter mr-4 dark:hidden coffee:flex"
                             alt="state management icon"
                         />
                         <h2 className="font-display font-bold text-lg">State Management</h2>
@@ -94,18 +112,24 @@ const TechnologiesIUseSection = () => {
                         <p className="wrap-normal">Zustand, Redux/Redux Toolkit, Jotai</p>
                     </div>
                 </div>
-                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
+                <div className="m-6 rounded-xl bg-transparent p-4 border border-light-border dark:border-dark-border dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center">
                         <Image
                             src={BackendIcon}
                             width={30}
-                            className="flex black-color-filter mr-4 dark:hidden"
+                            className="flex black-color-filter mr-4 dark:hidden coffee:hidden"
                             alt="backend icon"
                         />
                         <Image
                             src={BackendIcon}
                             width={30}
-                            className="hidden orange-color-filter mr-4 dark:flex"
+                            className="hidden orange-color-filter mr-4 dark:flex coffee:hidden"
+                            alt="backend icon"
+                        />
+                        <Image
+                            src={BackendIcon}
+                            width={30}
+                            className="hidden coffee-color-filter mr-4 dark:hidden coffee:flex"
                             alt="backend icon"
                         />
                         <h2 className="font-display font-bold text-lg">Backend</h2>
@@ -116,18 +140,24 @@ const TechnologiesIUseSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="m-6 rounded-xl p-4 border border-light-border dark:border-dark-border bg-background-light dark:bg-transparent">
+                <div className="m-6 rounded-xl bg-transparent p-4 border border-light-border dark:border-dark-border dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center">
                         <Image
                             src={DesignIcon}
                             width={30}
-                            className="flex black-color-filter mr-4 dark:hidden"
+                            className="flex black-color-filter mr-4 dark:hidden coffee:hidden"
                             alt="state management icon"
                         />
                         <Image
                             src={DesignIcon}
                             width={30}
-                            className="hidden orange-color-filter mr-4 dark:flex"
+                            className="hidden orange-color-filter mr-4 dark:flex coffee:hidden"
+                            alt="state management icon"
+                        />
+                        <Image
+                            src={DesignIcon}
+                            width={30}
+                            className="hidden coffee-color-filter mr-4 dark:hidden coffee:flex"
                             alt="state management icon"
                         />
                         <h2 className="font-display font-bold text-lg">Design</h2>
