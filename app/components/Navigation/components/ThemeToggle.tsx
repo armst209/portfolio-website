@@ -69,22 +69,6 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                 <AnimatePresence mode="wait" initial={false}>
                     {isLightMode && (
                         <motion.div
-                            key={'moon'}
-                            initial={{ y: -20, opacity: 0, rotate: -90 }}
-                            animate={{ y: 0, opacity: 1, rotate: 0 }}
-                            exit={{ y: 20, opacity: 0, rotate: 90 }}
-                            transition={{ duration: 0.15 }}
-                        >
-                            <Image
-                                src={DarkModeIcon}
-                                alt="dark mode icon"
-                                width={25}
-                                className="black-color-filter"
-                            />
-                        </motion.div>
-                    )}
-                    {isDarkMode && (
-                        <motion.div
                             key={'sun'}
                             initial={{ y: 20, opacity: 0, rotate: 90 }}
                             animate={{ y: 0, opacity: 1, rotate: 0 }}
@@ -94,6 +78,22 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                             <Image
                                 src={LightModeIcon}
                                 alt="light mode icon"
+                                width={25}
+                                className="black-color-filter"
+                            />
+                        </motion.div>
+                    )}
+                    {isDarkMode && (
+                        <motion.div
+                            key={'moon'}
+                            initial={{ y: -20, opacity: 0, rotate: -90 }}
+                            animate={{ y: 0, opacity: 1, rotate: 0 }}
+                            exit={{ y: 20, opacity: 0, rotate: 90 }}
+                            transition={{ duration: 0.15 }}
+                        >
+                            <Image
+                                src={DarkModeIcon}
+                                alt="dark mode icon"
                                 width={25}
                                 className="orange-color-filter"
                             />
