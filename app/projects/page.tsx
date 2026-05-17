@@ -145,8 +145,8 @@ const Projects = () => {
             <div className="w-full items-center justify-center">
                 <div className="flex flex-col">
                     <div className="flex flex-row">
-                        <div className="flex flex-row w-full">
-                            <h1 className="font-display flex flex-row items-center text-6xl pb-2 font-bold hero-text-h1">
+                        <div className="flex flex-row w-auto">
+                            <h1 className="font-display flex flex-col-reverse lg:flex-row items-center pb-2 font-bold hero-text-h1">
                                 <p>Personal Projects</p>
                             </h1>
                         </div>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ScribblePeriod from '@public/assets/icons/scribble-blob.svg'
+import SingleCoffeeBean from '@public/assets/icons/single-coffee-bean.svg'
 
 const SiteLogo = () => {
     return (
@@ -19,7 +20,7 @@ const SiteLogo = () => {
                         alt="scribble blob period"
                     />
                     <Image
-                        src={ScribblePeriod}
+                        src={SingleCoffeeBean}
                         className="hidden coffee-color-filter w-2 dark:hidden coffee:flex"
                         alt="scribble blob period"
                     />

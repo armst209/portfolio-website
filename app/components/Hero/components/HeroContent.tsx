@@ -5,6 +5,7 @@ import HeroArtLight from '@public/assets/HeroImage_Light.webp'
 import HeroArtCoffee from '@public/assets/HeroImage_Coffee.webp'
 import SocialLinksSection from '../../Sections/SocialLinksSection'
 import ScribbledDashPartition from '../../Partitions/ScribbledDashPartition'
+import CoffeeBeanIcon from '@public/assets/icons/coffee-beans.svg'
 
 const HeroContent = () => {
     return (
@@ -21,10 +22,11 @@ const HeroContent = () => {
                         alt="pointing down arrows"
                         className="hidden orange-color-filter w-30 mt-6 dark:flex coffee:hidden"
                     />
+
                     <Image
-                        src={PointingDownArrows}
-                        alt="pointing down arrows"
-                        className="hidden coffee-color-filter w-30 mt-6 dark:hidden coffee:flex"
+                        src={CoffeeBeanIcon}
+                        className="hidden coffee-color-filter w-10 mt-6 dark:hidden coffee:flex"
+                        alt="coffee bean icon"
                     />
                 </div>
                 <ScribbledDashPartition />
@@ -68,9 +70,9 @@ const HeroContent = () => {
                         className="hidden orange-color-filter w-30 mt-6 dark:flex coffee:hidden"
                     />
                     <Image
-                        src={PointingDownArrows}
-                        alt="pointing down arrows"
-                        className="hidden coffee-color-filter w-30 mt-6 dark:hidden coffee:flex"
+                        src={CoffeeBeanIcon}
+                        className="hidden coffee-color-filter w-10 mt-6 dark:hidden coffee:flex"
+                        alt="coffee bean icon"
                     />
                 </div>
             </div>

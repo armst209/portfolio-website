@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import HamburgerIcon from '@public/assets/icons/menu.svg'
 import ScribblePeriod from '@public/assets/icons/scribble-blob.svg'
+import CoffeeBeansIcon from '@public/assets/icons/coffee-beans.svg'
 import CloseIcon from '@public/assets/icons/close.svg'
 import { navItems } from '@/app/utils/content'
 
@@ -40,7 +41,7 @@ const MobileNavbar = () => {
                 id="mobile-menu"
                 aria-label="mobile menu"
                 aria-expanded={isOpen}
-                className={`w-full h-screen flex fixed inset-0 z-50 transition-transform duration-300 ease-out shadow(12px 9px 18px 5px rgba(0,0,0,0.84)) transform ${isOpen ? ' translate-x-0' : 'translate-x-full'} bg-background-light dark:bg-background-dark lg:hidden`}
+                className={`w-full h-screen flex fixed inset-0 z-50 transition-transform duration-300 ease-out shadow(12px 9px 18px 5px rgba(0,0,0,0.84)) transform ${isOpen ? ' translate-x-0' : 'translate-x-full'} bg-background-light dark:bg-background-dark coffee:bg-background-coffee lg:hidden`}
             >
                 <button
                     onClick={closeMobileMenu}
@@ -75,14 +76,21 @@ const MobileNavbar = () => {
                                 <div>
                                     <Image
                                         src={ScribblePeriod}
-                                        className="hidden orange-color-filter ml-2 dark:flex"
+                                        className="hidden orange-color-filter ml-2 dark:flex coffee:hidden"
                                         width={40}
                                         height={40}
                                         alt="scribble blob period"
                                     />
                                     <Image
                                         src={ScribblePeriod}
-                                        className="flex black-color-filter ml-2 dark:hidden"
+                                        className="flex black-color-filter ml-2 dark:hidden coffee:hidden"
+                                        width={40}
+                                        height={40}
+                                        alt="scribble blob period"
+                                    />
+                                    <Image
+                                        src={CoffeeBeansIcon}
+                                        className="hidden coffee-color-filter ml-2 dark:hidden coffee:flex"
                                         width={40}
                                         height={40}
                                         alt="scribble blob period"
@@ -102,14 +110,21 @@ const MobileNavbar = () => {
                         <div>
                             <Image
                                 src={ScribblePeriod}
-                                className="hidden orange-color-filter ml-2 dark:flex"
+                                className="hidden orange-color-filter ml-2 dark:flex coffee:hidden"
                                 width={40}
                                 height={40}
                                 alt="scribble blob period"
                             />
                             <Image
                                 src={ScribblePeriod}
-                                className="flex black-color-filter ml-2 dark:hidden"
+                                className="flex black-color-filter ml-2 dark:hidden coffee:hidden"
+                                width={40}
+                                height={40}
+                                alt="scribble blob period"
+                            />
+                            <Image
+                                src={CoffeeBeansIcon}
+                                className="hidden coffee-color-filter ml-2 dark:hidden coffee:flex"
                                 width={40}
                                 height={40}
                                 alt="scribble blob period"
