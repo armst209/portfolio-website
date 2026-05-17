@@ -103,7 +103,7 @@ const MobileNavbar = () => {
                     <a
                         id="mobile-link-contact"
                         href={`${pathname !== '/' ? '/#contact-me' : '#contact-me'}`}
-                        className="w-70 flex flex-row items-center"
+                        className="flex flex-row items-center"
                         onClick={closeMobileMenu}
                     >
                         <p className="font-display">Contact</p>
