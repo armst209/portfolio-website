@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import DownArrow from '@public/assets/downward-scribble-arrow.svg'
 import ClosingBracket from '@public/assets/closing-bracket.svg'
+import HotCoffee from '@public/assets/hot-coffee.svg'
 
 const DownSwirlArrowPartition = ({ className }: { className?: string }) => {
     return (
@@ -19,7 +20,7 @@ const DownSwirlArrowPartition = ({ className }: { className?: string }) => {
                 className="flex black-color-filter dark:hidden coffee:hidden"
             />
             <Image
-                src={ClosingBracket}
+                src={HotCoffee}
                 alt="closing bracket"
                 height={160}
                 className="hidden coffee-color-filter dark:hidden coffee:flex"

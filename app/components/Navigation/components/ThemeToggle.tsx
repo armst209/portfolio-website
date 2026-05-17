@@ -41,7 +41,6 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                 <motion.div
                     className="mr-1 "
                     key="caret"
-                    whileHover={{ scale: 1.2 }}
                     animate={{ rotate: showDropdown ? 180 : 0 }}
                     transition={{ duration: 0.15 }}
                 >
@@ -65,58 +64,57 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                     />
                 </motion.div>
             </AnimatePresence>
-            <div>
-                <AnimatePresence mode="wait" initial={false}>
-                    {isLightMode && (
-                        <motion.div
-                            key={'sun'}
-                            initial={{ y: 20, opacity: 0, rotate: 90 }}
-                            animate={{ y: 0, opacity: 1, rotate: 0 }}
-                            exit={{ y: -20, opacity: 0, rotate: -90 }}
-                            transition={{ duration: 0.15 }}
-                        >
-                            <Image
-                                src={LightModeIcon}
-                                alt="light mode icon"
-                                width={25}
-                                className="black-color-filter"
-                            />
-                        </motion.div>
-                    )}
-                    {isDarkMode && (
-                        <motion.div
-                            key={'moon'}
-                            initial={{ y: -20, opacity: 0, rotate: -90 }}
-                            animate={{ y: 0, opacity: 1, rotate: 0 }}
-                            exit={{ y: 20, opacity: 0, rotate: 90 }}
-                            transition={{ duration: 0.15 }}
-                        >
-                            <Image
-                                src={DarkModeIcon}
-                                alt="dark mode icon"
-                                width={25}
-                                className="white-color-filter"
-                            />
-                        </motion.div>
-                    )}
-                    {isCoffeeMode && (
-                        <motion.div
-                            key={'coffee'}
-                            initial={{ x: 20, opacity: 0, rotate: 90 }}
-                            animate={{ x: 0, opacity: 1, rotate: 0 }}
-                            exit={{ x: -20, opacity: 0, rotate: -90 }}
-                            transition={{ duration: 0.15 }}
-                        >
-                            <Image
-                                src={CoffeeModeIcon}
-                                alt="coffee mode icon"
-                                width={26}
-                                className="dark-coffee-color-filter"
-                            />
-                        </motion.div>
-                    )}
-                </AnimatePresence>
-            </div>
+
+            <AnimatePresence mode="wait" initial={false}>
+                {isLightMode && (
+                    <motion.div
+                        key={'sun'}
+                        initial={{ y: 20, opacity: 0, rotate: 90 }}
+                        animate={{ y: 0, opacity: 1, rotate: 0 }}
+                        exit={{ y: -20, opacity: 0, rotate: -90 }}
+                        transition={{ duration: 0.15 }}
+                    >
+                        <Image
+                            src={LightModeIcon}
+                            alt="light mode icon"
+                            width={25}
+                            className="black-color-filter"
+                        />
+                    </motion.div>
+                )}
+                {isDarkMode && (
+                    <motion.div
+                        key={'moon'}
+                        initial={{ y: -20, opacity: 0, rotate: -90 }}
+                        animate={{ y: 0, opacity: 1, rotate: 0 }}
+                        exit={{ y: 20, opacity: 0, rotate: 90 }}
+                        transition={{ duration: 0.15 }}
+                    >
+                        <Image
+                            src={DarkModeIcon}
+                            alt="dark mode icon"
+                            width={25}
+                            className="white-color-filter"
+                        />
+                    </motion.div>
+                )}
+                {isCoffeeMode && (
+                    <motion.div
+                        key={'coffee'}
+                        initial={{ x: 20, opacity: 0, rotate: 90 }}
+                        animate={{ x: 0, opacity: 1, rotate: 0 }}
+                        exit={{ x: -20, opacity: 0, rotate: -90 }}
+                        transition={{ duration: 0.2 }}
+                    >
+                        <Image
+                            src={CoffeeModeIcon}
+                            alt="coffee mode icon"
+                            width={26}
+                            className="dark-coffee-color-filter"
+                        />
+                    </motion.div>
+                )}
+            </AnimatePresence>
 
             {showDropdown && (
                 <motion.div
