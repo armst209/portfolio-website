@@ -37,7 +37,7 @@ const ThemeToggle = ({ className }: { className?: string }) => {
             onClick={() => setShowDropdown(!showDropdown)}
             className="flex flex-row h-full items-center justify-center relative mr-6 z-50 cursor-pointer"
         >
-            <AnimatePresence mode="wait" initial={true}>
+            <AnimatePresence mode="wait" initial={false}>
                 <motion.div
                     className="mr-1 "
                     key="caret"
@@ -66,7 +66,7 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                 </motion.div>
             </AnimatePresence>
             <div>
-                <AnimatePresence mode="wait" initial={true}>
+                <AnimatePresence mode="wait" initial={false}>
                     {isLightMode && (
                         <motion.div
                             key={'moon'}
