@@ -214,7 +214,7 @@ const About = () => {
                 </p>
 
                 <p className="hidden text-highlight-coffee text-3xl font-bold mt-10 dark:hidden coffee:flex">
-                    I really like coffee!
+                    Also, I really like coffee.
                 </p>
             </article>
             <div></div>
