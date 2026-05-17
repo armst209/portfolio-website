@@ -17,12 +17,12 @@ const ContactMe = () => {
                         />
                         <Image
                             src={Lightbulb}
-                            className="hidden black-color-filter w-50 h-20 md:flex dark:hidden coffee:hidden"
+                            className="flex black-color-filter w-50 h-20 md:flex dark:hidden coffee:hidden"
                             alt="lightbulb"
                         />
                         <Image
                             src={Lightbulb}
-                            className="hidden coffee-color-filter w-50 h-20 coffee:md:flex dark:hidden"
+                            className="hidden coffee-color-filter w-50 h-20 coffee:md:flex dark:hidden coffee:flex"
                             alt="lightbulb"
                         />
                     </div>
