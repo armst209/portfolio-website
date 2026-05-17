@@ -19,12 +19,17 @@ const CustomAccordionItem = ({ header, ...rest }: AccordionItemProps) => {
                             <Image
                                 src={MinusIcon}
                                 alt="minus icon"
-                                className="hidden ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer w-8 h-8 dark:flex"
+                                className="hidden ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer w-8 h-8 dark:flex coffee:hidden"
                             />
                             <Image
                                 src={MinusIcon}
                                 alt="minus icon"
-                                className="flex ml-auto transition-transform duration-200 ease-out black-color-filter cursor-pointer w-8 h-8 dark:hidden"
+                                className="flex ml-auto transition-transform duration-200 ease-out black-color-filter cursor-pointer w-8 h-8 dark:hidden coffee:hidden"
+                            />
+                            <Image
+                                src={MinusIcon}
+                                alt="minus icon"
+                                className="hidden ml-auto transition-transform duration-200 ease-out coffee-color-filter cursor-pointer w-8 h-8 dark:hidden coffee:flex"
                             />
                         </>
                     ) : (
@@ -32,12 +37,17 @@ const CustomAccordionItem = ({ header, ...rest }: AccordionItemProps) => {
                             <Image
                                 src={PlusIcon}
                                 alt="plus icon"
-                                className="hidden ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer w-8 h-8 dark:flex"
+                                className="hidden ml-auto transition-transform duration-200 ease-out emerald-green-filter cursor-pointer w-8 h-8 dark:flex coffee:hidden"
                             />
                             <Image
                                 src={PlusIcon}
                                 alt="plus icon"
-                                className="flex ml-auto transition-transform duration-200 ease-out black-color-filter cursor-pointer w-8 h-8 dark:hidden"
+                                className="flex ml-auto transition-transform duration-200 ease-out black-color-filter cursor-pointer w-8 h-8 dark:hidden coffee:hidden"
+                            />
+                            <Image
+                                src={PlusIcon}
+                                alt="plus icon"
+                                className="hidden ml-auto transition-transform duration-200 ease-out coffee-color-filter cursor-pointer w-8 h-8 dark:hidden coffee:flex"
                             />
                         </>
                     )}

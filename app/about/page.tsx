@@ -2,6 +2,7 @@ import { Metadata, Viewport } from 'next'
 import Image from 'next/image'
 import AboutMeHeadShotDark from '@public/assets/AboutMeHeadshot_Dark.webp'
 import AboutMeHeadShotLight from '@public/assets/AboutMeHeadshot_Light.webp'
+import AboutMeHeadShotCoffee from '@public/assets/AboutMeHeadshot_Coffee.webp'
 import ScribbledDashPartition from '../components/Partitions/ScribbledDashPartition'
 
 export const viewport: Viewport = {
@@ -152,7 +153,7 @@ const About = () => {
                 <Image
                     src={AboutMeHeadShotDark}
                     alt="about me headshot"
-                    className="hidden w-50 about-image-float pb-6 lg:w-90 dark:flex"
+                    className="hidden w-50 about-image-float pb-6 lg:w-90 dark:flex coffee:hidden"
                     quality={75}
                     placeholder="blur"
                     preload={true}
@@ -160,7 +161,15 @@ const About = () => {
                 <Image
                     src={AboutMeHeadShotLight}
                     alt="about me headshot"
-                    className="flex w-50 about-image-float pb-6 lg:w-90 dark:hidden"
+                    className="flex w-50 about-image-float pb-6 lg:w-90 dark:hidden coffee:hidden"
+                    quality={75}
+                    placeholder="blur"
+                    preload={true}
+                />
+                <Image
+                    src={AboutMeHeadShotCoffee}
+                    alt="about me headshot"
+                    className="hidden w-50 about-image-float pb-6 lg:w-90 dark:hidden coffee:flex"
                     quality={75}
                     placeholder="blur"
                     preload={true}

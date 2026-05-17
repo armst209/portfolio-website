@@ -62,25 +62,37 @@ const AnaheimElectronicsCard = () => {
                                     src={ScribbleSmallCircle}
                                     fill={true}
                                     style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="hidden absolute inset-0 orange-color-filter dark:flex"
+                                    className="hidden absolute inset-0 orange-color-filter dark:flex coffee:hidden"
                                     alt="small scribbled circle"
                                 />
                                 <Image
                                     src={ScribbleSmallCircle}
                                     fill={true}
                                     style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="flex absolute inset-0 black-color-filter dark:hidden"
+                                    className="flex absolute inset-0 black-color-filter dark:hidden coffee:hidden"
+                                    alt="small scribbled circle"
+                                />
+                                <Image
+                                    src={ScribbleSmallCircle}
+                                    fill={true}
+                                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                                    className="hidden absolute inset-0 coffee-color-filter dark:hidden coffee:flex"
                                     alt="small scribbled circle"
                                 />
                                 <Image
                                     src={LiveDemoIcon}
                                     alt="skillset icon"
-                                    className="hidden orange-color-filter w-10 dark:flex"
+                                    className="hidden orange-color-filter w-10 dark:flex coffee:hidden"
                                 />
                                 <Image
                                     src={LiveDemoIcon}
                                     alt="skillset icon"
-                                    className="flex black-color-filter w-10 dark:hidden"
+                                    className="flexblack-color-filter w-10 dark:hidden coffee:hidden"
+                                />
+                                <Image
+                                    src={LiveDemoIcon}
+                                    alt="skillset icon"
+                                    className="hidden coffee-color-filter w-10 dark:hidden coffee:flex"
                                 />
                             </div>
                         </div>

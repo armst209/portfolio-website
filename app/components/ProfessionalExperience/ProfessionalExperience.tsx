@@ -34,13 +34,19 @@ const ProfessionalExperience = () => {
                                                     src={LocationIcon}
                                                     alt="location icon"
                                                     width={20}
-                                                    className="hidden orange-color-filter mr-2 dark:flex"
+                                                    className="hidden orange-color-filter mr-2 dark:flex coffee:hidden"
                                                 />
                                                 <Image
                                                     src={LocationIcon}
                                                     alt="location icon"
                                                     width={20}
-                                                    className="flex black-color-filter mr-2 dark:hidden"
+                                                    className="flex black-color-filter mr-2 dark:hidden coffee:hidden"
+                                                />
+                                                <Image
+                                                    src={LocationIcon}
+                                                    alt="location icon"
+                                                    width={20}
+                                                    className="hidden coffee-color-filter mr-2 dark:hidden coffee:flex"
                                                 />
                                                 <p>{location}</p>
                                             </div>
@@ -50,13 +56,19 @@ const ProfessionalExperience = () => {
                                                     src={GlobeIcon}
                                                     alt="globe icon"
                                                     width={20}
-                                                    className="hidden orange-color-filter mr-2 dark:flex"
+                                                    className="hidden orange-color-filter mr-2 dark:flex coffee:hidden"
                                                 />
                                                 <Image
                                                     src={GlobeIcon}
                                                     alt="globe icon"
                                                     width={20}
-                                                    className="flex black-color-filter mr-2 dark:hidden"
+                                                    className="flex black-color-filter mr-2 dark:hidden coffee:hidden"
+                                                />
+                                                <Image
+                                                    src={GlobeIcon}
+                                                    alt="globe icon"
+                                                    width={20}
+                                                    className="hidden coffee-color-filter mr-2 dark:hidden coffee:flex"
                                                 />
                                                 <a
                                                     href={website}
