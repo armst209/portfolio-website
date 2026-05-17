@@ -55,13 +55,13 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                         src={CaretIcon}
                         alt="dropdown caret icon"
                         width={15}
-                        className="hidden orange-color-filter coffee:hidden dark:flex"
+                        className="hidden white-color-filter coffee:hidden dark:flex"
                     />
                     <Image
                         src={CaretIcon}
                         alt="dropdown caret icon"
                         width={15}
-                        className="hidden coffee-color-filter coffee:flex dark:hidden"
+                        className="hidden dark-coffee-color-filter coffee:flex dark:hidden"
                     />
                 </motion.div>
             </AnimatePresence>
@@ -95,7 +95,7 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                                 src={DarkModeIcon}
                                 alt="dark mode icon"
                                 width={25}
-                                className="orange-color-filter"
+                                className="white-color-filter"
                             />
                         </motion.div>
                     )}
@@ -111,7 +111,7 @@ const ThemeToggle = ({ className }: { className?: string }) => {
                                 src={CoffeeModeIcon}
                                 alt="coffee mode icon"
                                 width={26}
-                                className="coffee-color-filter"
+                                className="dark-coffee-color-filter"
                             />
                         </motion.div>
                     )}
