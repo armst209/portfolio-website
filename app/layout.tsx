@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
     title: 'Aaron Armstrong | Software Engineer, Frontend & Design',
     description:
-        'Armst209.dev - A portfolio website for Aaron Armstrong - I build modern, accessible and visually pleasing user experiences.',
+        'Aaron Armstrong, a software engineer with 6+ years of experience, focusing on frontend development and design. I specialize in creating robust and visually pleasing user interfaces, optimizing website functionality and performance, and curating modern and accessible user experiences.',
     keywords: [
         'Aaron',
         'Armstrong',
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
         'portfolio',
     ],
     openGraph: {
-        title: 'Armst209.dev | Software Engineer, Frontend & Design',
+        title: 'Aaron Armstrong | Software Engineer, Frontend & Design',
         description:
-            'A portfolio website for Aaron Armstrong | I build modern, accessible and visually pleasing user experiences.',
+            'Aaron Armstrong, a software engineer with 6+ years of experience, focusing on frontend development and design. I specialize in creating robust and visually pleasing user interfaces, optimizing website functionality and performance, and curating modern and accessible user experiences.',
         siteName: 'armst209.dev',
         locale: 'en_US',
         type: 'website',
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Armst209.dev | Software Engineer, Frontend & Design',
+        title: 'Aaron Armstrong | Software Engineer, Frontend & Design',
         description:
-            'A portfolio website for Aaron Armstrong | I build modern, accessible and visually pleasing user experiences.',
+            'Aaron Armstrong, a software engineer with 6+ years of experience, focusing on frontend development and design. I specialize in creating robust and visually pleasing user interfaces, optimizing website functionality and performance, and curating modern and accessible user experiences.',
         creator: '@armst209dev',
         images: [],
     },

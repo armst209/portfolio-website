@@ -9,9 +9,8 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-    title: 'Personal Projects | Software Engineer, Frontend & Design',
-    description:
-        'Personal Projects - A portfolio website for Aaron Armstrong - I build modern, accessible and visually pleasing user experiences.',
+    title: 'Personal Projects - Aaron Armstrong | Software Engineer, Frontend & Design',
+    description: 'Here you will find a collection of my completed and in-progress projects.',
     keywords: [
         'Aaron',
         'Armstrong',
@@ -31,9 +30,8 @@ export const metadata: Metadata = {
         'projects',
     ],
     openGraph: {
-        title: 'Personal Projects - Armst209.dev | Software Engineer, Frontend & Design',
-        description:
-            'A portfolio website for Aaron Armstrong | I build modern, accessible and visually pleasing user experiences.',
+        title: 'Personal Projects - Aaron Armstrong | Software Engineer, Frontend & Design',
+        description: 'Here you will find a collection of my completed and in-progress projects.',
         siteName: 'armst209.dev',
         locale: 'en_US',
         type: 'website',
@@ -41,9 +39,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Personal Projects - Armst209.dev | Software Engineer, Frontend & Design',
-        description:
-            'A portfolio website for Aaron Armstrong | I build modern, accessible and visually pleasing user experiences.',
+        title: 'Personal Projects - Aaron Armstrong | Software Engineer, Frontend & Design',
+        description: 'Here you will find a collection of my completed and in-progress projects.',
         creator: '@armst209dev',
         images: [],
     },
