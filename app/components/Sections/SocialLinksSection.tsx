@@ -70,7 +70,7 @@ const SocialLinksSection = () => {
                 />
             </a>
             <a
-                href="https://drive.google.com/file/d/11kO-LIcwe-BIVgw2w7LYY6Zq_6fkGIsR/view?usp=sharing"
+                href="https://drive.google.com/file/d/1GiBXmArJsI1YG99vIcSBY9tb-UUw0Rqs/view?usp=sharing"
                 rel="noopener noreferer"
                 target="_blank"
                 className="mr-4"

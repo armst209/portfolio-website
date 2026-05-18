@@ -62,8 +62,9 @@ export const professionalExpContent: ProfessionalExperienceContent[] = [
         location: 'Dearborn, Michigan',
         website: 'https://www.ford.com/',
         contentItems: [
-            'Collaborated with senior software engineers to enhance Ford Motor Company&apos;s customer-facing web applications.',
-            'Focused on developing and modernizing vehicle trade-in and purchase platforms.',
+            `Collaborated with senior software engineers to enhance Ford Motor Company's customer-facing web applications - vehicle purchase & vehicle trade-in`,
+            'Vehicle Purchase - using Vite, React Hook Form and Zod validation & web component architecture, developed a versatile form for generating purchase leads and client interest.',
+            `Vehicle Trade-In - using Next.js, in conjunction with monorepo architecture, completely rebuilt & modernized Ford's legacy web application`,
         ],
         technologies: [
             'Next.js',
@@ -83,7 +84,8 @@ export const professionalExpContent: ProfessionalExperienceContent[] = [
         website: 'https://www.uwm.com/',
         contentItems: [
             'Supported, maintained, and refactored code base for United Wholesale Mortgage’s proprietary loan origination and marketing software suites (EASE, EDGE, BOLT & Brand360) – utilized Scrum & Agile methodologies',
-            'Worked closely with UI Designers to implement and refactor UI components to meet ADA/WCAG standards as well as additional data reporting and SEO (BOLT & Brand360)',
+            'Mortgage Refinance & Title Features (BOLT) – using React, YAML, Data Driven Forms and an in-house-built form templating library, created several UI components & pages that streamlined the title and refinance process for UWM brokers and underwriters – these features also implemented AI and microservice architecture',
+            "Loan Origination & Underwriting (EDGE & EASE) - using C#, .NET & Razor, optimized user endpoints & internal-use API's for UWM underwriters & developers",
         ],
         technologies: [
             'Javascript',

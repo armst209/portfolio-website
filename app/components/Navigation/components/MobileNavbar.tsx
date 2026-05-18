@@ -21,6 +21,8 @@ const MobileNavbar = () => {
                 className="flex lg:hidden"
                 onClick={toggleMobileMenu}
                 aria-label="Open Navigation"
+                aria-haspopup="menu"
+                aria-expanded={isOpen}
             >
                 <Image
                     src={HamburgerIcon}
