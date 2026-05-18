@@ -1,51 +1,57 @@
-# Portfolio Website - armst209.dev
+# Portfolio Website
 
-A polished personal portfolio built with Next.js 16, React 19, Tailwind CSS v4, and EmailJS.
+A personal portfolio built with Next.js, React and Tailwind CSS. It demonstrates a modern, accessible frontend with sections for a hero, skills, projects, and a contact form.
 
-This repository showcases a frontend portfolio experience with a hero section, skill highlights, project cards, and a client-side contact form.
+## Quick overview
+
+- **Purpose:** Showcase projects, skills, and a contact flow for freelance or personal branding.
+- **Framework:** Next.js (app router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
 
 ## Features
 
-- Responsive, modern portfolio layout
-- Hero banner, skills overview, and project showcase
-- Dedicated projects page with project card components
-- Contact form integrated with EmailJS for email submission
-- Theme support with dark/light mode styles
-- Accessible UI components and structured content
+- Responsive layout and accessible components
+- Theme (dark / light) support
+- Project gallery with card components
+- Client-side contact form integrated with EmailJS
+- Unit and accessibility tests with Vitest and vitest-axe
 
-## Tech Stack
+## Tech stack
 
-- Next.js 16
-- React 19
+- Next.js
+- React
 - TypeScript
-- Tailwind CSS v4
+- Tailwind CSS
 - EmailJS (`@emailjs/browser`)
 - React Hook Form
 - React Hot Toast
-- Lucide React icons
-- `class-variance-authority`, `clsx`, `next-themes`
+- Lucide icons
 
-## Repository Structure
+## Repository structure (high level)
 
-- `app/`
-    - `page.tsx` — main home page
-    - `projects/page.tsx` — project gallery page
-    - `layout.tsx` — root layout, metadata, and font setup
-    - `globals.css` — Tailwind base styles and custom utilities
-    - `about/` — about page and related components
-    - `components/` — reusable UI sections and page pieces
-    - `utils/` — shared content and helper modules
-- `public/` — static assets, fonts, and images
+- `app/` — application routes and page components
+- `app/components/` — reusable UI sections (Hero, Navigation, Footer, etc.)
+- `app/projects/` — project pages and cards
+- `public/` — static assets, images, fonts
+- `utils/` — shared utilities and content
 
-## Setup
+For details, explore the `app/components` tree to see tests alongside components.
 
-1. Install dependencies:
+## Getting started
+
+Prerequisites:
+
+- Node.js (18+ recommended)
+- npm or yarn
+
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Create a `.env.local` file at the repository root and add EmailJS credentials:
+Create local environment variables (for EmailJS):
 
 ```env
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
@@ -53,30 +59,66 @@ NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
 ```
 
-3. Run the development server:
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
-4. Open the site:
+Open http://localhost:3000 in your browser.
 
-```text
-http://localhost:3000
+## Available scripts
+
+- `npm run dev` — start the Next.js development server
+- `npm run build` — build the production site
+- `npm run start` — start the production server
+- `npm run lint` — run ESLint
+- `npm run test` — run Vitest tests
+- `npm run test:ui` — run Vitest with the interactive UI
+- `npm run prettier` — format files with Prettier
+- `npm run prettier:check` — check formatting
+
+## Testing
+
+Run unit and accessibility tests with Vitest:
+
+```bash
+npm run test
 ```
 
-## Available Scripts
+Some components include accessibility checks using `vitest-axe`.
 
-- `npm run dev` — start the development server
-- `npm run build` — create a production build
-- `npm run start` — serve the production build
-- `npm run lint` — run ESLint checks
-- `npm run test` — run Vitest tests
-- `npm run prettier` — format code
-- `npm run prettier:check` — check formatting
+## Deployment
+
+This is a standard Next.js app and can be deployed to Vercel or any platform that supports Next.js. Typical flow:
+
+```bash
+npm run build
+npm run start
+```
+
+For Vercel, connect the repository and use the default Next.js build settings.
+
+## Contributing
+
+Contributions and suggestions are welcome. Common contribution steps:
+
+1. Fork the repository
+2. Create a feature branch
+3. Run tests and linters
+4. Open a pull request with a clear description
+
+## Files to check first
+
+- [app/layout.tsx](app/layout.tsx) — root layout and fonts
+- [app/page.tsx](app/page.tsx) — home page
+- [app/components/Navigation/Navigation.tsx](app/components/Navigation/Navigation.tsx) — main navigation
 
 ## Notes
 
-- The contact form requires EmailJS configuration to send messages.
-- Static assets are stored under `public/`.
-- This project is configured as a private repository.
+- The contact form requires EmailJS keys to send messages.
+- Static assets live in `public/` and project images are under `public/assets/project-photos/`.
+
+## License & author
+
+This repository is a personal portfolio. For questions or updates, open an issue or contact [armst209](https://www.linkedin.com/in/aaronlamararmstrong/) via the contact form on the site.
