@@ -35,10 +35,12 @@ const ThemeToggle = () => {
     return (
         <div className="relative mr-6 z-50 cursor-pointer">
             <button
+                id="theme-mode-trigger"
                 onClick={() => setShowDropdown(!showDropdown)}
                 className="flex flex-row h-full items-center justify-center "
                 aria-expanded={showDropdown}
-                aria-label="Open Modes"
+                aria-controls="theme-mode-menu"
+                aria-label="Toggle Theme Modes Menu"
                 aria-haspopup="menu"
             >
                 <AnimatePresence mode="wait" initial={false}>
@@ -123,6 +125,9 @@ const ThemeToggle = () => {
 
             {showDropdown && (
                 <motion.div
+                    id="theme-mode-dropdown"
+                    aria-labelledby="theme-mode-trigger"
+                    role="dialog"
                     animate={showDropdown ? 'enter' : 'exit'}
                     transition={{ duration: 0.15 }}
                     className="bg-white cursor-pointer font-bold text-xl p-4 flex flex-col justify-center items-center absolute top-0 right-0 mt-10 border-2 border-light-border rounded-md dark:bg-black-custom coffee:bg-background-coffee"

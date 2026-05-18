@@ -17,11 +17,12 @@ const MobileNavbar = () => {
     return (
         <>
             <button
-                id="hamburger"
+                id="mobile-menu-toggle"
                 className="flex lg:hidden"
                 onClick={toggleMobileMenu}
                 aria-label="Open Navigation"
                 aria-haspopup="menu"
+                aria-controls="mobile-menu"
                 aria-expanded={isOpen}
             >
                 <Image
@@ -49,8 +50,7 @@ const MobileNavbar = () => {
             <div
                 role="dialog"
                 id="mobile-menu"
-                aria-label="mobile menu"
-                aria-expanded={isOpen}
+                aria-labelledby="mobile-menu-toggle"
                 className={`w-full h-screen flex fixed inset-0 z-50 transition-transform duration-300 ease-out shadow(12px 9px 18px 5px rgba(0,0,0,0.84)) transform ${isOpen ? ' translate-x-0' : 'translate-x-full'} bg-background-light dark:bg-background-dark coffee:bg-background-coffee lg:hidden`}
             >
                 <button
