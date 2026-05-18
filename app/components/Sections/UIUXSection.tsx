@@ -81,13 +81,13 @@ const UIUXSection = () => {
                                     src={CheckIcon}
                                     alt="contact icon"
                                     width={20}
-                                    className="hidden mr-4 black-color-filter dark:hidden coffee:hidden"
+                                    className="flex mr-4 black-color-filter dark:hidden coffee:hidden"
                                 />
                                 <Image
                                     src={CheckIcon}
                                     alt="contact icon"
                                     width={20}
-                                    className="flex mr-4 coffee-color-filter dark:hidden coffee:flex"
+                                    className="hidden mr-4 coffee-color-filter dark:hidden coffee:flex"
                                 />
                                 <p className="text-lg xl:text-2xl">{skill}</p>
                             </div>
