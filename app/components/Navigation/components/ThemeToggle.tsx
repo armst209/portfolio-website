@@ -10,7 +10,7 @@ import CoffeeModeIcon from '@public/assets/icons/coffee.svg'
 import CaretIcon from '@public/assets/icons/caret-down.svg'
 import { motion, AnimatePresence } from 'motion/react'
 
-const ThemeToggle = ({ className }: { className?: string }) => {
+const ThemeToggle = () => {
     const [mounted, setMounted] = useState(false)
     const [showDropdown, setShowDropdown] = useState(false)
     const { resolvedTheme, setTheme } = useTheme()

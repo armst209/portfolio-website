@@ -16,7 +16,7 @@ const Navigation = () => {
                 <div className="flex justify-between p-4  lg:items-center w-full">
                     <SiteLogo />
                     <div className=" flex items-center">
-                        <ThemeToggle className="mr-6" />
+                        <ThemeToggle />
                         <DesktopNavbar />
                         <MobileNavbar />
                     </div>

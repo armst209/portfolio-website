@@ -6,6 +6,7 @@ import HamburgerIcon from '@public/assets/icons/menu.svg'
 import ScribblePeriod from '@public/assets/icons/scribble-blob.svg'
 import CoffeeBeansIcon from '@public/assets/icons/coffee-beans.svg'
 import CloseIcon from '@public/assets/icons/close.svg'
+import CoffeeMachineIcon from '@public/assets/icons/coffee-maker.svg'
 import { navItems } from '@/app/utils/content'
 
 const MobileNavbar = () => {
@@ -26,14 +27,21 @@ const MobileNavbar = () => {
                     width={25}
                     height={25}
                     alt="mobile menu icon"
-                    className="hidden white-color-filter dark:flex"
+                    className="hidden white-color-filter dark:flex coffee:hidden"
                 />
                 <Image
                     src={HamburgerIcon}
                     alt="mobile menu icon"
                     width={25}
                     height={25}
-                    className="flex black-color-filter dark:hidden"
+                    className="flex black-color-filter dark:hidden coffee:hidden"
+                />
+                <Image
+                    src={CoffeeMachineIcon}
+                    alt="coffee machine navigation icon"
+                    width={25}
+                    height={25}
+                    className="hidden dark-coffee-color-filter dark:hidden coffee:flex"
                 />
             </button>
             <div
@@ -53,14 +61,21 @@ const MobileNavbar = () => {
                         alt="close navigation icon"
                         width={40}
                         height={40}
-                        className="hidden white-color-filter dark:flex"
+                        className="hidden white-color-filter dark:flex coffee:hidden"
                     />
                     <Image
                         src={CloseIcon}
                         alt="close navigation icon"
                         width={40}
                         height={40}
-                        className="flex black-color-filter dark:hidden"
+                        className="flex black-color-filter dark:hidden coffee:hidden"
+                    />
+                    <Image
+                        src={CloseIcon}
+                        alt="close navigation icon"
+                        width={40}
+                        height={40}
+                        className="hidden coffee-color-filter dark:hidden coffee:flex"
                     />
                 </button>
                 <div className="z-10 relative font-bold text-6xl flex flex-col pt-20 pl-4 h-full">

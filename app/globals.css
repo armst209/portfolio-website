@@ -24,7 +24,6 @@
     --color-highlight-coffee: hsl(29, 100%, 22%);
     --color-light-border: hsl(240, 4%, 16%);
     --color-dark-border: hsl(240, 4%, 16%);
-    --color-forest-green-custom: hsl(158.28, 82.86%, 13.73%);
     --color-emerald-green-custom: var(--color-emerald-600);
     --color-orange-custom: hsl(41.17, 97.38%, 44.9%);
     --color-black-custom: hsl(0, 0%, 4.31%);
@@ -44,11 +43,6 @@ body {
     .emerald-green-filter {
         filter: brightness(0) saturate(100%) invert(32%) sepia(51%) saturate(3503%)
             hue-rotate(145deg) brightness(96%) contrast(101%);
-    }
-
-    .forest-green-filter {
-        filter: invert(18%) sepia(13%) saturate(3575%) hue-rotate(114deg) brightness(93%)
-            contrast(95%);
     }
 
     .orange-color-filter {
