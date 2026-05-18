@@ -154,7 +154,7 @@ const Projects = () => {
                     </h2>
                 </div>
                 <ScribbledDashPartition className="mt-10 mb-10" />
-                <div className="grid grid-cols-1 gap-4 pt-10 place-items-center lg:grid-cols-2">
+                <div className="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-2">
                     <AnaheimElectronicsCard />
                     <BiscuitsNGroovyCard />
                 </div>
