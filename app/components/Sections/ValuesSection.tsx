@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import ScribbleSmallCircle from '@public/assets/icons/scribble-small-circle.svg'
 import { valuesContent } from '@/app/utils/content'
+import ScribbleSmallCircleImage from '../Images/ScribbleSmallCircle'
 
 const ValuesSection = () => {
     return (
@@ -14,24 +14,7 @@ const ValuesSection = () => {
                         >
                             <div className="flex justify-center items-center pb-4 sm:pb-0 lg:items-center xl:items-start xl:">
                                 <div className="relative w-20 h-20 flex justify-center items-center">
-                                    <Image
-                                        src={ScribbleSmallCircle}
-                                        style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                        className="hidden absolute inset-0 orange-color-filter dark:flex coffee:hidden"
-                                        alt="small scribbled circle"
-                                    />
-                                    <Image
-                                        src={ScribbleSmallCircle}
-                                        style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                        className="flex absolute inset-0 black-color-filter dark:hidden coffee:hidden"
-                                        alt="small scribbled circle"
-                                    />
-                                    <Image
-                                        src={ScribbleSmallCircle}
-                                        style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                        className="hidden absolute inset-0 coffee-color-filter dark:hidden coffee:flex"
-                                        alt="small scribbled circle"
-                                    />
+                                    <ScribbleSmallCircleImage />
                                     <Image
                                         src={icon}
                                         alt="modern icon"

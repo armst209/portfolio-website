@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ProjectImage from '@public/assets/project-photos/anahiem-electronics/hero.webp'
 import LiveDemoIcon from '@public/assets/icons/live-demo.svg'
 import GithubIcon from '../components/Images/GithubIcon'
-import ScribbleSmallCircle from '@public/assets/icons/scribble-small-circle.svg'
+import ScribbleSmallCircleImage from '../components/Images/ScribbleSmallCircle'
 
 const AnaheimElectronicsCard = () => {
     return (
@@ -56,27 +56,7 @@ const AnaheimElectronicsCard = () => {
                         </div>
                         <div className="w-20 h-20">
                             <div className="relative h-full w-full flex justify-center">
-                                <Image
-                                    src={ScribbleSmallCircle}
-                                    fill={true}
-                                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="hidden absolute inset-0 orange-color-filter dark:flex coffee:hidden"
-                                    alt="small scribbled circle"
-                                />
-                                <Image
-                                    src={ScribbleSmallCircle}
-                                    fill={true}
-                                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="flex absolute inset-0 black-color-filter dark:hidden coffee:hidden"
-                                    alt="small scribbled circle"
-                                />
-                                <Image
-                                    src={ScribbleSmallCircle}
-                                    fill={true}
-                                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="hidden absolute inset-0 coffee-color-filter dark:hidden coffee:flex"
-                                    alt="small scribbled circle"
-                                />
+                                <ScribbleSmallCircleImage />
                                 <Image
                                     src={LiveDemoIcon}
                                     alt="skillset icon"
@@ -106,27 +86,7 @@ const AnaheimElectronicsCard = () => {
                         </div>
                         <div className="w-20 h-20">
                             <div className="relative h-full w-full flex justify-center">
-                                <Image
-                                    src={ScribbleSmallCircle}
-                                    fill={true}
-                                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="hidden absolute inset-0 orange-color-filter dark:flex coffee:hidden"
-                                    alt="small scribbled circle"
-                                />
-                                <Image
-                                    src={ScribbleSmallCircle}
-                                    fill={true}
-                                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="flex absolute inset-0 black-color-filter dark:hidden coffee:hidden"
-                                    alt="small scribbled circle"
-                                />
-                                <Image
-                                    src={ScribbleSmallCircle}
-                                    fill={true}
-                                    style={{ objectFit: 'cover', objectPosition: 'center' }}
-                                    className="hidden absolute inset-0 coffee-color-filter dark:hidden coffee:flex"
-                                    alt="small scribbled circle"
-                                />
+                                <ScribbleSmallCircleImage />
                                 <GithubIcon />
                             </div>
                         </div>

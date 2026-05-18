@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import ProjectImage from '@public/assets/project-photos/biscuits-n-groovy/hero.webp'
 import BiscuitsNGroovyLogo from '@public/assets/project-photos/biscuits-n-groovy/bng_logo_webp.webp'
+import ScribbleSmallCircleImage from '../components/Images/ScribbleSmallCircle'
+import GithubIcon from '../components/Images/GithubIcon'
 
 const BiscuitsNGroovyCard = () => {
     return (
-        <div className=" h-auto flex flex-col rounded-xl border border-light-border lg:h-180 max-w-200 dark:border-dark-border">
+        <div className=" h-auto flex flex-col rounded-xl border border-light-border max-w-200 dark:border-dark-border">
             <div className="z-10 ">
                 <Image
                     src={ProjectImage}
@@ -14,8 +16,8 @@ const BiscuitsNGroovyCard = () => {
                     placeholder="blur"
                 />
             </div>
-            <div className="relative z-10 flex flex-col lg:flex-row">
-                <div className="flex flex-col justify-between z-10 border-t-[.5px] border-[hsl(240,4,16)] p-4 pb-4 lg:flex-row lg:mb-30">
+            <div className="w-full flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-between z-10 border-t border-t-light-border dark:border-t-dark-border coffee:border-t-coffee p-4 pb-4">
                     <div>
                         <div className="pb-4">
                             <h2 className="text-2xl font-bold">
@@ -73,6 +75,25 @@ const BiscuitsNGroovyCard = () => {
                             </li>
                         </ul>
                     </div>
+                </div>
+
+                <div className="w-full flex flex-col justify-center items-center md:flex-row">
+                    <a
+                        href="https://github.com/armst209/BiscuitsNGroovy"
+                        className="w-70 items-center justify-center flex flex-row m-4 border border-light-border p-4 rounded-xl dark:border-dark-border"
+                        rel="noopener noreferer"
+                        target="_blank"
+                    >
+                        <div className="flex items-center mr-2">
+                            <p className="font-bold">Code</p>
+                        </div>
+                        <div className="w-20 h-20">
+                            <div className="relative h-full w-full flex justify-center">
+                                <ScribbleSmallCircleImage />
+                                <GithubIcon />
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

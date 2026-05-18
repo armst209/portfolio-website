@@ -33,11 +33,11 @@ const ThemeToggle = () => {
     }
 
     return (
-        <div className="relative mr-6 z-50 cursor-pointer">
+        <div className="relative mr-6 z-50">
             <button
                 id="theme-mode-trigger"
                 onClick={() => setShowDropdown(!showDropdown)}
-                className="flex flex-row h-full items-center justify-center "
+                className="flex flex-row h-full items-center justify-center cursor-pointer"
                 aria-expanded={showDropdown}
                 aria-controls="theme-mode-menu"
                 aria-label="Toggle Theme Modes Menu"
