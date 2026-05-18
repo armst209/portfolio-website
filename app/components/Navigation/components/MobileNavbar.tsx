@@ -20,7 +20,7 @@ const MobileNavbar = () => {
                 id="mobile-menu-toggle"
                 className="flex lg:hidden"
                 onClick={toggleMobileMenu}
-                aria-label="Open Navigation"
+                aria-label="Open Mobile Navigation"
                 aria-haspopup="menu"
                 aria-controls="mobile-menu"
                 aria-expanded={isOpen}
@@ -41,7 +41,7 @@ const MobileNavbar = () => {
                 />
                 <Image
                     src={CoffeeMachineIcon}
-                    alt="coffee machine navigation icon"
+                    alt="mobile menu icon as coffee machine icon"
                     width={25}
                     height={25}
                     className="hidden dark-coffee-color-filter dark:hidden coffee:flex"
@@ -51,30 +51,30 @@ const MobileNavbar = () => {
                 role="dialog"
                 id="mobile-menu"
                 aria-labelledby="mobile-menu-toggle"
-                className={`w-full h-screen flex fixed inset-0 z-50 transition-transform duration-300 ease-out shadow(12px 9px 18px 5px rgba(0,0,0,0.84)) transform ${isOpen ? ' translate-x-0' : 'translate-x-full'} bg-background-light dark:bg-background-dark coffee:bg-background-coffee lg:hidden`}
+                className={`w-full h-screen flex fixed inset-0 z-100 transition-transform duration-300 ease-out shadow(12px 9px 18px 5px rgba(0,0,0,0.84)) transform ${isOpen ? ' translate-x-0' : 'translate-x-full'} bg-background-light dark:bg-background-dark coffee:bg-background-coffee lg:hidden`}
             >
                 <button
                     onClick={closeMobileMenu}
                     className="absolute top-0 flex justify-end w-full pt-5 pr-3"
-                    aria-label="Close Navigation"
+                    aria-label="Close Mobile Navigation"
                 >
                     <Image
                         src={CloseIcon}
-                        alt="close navigation icon"
+                        alt="close mobile navigation icon"
                         width={40}
                         height={40}
                         className="hidden white-color-filter dark:flex coffee:hidden"
                     />
                     <Image
                         src={CloseIcon}
-                        alt="close navigation icon"
+                        alt="close mobile navigation icon"
                         width={40}
                         height={40}
                         className="flex black-color-filter dark:hidden coffee:hidden"
                     />
                     <Image
                         src={CloseIcon}
-                        alt="close navigation icon"
+                        alt="close mobile navigation icon"
                         width={40}
                         height={40}
                         className="hidden coffee-color-filter dark:hidden coffee:flex"
@@ -96,21 +96,21 @@ const MobileNavbar = () => {
                                         className="hidden orange-color-filter ml-2 dark:flex coffee:hidden"
                                         width={40}
                                         height={40}
-                                        alt="scribble blob period"
+                                        alt={`accent image for ${title} mobile link `}
                                     />
                                     <Image
                                         src={ScribblePeriod}
                                         className="flex black-color-filter ml-2 dark:hidden coffee:hidden"
                                         width={40}
                                         height={40}
-                                        alt="scribble blob period"
+                                        alt={`accent image for ${title} mobile link `}
                                     />
                                     <Image
                                         src={CoffeeBeansIcon}
                                         className="hidden coffee-color-filter ml-2 dark:hidden coffee:flex"
                                         width={40}
                                         height={40}
-                                        alt="scribble blob period"
+                                        alt={`accent image for ${title} mobile link `}
                                     />
                                 </div>
                             </Link>
@@ -130,21 +130,21 @@ const MobileNavbar = () => {
                                 className="hidden orange-color-filter ml-2 dark:flex coffee:hidden"
                                 width={40}
                                 height={40}
-                                alt="scribble blob period"
+                                alt={'accent image for Contact mobile link'}
                             />
                             <Image
                                 src={ScribblePeriod}
                                 className="flex black-color-filter ml-2 dark:hidden coffee:hidden"
                                 width={40}
                                 height={40}
-                                alt="scribble blob period"
+                                alt={'accent image for Contact mobile link'}
                             />
                             <Image
                                 src={CoffeeBeansIcon}
                                 className="hidden coffee-color-filter ml-2 dark:hidden coffee:flex"
                                 width={40}
                                 height={40}
-                                alt="scribble blob period"
+                                alt={'accent image for Contact mobile link'}
                             />
                         </div>
                     </a>
