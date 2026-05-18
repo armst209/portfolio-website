@@ -15,7 +15,8 @@ const ProfessionalExperience = () => {
                     Professional Experience
                 </h1>
             </div>
-            <div className=" border-t border-black-custom dark:border-orange-custom">
+            {/* keep h2 element for accessibility - theres a nest h3 in the Accordion library that can't be changed */}
+            <h2 className=" border-t border-black-custom dark:border-orange-custom">
                 <Accordion transition transitionTimeout={200}>
                     {professionalExpContent.map(
                         ({ header, logo, location, website, contentItems, technologies, id }) => {
@@ -110,7 +111,7 @@ const ProfessionalExperience = () => {
                         }
                     )}
                 </Accordion>
-            </div>
+            </h2>
         </section>
     )
 }
