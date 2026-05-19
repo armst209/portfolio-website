@@ -58,7 +58,7 @@ const BiscuitsNGroovyCard = () => {
                                 .
                             </li>
                             <li>
-                                Work in progress. Currenly updating npm packages and frameworks to
+                                Work in progress. Currently updating npm packages and frameworks to
                                 latest versions. Updating to{' '}
                                 <span className="font-bold text-black-custom dark:text-orange-custom">
                                     Next.js
