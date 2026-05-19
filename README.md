@@ -151,27 +151,6 @@ Tests include:
 - **Accessibility Tests** — Powered by vitest-axe to ensure WCAG compliance
 - **Integration Tests** — Form submissions and user interactions
 
-## 📦 Deployment
-
-### Vercel (Recommended)
-
-1. Push your repository to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Vercel auto-detects Next.js and uses optimal build settings
-4. Add environment variables in Vercel project settings
-5. Deploy automatically on push
-
-### Other Platforms
-
-Build and deploy manually:
-
-```bash
-npm run build
-npm run start
-```
-
-The `.next` directory contains your production build and is ready to be deployed to any Node.js hosting platform.
-
 ## 🔧 Configuration
 
 ### Tailwind CSS
@@ -197,22 +176,9 @@ App Router is configured in `next.config.ts` with performance optimizations.
 
 This project is open source. Feel free to use it as a template for your own portfolio.
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](../../issues) if you want to contribute.
-
 ## 📧 Contact
 
 For questions or feedback about the portfolio, please use the contact form on the website or reach out directly.
-
-## Contributing
-
-Contributions and suggestions are welcome. Common contribution steps:
-
-1. Fork the repository
-2. Create a feature branch
-3. Run tests and linters
-4. Open a pull request with a clear description
 
 ## Files to check first
 
