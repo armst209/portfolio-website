@@ -25,7 +25,7 @@ const SkillSetSection = () => {
                     return (
                         <div
                             key={index}
-                            className="w-full font-bold text-3xl xs:w-auto rounded-md p-2 flex flex-row items-center justify-left mr-4 sm:text-lg xl:text-xl"
+                            className="w-full text-2xl xs:w-auto rounded-md p-2 flex flex-row items-center justify-left mr-4 sm:text-lg xl:text-xl"
                         >
                             <CheckIcon />
                             <p>{skill}</p>

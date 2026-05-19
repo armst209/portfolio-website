@@ -69,7 +69,7 @@ const UIUXSection = () => {
                         return (
                             <div
                                 key={`uiuxskill-${index}`}
-                                className="font-bold flex flex-row items-center w-full"
+                                className="flex flex-row items-center w-full"
                             >
                                 <CheckIcon />
                                 <p>{skill}</p>
