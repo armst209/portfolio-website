@@ -3,9 +3,10 @@
 import Image from 'next/image'
 import { Accordion } from '@szhsin/react-accordion'
 import CustomAccordionItem from './components/CustomAccordionItem'
-import LocationIcon from '@public/assets/icons/marker.svg'
-import GlobeIcon from '@public/assets/icons/globe.svg'
+
 import { professionalExpContent } from '@/app/utils/content'
+import LocationIcon from '../../Images/LocationIcon'
+import GlobeIcon from '../../Images/GlobeIcon'
 
 const ProfessionalExperience = () => {
     return (
@@ -31,46 +32,12 @@ const ProfessionalExperience = () => {
                                                 className="mb-4 md:mr-4 md:mb-0"
                                             />
                                             <div className="flex flex-row items-center justify-center lg:mr-4">
-                                                <Image
-                                                    src={LocationIcon}
-                                                    alt="location icon"
-                                                    width={20}
-                                                    className="hidden orange-color-filter mr-2 dark:flex coffee:hidden"
-                                                />
-                                                <Image
-                                                    src={LocationIcon}
-                                                    alt="location icon"
-                                                    width={20}
-                                                    className="flex black-color-filter mr-2 dark:hidden coffee:hidden"
-                                                />
-                                                <Image
-                                                    src={LocationIcon}
-                                                    alt="location icon"
-                                                    width={20}
-                                                    className="hidden coffee-color-filter mr-2 dark:hidden coffee:flex"
-                                                />
+                                                <LocationIcon />
                                                 <p>{location}</p>
                                             </div>
 
                                             <div className="flex flex-row items-center justify-center">
-                                                <Image
-                                                    src={GlobeIcon}
-                                                    alt="globe icon"
-                                                    width={20}
-                                                    className="hidden orange-color-filter mr-2 dark:flex coffee:hidden"
-                                                />
-                                                <Image
-                                                    src={GlobeIcon}
-                                                    alt="globe icon"
-                                                    width={20}
-                                                    className="flex black-color-filter mr-2 dark:hidden coffee:hidden"
-                                                />
-                                                <Image
-                                                    src={GlobeIcon}
-                                                    alt="globe icon"
-                                                    width={20}
-                                                    className="hidden coffee-color-filter mr-2 dark:hidden coffee:flex"
-                                                />
+                                                <GlobeIcon />
                                                 <a
                                                     href={website}
                                                     rel="noopener noreferer"

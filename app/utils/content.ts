@@ -62,9 +62,9 @@ export const professionalExpContent: ProfessionalExperienceContent[] = [
         location: 'Dearborn, Michigan',
         website: 'https://www.ford.com/',
         contentItems: [
-            `Collaborated with senior software engineers to enhance Ford Motor Company's customer-facing web applications - vehicle purchase & vehicle trade-in`,
-            'Vehicle Purchase - using Vite, React Hook Form and Zod validation & web component architecture, developed a versatile form for generating purchase leads and client interest.',
-            `Vehicle Trade-In - using Next.js, in conjunction with monorepo architecture, completely rebuilt & modernized Ford's legacy web application`,
+            'Developed responsive & accessible web applications for 500,000 plus daily users using React, Next.js, Tailwind CSS & Web Component Architecture',
+            'Vehicle Purchase - Built a versatile, production-ready lead form web application that generated over 1000 plus purchase leads, using React, Vite & React Hook Form',
+            `Vehicle Trade-In - rebuilt & modernized several of Ford's legacy web applications using Next.js, React, Tailwind CSS, Playwright, Monorepo Architecture, Google Firebase, Web Components, Zustand, Tanstack Query`,
         ],
         technologies: [
             'Next.js',

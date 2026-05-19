@@ -6,8 +6,7 @@ import Image from 'next/image'
 import DarkModeIcon from '@public/assets/icons/dark-moon.svg'
 import LightModeIcon from '@public/assets/icons/sun-light.svg'
 import CoffeeModeIcon from '@public/assets/icons/coffee.svg'
-
-import CaretIcon from '@public/assets/icons/caret-down.svg'
+import CaretIcon from '../../Images/CaretIcon'
 import { motion, AnimatePresence } from 'motion/react'
 
 const ThemeToggle = () => {
@@ -50,24 +49,7 @@ const ThemeToggle = () => {
                         animate={{ rotate: showDropdown ? 180 : 0 }}
                         transition={{ duration: 0.15 }}
                     >
-                        <Image
-                            src={CaretIcon}
-                            alt="dropdown caret icon"
-                            width={15}
-                            className={`flex black-color-filter dark:hidden coffee:hidden`}
-                        />
-                        <Image
-                            src={CaretIcon}
-                            alt="dropdown caret icon"
-                            width={15}
-                            className="hidden white-color-filter coffee:hidden dark:flex"
-                        />
-                        <Image
-                            src={CaretIcon}
-                            alt="dropdown caret icon"
-                            width={15}
-                            className="hidden dark-coffee-color-filter coffee:flex dark:hidden"
-                        />
+                        <CaretIcon />
                     </motion.div>
                 </AnimatePresence>
 

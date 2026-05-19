@@ -2,12 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
-import HamburgerIcon from '@public/assets/icons/menu.svg'
 import ScribblePeriod from '@public/assets/icons/scribble-blob.svg'
 import CoffeeBeansIcon from '@public/assets/icons/coffee-beans.svg'
-import CloseIcon from '@public/assets/icons/close.svg'
-import CoffeeMachineIcon from '@public/assets/icons/coffee-maker.svg'
 import { navItems } from '@/app/utils/content'
+import CloseIcon from '../../Images/CloseIcon'
+import MobileMenuIcon from '../../Images/MobileMenuIcon'
 
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -25,27 +24,7 @@ const MobileNavbar = () => {
                 aria-controls="mobile-menu"
                 aria-expanded={isOpen}
             >
-                <Image
-                    src={HamburgerIcon}
-                    width={25}
-                    height={25}
-                    alt="mobile menu icon"
-                    className="hidden white-color-filter dark:flex coffee:hidden"
-                />
-                <Image
-                    src={HamburgerIcon}
-                    alt="mobile menu icon"
-                    width={25}
-                    height={25}
-                    className="flex black-color-filter dark:hidden coffee:hidden"
-                />
-                <Image
-                    src={CoffeeMachineIcon}
-                    alt="mobile menu icon as coffee machine icon"
-                    width={25}
-                    height={25}
-                    className="hidden dark-coffee-color-filter dark:hidden coffee:flex"
-                />
+                <MobileMenuIcon />
             </button>
             <div
                 role="dialog"
@@ -58,27 +37,7 @@ const MobileNavbar = () => {
                     className="absolute top-0 flex justify-end w-full pt-5 pr-3"
                     aria-label="Close Mobile Navigation"
                 >
-                    <Image
-                        src={CloseIcon}
-                        alt="close mobile navigation icon"
-                        width={40}
-                        height={40}
-                        className="hidden white-color-filter dark:flex coffee:hidden"
-                    />
-                    <Image
-                        src={CloseIcon}
-                        alt="close mobile navigation icon"
-                        width={40}
-                        height={40}
-                        className="flex black-color-filter dark:hidden coffee:hidden"
-                    />
-                    <Image
-                        src={CloseIcon}
-                        alt="close mobile navigation icon"
-                        width={40}
-                        height={40}
-                        className="hidden coffee-color-filter dark:hidden coffee:flex"
-                    />
+                    <CloseIcon />
                 </button>
                 <div className="z-10 relative font-bold text-6xl flex flex-col pt-20 pl-4 h-full">
                     {navItems.map(({ title, pathname, id }) => {

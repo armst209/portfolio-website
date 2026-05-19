@@ -1,36 +1,16 @@
-import Image from 'next/image'
-import PointingDownArrows from '@public/assets/icons/pointing down arrows.svg'
-import HeroArtDark from '@public/assets/HeroImage_Dark.webp'
-import HeroArtLight from '@public/assets/HeroImage_Light.webp'
-import HeroArtCoffee from '@public/assets/HeroImage_Coffee.webp'
 import SocialLinksSection from '../../Sections/SocialLinksSection'
 import ScribbledDashPartition from '../../Partitions/ScribbledDashPartition'
-import CoffeeBeanIcon from '@public/assets/icons/coffee-beans.svg'
+import HeroArrows from '../../Images/HeroArrows'
+import HeroImage from '../../Images/HeroImage'
 
 const HeroContent = () => {
     return (
         <section className="flex flex-col xxl:flex-row lg:items-center lg:justify-between">
             <div id="hero-section-headings">
                 <div className="flex items-center justify-center">
-                    <Image
-                        src={PointingDownArrows}
-                        alt="pointing down arrows"
-                        className="flex black-color-filter dark:hidden w-30 mt-6 coffee:hidden"
-                    />
-                    <Image
-                        src={PointingDownArrows}
-                        alt="pointing down arrows"
-                        className="hidden orange-color-filter w-30 mt-6 dark:flex coffee:hidden"
-                    />
-
-                    <Image
-                        src={CoffeeBeanIcon}
-                        className="hidden coffee-color-filter w-10 mt-6 dark:hidden coffee:flex"
-                        alt="coffee bean icon"
-                    />
+                    <HeroArrows />
                 </div>
                 <ScribbledDashPartition />
-
                 <div
                     id="hero-text-mobile"
                     className="flex-cold justify-center items-center text-center"
@@ -59,48 +39,11 @@ const HeroContent = () => {
                 </div>
                 <ScribbledDashPartition />
                 <div className="flex items-center justify-center rotate-180">
-                    <Image
-                        src={PointingDownArrows}
-                        alt="pointing down arrows"
-                        className="flex black-color-filter dark:hidden w-30 mt-6 coffee:hidden"
-                    />
-                    <Image
-                        src={PointingDownArrows}
-                        alt="pointing down arrows"
-                        className="hidden orange-color-filter w-30 mt-6 dark:flex coffee:hidden"
-                    />
-                    <Image
-                        src={CoffeeBeanIcon}
-                        className="hidden coffee-color-filter w-10 mt-6 dark:hidden coffee:flex"
-                        alt="coffee bean icon"
-                    />
+                    <HeroArrows />
                 </div>
             </div>
             <div id="hero-section-image" className="h-full flex justify-center items-center">
-                <Image
-                    src={HeroArtDark}
-                    alt="hero image"
-                    quality={75}
-                    placeholder="blur"
-                    preload={true}
-                    className="hidden w-[70%] xl:w-[50%] dark:flex coffee:hidden"
-                />
-                <Image
-                    src={HeroArtLight}
-                    alt="hero image"
-                    quality={75}
-                    placeholder="blur"
-                    preload={true}
-                    className="flex w-[70%] xl:w-[50%] dark:hidden coffee:hidden"
-                />
-                <Image
-                    src={HeroArtCoffee}
-                    alt="hero image"
-                    quality={75}
-                    placeholder="blur"
-                    preload={true}
-                    className="hidden w-[70%] xl:w-[50%] dark:hidden coffee:flex"
-                />
+                <HeroImage />
             </div>
         </section>
     )
