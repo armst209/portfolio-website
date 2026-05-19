@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import { valuesContent } from '@/app/utils/content'
 import ScribbleSmallCircleImage from '../Images/ScribbleSmallCircle'
+import ValuesSectionIcon from '../Images/ValuesSectionIcon'
 
 const ValuesSection = () => {
     return (
@@ -15,21 +15,7 @@ const ValuesSection = () => {
                             <div className="flex justify-center items-center pb-4 sm:pb-0 lg:items-center xl:items-start xl:">
                                 <div className="relative w-20 h-20 flex justify-center items-center">
                                     <ScribbleSmallCircleImage />
-                                    <Image
-                                        src={icon}
-                                        alt="modern icon"
-                                        className="hidden w-10 orange-color-filter dark:flex coffee:hidden"
-                                    />
-                                    <Image
-                                        src={icon}
-                                        alt="modern icon"
-                                        className="flex w-10 black-color-filter dark:hidden coffee:hidden"
-                                    />
-                                    <Image
-                                        src={icon}
-                                        alt="modern icon"
-                                        className="hidden w-10 coffee-color-filter dark:hidden coffee:flex"
-                                    />
+                                    <ValuesSectionIcon title={title} icon={icon} />
                                 </div>
                             </div>
                             <div className="w-full h-full flex flex-col justify-center xl:justify-start items-left pl-4">

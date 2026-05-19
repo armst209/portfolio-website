@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import CheckIcon from '@public/assets/icons/check.svg'
+import CheckIcon from '../Images/CheckIcon'
 import SemiColonPeriodScribble from '../Utility/SemiColonPeriodScribble'
 import { skillSetContent } from '@/app/utils/content'
 
@@ -21,31 +20,14 @@ const SkillSetSection = () => {
                     </h2>
                 </div>
             </div>
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(250,1fr))] p-4 w-full rounded-xl mt-4 border border-light-border bg-transparent dark:border-dark-border">
+            <div className="flex flex-col sm:grid sm:grid-cols-[repeat(auto-fit,minmax(250,1fr))] p-4 w-full rounded-xl mt-4 border border-light-border bg-transparent dark:border-dark-border">
                 {skillSetContent.map((skill, index) => {
                     return (
                         <div
                             key={index}
-                            className="w-auto rounded-md p-2 flex flex-row items-center justify-center cursor-pointer mr-4 text-lg xl:text-xl"
+                            className="w-full font-bold text-3xl xs:w-auto rounded-md p-2 flex flex-row items-center justify-left mr-4 sm:text-lg xl:text-xl"
                         >
-                            <Image
-                                src={CheckIcon}
-                                alt="check icon"
-                                width={20}
-                                className="hidden mr-4 emerald-green-filter dark:flex coffee:hidden"
-                            />
-                            <Image
-                                src={CheckIcon}
-                                alt="check icon"
-                                width={20}
-                                className="flex mr-4 black-color-filter dark:hidden coffee:hidden"
-                            />
-                            <Image
-                                src={CheckIcon}
-                                alt="check icon"
-                                width={20}
-                                className="hidden mr-4 coffee-color-filter dark:hidden coffee:flex"
-                            />
+                            <CheckIcon />
                             <p>{skill}</p>
                         </div>
                     )

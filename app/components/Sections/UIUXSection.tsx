@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import CheckIcon from '@public/assets/icons/check.svg'
 import UIUXIcon from '@public/assets/icons/ui-ux.svg'
 import ScribbleSmallCircle from '@public/assets/icons/scribble-small-circle.svg'
 import SemiColonPeriodScribble from '../Utility/SemiColonPeriodScribble'
 import { uiuxContent } from '@/app/utils/content'
+import CheckIcon from '../Images/CheckIcon'
 
 const UIUXSection = () => {
     return (
@@ -64,32 +64,15 @@ const UIUXSection = () => {
 
                 <div className="w-full border-r border-b border-b-light-border xl:border-b-0 xl:w-auto xl:h-full dark:border-r-dark-border dark:border-b-dark-border "></div>
 
-                <div className="h-full w-full grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] mt-4 p-4 rounded-xl xl:mt-0">
+                <div className="h-full w-full flex flex-col text-2xl items-center xs:grid xs:grid-cols-[repeat(auto-fit,minmax(220px,1fr))] mt-4 p-4 rounded-xl sm:text-xl xl:text-2xl xl:mt-0">
                     {uiuxContent.map((skill, index) => {
                         return (
                             <div
                                 key={`uiuxskill-${index}`}
-                                className="flex flex-row items-center justify-center"
+                                className="font-bold flex flex-row items-center w-full"
                             >
-                                <Image
-                                    src={CheckIcon}
-                                    alt="contact icon"
-                                    width={20}
-                                    className="hidden mr-4 emerald-green-filter dark:flex coffee:hidden"
-                                />
-                                <Image
-                                    src={CheckIcon}
-                                    alt="contact icon"
-                                    width={20}
-                                    className="flex mr-4 black-color-filter dark:hidden coffee:hidden"
-                                />
-                                <Image
-                                    src={CheckIcon}
-                                    alt="contact icon"
-                                    width={20}
-                                    className="hidden mr-4 coffee-color-filter dark:hidden coffee:flex"
-                                />
-                                <p className="text-lg xl:text-2xl">{skill}</p>
+                                <CheckIcon />
+                                <p>{skill}</p>
                             </div>
                         )
                     })}

@@ -30,22 +30,22 @@ type ValuesContent = {
 }
 
 export const skillSetContent = [
-    'Frontend Architecture',
-    'Fullstack Development',
-    'Web Accessibility',
-    'API Integration',
     'UI/UX Design',
+    'API Integration',
+    'Web Accessibility',
+    'Fullstack Development',
+    'Frontend Architecture',
 ]
 
 export const uiuxContent = [
+    'Typography',
     'Wireframing',
     'Prototyping',
-    'Typography',
-    'Responsive Layouts',
-    'Product Branding',
     'Storytelling',
     'User Testing',
     'Color Selection',
+    'Product Branding',
+    'Responsive Layouts',
 ]
 
 export const navItems: NavigationItems[] = [
