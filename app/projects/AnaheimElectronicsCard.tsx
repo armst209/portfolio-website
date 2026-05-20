@@ -6,14 +6,13 @@ import ScribbleSmallCircleImage from '../components/Images/ScribbleSmallCircle'
 
 const AnaheimElectronicsCard = () => {
     return (
-        <div className="flex flex-col border border-light-border h-auto max-w-200 rounded-xl dark:border-dark-border">
+        <div className="flex flex-col border w-auto border-light-border h-auto rounded-xl dark:border-dark-border lg:h-200">
             <div className="z-10">
                 <Image
                     src={ProjectImage}
                     alt="project hero image"
                     className="rounded-t-xl"
                     preload={true}
-                    height={450}
                     placeholder="blur"
                 />
             </div>
@@ -44,7 +43,7 @@ const AnaheimElectronicsCard = () => {
                     </div>
                 </div>
 
-                <div className="w-full flex flex-col justify-center items-center md:flex-row">
+                <div className="w-full flex flex-col justify-center items-center xl:flex-row">
                     <a
                         href="https://armst209.github.io/"
                         className="w-70 items-center justify-center flex flex-row m-4 border border-light-border p-4 rounded-xl dark:border-dark-border"
