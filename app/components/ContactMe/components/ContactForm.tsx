@@ -3,13 +3,13 @@
 import emailjs from '@emailjs/browser'
 import toast from 'react-hot-toast'
 import { useForm } from 'react-hook-form'
-import { useState } from 'react'
+import { useTransition } from 'react'
 import SendEmailButton from './SendEmailButton'
 
 emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string)
 
 const ContactForm = () => {
-    const [isSending, setIsSending] = useState(false)
+    const [isPending, startTransition] = useTransition()
     const {
         register,
         handleSubmit,
@@ -17,32 +17,31 @@ const ContactForm = () => {
         formState: { errors },
     } = useForm()
 
-    const onSubmit = handleSubmit(async (data) => {
-        setIsSending(true)
-        try {
-            const response = await emailjs.send(
-                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
-                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
-                data,
-                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
-            )
+    const onSubmit = (data: Record<string, unknown>): void => {
+        startTransition(async () => {
+            try {
+                const response = await emailjs.send(
+                    process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+                    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+                    data,
+                    process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
+                )
 
-            if (response.status === 200) {
-                toast.success('Message sent successfully!')
-                setIsSending(false)
-                reset()
+                if (response.status === 200) {
+                    toast.success('Message sent successfully!')
+                    reset()
+                }
+            } catch (error) {
+                toast.error('Email failed to send')
+                console.error('Failed to send email:', error)
             }
-        } catch (error) {
-            setIsSending(false)
-            toast.error('Email failed to send')
-            console.error('Failed to send email:', error)
-        }
-    })
+        })
+    }
 
     return (
         <form
             id="contact-form"
-            onSubmit={onSubmit}
+            onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col h-full justify-center items-center w-full"
         >
             <label htmlFor="subject" className="font-bold w-full pb-2">
@@ -89,7 +88,7 @@ const ContactForm = () => {
                 required
             />
             {errors.message && <p role="alert">{errors.message.message as string}</p>}
-            <SendEmailButton isSending={isSending} />
+            <SendEmailButton isSending={isPending} />
         </form>
     )
 }

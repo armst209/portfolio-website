@@ -15,6 +15,7 @@ const PageContainer = ({ children }: { children: ReactNode }) => {
             <Footer />
             <Toaster
                 toastOptions={{
+                    duration: 4000,
                     ariaProps: {
                         role: 'status',
                         'aria-live': 'polite',
