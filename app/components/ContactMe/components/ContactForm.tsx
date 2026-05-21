@@ -5,17 +5,36 @@ import toast from 'react-hot-toast'
 import { useForm } from 'react-hook-form'
 import { useTransition } from 'react'
 import SendEmailButton from './SendEmailButton'
+import { z } from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
 
 emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string)
 
 const ContactForm = () => {
+    const formSchema = z.object({
+        subject: z.string().max(75, 'Subject line must be 75 characters or less'),
+        name: z
+            .string()
+            .min(1, 'Name must be at least 1 character long.')
+            .max(100, 'Name must be 100 characters or less.'),
+        email: z.email('Please enter a valid email'),
+        message: z
+            .string()
+            .min(10, 'Messages must be greater than 10 characters.')
+            .max(1000, 'Messages must be 500 characters or less'),
+    })
+
+    type FormData = z.infer<typeof formSchema>
+
     const [isPending, startTransition] = useTransition()
     const {
         register,
         handleSubmit,
         reset,
         formState: { errors },
-    } = useForm()
+    } = useForm<FormData>({
+        resolver: zodResolver(formSchema),
+    })
 
     const onSubmit = (data: Record<string, unknown>): void => {
         startTransition(async () => {
@@ -52,9 +71,10 @@ const ContactForm = () => {
                 {...register('subject')}
                 className="w-full mb-2 h-10 rounded-md p-2 bg-transparent border border-light-border dark:border-dark-border dark:bg-black placeholder:text-grey-600"
                 placeholder="Your Subject"
+                maxLength={75}
                 required
             />
-            {errors.title && <p role="alert">{errors.title.message as string}</p>}
+            {errors.subject && <p role="alert">{errors.subject.message as string}</p>}
             <label htmlFor="name" className="font-bold w-full pb-2">
                 Name
             </label>
@@ -82,7 +102,7 @@ const ContactForm = () => {
             </label>
             <textarea
                 {...register('message')}
-                maxLength={500}
+                maxLength={1000}
                 className=" min-h-50 w-full mb-2 h-10 rounded-md p-2 bg-transparent border border-light-border dark:border-dark-border dark:bg-black placeholder:text-grey-600"
                 placeholder="Your message here..."
                 required
