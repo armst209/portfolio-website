@@ -31,7 +31,7 @@ const SocialLinksSection = () => {
                 <GithubIcon />
             </a>
             <a
-                href="https://drive.google.com/file/d/1mc2AVvIW6GdcHancgz1ing24TK1Og5az/view?usp=sharing"
+                href="https://drive.google.com/file/d/11eziH1IuAzJc285-Dao6mT8Z_RAqc3JZ/view?usp=sharing"
                 rel="noopener noreferer"
                 target="_blank"
                 className="mr-4"
