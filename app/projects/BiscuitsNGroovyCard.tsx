@@ -6,7 +6,7 @@ import GithubIcon from '../components/Images/GithubIcon'
 
 const BiscuitsNGroovyCard = () => {
     return (
-        <div className="h-auto flex flex-col rounded-xl border w-auto border-light-border dark:border-dark-border lg:h-200">
+        <div className="h-auto flex flex-col rounded-xl border w-auto border-light-border dark:border-dark-border lg:h-250">
             <div className="z-10 ">
                 <Image
                     src={ProjectImage}

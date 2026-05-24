@@ -6,7 +6,7 @@ import ScribbleSmallCircleImage from '../components/Images/ScribbleSmallCircle'
 
 const AnaheimElectronicsCard = () => {
     return (
-        <div className="flex flex-col border w-auto border-light-border h-auto rounded-xl dark:border-dark-border lg:h-200">
+        <div className="flex flex-col border w-auto border-light-border h-auto rounded-xl dark:border-dark-border lg:h-250">
             <div className="z-10">
                 <Image
                     src={ProjectImage}
