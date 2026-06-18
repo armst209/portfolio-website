@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ProjectImage from '@public/assets/project-photos/biscuits-n-groovy/hero.webp'
 import BiscuitsNGroovyLogo from '@public/assets/project-photos/biscuits-n-groovy/bng_logo_webp.webp'
 import ScribbleSmallCircleImage from '../components/Images/ScribbleSmallCircle'
-import GithubIcon from '../components/Images/GithubIcon'
+import GithubIcon from '../components/Images/icons/GithubIcon'
 
 const BiscuitsNGroovyCard = () => {
     return (

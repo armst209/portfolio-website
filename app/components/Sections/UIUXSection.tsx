@@ -3,7 +3,7 @@ import UIUXIcon from '@public/assets/icons/ui-ux.svg'
 import ScribbleSmallCircle from '@public/assets/icons/scribble-small-circle.svg'
 import SemiColonPeriodScribble from '../Utility/SemiColonPeriodScribble'
 import { uiuxContent } from '@/app/utils/content'
-import CheckIcon from '../Images/CheckIcon'
+import CheckIcon from '../Images/icons/CheckIcon'
 
 const UIUXSection = () => {
     return (

@@ -1,4 +1,4 @@
-import CheckIcon from '../Images/CheckIcon'
+import CheckIcon from '../Images/icons/CheckIcon'
 import SemiColonPeriodScribble from '../Utility/SemiColonPeriodScribble'
 import { skillSetContent } from '@/app/utils/content'
 

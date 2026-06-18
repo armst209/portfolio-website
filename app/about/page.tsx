@@ -1,9 +1,6 @@
 import { Metadata, Viewport } from 'next'
-import Image from 'next/image'
-import AboutMeHeadShotDark from '@public/assets/AboutMeHeadshot_Dark.webp'
-import AboutMeHeadShotLight from '@public/assets/AboutMeHeadshot_Light.webp'
-import AboutMeHeadShotCoffee from '@public/assets/AboutMeHeadshot_Coffee.webp'
 import ScribbledDashPartition from '../components/Partitions/ScribbledDashPartition'
+import AboutMeHeadShot from '../components/Images/AboutMeHeadShot'
 
 export const viewport: Viewport = {
     width: 'device-width',
@@ -148,30 +145,7 @@ const About = () => {
                 </h1>
             </div>
             <article className="flex flex-col justify-center items-center w-full">
-                <Image
-                    src={AboutMeHeadShotDark}
-                    alt="about me headshot"
-                    className="hidden w-50 about-image-float pb-6 lg:w-90 dark:flex coffee:hidden"
-                    quality={75}
-                    placeholder="blur"
-                    preload={true}
-                />
-                <Image
-                    src={AboutMeHeadShotLight}
-                    alt="about me headshot"
-                    className="flex w-50 about-image-float pb-6 lg:w-90 dark:hidden coffee:hidden"
-                    quality={75}
-                    placeholder="blur"
-                    preload={true}
-                />
-                <Image
-                    src={AboutMeHeadShotCoffee}
-                    alt="about me headshot"
-                    className="hidden w-50 about-image-float pb-6 lg:w-90 dark:hidden coffee:flex"
-                    quality={75}
-                    placeholder="blur"
-                    preload={true}
-                />
+                <AboutMeHeadShot />
                 <ScribbledDashPartition />
                 <div className="flex flex-col justify-center items-center w-full xl:hidden">
                     <p className="text-md mb-4 wrap-normal w-full md:text-xl lg:text-2xl xl:mb-0 xl:text-3xl">

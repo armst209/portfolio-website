@@ -5,8 +5,8 @@ import { Accordion } from '@szhsin/react-accordion'
 import CustomAccordionItem from './components/CustomAccordionItem'
 
 import { professionalExpContent } from '@/app/utils/content'
-import LocationIcon from '../../Images/LocationIcon'
-import GlobeIcon from '../../Images/GlobeIcon'
+import LocationIcon from '../../Images/icons/LocationIcon'
+import GlobeIcon from '../../Images/icons/GlobeIcon'
 
 const ProfessionalExperience = () => {
     return (

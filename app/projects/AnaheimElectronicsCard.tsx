@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import ProjectImage from '@public/assets/project-photos/anahiem-electronics/hero.webp'
 import LiveDemoIcon from '@public/assets/icons/live-demo.svg'
-import GithubIcon from '../components/Images/GithubIcon'
+import GithubIcon from '../components/Images/icons/GithubIcon'
 import ScribbleSmallCircleImage from '../components/Images/ScribbleSmallCircle'
 
 const AnaheimElectronicsCard = () => {

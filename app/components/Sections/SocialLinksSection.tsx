@@ -1,10 +1,10 @@
-import LinkedInIcon from '../Images/LinkedInIcon'
-import ResumeIcon from '../Images/ResumeIcon'
-import GithubIcon from '../Images/GithubIcon'
+import LinkedInIcon from '../Images/icons/LinkedInIcon'
+import ResumeIcon from '../Images/icons/ResumeIcon'
+import GithubIcon from '../Images/icons/GithubIcon'
 import Link from 'next/link'
-import InfoIcon from '../Images/InfoIcon'
-import TwitterIcon from '../Images/TwitterIcon'
-import ProjectsIcon from '../Images/ProjectsIcon'
+import InfoIcon from '../Images/icons/InfoIcon'
+import TwitterIcon from '../Images/icons/TwitterIcon'
+import ProjectsIcon from '../Images/icons/ProjectsIcon'
 
 const SocialLinksSection = () => {
     return (

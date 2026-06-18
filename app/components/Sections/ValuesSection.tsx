@@ -1,6 +1,6 @@
 import { valuesContent } from '@/app/utils/content'
 import ScribbleSmallCircleImage from '../Images/ScribbleSmallCircle'
-import ValuesSectionIcon from '../Images/ValuesSectionIcon'
+import ValuesSectionIcon from '../Images/icons/ValuesSectionIcon'
 
 const ValuesSection = () => {
     return (

@@ -6,7 +6,7 @@ import Image from 'next/image'
 import DarkModeIcon from '@public/assets/icons/dark-moon.svg'
 import LightModeIcon from '@public/assets/icons/sun-light.svg'
 import CoffeeModeIcon from '@public/assets/icons/coffee.svg'
-import CaretIcon from '../../Images/CaretIcon'
+import CaretIcon from '../../Images/icons/CaretIcon'
 import { motion, AnimatePresence } from 'motion/react'
 
 const ThemeToggle = () => {

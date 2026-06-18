@@ -5,8 +5,8 @@ import { usePathname } from 'next/navigation'
 import ScribblePeriod from '@public/assets/icons/scribble-blob.svg'
 import CoffeeBeansIcon from '@public/assets/icons/coffee-beans.svg'
 import { navItems } from '@/app/utils/content'
-import CloseIcon from '../../Images/CloseIcon'
-import MobileMenuIcon from '../../Images/MobileMenuIcon'
+import CloseIcon from '../../Images/icons/CloseIcon'
+import MobileMenuIcon from '../../Images/icons/MobileMenuIcon'
 
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false)
