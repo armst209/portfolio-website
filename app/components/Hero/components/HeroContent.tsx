@@ -6,6 +6,9 @@ import HeroImage from '../../Images/HeroImage'
 const HeroContent = () => {
     return (
         <section className="flex flex-col xxl:flex-row lg:items-center lg:justify-between">
+            <div id="hero-section-image" className="h-full flex justify-center items-center">
+                <HeroImage />
+            </div>
             <div id="hero-section-headings">
                 <div className="flex items-center justify-center">
                     <HeroArrows />
@@ -41,9 +44,6 @@ const HeroContent = () => {
                 <div className="flex items-center justify-center rotate-180">
                     <HeroArrows />
                 </div>
-            </div>
-            <div id="hero-section-image" className="h-full flex justify-center items-center">
-                <HeroImage />
             </div>
         </section>
     )
