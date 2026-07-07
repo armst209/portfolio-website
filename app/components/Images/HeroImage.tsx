@@ -12,7 +12,7 @@ const HeroImage = () => {
                 quality={75}
                 placeholder="blur"
                 preload={true}
-                className="hidden w-[40%] xl:w-[30%] 2xl:w-[40%]  dark:flex coffee:hidden"
+                className="hidden w-[60%] xl:w-[30%] 2xl:w-[40%]  dark:flex coffee:hidden"
             />
             <Image
                 src={HeroArtLight}
@@ -20,7 +20,7 @@ const HeroImage = () => {
                 quality={75}
                 placeholder="blur"
                 preload={true}
-                className="flex w-[40%] xl:w-[30%] 2xl:w-[40%] dark:hidden coffee:hidden"
+                className="flex w-[60%] xl:w-[30%] 2xl:w-[40%] dark:hidden coffee:hidden"
             />
             <Image
                 src={HeroArtCoffee}
@@ -28,7 +28,7 @@ const HeroImage = () => {
                 quality={75}
                 placeholder="blur"
                 preload={true}
-                className="hidden w-[40%] xl:w-[30%] 2xl:w-[40%] dark:hidden coffee:flex"
+                className="hidden w-[60%] xl:w-[30%] 2xl:w-[40%] dark:hidden coffee:flex"
             />
         </>
     )
