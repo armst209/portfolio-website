@@ -5,6 +5,7 @@ import FrontendIcon from '@public/assets/icons/front-end.svg'
 import StateManagementIcon from '@public/assets/icons/state-management.svg'
 import BackendIcon from '@public/assets/icons/backend.svg'
 import DesignIcon from '@public/assets/icons/design.svg'
+import AI_Icon from '@public/assets/icons/ai-assistant.svg'
 
 const TechnologiesIUseSection = () => {
     return (
@@ -21,7 +22,7 @@ const TechnologiesIUseSection = () => {
                     </h2>
                 </div>
             </div>
-            <div className="grid grid-cols-1 grid-row-2 gap-0 rounded-xl border bg-transparent dark:border-dark-border lg:grid-cols-3">
+            <div className="grid grid-cols-1 grid-row-2 gap-0 rounded-xl border bg-transparent dark:border-dark-border lg:grid-cols-3 lg:grid-rows-3">
                 <div className="m-6 rounded-xl bg-transparent p-4 row-span-2 border border-light-border dark:border-dark-border dark:bg-transparent">
                     <div className="flex flex-row pb-2 items-center">
                         <Image
@@ -164,6 +165,32 @@ const TechnologiesIUseSection = () => {
                     </div>
                     <div className="pb-2">
                         <p className="wrap-normal">Figma, Davinci Resolve, GIMP</p>
+                    </div>
+                </div>
+                <div className="m-6 rounded-xl bg-transparent p-4 lg:col-span-3 border border-light-border dark:border-dark-border dark:bg-transparent">
+                    <div className="flex flex-row pb-2 items-center">
+                        <Image
+                            src={AI_Icon}
+                            width={30}
+                            className="flex black-color-filter mr-4 dark:hidden coffee:hidden"
+                            alt="state management icon"
+                        />
+                        <Image
+                            src={AI_Icon}
+                            width={30}
+                            className="hidden orange-color-filter mr-4 dark:flex coffee:hidden"
+                            alt="state management icon"
+                        />
+                        <Image
+                            src={AI_Icon}
+                            width={30}
+                            className="hidden coffee-color-filter mr-4 dark:hidden coffee:flex"
+                            alt="state management icon"
+                        />
+                        <h2 className="font-display font-bold text-lg">AI Agents</h2>
+                    </div>
+                    <div className="pb-2">
+                        <p className="wrap-normal">Github Copilot, Claude Code</p>
                     </div>
                 </div>
             </div>
