@@ -5,7 +5,7 @@ import {
   Clauses,
   LegalDocument,
   SubClauses,
-} from '@/features/legal/components/LegalDocument';
+} from '@main/terms/components/LegalDocument';
 
 export const metadata: Metadata = { title: 'Music Purchase Terms' };
 

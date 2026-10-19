@@ -4,7 +4,7 @@ import {
   Clause,
   Clauses,
   LegalDocument,
-} from '@/features/legal/components/LegalDocument';
+} from '@main/terms/components/LegalDocument';
 
 export const metadata: Metadata = { title: 'Terms Of Service' };
 

@@ -3,7 +3,7 @@ import TextLink from '@shared-components/TextLink';
 import {
   LegalDocument,
   LegalSection,
-} from '@/features/legal/components/LegalDocument';
+} from '@main/terms/components/LegalDocument';
 
 export const metadata: Metadata = { title: 'Privacy Policy' };
 

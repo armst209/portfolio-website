@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { howItWorks } from '../data/data';
-import HowItWorks from './components/HowItWorks';
+import HowItWorks from './HowItWorks';
 
 describe('HowItWorks', () => {
   it('renders every step from the data file', () => {

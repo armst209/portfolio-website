@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import PageHeader from '@shared-components/layout/PageHeader';
-import { legalDocuments } from '@/features/legal/documents';
+import { legalDocuments } from '@main/terms/documents';
 import openBook from '@public/assets/open-book.svg';
 
 export const metadata: Metadata = {

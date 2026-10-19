@@ -31,3 +31,11 @@ export type NavItem = {
 };
 
 export type AuthStatus = 'loading' | 'authenticated' | 'unauthenticated';
+
+export type AppUser = {
+  id: string;
+  email: string | null;
+  username: string | null;
+  avatarUrl: string | null;
+  isEmailConfirmed: boolean;
+};
