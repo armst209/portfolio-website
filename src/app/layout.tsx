@@ -1,11 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import { Figtree, Jost } from 'next/font/google';
-import { Suspense } from 'react';
 import { Toaster } from 'react-hot-toast';
-import SessionLoader from '@/providers/SessionLoader';
 import './globals.css';
 
-// Figtree stands in for Spotify Circular; Jost echoes BnG's original Futura headers.
 const figtree = Figtree({
   variable: '--font-figtree',
   subsets: ['latin'],
@@ -36,10 +33,6 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       lang="en"
       className={`${figtree.variable} ${jost.variable} h-full antialiased`}>
       <body className="h-full">
-        {/* Session is request-time data, so it streams in behind Suspense. */}
-        <Suspense fallback={null}>
-          <SessionLoader />
-        </Suspense>
         {children}
         <Toaster
           position="top-center"

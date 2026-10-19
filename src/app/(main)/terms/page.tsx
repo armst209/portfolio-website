@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
-import PageHeader from '@/components/layout/PageHeader';
+import PageHeader from '@shared-components/layout/PageHeader';
 import { legalDocuments } from '@/features/legal/documents';
 import openBook from '@public/assets/open-book.svg';
 

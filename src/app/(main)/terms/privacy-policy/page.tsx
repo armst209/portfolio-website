@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import TextLink from '@/components/ui/TextLink';
+import TextLink from '@shared-components/TextLink';
 import {
   LegalDocument,
   LegalSection,

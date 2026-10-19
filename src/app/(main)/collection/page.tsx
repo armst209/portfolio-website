@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import PageHeader from '@/components/layout/PageHeader';
-import SectionHeader from '@/components/layout/SectionHeader';
-import { buttonVariants } from '@/components/ui/Button';
-import ExpiredInfoButton from '@/features/collection/components/ExpiredInfoButton';
-import ExpiredReleaseCard from '@/features/collection/components/ExpiredReleaseCard';
+import PageHeader from '@shared-components/layout/PageHeader';
+import SectionHeader from '@shared-components/layout/SectionHeader';
+import { buttonVariants } from '@shared-components/Button';
+import ExpiredInfoButton from './components/ExpiredInfoButton';
+import ExpiredReleaseCard from './components/ExpiredReleaseCard';
 import {
   sampleCollection,
   splitCollection,
-} from '@/features/collection/data/sample-collection';
-import ReleaseGrid from '@/features/releases/components/ReleaseGrid';
+} from '@/app/(main)/collection/data/sample-collection';
+import ReleaseGrid from '../releases/components/ReleaseGrid';
 import musicIcon from '@public/assets/music-collection-yellow.svg';
 import vinylIcon from '@public/assets/vinyl_yellow.svg';
 

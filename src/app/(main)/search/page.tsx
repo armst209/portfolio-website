@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
-import SearchView from '@/features/search/components/SearchView';
+import SearchView from '@/app/(main)/search/components/SearchView';
 
 export const metadata: Metadata = { title: 'Search' };
 

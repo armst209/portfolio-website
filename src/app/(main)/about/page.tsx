@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import IconList from '@/components/layout/IconList';
-import SectionHeader from '@/components/layout/SectionHeader';
-import HowWeServe from '@/features/about/components/HowWeServe';
+import IconList from '@shared-components/layout/IconList';
+import SectionHeader from '@shared-components/layout/SectionHeader';
+import HowWeServe from '@/app/(main)/about/components/HowWeServe';
 import aboutStory from '@public/assets/about_story.webp';
 import bucketHats from '@public/assets/buckethats.webp';
 import handOne from '@public/assets/hand1_yellow.svg';

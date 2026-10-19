@@ -20,7 +20,9 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@public/*": ["./public/*"]
+      "@public/*": ["./public/*"],
+      "@main/*": ["./src/app/(main)/*"],
+      "@shared-components/*": ["./src/shared-components/*"]
     },
     "types": ["vitest/globals", "jest-extended", "@testing-library/jest-dom"]
   },

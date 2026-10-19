@@ -1,6 +1,6 @@
 import { Disc3 } from 'lucide-react';
-import Logo from '@/components/layout/Logo';
-import MessagePanel from '@/components/layout/MessagePanel';
+import Logo from '@shared-components/layout/Logo';
+import MessagePanel from '@shared-components/layout/MessagePanel';
 
 export default function NotFound() {
   return (

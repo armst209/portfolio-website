@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import PageHeader from '@/components/layout/PageHeader';
-import TextLink from '@/components/ui/TextLink';
-import VaultCard from '@/features/vault/components/VaultCard';
-import { sampleVault } from '@/features/vault/data/sample-vault';
+import PageHeader from '@shared-components/layout/PageHeader';
+import TextLink from '@shared-components/TextLink';
+import VaultCard from './components/VaultCard';
+import { sampleVault } from './data/sample-vault';
 
 export const metadata: Metadata = {
   title: 'Vault',

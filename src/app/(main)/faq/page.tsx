@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import PageHeader from '@/components/layout/PageHeader';
-import SectionHeader from '@/components/layout/SectionHeader';
-import FaqAccordion from '@/features/faq/components/FaqAccordion';
-import NftsExplained from '@/features/faq/components/NftsExplained';
-import { faqs } from '@/features/faq/data';
+import PageHeader from '@shared-components/layout/PageHeader';
+import SectionHeader from '@shared-components/layout/SectionHeader';
+import FaqAccordion from './components/FaqAccordion';
+import NftsExplained from './components/NftsExplained';
+import { faqs } from './data';
 import questionIcon from '@public/assets/question2.svg';
 
 export const metadata: Metadata = {

@@ -1,19 +1,4 @@
-import { NextResponse, type NextRequest } from 'next/server';
-import { updateSession } from '@/lib/supabase/proxy';
-import { isPrivateRoute } from '@/lib/routes';
-
-export async function proxy(request: NextRequest) {
-  const { response, isAuthenticated } = await updateSession(request);
-
-  if (!isAuthenticated && isPrivateRoute(request.nextUrl.pathname)) {
-    const signInUrl = request.nextUrl.clone();
-    signInUrl.pathname = '/signin';
-    signInUrl.search = '';
-    return NextResponse.redirect(signInUrl);
-  }
-
-  return response;
-}
+export async function proxy() {}
 
 export const config = {
   matcher: [

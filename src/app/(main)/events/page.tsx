@@ -2,13 +2,13 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { CalendarDays, Clock, ExternalLink, MapPin } from 'lucide-react';
-import IconList from '@/components/layout/IconList';
-import SectionHeader from '@/components/layout/SectionHeader';
-import { buttonVariants } from '@/components/ui/Button';
-import TextLink from '@/components/ui/TextLink';
-import EventCountdown from '@/features/events/components/EventCountdown';
-import { featuredEvent as event } from '@/features/events/data';
-import NewsletterForm from '@/features/home/components/NewsletterForm';
+import IconList from '@shared-components/layout/IconList';
+import SectionHeader from '@shared-components/layout/SectionHeader';
+import { buttonVariants } from '@shared-components/Button';
+import TextLink from '@shared-components/TextLink';
+import EventCountdown from './components/EventCountdown';
+import { featuredEvent as event } from './data';
+import NewsletterForm from '@shared-components/home/NewsletterForm';
 import speakerIcon from '@public/assets/speaker_yellow.svg';
 
 export const metadata: Metadata = {

@@ -30,13 +30,4 @@ export type NavItem = {
   icon: LucideIcon;
 };
 
-/** The slice of the Supabase user the client actually needs. */
-export type AppUser = {
-  id: string;
-  email: string | null;
-  username: string | null;
-  avatarUrl: string | null;
-  isEmailConfirmed: boolean;
-};
-
 export type AuthStatus = 'loading' | 'authenticated' | 'unauthenticated';

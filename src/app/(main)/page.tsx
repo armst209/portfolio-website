@@ -1,8 +1,8 @@
-import Attention from '@/features/home/components/Attention';
-import Hero from '@/features/home/components/Hero';
-import HowItWorks from '@/features/home/components/HowItWorks';
-import KnowYourCollection from '@/features/home/components/KnowYourCollection';
-import MusicShowcase from '@/features/home/components/MusicShowcase';
+import Attention from '@shared-components/home/Attention';
+import Hero from '@shared-components/home/Hero';
+import HowItWorks from '@/shared-components/home/HowItWorks/HowItWorks';
+import KnowYourCollection from '@shared-components/home/KnowYourCollection';
+import MusicShowcase from '@shared-components/home/MusicShowcase';
 
 export default function Home() {
   return (

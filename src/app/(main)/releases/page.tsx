@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import PageHeader from '@/components/layout/PageHeader';
-import ReleaseGrid from '@/features/releases/components/ReleaseGrid';
-import { sampleReleases } from '@/features/releases/data/sample-releases';
+import PageHeader from '@shared-components/layout/PageHeader';
+import ReleaseGrid from './components/ReleaseGrid';
+import { sampleReleases } from './data/sample-releases';
 
 export const metadata: Metadata = { title: 'Releases' };
 

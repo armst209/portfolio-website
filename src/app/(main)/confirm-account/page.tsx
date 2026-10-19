@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { MailCheck } from 'lucide-react';
-import MessagePanel from '@/components/layout/MessagePanel';
+import MessagePanel from '@shared-components/layout/MessagePanel';
 
 export const metadata: Metadata = { title: 'Verify your email' };
 

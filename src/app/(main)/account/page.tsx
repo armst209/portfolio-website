@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 import { Suspense } from 'react';
-import AccountForm from '@/features/account/components/AccountForm';
-import { getProfile } from '@/features/account/queries';
-import { getClaims } from '@/lib/supabase/server';
+import AccountForm from './components/AccountForm';
+import { getProfile } from './queries';
 
 export const metadata: Metadata = { title: 'Account' };
 
@@ -16,8 +15,11 @@ export default function AccountPage() {
 }
 
 async function AccountContent() {
-  const claims = await getClaims();
-  // The proxy already guards /account; this is the server-side backstop.
+  const claims = {
+    sub: '',
+    email: '',
+  }; //replace with new getUser handler
+
   if (!claims?.sub) redirect('/signin');
 
   const profile = await getProfile(claims.sub);
