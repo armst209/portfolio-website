@@ -137,7 +137,7 @@ export const metadata: Metadata = {
     },
 }
 
-const Projects = () => {
+const Portfolio = () => {
     return (
         <section className="p-4 pt-20 pb-20 w-full flex flex-col justify-center items-center">
             <div className="w-full items-center justify-center">
@@ -145,7 +145,7 @@ const Projects = () => {
                     <div className="flex flex-row">
                         <div className="flex flex-row w-auto">
                             <h1 className="font-display flex flex-col-reverse lg:flex-row items-center pb-2 font-bold hero-text-h1">
-                                <p>Personal Projects</p>
+                                <p>Portfolio</p>
                             </h1>
                         </div>
                     </div>
@@ -155,12 +155,12 @@ const Projects = () => {
                 </div>
                 <ScribbledDashPartition className="mt-10 mb-10" />
                 <div className="flex flex-col items-center justify-center gap-4 xl:gap-2 lg:flex-row">
-                    <AnaheimElectronicsCard />
                     <BiscuitsNGroovyCard />
+                    <AnaheimElectronicsCard />
                 </div>
             </div>
         </section>
     )
 }
 
-export default Projects
+export default Portfolio

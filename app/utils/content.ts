@@ -50,7 +50,7 @@ export const uiuxContent = [
 
 export const navItems: NavigationItems[] = [
     { id: 1, title: 'Home', pathname: '/' },
-    { id: 2, title: 'Projects', pathname: '/projects' },
+    { id: 2, title: 'Portfolio', pathname: '/portfolio' },
     { id: 3, title: 'About', pathname: '/about' },
 ]
 
