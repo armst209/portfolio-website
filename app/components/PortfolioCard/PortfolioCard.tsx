@@ -15,8 +15,6 @@ export type PortfolioCardProps = {
     githubUrl?: string
     caseStudyUrl?: string
     preload?: boolean
-    beforeImg?: string | StaticImport
-    afterImg?: string | StaticImport
 }
 
 const SLIDE_INTERVAL_MS = 3200
@@ -68,8 +66,6 @@ const PortfolioCard = ({
     visitUrl,
     githubUrl,
     caseStudyUrl,
-    beforeImg,
-    afterImg,
     preload = false,
 }: PortfolioCardProps) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -110,7 +106,7 @@ const PortfolioCard = ({
                         sizes="(min-width: 1024px) 50vw, 100vw"
                         placeholder="blur"
                         preload={preload && index === 0}
-                        className={`object-cover transition-opacity duration-1000 ease-in-out ${
+                        className={`object-contain object-center transition-opacity max-[500px]:duration-1000 ease-in-out ${
                             index === activeImage ? 'opacity-100' : 'opacity-0'
                         }`}
                     />
@@ -120,7 +116,7 @@ const PortfolioCard = ({
 
             <div
                 aria-hidden={isOpen}
-                className={`absolute right-20 bottom-0 left-0 z-5 px-4 pb-5 transition-all duration-300 sm:px-6 sm:pb-6 ${
+                className={`absolute right-20 bottom-0 left-0 z-5 px-4 pb-5 transition-all duration-300 max-[500px]:right-0 max-[500px]:pb-22 sm:px-6 sm:pb-6 ${
                     isOpen ? 'pointer-events-none translate-y-2 opacity-0' : 'opacity-100'
                 }`}
             >
@@ -134,7 +130,7 @@ const PortfolioCard = ({
             <div
                 id={panelId}
                 inert={!isOpen}
-                className={`absolute inset-0 z-8 flex flex-col gap-3 overflow-y-auto rounded-[20px] bg-linear-[165deg] from-[#1e1e24] via-[#121216] to-[#08080a] py-5 pr-18 pl-4 transition-[clip-path] duration-550 ease-[cubic-bezier(0.4,0,0.2,1)] sm:py-8 sm:pr-24 sm:pl-7 ${
+                className={`absolute inset-0 z-8 flex flex-col gap-3 overflow-y-auto rounded-[20px] bg-linear-[165deg] from-[#1e1e24] via-[#121216] to-[#08080a] py-5 pr-18 pl-4 transition-[clip-path] max-[500px]:pt-20 max-[500px]:pr-4 duration-550 ease-[cubic-bezier(0.4,0,0.2,1)] sm:py-8 sm:pr-24 sm:pl-7 ${
                     isOpen
                         ? '[clip-path:circle(160%_at_calc(100%_-_42px)_calc(100%_-_46px))]'
                         : '[clip-path:circle(0_at_calc(100%_-_42px)_calc(100%_-_46px))]'
@@ -205,31 +201,13 @@ const PortfolioCard = ({
                         </a>
                     )}
                 </div>
-                {(beforeImg || afterImg) && isOpen && (
-                    <div className="flex flex-col mt-4">
-                        <div className="mb-2">
-                            <h2 className="font-extrabold">Before:</h2>
-                            <Image
-                                src={beforeImg as string}
-                                className="rounded-md"
-                                alt={`${name}-before`}
-                            />
-                        </div>
-                        <div>
-                            <h2 className="font-extrabold">After:</h2>
-                            <Image
-                                src={afterImg as string}
-                                className="rounded-md"
-                                alt={`${name}-after`}
-                            />
-                        </div>
-                    </div>
-                )}
             </div>
 
             <div
                 className={`pointer-events-none absolute top-0 right-0 bottom-0 z-30 flex w-17 flex-col items-center gap-2 sm:w-21 [&>*]:pointer-events-auto ${
-                    isOpen ? 'justify-start pt-4.5' : 'justify-end pb-4.5'
+                    isOpen
+                        ? 'justify-start pt-4.5'
+                        : 'justify-end pb-4.5 max-[500px]:top-auto max-[500px]:left-0 max-[500px]:w-full max-[500px]:flex-row-reverse max-[500px]:justify-start max-[500px]:px-3'
                 }`}
             >
                 <button

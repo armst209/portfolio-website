@@ -1,7 +1,6 @@
 import ProjectImage from '@public/assets/project-photos/biscuits-n-groovy/bng-new-hero.webp'
 import BiscuitsNGroovyLogo from '@public/assets/project-photos/biscuits-n-groovy/bng_logo_webp.webp'
 import PortfolioCard from '../components/PortfolioCard/PortfolioCard'
-import BeforeImage from '@public/assets/project-photos/biscuits-n-groovy/bng-old-hero.webp'
 
 const BiscuitsNGroovyCard = () => {
     return (
@@ -14,8 +13,6 @@ const BiscuitsNGroovyCard = () => {
             logo={BiscuitsNGroovyLogo}
             githubUrl="https://github.com/armst209/BiscuitsNGroovyNEW"
             visitUrl="https://bngroovy.armst209.dev/"
-            beforeImg={BeforeImage}
-            afterImg={ProjectImage}
             preload
         />
     )
